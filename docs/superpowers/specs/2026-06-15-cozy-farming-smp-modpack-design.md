@@ -26,7 +26,8 @@ zwischen den Siedlungen sind ein zentrales Spielziel.
 | Umfang | **Kitchen-Sink, ~150+ Mods** |
 | Build-Tooling | **Packwiz** (Pack als Textdateien, versionierbar) |
 | Export-Ziele | **.mrpack** (Client) + **Server-Pack** |
-| Optik | **Shader-ready, standardmäßig aus** (optionales Iris/Oculus-Äquivalent) |
+| Optik | **Shader-ready, standardmäßig aus** + **Distant Horizons** (extreme Sichtweite) |
+| Pregeneration | **Chunky** (Welt im Voraus generieren) |
 | Land-Schutz | **FTB Chunks** (Claims + Schutz, integriert mit FTB Teams) |
 | Progression/Wirtschaft | **FTB Quests + Magic Coins** (Currency-Rewards-Integration) |
 | Weltgenerierung | **Terralith + Tectonic** (riesige, realistische Biome) |
@@ -99,16 +100,24 @@ Die exakte, versions-gepinnte Mod-Liste entsteht im Implementierungsplan (jede M
 
 ### 🛡️ Server / SMP-Basis
 - FTB Chunks (Claims/Schutz) + FTB Teams, Sleep-Voting, optional Grab-/Death-Komfort
+- **Chunky** — Chunk-Pregeneration der großen Terralith/Tectonic-Welt im Voraus
 
 ### 🚀 Performance (Pflicht bei Kitchen-Sink)
-- Embeddium (+Embeddium Extra), FerriteCore, ModernFix, Entity Culling, Starlight u.a.
+- **Renderer:** Sodium **oder** Embeddium — Auswahl hängt an der Render-Stack-Entscheidung unter
+  „Optik & Sichtweite" (Sodium+Iris bevorzugt wegen DH+Shader-Kompatibilität auf NeoForge)
+- FerriteCore, ModernFix, Entity Culling, Starlight u.a.
 
 ### ✨ QoL (erweiterbar)
 - Rezept-Anzeige (JEI/EMI), Map (JourneyMap/Xaero's), Inventar-Sortierung, Waypoints
 - **Hinweis:** Diese Kategorie wird im Aufbau gemeinsam erweitert (weitere QoL-Mods nach Wunsch).
 
-### 🎨 Optik (optional, shader-ready)
-- Iris/Oculus-Äquivalent für NeoForge 1.21.1, Shader standardmäßig deaktiviert
+### 🎨 Optik & Sichtweite (extreme Distanzen, shader-ready)
+- **Distant Horizons 2.x** — extreme Sichtweite per LOD (clientseitig, kaum Server-TPS-Last);
+  passt ideal zu den riesigen Terralith/Tectonic-Landschaften
+- **Render-Stack-Entscheidung (Implementierung):** kohärenten Stack wählen, damit
+  Distant Horizons + optionale Shader auf NeoForge zusammenspielen — voraussichtlich
+  **Sodium + Iris (1.7+, DH-fähig)** statt Embeddium, da Embeddium auf NeoForge nicht sauber
+  mit Iris/Shadern läuft. Shader standardmäßig deaktiviert, mit DH-kompatiblem Shaderpack als Empfehlung.
 
 ## Packwiz-Struktur
 
