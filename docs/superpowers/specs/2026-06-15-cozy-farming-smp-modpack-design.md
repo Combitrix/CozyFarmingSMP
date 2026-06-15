@@ -32,6 +32,7 @@ zwischen den Siedlungen sind ein zentrales Spielziel.
 | Weltgenerierung | **Terralith + Tectonic** (riesige, realistische Biome) |
 | Create-Addons | **So viele wie möglich** (auf 1.21.1 NeoForge kompatibel) |
 | Gameplay-Ziel | Mehrere Zivilisationen, per **Zug-Netz** verbunden |
+| Server-Hardware | **25 GB RAM**, max. ~**5 Spieler** |
 
 ### Begründung der Versionswahl
 Beide Anker-Mods werden aktiv auf 1.21.1 NeoForge gepflegt:
@@ -126,12 +127,14 @@ Export: `packwiz modrinth export` (Client-.mrpack) und Server-Pack via packwiz-i
 
 - **Create Aeronautics ist Alpha** → gelegentliche Bugs/Crashes möglich. Bleibt drin (Kernwunsch),
   wird auf eine stabile Version gepinnt.
-- **Kitchen-Sink + MineColonies + Aeronautics + viele Create-Addons + Tectonic ist sehr serverlastig**
-  → Server mit **≥ 8–10 GB RAM** empfohlen; ggf. Chunk-Pregeneration für die große Welt.
+- **Server:** **25 GB RAM**, max. ~**5 Spieler** → reichlich Reserve für Kitchen-Sink + viele
+  Create-Addons + Tectonic. RAM ist kein Engpass; Hauptlast bleibt **Single-Thread-TPS**
+  (MineColonies-Bürger, Create-Kontraptionen, Aeronautics-Physik) — daher TPS-schonende Configs
+  und Performance-Mods trotzdem Pflicht.
 - **Viele Create-Addons** erhöhen Konflikt-/Update-Risiko → alle gegen dieselbe Create-Version pinnen,
   inkompatible weglassen statt erzwingen.
-- **Tectonic/Terralith = große, komplexe Worldgen** → langsamere Chunk-Generierung; Pregen + großzügige
-  Render-/Simulation-Distanz-Einstellung einplanen.
+- **Tectonic/Terralith = große, komplexe Worldgen** → langsamere Chunk-Generierung; Chunk-Pregen
+  (z.B. Chunky) für die große Welt einplanen, großzügige Render-/Simulation-Distanz möglich.
 - **Mod-Konflikte** bei 150+ Mods → Performance-Mods + schrittweiser Aufbau/Test mindern das Risiko.
 - Annahme: Alle Mitspieler nutzen denselben Launcher (Modrinth/Prism) zum Installieren des .mrpack.
 
