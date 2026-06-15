@@ -33,6 +33,9 @@ zwischen den Siedlungen sind ein zentrales Spielziel.
 | Weltgenerierung | **Terralith + Tectonic** (riesige, realistische Biome) |
 | Create-Addons | **So viele wie möglich** (auf 1.21.1 NeoForge kompatibel) |
 | Gameplay-Ziel | Mehrere Zivilisationen, per **Zug-Netz** verbunden |
+| Kolonien pro Spieler | **Unbegrenzt** (über Mindestabstand geregelt) |
+| Abenteuer/Combat | **Leichte Würze** (etwas Gefahr/Dungeons), kein Combat-Fokus |
+| Eigene Mods | **Optional, späteres Teilprojekt** (z.B. „Kartoffelboss") |
 | Server-Hardware | **25 GB RAM**, max. ~**5 Spieler** |
 
 ### Begründung der Versionswahl
@@ -49,13 +52,16 @@ Beide Anker-Mods werden aktiv auf 1.21.1 NeoForge gepflegt:
 Stattdessen wird das Cozy-Farming-Erlebnis **aus Einzel-Mods auf 1.21.1 neu zusammengestellt** —
 volle Kontrolle, aktuelle Versionen, saubere SMP-Tauglichkeit.
 
-## Die 4 Säulen
+## Die 5 Säulen
 
 1. **Farmen & Leben** — Crops, Kochen, Jahreszeiten, Tiere, Skills (Cozy-Herzstück)
-2. **Bauen & Gemeinschaft** — MineColonies + mehrere Zivilisationen in einer riesigen Welt
+2. **Bauen & Gemeinschaft** — MineColonies, **mehrere Kolonien pro Spieler (unbegrenzt)** in einer riesigen Welt
 3. **Technik & Mobilität** — Create (so viele Addons wie möglich) + Aeronautics + Zug-Netz
 4. **Welt & Vernetzung** — riesige realistische Biome (Terralith + Tectonic), per Zug verbunden
 5. **Ziele & Wirtschaft** — FTB Quests + Coin-Währung als roter Faden
+
+Leichte Würze: etwas Gefahr/Dungeons (kein Combat-Fokus). Optionales Folge-Teilprojekt:
+eigene, thematische Mods (z.B. ein „Kartoffelboss") — siehe Abschnitt „Eigene Inhalte".
 
 ## Mod-Kategorien
 
@@ -76,6 +82,15 @@ Die exakte, versions-gepinnte Mod-Liste entsteht im Implementierungsplan (jede M
 
 ### 🏘️ Gemeinschaft
 - MineColonies + Dependencies (Structurize, Domum Ornamentum, BlockUI) + Kompatibilitäts-Addon
+- **Multiplayer-Config (wichtig):** mehrere Kolonien pro Spieler **unbegrenzt** erlauben
+  (kein Kolonie-Limit), Gründung über **Mindestabstand** zwischen Kolonien geregelt.
+- **Claim-Koexistenz:** MineColonies-Claim-Radius bewusst mit **FTB Chunks** abstimmen, damit sich
+  die beiden Claim-/Schutzsysteme nicht beißen (Radien/Regeln im Plan festlegen).
+
+### ⚔️ Abenteuer & Gefahr (leicht, optional würzig)
+- Etwas Erkundung/Dungeons/Strukturen + moderate Gegner — **kein Hardcore-Combat-Fokus**
+- Kandidaten im Plan prüfen (z.B. Strukturen-/Dungeon-Mod, dezente Mob-Erweiterung), so dosiert,
+  dass das Cozy-Farming-Gefühl dominant bleibt
 
 ### ⚙️ Technik & Mobilität (Create + so viele Addons wie möglich)
 - **Create** (Basis) + **Create Aeronautics** (v1.3.0, Luftschiffe/Flugzeuge)
@@ -101,11 +116,15 @@ Die exakte, versions-gepinnte Mod-Liste entsteht im Implementierungsplan (jede M
 ### 🛡️ Server / SMP-Basis
 - FTB Chunks (Claims/Schutz) + FTB Teams, Sleep-Voting, optional Grab-/Death-Komfort
 - **Chunky** — Chunk-Pregeneration der großen Terralith/Tectonic-Welt im Voraus
+- **Backups** — automatische, regelmäßige Server-Backups (z.B. FTB Backups / serverseitig);
+  Pflicht wegen Alpha-Aeronautics und langlebigem SMP
 
 ### 🚀 Performance (Pflicht bei Kitchen-Sink)
 - **Renderer:** Sodium **oder** Embeddium — Auswahl hängt an der Render-Stack-Entscheidung unter
   „Optik & Sichtweite" (Sodium+Iris bevorzugt wegen DH+Shader-Kompatibilität auf NeoForge)
-- FerriteCore, ModernFix, Entity Culling, Starlight u.a.
+- FerriteCore, ModernFix, Entity Culling u.a.
+- **Starlight:** auf NeoForge 1.21.1 erst auf Verfügbarkeit/Nutzen prüfen, ggf. weglassen
+  (Lighting hier teils schon optimiert)
 
 ### ✨ QoL (erweiterbar)
 - Rezept-Anzeige (JEI/EMI), Map (JourneyMap/Xaero's), Inventar-Sortierung, Waypoints
@@ -132,6 +151,22 @@ modpack/
 
 Export: `packwiz modrinth export` (Client-.mrpack) und Server-Pack via packwiz-installer.
 
+**Client-/Server-Seiten-Trennung (wichtig):** Jede Mod bekommt in ihrer `*.pw.toml` ein
+`side = "client" | "server" | "both"`.
+- **client-only:** Distant Horizons (Renderer), Sodium/Iris bzw. Embeddium, Minimap/Map-Rendering,
+  Shader, Embeddium-Extra
+- **server-only:** Chunky, ggf. Backup-Mod
+- **both:** alle Gameplay-Mods (Create, MineColonies, Farming, Quests, Worldgen, …)
+Ohne diese Trennung crasht der Server an client-only-Mods. Hinweis: Distant Horizons hat ab 2.1+
+eine optionale Server-Komponente zum Teilen von LODs — separat prüfen.
+
+## Eigene Inhalte (optionales Folge-Teilprojekt)
+
+Eigene, thematische Mods passend zum Farming-Thema — z.B. ein **„Kartoffelboss"** (themen­gerechter
+Boss/Dungeon). Dies ist **nicht Teil des Pack-Aufbaus**, sondern ein eigenes Projekt mit eigenem
+Spec → Plan → Umsetzung (NeoForge-Mod-Entwicklung für 1.21.1), das später ins Pack integriert wird.
+Wird hier nur als Vision festgehalten, um den aktuellen Plan fokussiert zu lassen.
+
 ## Risiken & Annahmen
 
 - **Create Aeronautics ist Alpha** → gelegentliche Bugs/Crashes möglich. Bleibt drin (Kernwunsch),
@@ -145,11 +180,28 @@ Export: `packwiz modrinth export` (Client-.mrpack) und Server-Pack via packwiz-i
 - **Tectonic/Terralith = große, komplexe Worldgen** → langsamere Chunk-Generierung; Chunk-Pregen
   (z.B. Chunky) für die große Welt einplanen, großzügige Render-/Simulation-Distanz möglich.
 - **Mod-Konflikte** bei 150+ Mods → Performance-Mods + schrittweiser Aufbau/Test mindern das Risiko.
+- **Client-Hardware:** 150+ Mods + Distant Horizons + Shader brauchen client-seitig ~6–8 GB RAM
+  + brauchbare GPU. DH/Shader bleiben optional & abschaltbar; für schwächere PCs dokumentieren.
+- **Terrain ↔ Zug-Netz-Spannung:** Tectonic macht das Gelände extrem → Zivilisationen per Zug zu
+  verbinden ist ein großes Bauprojekt. Im Plan entscheiden: Tectonic-Intensität justieren ODER
+  bewusst als Endgame-Herausforderung akzeptieren.
+- **Update-/Versions-Politik:** Alle Mod-Versionen einfrieren (Packwiz pinnt). Updates nur bewusst,
+  vorher Backup — Create Aeronautics (Alpha) kann Kontraptionen/Welt brechen.
 - Annahme: Alle Mitspieler nutzen denselben Launcher (Modrinth/Prism) zum Installieren des .mrpack.
 
 ## Offene Punkte (für Implementierung)
 
 - Pack-Name + Icon
-- Exakte versions-gepinnte Mod-Liste (~150+), pro Mod verifiziert
-- Konkrete Quest-Linie / Coin-Balancing
+- **Exakte NeoForge-Build-Version für 1.21.1 festlegen** (pinnen)
+- Exakte versions-gepinnte Mod-Liste (~150+), pro Mod verifiziert + `side`-Zuordnung
+- **Render-Stack final entscheiden** (Sodium+Iris vs. Embeddium) inkl. DH-/Shader-Kompatibilität
+- MineColonies-Multiplayer-Werte (Mindestabstand, Claim-Radius) + FTB-Chunks-Abstimmung
+- Tectonic-Intensität (extrem belassen vs. justieren) wegen Zug-Netz
+- Dosierung Abenteuer/Gefahr (welche Dungeon-/Mob-Mods, wie viel)
+- Konkrete Quest-Linie / Coin-Balancing (idealerweise entlang der 5 Säulen)
 - Finale QoL-Mod-Auswahl (gemeinsam erweitern)
+- Backup-Lösung wählen + Intervall
+
+## Spätere Teilprojekte (eigener Spec/Plan)
+
+- Eigene Mods („Kartoffelboss" etc.) — NeoForge-1.21.1-Mod-Entwicklung, danach Integration ins Pack
