@@ -1,0 +1,12 @@
+{
+	chapter_groups: [
+		{
+			id: "4C0F000000000001"
+			title: "§e👋 Willkommen"
+		}
+		{
+			id: "4C0F000000000002"
+			title: "§a🌱 Farmen & Leben"
+		}
+	]
+}

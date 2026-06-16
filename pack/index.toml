@@ -9,6 +9,22 @@ file = "README.md"
 hash = "b25e4c43990d3a10c75b7a233168c3bdc25bf3039b25bba30c80a82c1fcf5a59"
 
 [[files]]
+file = "config/ftbquests/quests/chapter_groups.snbt"
+hash = "8fa119da18f6173a44df77fbe7333e06b2ce9e6b5bda45b893d3f93c09389912"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/farmen_und_leben.snbt"
+hash = "07c524746b894e9dde2b96b4450cc8a227b81b72f04e7cb69fc68c48a3badc2c"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/willkommen.snbt"
+hash = "a1900447502cae6a3615d60d59b7c205a8d1929360b81d2e16b58c74265da2e8"
+
+[[files]]
+file = "config/ftbquests/quests/data.snbt"
+hash = "0cf75fb43c097b6bbc010af6b3305f5b6215c684c65da7aa347823a6af6bf2e7"
+
+[[files]]
 file = "config/minecolonies-server.toml"
 hash = "ef52aacac2654ba4143f9d05c60c528938191fcee74410a73f7e04fedbc21990"
 

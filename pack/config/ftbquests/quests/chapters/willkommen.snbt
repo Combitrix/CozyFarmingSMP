@@ -1,0 +1,120 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "willkommen"
+	group: "4C0F000000000001"
+	icon: {
+		count: 1
+		id: "ftbquests:book"
+	}
+	id: "4C0F000000000003"
+	order_index: 0
+	progression_mode: "flexible"
+	quest_links: [ ]
+	title: "👋 Willkommen"
+	quests: [
+		{
+			id: "4C0F000000000005"
+			x: 0.0d
+			y: 0.0d
+			title: "Willkommen auf dem Cozy Farming SMP!"
+			icon: {
+				count: 1
+				id: "minecraft:oak_sapling"
+			}
+			shape: "hexagon"
+			size: 1.5d
+			description: [
+				"Schön, dass du da bist! Dieses Pack dreht sich um &aFarmen&r, &6Kolonien&r,"
+				"&bCreate-Technik&r und ein gemütliches Leben mit Freunden."
+				""
+				"&eRezepte:&r Drücke die Taste für &aEMI&r (rechts neben dem Inventar) —"
+				"links siehst du, wie etwas hergestellt wird, rechts wofür man es braucht."
+				"&eKarte:&r &aJourneyMap&r (oben rechts) — Wegpunkte mit der Karten-Taste."
+				""
+				"Stelle einen &aWerkbank-Tisch&r her, um zu starten."
+			]
+			tasks: [
+				{
+					id: "4C0F00000000000E"
+					item: {
+						count: 1
+						id: "minecraft:crafting_table"
+					}
+					type: "item"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F00000000000F"
+					item: {
+						count: 1
+						id: "minecraft:bread"
+					}
+					type: "item"
+					count: 4
+				}
+				{
+					id: "4C0F000000000010"
+					item: {
+						count: 1
+						id: "magic_coins:silver_coin"
+					}
+					type: "item"
+					count: 10
+				}
+				{
+					id: "4C0F000000000011"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			id: "4C0F000000000006"
+			x: 2.0d
+			y: 0.0d
+			title: "Inventar-Komfort (Inventory Profiles Next)"
+			icon: {
+				count: 1
+				id: "minecraft:chest"
+			}
+			size: 1.0d
+			description: [
+				"Die &dlila Pfeile&r in der Hotbar gehören zu &dInventory Profiles Next&r (IPN) —"
+				"dem &eHotbar-Swapping&r: damit schaltest du ganze Hotbar-Belegungen per"
+				"Tastendruck um."
+				""
+				"Wir haben die Pfeile &cstandardmäßig ausgeblendet&r, weil sie im Weg waren —"
+				"das &aFeature bleibt aber aktiv&r. So holst du es zurück:"
+				""
+				"&71.&r Inventar öffnen → oben (Mitte / nahe Inventar) sind die IPN-Buttons."
+				"&72.&r Einstellungen → &eInventory Profiles Next&r (Taste &aO&r): dort"
+				"   &eHotbar Swapping&r bzw. &eShow hotbar buttons&r wieder einschalten."
+				"&73.&r Die zwei Symbole oben links wurden in die Nähe des Inventars verschoben."
+				""
+				"Hak diese Quest ab, wenn du es gelesen hast."
+			]
+			dependencies: [
+				"4C0F000000000005"
+			]
+			tasks: [
+				{
+					id: "4C0F000000000012"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F000000000013"
+					item: {
+						count: 1
+						id: "magic_coins:silver_coin"
+					}
+					type: "item"
+					count: 5
+				}
+			]
+		}
+	]
+}
