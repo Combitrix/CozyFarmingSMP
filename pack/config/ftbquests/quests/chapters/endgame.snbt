@@ -2,19 +2,19 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "endgame"
-	group: "4C0F000000000007"
+	group: "4C0F000000000001"
 	icon: {
 		count: 1
-		id: "magic_coins:crystal_coin"
+		id: "minecraft:nether_star"
 	}
-	id: "4C0F00000000000E"
-	order_index: 0
+	id: "4C0F000000000009"
+	order_index: 7
 	progression_mode: "flexible"
 	quest_links: [ ]
 	title: "🏆 Endgame"
 	quests: [
 		{
-			id: "4C0F000000000023"
+			id: "4C0F00000000003C"
 			x: 0.0d
 			y: 0.0d
 			title: "Der lange Weg"
@@ -26,19 +26,21 @@
 			size: 2.0d
 			description: [
 				"Du hast die Grundlagen gemeistert — jetzt beginnt das große Spiel."
-				"Hier warten die ganz großen Ziele für dich und deine Mitspieler."
-				""
-				"Schließe ein paar Endgame-Ziele ab und werde zur Legende des SMP."
+				"Hier warten die ganz großen Ziele. Werde zur &6Legende des SMP&r."
+			]
+			dependencies: [
+				"4C0F00000000003A"
+				"4C0F000000000035"
 			]
 			tasks: [
 				{
-					id: "4C0F00000000007F"
+					id: "4C0F0000000000ED"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "4C0F000000000080"
+					id: "4C0F0000000000EE"
 					item: {
 						count: 1
 						id: "magic_coins:gold_coin"
@@ -47,14 +49,14 @@
 					count: 5
 				}
 				{
-					id: "4C0F000000000081"
+					id: "4C0F0000000000EF"
 					type: "xp"
 					xp: 30
 				}
 			]
 		}
 		{
-			id: "4C0F000000000024"
+			id: "4C0F00000000003D"
 			x: -3.0d
 			y: -1.5d
 			title: "Mega-Kolonie"
@@ -64,23 +66,20 @@
 			}
 			size: 1.25d
 			description: [
-				"Lass eine deiner Kolonien zur echten Großstadt wachsen:"
-				"&750+ Bürger&r und mehrere voll ausgebaute Gebäude."
-				""
-				"Hak ab, wenn deine Kolonie 50 Bürger erreicht."
+				"Lass eine Kolonie zur Großstadt wachsen: &750+ Bürger&r und viele Gebäude."
 			]
 			dependencies: [
-				"4C0F000000000023"
+				"4C0F00000000003C"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000082"
+					id: "4C0F0000000000F0"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "4C0F000000000083"
+					id: "4C0F0000000000F1"
 					item: {
 						count: 1
 						id: "magic_coins:crystal_coin"
@@ -89,14 +88,14 @@
 					count: 2
 				}
 				{
-					id: "4C0F000000000084"
+					id: "4C0F0000000000F2"
 					type: "xp"
 					xp: 40
 				}
 			]
 		}
 		{
-			id: "4C0F000000000025"
+			id: "4C0F00000000003E"
 			x: -1.5d
 			y: -2.5d
 			title: "Schienen-Imperium"
@@ -106,23 +105,20 @@
 			}
 			size: 1.25d
 			description: [
-				"Verbinde &emindestens drei Kolonien&r zu einem funktionierenden"
-				"Zug-Netzwerk mit Fahrplänen und mehreren Linien."
-				""
-				"Hak ab, wenn 3 Stationen per Zug verbunden sind."
+				"Verbinde &emindestens drei Kolonien&r zu einem Zug-Netzwerk."
 			]
 			dependencies: [
-				"4C0F000000000023"
+				"4C0F00000000003C"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000085"
+					id: "4C0F0000000000F3"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "4C0F000000000086"
+					id: "4C0F0000000000F4"
 					item: {
 						count: 1
 						id: "magic_coins:crystal_coin"
@@ -131,40 +127,37 @@
 					count: 2
 				}
 				{
-					id: "4C0F000000000087"
+					id: "4C0F0000000000F5"
 					type: "xp"
 					xp: 40
 				}
 			]
 		}
 		{
-			id: "4C0F000000000026"
+			id: "4C0F00000000003F"
 			x: 1.5d
 			y: -2.5d
 			title: "Luftschiff-Flotte"
 			icon: {
 				count: 1
-				id: "create:goggles"
+				id: "aeronautics:aviators_goggles"
 			}
 			size: 1.25d
 			description: [
-				"&bCreate Aeronautics&r-Meisterschaft: baue ein großes, steuerbares"
-				"Luftschiff (oder gleich mehrere)."
-				""
-				"&7Alpha-Mod — vorher Backup! Hak ab, wenn dein Schiff fliegt."
+				"&bAeronautics&r-Meisterschaft: eine ganze Flotte großer Luftschiffe."
 			]
 			dependencies: [
-				"4C0F000000000023"
+				"4C0F00000000003C"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000088"
+					id: "4C0F0000000000F6"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "4C0F000000000089"
+					id: "4C0F0000000000F7"
 					item: {
 						count: 1
 						id: "magic_coins:crystal_coin"
@@ -173,14 +166,14 @@
 					count: 3
 				}
 				{
-					id: "4C0F00000000008A"
+					id: "4C0F0000000000F8"
 					type: "xp"
 					xp: 50
 				}
 			]
 		}
 		{
-			id: "4C0F000000000027"
+			id: "4C0F000000000040"
 			x: 3.0d
 			y: -1.5d
 			title: "Die Großfabrik"
@@ -190,23 +183,21 @@
 			}
 			size: 1.25d
 			description: [
-				"Baue eine &evollautomatische Create-Fabrik&r, die ein komplexes"
-				"Endprodukt ohne Handarbeit fertigt (z.B. via Factory Gauges / Packages)."
-				""
-				"Hak ab, wenn die Linie autark läuft."
+				"Eine &evollautomatische Create-Fabrik&r, die ein komplexes Produkt ohne"
+				"Handarbeit fertigt (Factory Gauges / Packages)."
 			]
 			dependencies: [
-				"4C0F000000000023"
+				"4C0F00000000003C"
 			]
 			tasks: [
 				{
-					id: "4C0F00000000008B"
+					id: "4C0F0000000000F9"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "4C0F00000000008C"
+					id: "4C0F0000000000FA"
 					item: {
 						count: 1
 						id: "magic_coins:crystal_coin"
@@ -215,14 +206,14 @@
 					count: 2
 				}
 				{
-					id: "4C0F00000000008D"
+					id: "4C0F0000000000FB"
 					type: "xp"
 					xp: 40
 				}
 			]
 		}
 		{
-			id: "4C0F000000000028"
+			id: "4C0F000000000041"
 			x: 3.0d
 			y: 1.5d
 			title: "Energie-Imperium"
@@ -232,23 +223,20 @@
 			}
 			size: 1.25d
 			description: [
-				"Errichte ein großes Stromnetz mit den Energie-Addons"
-				"(&aNew Age / Createaddition / Diesel / TFMG&r) und versorge deine Basis."
-				""
-				"Hak ab, wenn deine Maschinen aus einem Netz laufen."
+				"Ein großes Stromnetz aus &aNew Age / Createaddition / Diesel / TFMG&r."
 			]
 			dependencies: [
-				"4C0F000000000023"
+				"4C0F00000000003C"
 			]
 			tasks: [
 				{
-					id: "4C0F00000000008E"
+					id: "4C0F0000000000FC"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "4C0F00000000008F"
+					id: "4C0F0000000000FD"
 					item: {
 						count: 1
 						id: "magic_coins:crystal_coin"
@@ -257,14 +245,14 @@
 					count: 2
 				}
 				{
-					id: "4C0F000000000090"
+					id: "4C0F0000000000FE"
 					type: "xp"
 					xp: 40
 				}
 			]
 		}
 		{
-			id: "4C0F000000000029"
+			id: "4C0F000000000042"
 			x: 1.5d
 			y: 2.5d
 			title: "Selbstversorger"
@@ -274,23 +262,20 @@
 			}
 			size: 1.25d
 			description: [
-				"Vollautomatische Nahrung: &aCreate: Central Kitchen&r kocht deine"
-				"Gerichte am Fließband — nie wieder Hunger."
-				""
-				"Hak ab, wenn Essen automatisch produziert wird."
+				"Vollautomatische Nahrung mit &aCreate: Central Kitchen&r — nie wieder Hunger."
 			]
 			dependencies: [
-				"4C0F000000000023"
+				"4C0F00000000003C"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000091"
+					id: "4C0F0000000000FF"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "4C0F000000000092"
+					id: "4C0F000000000100"
 					item: {
 						count: 1
 						id: "magic_coins:crystal_coin"
@@ -299,14 +284,14 @@
 					count: 2
 				}
 				{
-					id: "4C0F000000000093"
+					id: "4C0F000000000101"
 					type: "xp"
 					xp: 40
 				}
 			]
 		}
 		{
-			id: "4C0F00000000002A"
+			id: "4C0F000000000043"
 			x: -3.0d
 			y: 1.5d
 			title: "Münz-Vermögen"
@@ -316,17 +301,14 @@
 			}
 			size: 1.25d
 			description: [
-				"Häufe ein echtes Vermögen an: besitze gleichzeitig"
-				"&emindestens 5 Kristallmünzen&r."
-				""
-				"&7Der Gipfel des Münz-Wohlstands."
+				"Besitze gleichzeitig &emindestens 5 Kristallmünzen&r — der Gipfel des Wohlstands."
 			]
 			dependencies: [
-				"4C0F000000000023"
+				"4C0F00000000003C"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000094"
+					id: "4C0F000000000102"
 					item: {
 						count: 1
 						id: "magic_coins:crystal_coin"
@@ -337,7 +319,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000095"
+					id: "4C0F000000000103"
 					item: {
 						count: 1
 						id: "magic_coins:crystal_coin"
@@ -346,14 +328,14 @@
 					count: 3
 				}
 				{
-					id: "4C0F000000000096"
+					id: "4C0F000000000104"
 					type: "xp"
 					xp: 40
 				}
 			]
 		}
 		{
-			id: "4C0F00000000002B"
+			id: "4C0F000000000044"
 			x: -1.5d
 			y: 2.5d
 			title: "Handelsimperium"
@@ -363,23 +345,20 @@
 			}
 			size: 1.25d
 			description: [
-				"Baue ein &aNumismatics&r-Handelsnetz mit mehreren Automaten und"
-				"Bankkarten zwischen den Kolonien auf."
-				""
-				"Hak ab, wenn mehrere Vendor laufen."
+				"Ein &aNumismatics&r-Handelsnetz mit mehreren Automaten zwischen den Kolonien."
 			]
 			dependencies: [
-				"4C0F000000000023"
+				"4C0F00000000003C"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000097"
+					id: "4C0F000000000105"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "4C0F000000000098"
+					id: "4C0F000000000106"
 					item: {
 						count: 1
 						id: "magic_coins:crystal_coin"
@@ -388,14 +367,14 @@
 					count: 2
 				}
 				{
-					id: "4C0F000000000099"
+					id: "4C0F000000000107"
 					type: "xp"
 					xp: 40
 				}
 			]
 		}
 		{
-			id: "4C0F00000000002C"
+			id: "4C0F000000000045"
 			x: 0.0d
 			y: -3.5d
 			title: "Welt-Entdecker"
@@ -405,23 +384,20 @@
 			}
 			size: 1.25d
 			description: [
-				"Bereise die riesige Welt: entdecke &e15 verschiedene Biome&r"
-				"von Terralith \\& Tectonic."
-				""
-				"Hak ab, wenn du 15 Biome gesehen hast."
+				"Entdecke &e15 verschiedene Biome&r von Terralith \\& Tectonic."
 			]
 			dependencies: [
-				"4C0F000000000023"
+				"4C0F00000000003C"
 			]
 			tasks: [
 				{
-					id: "4C0F00000000009A"
+					id: "4C0F000000000108"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "4C0F00000000009B"
+					id: "4C0F000000000109"
 					item: {
 						count: 1
 						id: "magic_coins:crystal_coin"
@@ -430,14 +406,14 @@
 					count: 2
 				}
 				{
-					id: "4C0F00000000009C"
+					id: "4C0F00000000010A"
 					type: "xp"
 					xp: 40
 				}
 			]
 		}
 		{
-			id: "4C0F00000000002D"
+			id: "4C0F000000000046"
 			x: 4.5d
 			y: 0.0d
 			title: "Der Kartoffelboss (geplant)"
@@ -448,23 +424,21 @@
 			size: 1.0d
 			optional: true
 			description: [
-				"§oGeplantes Eigen-Projekt:§r ein optionaler Boss-Kampf — der"
-				"&6Kartoffelboss&r. Diese Quest wird aktiviert, sobald die Mod fertig ist."
-				""
-				"&7Platzhalter — noch nichts zu tun."
+				"§oGeplantes Eigen-Projekt:§r ein optionaler Boss — der &6Kartoffelboss&r."
+				"Wird aktiviert, sobald die Mod fertig ist. &7Platzhalter."
 			]
 			dependencies: [
-				"4C0F000000000023"
+				"4C0F00000000003C"
 			]
 			tasks: [
 				{
-					id: "4C0F00000000009D"
+					id: "4C0F00000000010B"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "4C0F00000000009E"
+					id: "4C0F00000000010C"
 					item: {
 						count: 1
 						id: "magic_coins:crystal_coin"
@@ -474,7 +448,7 @@
 			]
 		}
 		{
-			id: "4C0F00000000002E"
+			id: "4C0F000000000047"
 			x: 0.0d
 			y: 4.0d
 			title: "Legende des SMP"
@@ -485,31 +459,28 @@
 			shape: "gear"
 			size: 2.0d
 			description: [
-				"Du hast es geschafft: alle großen Ziele erreicht. Vollende die"
-				"wichtigsten Endgame-Quests und sichere dir den Titel."
-				""
-				"&6Herzlichen Glückwunsch — du bist eine Legende!"
+				"Alle großen Ziele erreicht. &6Herzlichen Glückwunsch — du bist eine Legende!&r"
 			]
 			dependencies: [
-				"4C0F000000000024"
-				"4C0F000000000025"
-				"4C0F000000000026"
-				"4C0F000000000027"
-				"4C0F000000000028"
-				"4C0F000000000029"
-				"4C0F00000000002A"
-				"4C0F00000000002B"
-				"4C0F00000000002C"
+				"4C0F00000000003D"
+				"4C0F00000000003E"
+				"4C0F00000000003F"
+				"4C0F000000000040"
+				"4C0F000000000041"
+				"4C0F000000000042"
+				"4C0F000000000043"
+				"4C0F000000000044"
+				"4C0F000000000045"
 			]
 			tasks: [
 				{
-					id: "4C0F00000000009F"
+					id: "4C0F00000000010D"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "4C0F0000000000A0"
+					id: "4C0F00000000010E"
 					item: {
 						count: 1
 						id: "magic_coins:crystal_coin"
@@ -518,7 +489,7 @@
 					count: 10
 				}
 				{
-					id: "4C0F0000000000A1"
+					id: "4C0F00000000010F"
 					item: {
 						count: 1
 						id: "minecraft:nether_star"
@@ -526,7 +497,7 @@
 					type: "item"
 				}
 				{
-					id: "4C0F0000000000A2"
+					id: "4C0F000000000110"
 					type: "xp"
 					xp: 100
 				}

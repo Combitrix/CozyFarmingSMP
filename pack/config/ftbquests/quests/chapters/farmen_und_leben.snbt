@@ -2,13 +2,13 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "farmen_und_leben"
-	group: "4C0F000000000002"
+	group: "4C0F000000000001"
 	icon: {
 		count: 1
 		id: "farmersdelight:cooking_pot"
 	}
-	id: "4C0F000000000009"
-	order_index: 0
+	id: "4C0F000000000003"
+	order_index: 1
 	progression_mode: "flexible"
 	quest_links: [ ]
 	title: "🌱 Farmen \\& Leben"
@@ -28,12 +28,14 @@
 				"Jedes Imperium beginnt mit einem Acker. Besorge dir eine &aHacke&r,"
 				"lege Felder an und ernte deine erste Frucht."
 				""
-				"&7Tipp: HarvestCraft 2, Veggies \\& die Delight-Mods bringen unzählige"
-				"neue Pflanzen — schau in EMI, was alles wächst!"
+				"&7HarvestCraft 2, Veggies \\& die Delight-Mods bringen unzählige Pflanzen!"
+			]
+			dependencies: [
+				"4C0F00000000000A"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000035"
+					id: "4C0F00000000005A"
 					item: {
 						count: 1
 						id: "minecraft:wheat"
@@ -42,7 +44,7 @@
 					count: 8L
 				}
 				{
-					id: "4C0F000000000036"
+					id: "4C0F00000000005B"
 					item: {
 						count: 1
 						id: "minecraft:wooden_hoe"
@@ -52,7 +54,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000037"
+					id: "4C0F00000000005C"
 					item: {
 						count: 1
 						id: "farmersdelight:cabbage_seeds"
@@ -61,7 +63,7 @@
 					count: 3
 				}
 				{
-					id: "4C0F000000000038"
+					id: "4C0F00000000005D"
 					item: {
 						count: 1
 						id: "farmersdelight:tomato_seeds"
@@ -70,7 +72,7 @@
 					count: 3
 				}
 				{
-					id: "4C0F000000000039"
+					id: "4C0F00000000005E"
 					item: {
 						count: 1
 						id: "magic_coins:silver_coin"
@@ -79,7 +81,7 @@
 					count: 15
 				}
 				{
-					id: "4C0F00000000003A"
+					id: "4C0F00000000005F"
 					type: "xp"
 					xp: 10
 				}
@@ -99,14 +101,14 @@
 				"Rohe Karotten? Nicht mit uns. Stelle &aKochtopf&r und &aSchneidebrett&r her"
 				"und koche dein erstes richtiges Gericht."
 				""
-				"&7Der Kochtopf braucht eine Hitzequelle darunter (z.B. Lagerfeuer/Ofen)."
+				"&7Der Kochtopf braucht eine Hitzequelle darunter (Lagerfeuer/Ofen)."
 			]
 			dependencies: [
 				"4C0F000000000011"
 			]
 			tasks: [
 				{
-					id: "4C0F00000000003B"
+					id: "4C0F000000000060"
 					item: {
 						count: 1
 						id: "farmersdelight:cooking_pot"
@@ -114,7 +116,7 @@
 					type: "item"
 				}
 				{
-					id: "4C0F00000000003C"
+					id: "4C0F000000000061"
 					item: {
 						count: 1
 						id: "farmersdelight:cutting_board"
@@ -122,7 +124,7 @@
 					type: "item"
 				}
 				{
-					id: "4C0F00000000003D"
+					id: "4C0F000000000062"
 					item: {
 						count: 1
 						id: "farmersdelight:vegetable_soup"
@@ -132,7 +134,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F00000000003E"
+					id: "4C0F000000000063"
 					item: {
 						count: 1
 						id: "farmersdelight:skillet"
@@ -140,7 +142,7 @@
 					type: "item"
 				}
 				{
-					id: "4C0F00000000003F"
+					id: "4C0F000000000064"
 					item: {
 						count: 1
 						id: "magic_coins:gold_coin"
@@ -148,7 +150,7 @@
 					type: "item"
 				}
 				{
-					id: "4C0F000000000040"
+					id: "4C0F000000000065"
 					type: "xp"
 					xp: 15
 				}
@@ -166,23 +168,22 @@
 			size: 1.0d
 			description: [
 				"Das Pack steckt voller Lebensmittel-Mods: &aVinery&r (Wein), &aMeadow&r (Käse),"
-				"&aBakery/Confectionery&r, &aHerbalbrews&r (Tee), &aBrewin' \\& Chewin'&r u.v.m."
+				"&aBakery&r, &aHerbalbrews&r (Tee), &aBrewin' \\& Chewin'&r u.v.m."
 				""
-				"Probiere mindestens eine dieser Mods aus und stelle etwas her."
-				"Hak ab, wenn du ein Produkt aus einer der Delight-/Let's-Do-Mods hast."
+				"Stelle aus einer der Delight-/Let's-Do-Mods etwas her und hak ab."
 			]
 			dependencies: [
 				"4C0F000000000012"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000041"
+					id: "4C0F000000000066"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "4C0F000000000042"
+					id: "4C0F000000000067"
 					item: {
 						count: 1
 						id: "magic_coins:silver_coin"
@@ -191,7 +192,7 @@
 					count: 15
 				}
 				{
-					id: "4C0F000000000043"
+					id: "4C0F000000000068"
 					type: "xp"
 					xp: 10
 				}
@@ -211,21 +212,20 @@
 				"Pflanzen wachsen je nach &eJahreszeit&r unterschiedlich gut."
 				"Achte auf Frühling/Sommer/Herbst und plane deine Felder."
 				""
-				"Ernte eine Feldfrucht in ihrer passenden Saison (Infos: EMI / Saisons-Kalender)."
-				"Hak diese Info-Quest ab."
+				"Ernte in passender Saison und hak diese Info-Quest ab."
 			]
 			dependencies: [
 				"4C0F000000000012"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000044"
+					id: "4C0F000000000069"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "4C0F000000000045"
+					id: "4C0F00000000006A"
 					item: {
 						count: 1
 						id: "magic_coins:silver_coin"
@@ -234,7 +234,7 @@
 					count: 15
 				}
 				{
-					id: "4C0F000000000046"
+					id: "4C0F00000000006B"
 					type: "xp"
 					xp: 10
 				}
@@ -253,15 +253,13 @@
 			description: [
 				"Eine Farm lebt von ihren Tieren. Züchte mindestens zwei Tierarten"
 				"und entdecke die neuen Kreaturen von &aNaturalist&r."
-				""
-				"Sammle Weizen/Samen zum Füttern und hak ab, wenn du 2 Arten gezüchtet hast."
 			]
 			dependencies: [
 				"4C0F000000000011"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000047"
+					id: "4C0F00000000006C"
 					item: {
 						count: 1
 						id: "minecraft:wheat"
@@ -270,13 +268,13 @@
 					count: 4L
 				}
 				{
-					id: "4C0F000000000048"
+					id: "4C0F00000000006D"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "4C0F000000000049"
+					id: "4C0F00000000006E"
 					item: {
 						count: 1
 						id: "minecraft:wheat"
@@ -285,7 +283,7 @@
 					count: 16
 				}
 				{
-					id: "4C0F00000000004A"
+					id: "4C0F00000000006F"
 					item: {
 						count: 1
 						id: "magic_coins:silver_coin"
@@ -294,7 +292,7 @@
 					count: 15
 				}
 				{
-					id: "4C0F00000000004B"
+					id: "4C0F000000000070"
 					type: "xp"
 					xp: 10
 				}
@@ -311,24 +309,21 @@
 			}
 			size: 1.0d
 			description: [
-				"Mit &aPufferfish's Skills&r levelst du Fähigkeiten wie Farming, Mining,"
-				"Fishing und Husbandry. Öffne den Skill-Bildschirm und investiere"
-				"deinen ersten Skill-Punkt."
-				""
-				"Hak ab, wenn du einen Skill freigeschaltet hast."
+				"Mit &aPufferfish's Skills&r levelst du Farming, Mining, Fishing \\& Co."
+				"Öffne den Skill-Bildschirm und investiere deinen ersten Punkt."
 			]
 			dependencies: [
 				"4C0F000000000013"
 			]
 			tasks: [
 				{
-					id: "4C0F00000000004C"
+					id: "4C0F000000000071"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "4C0F00000000004D"
+					id: "4C0F000000000072"
 					item: {
 						count: 1
 						id: "magic_coins:gold_coin"
@@ -336,7 +331,7 @@
 					type: "item"
 				}
 				{
-					id: "4C0F00000000004E"
+					id: "4C0F000000000073"
 					type: "xp"
 					xp: 20
 				}
@@ -355,15 +350,13 @@
 			description: [
 				"Am Wasser wartet eine zweite Speisekammer. Bastle eine &aAngel&r und"
 				"fange ein paar Fische — mit &aAquaculture&r gibt es viele neue Arten."
-				""
-				"Danach kannst du sie in der Küche zu Gerichten verarbeiten."
 			]
 			dependencies: [
 				"4C0F000000000011"
 			]
 			tasks: [
 				{
-					id: "4C0F00000000004F"
+					id: "4C0F000000000074"
 					item: {
 						count: 1
 						id: "minecraft:fishing_rod"
@@ -371,7 +364,7 @@
 					type: "item"
 				}
 				{
-					id: "4C0F000000000050"
+					id: "4C0F000000000075"
 					item: {
 						count: 1
 						id: "minecraft:cod"
@@ -382,7 +375,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000051"
+					id: "4C0F000000000076"
 					item: {
 						count: 1
 						id: "farmersdelight:cooked_cod_slice"
@@ -391,7 +384,7 @@
 					count: 4
 				}
 				{
-					id: "4C0F000000000052"
+					id: "4C0F000000000077"
 					item: {
 						count: 1
 						id: "magic_coins:silver_coin"
@@ -400,7 +393,7 @@
 					count: 15
 				}
 				{
-					id: "4C0F000000000053"
+					id: "4C0F000000000078"
 					type: "xp"
 					xp: 10
 				}

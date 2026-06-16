@@ -58,6 +58,16 @@ oder via `-Xms`/`-Xmx` hier). Empfohlen **6–10 GB** je nach PC; unten 8 GB:
 > Distant Horizons + Sodium/Iris sind CPU/GPU-lastig, nicht RAM-lastig. Mehr als ~10 GB bringt
 > dem Client kaum etwas — eher DH-LOD-Threads und Render-Distanz justieren.
 
+> 🟢 **Distant-Horizons-Empfehlung (statt G1GC): ZGC.** DH warnt beim Start, dass G1GC mit DH
+> Mikroruckler verursachen kann, und empfiehlt einen nebenläufigen Collector. Mit **Java 21**
+> (NeoForge 1.21.1) ist **Generational ZGC** für den Client die ruhigere Wahl. Dann **nur** diese
+> Flags nutzen (NICHT mit den G1GC-Aikar-Flags mischen):
+> ```
+> -Xms8G -Xmx8G -XX:+UseZGC -XX:+ZGenerational -XX:+AlwaysPreTouch -XX:+PerfDisableSharedMem -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC
+> ```
+> Ältere Java-Version (8–17)? Dann statt ZGC `-XX:+UseShenandoahGC` verwenden. Der Server kann bei
+> den G1GC-Aikar-Flags bleiben (dort ist Durchsatz wichtiger als ruckelfreies LOD-Rendering).
+
 ### Server (AMP, 25 GB Box) — 16 GB Heap (`>12 GB`-Variante)
 
 **Nicht** die vollen 25 GB an die JVM geben! Reserviere RAM fürs OS, Distant-Horizons-Serverdaten
@@ -121,16 +131,25 @@ Quellcode verifiziert, `ServerConfiguration.java`):
 **Wirtschaft:** **Magic Coins** = Währung für FTB-Quests-Belohnungen (Currency Rewards im Quest-Editor
 einstellbar). **Create: Numismatics** = physische Münzen/Handel/Automaten (passt zum Zug-/Handels-Thema).
 
-**Quest-Linie (liegt dem Pack bei, `config/ftbquests/quests/`):** 7 Kapitelgruppen —
-👋 Willkommen (inkl. Erklärung der IPN-Hotbar-Pfeile) · 🌱 Farmen & Leben · 🏘 Bauen & Gemeinschaft
-(MineColonies) · ⚙ Technik & Mobilität — **großes Create-Kapitel (~200 Quests, basierend auf ATM-10,
-an dieses Pack angepasst)** · 🌍 Welt & Vernetzung · 🪙 Ziele & Wirtschaft · 🏆 Endgame (große
-Meilenstein-Ziele). Münz-Belohnungen (Silber/Gold/Kristall) als roter Faden. Bearbeitbar im
-FTB-Quests-Editor (Server-Op: `/ftbquests editing_mode true`).
+**Quest-Linie (liegt dem Pack bei, `config/ftbquests/quests/`):** EIN großer Quest-Baum (eine
+Gruppe **🌾 Cozy Farming SMP**), der sich **progressiv freischaltet** — die Kapitel-Seiten sind über
+Abhängigkeiten verkettet, jede schaltet die nächste frei:
 
-> Eigene Kapitel werden über `gen-quests.py` erzeugt; das Create-Kapitel wird aus
-> `vendor/atm_create.snbt` (ATM-10) transformiert (Fremd-Items → Pack-Items, Gruppe, Bilder entfernt).
-> Blueprint: `docs/quest-line-blueprint.md`.
+1. **👋 Willkommen** (ATM-Style: zentrale Wurzel + EMI/JourneyMap/IPN/FTB-Chunks-Intro)
+2. **🌱 Farmen & Leben** → 3. **🏘 Bauen & Gemeinschaft** (MineColonies)
+4. **⚙ Technik (Create)** — **90 Quests** aus ATM-10, an dieses Pack angepasst, **jede mit
+   deutschem Titel + Beschreibung** (wofür/witzig/nett). Hinter Kolonie-Fortschritt freigeschaltet.
+5. **🎈 Aeronautics** — **25 Quests** rund um Create-Luftschiffe (Propeller → Hülle → Levitite →
+   Flotte → „Herr der Lüfte"). Hinter Create-Start freigeschaltet.
+6. **🌍 Welt & Vernetzung** → 7. **🪙 Ziele & Wirtschaft** → 8. **🏆 Endgame** (große Meilensteine,
+   freigeschaltet hinter Wirtschaft + Aeronautics-Meisterschaft).
+
+Münz-Belohnungen (Silber/Gold/Kristall) als roter Faden. Bearbeitbar im FTB-Quests-Editor
+(Server-Op: `/ftbquests editing_mode true`).
+
+> Alle Kapitel werden von `gen-quests.py` erzeugt; das Create-Kapitel wird aus
+> `vendor/atm_create.snbt` (ATM-10) transformiert (Fremd-Items → Pack-Items, deutsche Beschreibungen,
+> Gruppe & Verkettung, ATM-Bilder entfernt). Blueprint: `docs/quest-line-blueprint.md`.
 
 **Pregeneration (große Welt):** Server-Konsole → `chunky radius 5000` dann `chunky start`.
 

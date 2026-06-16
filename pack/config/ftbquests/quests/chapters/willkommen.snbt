@@ -5,38 +5,86 @@
 	group: "4C0F000000000001"
 	icon: {
 		count: 1
-		id: "ftbquests:book"
+		id: "minecraft:cherry_sapling"
 	}
-	id: "4C0F000000000008"
+	id: "4C0F000000000002"
 	order_index: 0
 	progression_mode: "flexible"
 	quest_links: [ ]
 	title: "👋 Willkommen"
 	quests: [
 		{
-			id: "4C0F00000000000F"
+			id: "4C0F00000000000A"
 			x: 0.0d
 			y: 0.0d
 			title: "Willkommen auf dem Cozy Farming SMP!"
 			icon: {
 				count: 1
-				id: "minecraft:oak_sapling"
+				id: "minecraft:cake"
 			}
-			shape: "hexagon"
-			size: 1.5d
+			shape: "gear"
+			size: 3.0d
 			description: [
-				"Schön, dass du da bist! Dieses Pack dreht sich um &aFarmen&r, &6Kolonien&r,"
-				"&bCreate-Technik&r und ein gemütliches Leben mit Freunden."
+				"&6Hallo und herzlich willkommen!&r Schön, dass du dabei bist."
+				"Dieses Pack dreht sich um &aFarmen&r, &6Kolonien&r, &bCreate-Technik&r,"
+				"&dLuftschiffe&r und ein gemütliches Leben mit Freunden."
 				""
-				"&eRezepte:&r Drücke die Taste für &aEMI&r (rechts neben dem Inventar) —"
-				"links siehst du, wie etwas hergestellt wird, rechts wofür man es braucht."
-				"&eKarte:&r &aJourneyMap&r (oben rechts) — Wegpunkte mit der Karten-Taste."
-				""
-				"Stelle einen &aWerkbank-Tisch&r her, um zu starten."
+				"Betritt die Welt — dann öffnet sich der Quest-Baum nach und nach."
+				"&7Die Quests führen dich Schritt für Schritt durch alle Features."
 			]
 			tasks: [
 				{
-					id: "4C0F00000000002F"
+					id: "4C0F000000000048"
+					type: "dimension"
+					dimension: "minecraft:overworld"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F000000000049"
+					item: {
+						count: 1
+						id: "minecraft:bread"
+					}
+					type: "item"
+					count: 4
+				}
+				{
+					id: "4C0F00000000004A"
+					item: {
+						count: 1
+						id: "magic_coins:silver_coin"
+					}
+					type: "item"
+					count: 10
+				}
+				{
+					id: "4C0F00000000004B"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			id: "4C0F00000000000B"
+			x: 0.0d
+			y: -2.0d
+			title: "Aller Anfang"
+			icon: {
+				count: 1
+				id: "minecraft:crafting_table"
+			}
+			size: 1.0d
+			description: [
+				"Stelle einen &aWerkbank-Tisch&r her und leg los."
+				"&7Mit EMI (rechts neben dem Inventar) siehst du jedes Rezept."
+			]
+			dependencies: [
+				"4C0F00000000000A"
+			]
+			tasks: [
+				{
+					id: "4C0F00000000004C"
 					item: {
 						count: 1
 						id: "minecraft:crafting_table"
@@ -46,73 +94,219 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000030"
+					id: "4C0F00000000004D"
 					item: {
 						count: 1
-						id: "minecraft:bread"
+						id: "minecraft:oak_log"
 					}
 					type: "item"
-					count: 4
+					count: 16
 				}
 				{
-					id: "4C0F000000000031"
-					item: {
-						count: 1
-						id: "magic_coins:silver_coin"
-					}
-					type: "item"
-					count: 10
-				}
-				{
-					id: "4C0F000000000032"
-					type: "xp"
-					xp: 10
-				}
-			]
-		}
-		{
-			id: "4C0F000000000010"
-			x: 2.0d
-			y: 0.0d
-			title: "Inventar-Komfort (Inventory Profiles Next)"
-			icon: {
-				count: 1
-				id: "minecraft:chest"
-			}
-			size: 1.0d
-			description: [
-				"Die &dlila Pfeile&r in der Hotbar gehören zu &dInventory Profiles Next&r (IPN) —"
-				"dem &eHotbar-Swapping&r: damit schaltest du ganze Hotbar-Belegungen per"
-				"Tastendruck um."
-				""
-				"Wir haben die Pfeile &cstandardmäßig ausgeblendet&r, weil sie im Weg waren —"
-				"das &aFeature bleibt aber aktiv&r. So holst du es zurück:"
-				""
-				"&71.&r Inventar öffnen → oben (Mitte / nahe Inventar) sind die IPN-Buttons."
-				"&72.&r Einstellungen → &eInventory Profiles Next&r (Taste &aO&r): dort"
-				"   &eHotbar Swapping&r bzw. &eShow hotbar buttons&r wieder einschalten."
-				"&73.&r Die zwei Symbole oben links wurden in die Nähe des Inventars verschoben."
-				""
-				"Hak diese Quest ab, wenn du es gelesen hast."
-			]
-			dependencies: [
-				"4C0F00000000000F"
-			]
-			tasks: [
-				{
-					id: "4C0F000000000033"
-					type: "checkmark"
-				}
-			]
-			rewards: [
-				{
-					id: "4C0F000000000034"
+					id: "4C0F00000000004E"
 					item: {
 						count: 1
 						id: "magic_coins:silver_coin"
 					}
 					type: "item"
 					count: 5
+				}
+			]
+		}
+		{
+			id: "4C0F00000000000C"
+			x: -2.0d
+			y: -1.0d
+			title: "Das Rezeptbuch (EMI)"
+			icon: {
+				count: 1
+				id: "minecraft:knowledge_book"
+			}
+			size: 1.0d
+			description: [
+				"&aEMI&r zeigt dir alle Rezepte: links wie etwas hergestellt wird,"
+				"rechts wofür man es braucht. Klicke auf ein Item, um es nachzuschlagen."
+				""
+				"Info gelesen? Hak ab."
+			]
+			dependencies: [
+				"4C0F00000000000A"
+			]
+			tasks: [
+				{
+					id: "4C0F00000000004F"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F000000000050"
+					item: {
+						count: 1
+						id: "magic_coins:silver_coin"
+					}
+					type: "item"
+					count: 5
+				}
+			]
+		}
+		{
+			id: "4C0F00000000000D"
+			x: 2.0d
+			y: -1.0d
+			title: "Die Karte (JourneyMap)"
+			icon: {
+				count: 1
+				id: "minecraft:filled_map"
+			}
+			size: 1.0d
+			description: [
+				"&aJourneyMap&r (oben rechts) zeigt deine Umgebung. Mit der Karten-Taste"
+				"öffnest du die Vollkarte und setzt &eWegpunkte&r — praktisch für Kolonien!"
+				""
+				"Info gelesen? Hak ab."
+			]
+			dependencies: [
+				"4C0F00000000000A"
+			]
+			tasks: [
+				{
+					id: "4C0F000000000051"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F000000000052"
+					item: {
+						count: 1
+						id: "magic_coins:silver_coin"
+					}
+					type: "item"
+					count: 5
+				}
+			]
+		}
+		{
+			id: "4C0F00000000000E"
+			x: -2.0d
+			y: 1.0d
+			title: "Inventar-Komfort (Inventory Profiles Next)"
+			icon: {
+				count: 1
+				id: "minecraft:hopper"
+			}
+			size: 1.0d
+			description: [
+				"Die &dlila Pfeile&r in der Hotbar gehören zu &dInventory Profiles Next&r —"
+				"dem &eHotbar-Swapping&r. Wir haben sie &cstandardmäßig ausgeblendet&r"
+				"(sie waren im Weg), das &aFeature bleibt aber aktiv&r. Zurückholen:"
+				""
+				"&71.&r Inventar öffnen → oben (Mitte/nahe Inventar) sind die IPN-Buttons."
+				"&72.&r Einstellungen → &eInventory Profiles Next&r (Taste &aO&r): dort"
+				"   &eHotbar Swapping&r / &eShow hotbar buttons&r wieder einschalten."
+				""
+				"Hak ab, wenn du es gelesen hast."
+			]
+			dependencies: [
+				"4C0F00000000000A"
+			]
+			tasks: [
+				{
+					id: "4C0F000000000053"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F000000000054"
+					item: {
+						count: 1
+						id: "magic_coins:silver_coin"
+					}
+					type: "item"
+					count: 5
+				}
+			]
+		}
+		{
+			id: "4C0F00000000000F"
+			x: 2.0d
+			y: 1.0d
+			title: "Land sichern (FTB Chunks)"
+			icon: {
+				count: 1
+				id: "ftbchunks:map"
+			}
+			size: 1.0d
+			description: [
+				"Mit &aFTB Chunks&r (Karten-Taste → Claim-Ansicht) schützt du Chunks vor"
+				"Grief. &7Tipp: Kolonie-Chunks lädt MineColonies selbst — die musst du"
+				"nicht zusätzlich force-loaden."
+				""
+				"Claime einen Chunk und hak ab."
+			]
+			dependencies: [
+				"4C0F00000000000A"
+			]
+			tasks: [
+				{
+					id: "4C0F000000000055"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F000000000056"
+					item: {
+						count: 1
+						id: "magic_coins:silver_coin"
+					}
+					type: "item"
+					count: 5
+				}
+			]
+		}
+		{
+			id: "4C0F000000000010"
+			x: 0.0d
+			y: 2.0d
+			title: "Gute Reise!"
+			icon: {
+				count: 1
+				id: "minecraft:bell"
+			}
+			size: 1.0d
+			optional: true
+			description: [
+				"Viel Spaß auf dem SMP! &7Baut zusammen, handelt, verbindet eure"
+				"Kolonien per Zug und erobert irgendwann den Himmel."
+				""
+				"&8(Diese Quest ist optional.)"
+			]
+			dependencies: [
+				"4C0F00000000000A"
+			]
+			tasks: [
+				{
+					id: "4C0F000000000057"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F000000000058"
+					item: {
+						count: 1
+						id: "magic_coins:silver_coin"
+					}
+					type: "item"
+					count: 5
+				}
+				{
+					id: "4C0F000000000059"
+					type: "xp"
+					xp: 5
 				}
 			]
 		}

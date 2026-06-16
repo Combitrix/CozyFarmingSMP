@@ -2,8 +2,9 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: "gear"
 	filename: "create"
-	title: "⚙ Technik \\& Mobilität (Create)"
-	group: "4C0F000000000004"
+	title: "⚙ Technik \\& Mobilität"
+	order_index: 3
+	group: "4C0F000000000001"
 	icon: {
 		id: "create:large_cogwheel"
 	}
@@ -17,6 +18,12 @@
 				id: "create:large_cogwheel"
 			}
 			id: "57A7A5C79389A96A"
+			dependencies: ["4C0F000000000019"]
+			title: "Andesit — der Anfang von allem"
+			description: [
+				"&bCreate&r liebt Andesit. Grab eine ordentliche Menge ab —"
+				"daraus wird gleich die wichtigste Zutat überhaupt."
+			]
 			rewards: [{
 				count: 16
 				id: "7D046DD10C7BF023"
@@ -39,6 +46,11 @@
 		{
 			dependencies: ["57A7A5C79389A96A"]
 			id: "0F16498769DFB3B0"
+			title: "Andesite Alloy"
+			description: [
+				"Die &aAndesit-Legierung&r ist das Brot-und-Butter-Material von Create."
+				"&7Ohne sie läuft hier gar nichts. Stell einen Vorrat her!"
+			]
 			rewards: [{
 				count: 8
 				id: "4CAE7A515FD1C1E3"
@@ -60,6 +72,10 @@
 		{
 			dependencies: ["0F16498769DFB3B0"]
 			id: "5B36DE3826F26963"
+			title: "Die Welle"
+			description: [
+				"Die &aWelle&r leitet Rotation von A nach B. Unscheinbar, unverzichtbar."
+			]
 			rewards: [{
 				count: 8
 				id: "1621253C23713864"
@@ -81,6 +97,11 @@
 		{
 			dependencies: ["3AF2BC9A0E298882"]
 			id: "1E9B2D814F50A265"
+			title: "Encased Fan"
+			description: [
+				"Beschaffe &aEncased Fan&r — ein weiterer Baustein auf deinem Create-Weg."
+				"&7(In EMI siehst du, wie es hergestellt wird.)"
+			]
 			rewards: [
 				{
 					id: "2017022896227E37"
@@ -119,6 +140,11 @@
 		{
 			dependencies: ["5B36DE3826F26963"]
 			id: "4285510271B5223D"
+			title: "Gearbox"
+			description: [
+				"Beschaffe &aGearbox&r — ein weiterer Baustein auf deinem Create-Weg."
+				"&7(In EMI siehst du, wie es hergestellt wird.)"
+			]
 			rewards: [
 				{
 					count: 4
@@ -150,6 +176,11 @@
 		{
 			dependencies: ["5B36DE3826F26963"]
 			id: "2BB3DB19D5EFC7E2"
+			title: "Clutch"
+			description: [
+				"Beschaffe &aClutch&r — ein weiterer Baustein auf deinem Create-Weg."
+				"&7(In EMI siehst du, wie es hergestellt wird.)"
+			]
 			rewards: [
 				{
 					id: "146727EDF1CC1DCE"
@@ -181,6 +212,11 @@
 		{
 			dependencies: ["5B36DE3826F26963"]
 			id: "67A46ED73E488CEE"
+			title: "Gearshift"
+			description: [
+				"Beschaffe &aGearshift&r — ein weiterer Baustein auf deinem Create-Weg."
+				"&7(In EMI siehst du, wie es hergestellt wird.)"
+			]
 			rewards: [
 				{
 					count: 3
@@ -212,6 +248,10 @@
 		{
 			dependencies: ["5B36DE3826F26963"]
 			id: "7F8E50FA436DB4E6"
+			title: "Kettenantrieb"
+			description: [
+				"Der &aKettenantrieb&r verteilt Drehkraft elegant um Ecken und über Strecken."
+			]
 			rewards: [{
 				count: 4
 				id: "04ABEC94A63D8ECB"
@@ -233,6 +273,10 @@
 		{
 			dependencies: ["7F8E50FA436DB4E6"]
 			id: "54EC1C7FC1DA9107"
+			title: "Regelbares Kettengetriebe"
+			description: [
+				"Damit steuerst du die Drehzahl per Redstone. Tempo nach Bedarf."
+			]
 			rewards: [
 				{
 					count: 2
@@ -273,6 +317,11 @@
 		{
 			dependencies: ["3AF2BC9A0E298882"]
 			id: "2D41B04C75FA02BC"
+			title: "Mechanische Presse"
+			description: [
+				"Die &aPresse&r plättet, prägt und presst. Bleche, Pflaster, Münzrohlinge …"
+				"&7Das nützlichste *Klonk* im Spiel."
+			]
 			rewards: [
 				{
 					count: 9
@@ -304,6 +353,10 @@
 		{
 			dependencies: ["3AF2BC9A0E298882"]
 			id: "5DC892BA79EB52EC"
+			title: "Mechanischer Mixer"
+			description: [
+				"Der &aMixer&r rührt über einem Becken alles zusammen — Legierungen, Teige, Tränke."
+			]
 			rewards: [
 				{
 					count: 5
@@ -348,6 +401,10 @@
 				"13AEBC331F29BC3D"
 			]
 			id: "75CBB5BD8C1DFEA1"
+			title: "Das Becken"
+			description: [
+				"Das &aBecken&r sammelt Zutaten für Mixer und Presse. Die kleine Küche der Maschinen."
+			]
 			rewards: [{
 				id: "06C90B0C9C145554"
 				item: {
@@ -366,6 +423,12 @@
 		}
 		{
 			id: "1B182A30604655E2"
+			dependencies: ["4C0F000000000019"]
+			title: "Blaze Burner"
+			description: [
+				"Beschaffe &aBlaze Burner&r — ein weiterer Baustein auf deinem Create-Weg."
+				"&7(In EMI siehst du, wie es hergestellt wird.)"
+			]
 			rewards: [
 				{
 					count: 3
@@ -401,6 +464,11 @@
 				"69EE22CB4FF1E591"
 			]
 			id: "45EC31812FB9934D"
+			title: "Mechanical Piston"
+			description: [
+				"Beschaffe &aMechanical Piston&r — ein weiterer Baustein auf deinem Create-Weg."
+				"&7(In EMI siehst du, wie es hergestellt wird.)"
+			]
 			rewards: [
 				{
 					count: 5
@@ -435,6 +503,11 @@
 				"3AF2BC9A0E298882"
 			]
 			id: "29917E6196649F5D"
+			title: "Speedometer"
+			description: [
+				"Beschaffe &aSpeedometer&r — ein weiterer Baustein auf deinem Create-Weg."
+				"&7(In EMI siehst du, wie es hergestellt wird.)"
+			]
 			rewards: [{
 				count: 8
 				id: "6062E984D4970F79"
@@ -458,6 +531,11 @@
 				"3AF2BC9A0E298882"
 			]
 			id: "48BE7DAC5082044D"
+			title: "Stressometer"
+			description: [
+				"Beschaffe &aStressometer&r — ein weiterer Baustein auf deinem Create-Weg."
+				"&7(In EMI siehst du, wie es hergestellt wird.)"
+			]
 			rewards: [{
 				count: 8
 				id: "52CD679063F42DC6"
@@ -478,6 +556,11 @@
 		{
 			dependencies: ["69EE22CB4FF1E591"]
 			id: "09936F8FCEA72C5C"
+			title: "Cart Assembler"
+			description: [
+				"Beschaffe &aCart Assembler&r — ein weiterer Baustein auf deinem Create-Weg."
+				"&7(In EMI siehst du, wie es hergestellt wird.)"
+			]
 			rewards: [
 				{
 					count: 2
@@ -517,6 +600,11 @@
 		{
 			dependencies: ["69EE22CB4FF1E591"]
 			id: "51EA6B1452883AB2"
+			title: "Linear Chassis"
+			description: [
+				"Beschaffe &aLinear Chassis&r — ein weiterer Baustein auf deinem Create-Weg."
+				"&7(In EMI siehst du, wie es hergestellt wird.)"
+			]
 			rewards: [{
 				count: 3
 				id: "564DDD7BC9A1799D"
@@ -537,6 +625,10 @@
 		{
 			dependencies: ["69EE22CB4FF1E591"]
 			id: "459BA85E48B343AE"
+			title: "Radial-Chassis"
+			description: [
+				"Das &aChassis&r hält große Kontraptionen zusammen, wenn sie sich drehen."
+			]
 			rewards: [
 				{
 					count: 3
@@ -568,6 +660,10 @@
 		{
 			dependencies: ["6893D537716AA748"]
 			id: "76CBFA38D021AC95"
+			title: "Windmühlen-Lager"
+			description: [
+				"Bau dir eine &aWindmühle&r — Segel dran, und der Wind erledigt den Rest."
+			]
 			rewards: [
 				{
 					count: 8
@@ -606,6 +702,11 @@
 		{
 			dependencies: ["69EE22CB4FF1E591"]
 			id: "3029E1E133B91ED8"
+			title: "Mechanical Drill"
+			description: [
+				"Beschaffe &aMechanical Drill&r — ein weiterer Baustein auf deinem Create-Weg."
+				"&7(In EMI siehst du, wie es hergestellt wird.)"
+			]
 			rewards: [
 				{
 					count: 8
@@ -638,6 +739,11 @@
 		{
 			dependencies: ["69EE22CB4FF1E591"]
 			id: "72DCE154E1714890"
+			title: "Mechanical Saw"
+			description: [
+				"Beschaffe &aMechanical Saw&r — ein weiterer Baustein auf deinem Create-Weg."
+				"&7(In EMI siehst du, wie es hergestellt wird.)"
+			]
 			rewards: [
 				{
 					count: 6
@@ -679,6 +785,11 @@
 		{
 			dependencies: ["3AF2BC9A0E298882"]
 			id: "3314FBC4FEAE1D08"
+			title: "Deployer"
+			description: [
+				"Beschaffe &aDeployer&r — ein weiterer Baustein auf deinem Create-Weg."
+				"&7(In EMI siehst du, wie es hergestellt wird.)"
+			]
 			rewards: [
 				{
 					count: 3
@@ -729,6 +840,11 @@
 		{
 			dependencies: ["69EE22CB4FF1E591"]
 			id: "4C31649D721F76B5"
+			title: "Mechanical Harvester"
+			description: [
+				"Beschaffe &aMechanical Harvester&r — ein weiterer Baustein auf deinem Create-Weg."
+				"&7(In EMI siehst du, wie es hergestellt wird.)"
+			]
 			rewards: [
 				{
 					count: 8
@@ -770,6 +886,11 @@
 		{
 			dependencies: ["69EE22CB4FF1E591"]
 			id: "0759CA52EECF3B49"
+			title: "Mechanical Plough"
+			description: [
+				"Beschaffe &aMechanical Plough&r — ein weiterer Baustein auf deinem Create-Weg."
+				"&7(In EMI siehst du, wie es hergestellt wird.)"
+			]
 			rewards: [
 				{
 					count: 10
@@ -802,6 +923,10 @@
 		{
 			dependencies: ["7242F591DA474B37"]
 			id: "3F663416E824720C"
+			title: "Copper Casing"
+			description: [
+				"Das &aKupfer-Gehäuse&r ist die Stufe für alles rund um Flüssigkeiten."
+			]
 			rewards: [{
 				count: 4
 				id: "3EABDEEFFF0E5136"
@@ -826,6 +951,10 @@
 				"3C99017FD32B6DE2"
 			]
 			id: "3F2C1A81C17D2D67"
+			title: "Mechanischer Arm"
+			description: [
+				"Der &aArm&r sortiert und befüllt punktgenau. Dein fleißigster Mitarbeiter."
+			]
 			rewards: [
 				{
 					id: "5254A6CF0D4B65C2"
@@ -857,6 +986,10 @@
 		{
 			dependencies: ["13AEBC331F29BC3D"]
 			id: "47A6769B6BF1A46D"
+			title: "Andesite Funnel"
+			description: [
+				"Der &aTrichter&r zieht Items ein oder gibt sie aus. Andesit = die Einsteigerklasse."
+			]
 			rewards: [
 				{
 					id: "1F33218151FDCD42"
@@ -886,6 +1019,10 @@
 		{
 			dependencies: ["13AEBC331F29BC3D"]
 			id: "495B0CC178B4CFA9"
+			title: "Brass Funnel"
+			description: [
+				"Der &aMessing-Trichter&r kann filtern — nur genau das durchlassen, was du willst."
+			]
 			rewards: [
 				{
 					count: 3
@@ -917,6 +1054,10 @@
 		{
 			dependencies: ["13AEBC331F29BC3D"]
 			id: "7C8CDD259495A31A"
+			title: "Andesite Tunnel"
+			description: [
+				"Der &aTunnel&r verteilt Items auf Förderbändern sauber weiter."
+			]
 			rewards: [
 				{
 					count: 2
@@ -948,6 +1089,10 @@
 		{
 			dependencies: ["13AEBC331F29BC3D"]
 			id: "78656C89EEE80DB5"
+			title: "Brass Tunnel"
+			description: [
+				"Der &aMessing-Tunnel&r verteilt und sortiert über mehrere Bänder. Logistik-Magie."
+			]
 			rewards: [
 				{
 					count: 3
@@ -979,6 +1124,10 @@
 		{
 			dependencies: ["13AEBC331F29BC3D"]
 			id: "3D2A03EB2B91E9C1"
+			title: "Schacht"
+			description: [
+				"Der &aSchacht&r lässt Items vertikal rieseln — die Schwerkraft arbeitet für dich."
+			]
 			rewards: [{
 				count: 4
 				id: "70761789AFFA17D6"
@@ -999,6 +1148,11 @@
 		{
 			dependencies: ["1C2309DB4B890E71"]
 			id: "4C77ABCD41383F32"
+			title: "Blaze-Kuchen"
+			description: [
+				"Ein &aBlaze Cake&r macht den Blaze Burner so richtig heiß — für die harten Rezepte."
+				"&7Backen für Fortgeschrittene."
+			]
 			rewards: [{
 				count: 3
 				id: "1F9F433502164B14"
@@ -1021,6 +1175,10 @@
 		{
 			dependencies: ["3C99017FD32B6DE2"]
 			id: "4194397DFD0199C2"
+			title: "Mechanischer Kruster"
+			description: [
+				"Mehrere &aKruster&r craften ganze Rezepte automatisch. Endlich Schluss mit Handarbeit!"
+			]
 			rewards: [{
 				count: 3
 				id: "354DD4DBB3D3B370"
@@ -1042,6 +1200,11 @@
 		{
 			dependencies: ["69EE22CB4FF1E591"]
 			id: "75B14A09FE39EDDA"
+			title: "Gantry Carriage"
+			description: [
+				"Beschaffe &aGantry Carriage&r — ein weiterer Baustein auf deinem Create-Weg."
+				"&7(In EMI siehst du, wie es hergestellt wird.)"
+			]
 			rewards: [
 				{
 					count: 8
@@ -1080,6 +1243,11 @@
 		{
 			dependencies: ["3D2A03EB2B91E9C1"]
 			id: "7EEEEDD5FF31ACD3"
+			title: "Smart Chute"
+			description: [
+				"Beschaffe &aSmart Chute&r — ein weiterer Baustein auf deinem Create-Weg."
+				"&7(In EMI siehst du, wie es hergestellt wird.)"
+			]
 			rewards: [
 				{
 					count: 7
@@ -1111,6 +1279,10 @@
 		{
 			dependencies: ["57A7A5C79389A96A"]
 			id: "0CF69DBA9573A7B3"
+			title: "Schematik-Tisch"
+			description: [
+				"Am &aSchematik-Tisch&r lädst du Baupläne — kopiere ganze Bauwerke."
+			]
 			tasks: [{
 				id: "0FB1E9BD14FE8EF8"
 				item: { count: 1, id: "create:schematic_table" }
@@ -1122,6 +1294,10 @@
 		{
 			dependencies: ["0CF69DBA9573A7B3"]
 			id: "7D67058592EE5958"
+			title: "Schematik-Kanone"
+			description: [
+				"Die &aSchematik-Kanone&r baut gespeicherte Schematics automatisch auf. Faulheit, aber effizient."
+			]
 			tasks: [{
 				id: "5D989C876E9B8AA5"
 				item: { count: 1, id: "create:schematicannon" }
@@ -1133,6 +1309,11 @@
 		{
 			dependencies: ["69EE22CB4FF1E591"]
 			id: "24E658BA47367A44"
+			title: "Rope Pulley"
+			description: [
+				"Beschaffe &aRope Pulley&r — ein weiterer Baustein auf deinem Create-Weg."
+				"&7(In EMI siehst du, wie es hergestellt wird.)"
+			]
 			rewards: [
 				{
 					count: 8
@@ -1164,6 +1345,11 @@
 		{
 			dependencies: ["3F663416E824720C"]
 			id: "1C2309DB4B890E71"
+			title: "Spout"
+			description: [
+				"Beschaffe &aSpout&r — ein weiterer Baustein auf deinem Create-Weg."
+				"&7(In EMI siehst du, wie es hergestellt wird.)"
+			]
 			rewards: [
 				{
 					count: 3
@@ -1203,6 +1389,11 @@
 		{
 			dependencies: ["3F663416E824720C"]
 			id: "77382D4114E901CB"
+			title: "Hose Pulley"
+			description: [
+				"Beschaffe &aHose Pulley&r — ein weiterer Baustein auf deinem Create-Weg."
+				"&7(In EMI siehst du, wie es hergestellt wird.)"
+			]
 			rewards: [
 				{
 					count: 2
@@ -1233,6 +1424,10 @@
 		{
 			dependencies: ["0F16498769DFB3B0"]
 			id: "47897D827C50629D"
+			title: "Kolben-Verlängerung"
+			description: [
+				"Verlängert den mechanischen Kolben — schiebe Dinge richtig weit."
+			]
 			rewards: [
 				{
 					id: "5DD3B4DCCCD14B41"
@@ -1275,6 +1470,10 @@
 				"69EE22CB4FF1E591"
 			]
 			id: "71B1B53A03A16296"
+			title: "Portable Fluid Interface"
+			description: [
+				"Tankt fahrende Kontraptionen automatisch ab oder auf. Praktisch für Züge \\& Schiffe."
+			]
 			rewards: [
 				{
 					id: "583659BEC64DAF4B"
@@ -1304,6 +1503,10 @@
 		{
 			dependencies: ["57A7A5C79389A96A"]
 			id: "13AEBC331F29BC3D"
+			title: "Förderband"
+			description: [
+				"Zwei Wellen, ein &aRiemen&r dazwischen — fertig ist das Fließband. Klassiker."
+			]
 			rewards: [{
 				count: 16
 				id: "47D9D2803A87B983"
@@ -1325,6 +1528,11 @@
 		{
 			dependencies: ["5B36DE3826F26963"]
 			id: "6893D537716AA748"
+			title: "Das Zahnrad"
+			description: [
+				"Das &aZahnrad&r überträgt Drehkraft. Der Herzschlag jeder Maschine."
+				"&7Zwei davon nebeneinander? Vorsicht — die mögen sich nicht."
+			]
 			rewards: [
 				{
 					count: 5
@@ -1356,6 +1564,11 @@
 		{
 			dependencies: ["6893D537716AA748"]
 			id: "3C892B33758B7BA6"
+			title: "Großes Zahnrad"
+			description: [
+				"Mit dem &agroßen Zahnrad&r änderst du Drehzahl und Richtung."
+				"&7Übersetzung gefällig?"
+			]
 			rewards: [
 				{
 					count: 3
@@ -1395,6 +1608,10 @@
 		{
 			dependencies: ["0F16498769DFB3B0"]
 			id: "3AF2BC9A0E298882"
+			title: "Andesite Casing"
+			description: [
+				"Das &aAndesit-Gehäuse&r ummantelt Wellen und Maschinen. Hübsch und praktisch."
+			]
 			rewards: [{
 				count: 4
 				id: "3158A4A10E35CDD6"
@@ -1416,6 +1633,11 @@
 		{
 			dependencies: ["6893D537716AA748"]
 			id: "5DD6631F5996BA71"
+			title: "Wasserrad"
+			description: [
+				"Das &aWasserrad&r macht aus fließendem Wasser saubere, kostenlose Drehkraft."
+				"&7Die gemütlichste Energiequelle überhaupt."
+			]
 			rewards: [
 				{
 					id: "6F09D6AB5F77AC20"
@@ -1454,6 +1676,11 @@
 		{
 			dependencies: ["6893D537716AA748"]
 			id: "3697AAF8F281B247"
+			title: "Steam Engine"
+			description: [
+				"Beschaffe &aSteam Engine&r — ein weiterer Baustein auf deinem Create-Weg."
+				"&7(In EMI siehst du, wie es hergestellt wird.)"
+			]
 			rewards: [
 				{
 					count: 4
@@ -1506,6 +1733,11 @@
 		{
 			dependencies: ["6893D537716AA748"]
 			id: "72C7698072BF0F1D"
+			title: "Hand Crank"
+			description: [
+				"Beschaffe &aHand Crank&r — ein weiterer Baustein auf deinem Create-Weg."
+				"&7(In EMI siehst du, wie es hergestellt wird.)"
+			]
 			rewards: [{
 				id: "5CEB7FFA15C1FB45"
 				item: {
@@ -1526,6 +1758,10 @@
 		{
 			dependencies: ["13AEBC331F29BC3D"]
 			id: "2AEA51044AD44BE8"
+			title: "Ablage"
+			description: [
+				"Das &aDepot&r hält ein einzelnes Item für die Bearbeitung bereit. Mini-Werkbank."
+			]
 			rewards: [
 				{
 					id: "2292B7D583E7691B"
@@ -1556,6 +1792,11 @@
 		{
 			dependencies: ["2AEA51044AD44BE8"]
 			id: "476C7317510198D9"
+			title: "Weighted Ejector"
+			description: [
+				"Beschaffe &aWeighted Ejector&r — ein weiterer Baustein auf deinem Create-Weg."
+				"&7(In EMI siehst du, wie es hergestellt wird.)"
+			]
 			rewards: [
 				{
 					count: 8
@@ -1596,6 +1837,10 @@
 		{
 			dependencies: ["7242F591DA474B37"]
 			id: "483892F0A0F75B97"
+			title: "Flüssigkeitsrohr"
+			description: [
+				"&aRohre&r pumpen Flüssigkeiten dorthin, wo du sie brauchst. Mit Pumpe, versteht sich."
+			]
 			rewards: [{
 				count: 10
 				id: "2ACCE5174D530B92"
@@ -1617,6 +1862,11 @@
 		{
 			dependencies: ["57A7A5C79389A96A"]
 			id: "7242F591DA474B37"
+			title: "Copper Ingot"
+			description: [
+				"Beschaffe &aCopper Ingot&r — ein weiterer Baustein auf deinem Create-Weg."
+				"&7(In EMI siehst du, wie es hergestellt wird.)"
+			]
 			rewards: [{
 				id: "07B7AFADD4C305C1"
 				item: {
@@ -1637,6 +1887,11 @@
 		{
 			dependencies: ["3AF2BC9A0E298882"]
 			id: "3F02EF19112D23BE"
+			title: "Crushing Wheel"
+			description: [
+				"Beschaffe &aCrushing Wheel&r — ein weiterer Baustein auf deinem Create-Weg."
+				"&7(In EMI siehst du, wie es hergestellt wird.)"
+			]
 			rewards: [
 				{
 					count: 8
@@ -1669,6 +1924,11 @@
 		{
 			dependencies: ["3AF2BC9A0E298882"]
 			id: "64FF7118E29931C0"
+			title: "Millstone"
+			description: [
+				"Beschaffe &aMillstone&r — ein weiterer Baustein auf deinem Create-Weg."
+				"&7(In EMI siehst du, wie es hergestellt wird.)"
+			]
 			rewards: [
 				{
 					count: 5
@@ -1719,6 +1979,11 @@
 		{
 			dependencies: ["483892F0A0F75B97"]
 			id: "133CA315A1443A49"
+			title: "Mechanical Pump"
+			description: [
+				"Beschaffe &aMechanical Pump&r — ein weiterer Baustein auf deinem Create-Weg."
+				"&7(In EMI siehst du, wie es hergestellt wird.)"
+			]
 			rewards: [{
 				count: 8
 				id: "2FD28408692EF09D"
@@ -1739,6 +2004,11 @@
 		{
 			dependencies: ["57A7A5C79389A96A"]
 			id: "127F9EAC7C305BF5"
+			title: "Wrench"
+			description: [
+				"Beschaffe &aWrench&r — ein weiterer Baustein auf deinem Create-Weg."
+				"&7(In EMI siehst du, wie es hergestellt wird.)"
+			]
 			rewards: [
 				{
 					count: 5
@@ -1771,6 +2041,10 @@
 		{
 			dependencies: ["57A7A5C79389A96A"]
 			id: "38CB5044AB3F859B"
+			title: "Superkleber"
+			description: [
+				"&aSuperkleber&r verbindet Blöcke zu einer Kontraption. Alles, was zusammenklebt, fliegt zusammen."
+			]
 			rewards: [
 				{
 					id: "563B5BD80D96CE1F"
@@ -1802,6 +2076,11 @@
 		{
 			dependencies: ["57A7A5C79389A96A"]
 			id: "72537968598AB884"
+			title: "Goggles"
+			description: [
+				"Beschaffe &aGoggles&r — ein weiterer Baustein auf deinem Create-Weg."
+				"&7(In EMI siehst du, wie es hergestellt wird.)"
+			]
 			rewards: [
 				{
 					count: 5
@@ -1845,6 +2124,10 @@
 			]
 			hide_dependent_lines: true
 			id: "69EE22CB4FF1E591"
+			title: "Superkleber"
+			description: [
+				"&aSuperkleber&r verbindet Blöcke zu einer Kontraption. Alles, was zusammenklebt, fliegt zusammen."
+			]
 			rewards: [
 				{
 					count: 5
@@ -1884,6 +2167,11 @@
 		{
 			dependencies: ["483892F0A0F75B97"]
 			id: "087F6C09CB5B2D1A"
+			title: "Smart Fluid Pipe"
+			description: [
+				"Beschaffe &aSmart Fluid Pipe&r — ein weiterer Baustein auf deinem Create-Weg."
+				"&7(In EMI siehst du, wie es hergestellt wird.)"
+			]
 			rewards: [{
 				count: 2
 				id: "583613FAC2726BB3"
@@ -1904,6 +2192,11 @@
 		{
 			dependencies: ["483892F0A0F75B97"]
 			id: "50DBB87E53017E60"
+			title: "Fluid Valve"
+			description: [
+				"Beschaffe &aFluid Valve&r — ein weiterer Baustein auf deinem Create-Weg."
+				"&7(In EMI siehst du, wie es hergestellt wird.)"
+			]
 			rewards: [{
 				id: "54BED7D1F85E2F7D"
 				item: {
@@ -1926,6 +2219,10 @@
 				"1B182A30604655E2"
 			]
 			id: "3C99017FD32B6DE2"
+			title: "Brass Casing"
+			description: [
+				"Das &aMessing-Gehäuse&r markiert die Mittelstufe — jetzt wird's clever."
+			]
 			rewards: [{
 				count: 5
 				id: "783F3F33B293858B"
@@ -1947,6 +2244,10 @@
 		{
 			dependencies: ["3314FBC4FEAE1D08"]
 			id: "1712C3B3CF158843"
+			title: "Präzisionsmechanismus"
+			description: [
+				"Das &aPräzisionsmechanismus&r ist das Herz fortgeschrittener Geräte. Fummelig, aber lohnend."
+			]
 			rewards: [{
 				count: 3
 				id: "528F5D56147835B2"
@@ -1968,6 +2269,11 @@
 		{
 			dependencies: ["67A46ED73E488CEE"]
 			id: "1BA11428DF7541AD"
+			title: "Sequenced Gearshift"
+			description: [
+				"Beschaffe &aSequenced Gearshift&r — ein weiterer Baustein auf deinem Create-Weg."
+				"&7(In EMI siehst du, wie es hergestellt wird.)"
+			]
 			rewards: [
 				{
 					count: 3
@@ -1999,6 +2305,10 @@
 		{
 			dependencies: ["3C99017FD32B6DE2"]
 			id: "4EE10B8E194F5CA9"
+			title: "Railway Casing"
+			description: [
+				"Das &aSchienen-Gehäuse&r ist die Basis für Züge, Bahnhöfe und Schienenfahrzeuge."
+			]
 			rewards: [{
 				count: 4
 				id: "2FA69107DDFCE2EF"
@@ -2020,6 +2330,11 @@
 		{
 			dependencies: ["5B36DE3826F26963"]
 			id: "09E34E1F9C751458"
+			title: "Vertical Gearbox"
+			description: [
+				"Beschaffe &aVertical Gearbox&r — ein weiterer Baustein auf deinem Create-Weg."
+				"&7(In EMI siehst du, wie es hergestellt wird.)"
+			]
 			rewards: [
 				{
 					count: 4
@@ -2051,6 +2366,10 @@
 		{
 			dependencies: ["7242F591DA474B37"]
 			id: "3A4C62865C7CC862"
+			title: "Flüssigkeitstank"
+			description: [
+				"Der &aTank&r lagert Lava, Wasser, Honig \\& Co. Stapelbar zu riesigen Reservoirs."
+			]
 			rewards: [{
 				count: 2
 				id: "1AFC47050A4F0D74"
@@ -2071,6 +2390,11 @@
 		{
 			dependencies: ["3F663416E824720C"]
 			id: "39A7619B4C5592BE"
+			title: "Item Drain"
+			description: [
+				"Beschaffe &aItem Drain&r — ein weiterer Baustein auf deinem Create-Weg."
+				"&7(In EMI siehst du, wie es hergestellt wird.)"
+			]
 			rewards: [
 				{
 					count: 3
@@ -2101,6 +2425,10 @@
 		{
 			dependencies: ["69EE22CB4FF1E591"]
 			id: "078C5B50CDC174CB"
+			title: "Mechanisches Lager"
+			description: [
+				"Mit dem &aLager&r drehst und bewegst du ganze Bauwerke — willkommen bei Kontraptionen!"
+			]
 			rewards: [
 				{
 					count: 3
@@ -2141,6 +2469,11 @@
 		{
 			dependencies: ["69EE22CB4FF1E591"]
 			id: "18914FDF9CF9EEA8"
+			title: "Clockwork Bearing"
+			description: [
+				"Beschaffe &aClockwork Bearing&r — ein weiterer Baustein auf deinem Create-Weg."
+				"&7(In EMI siehst du, wie es hergestellt wird.)"
+			]
 			rewards: [
 				{
 					id: "420799927625D4D8"
@@ -2171,6 +2504,10 @@
 		{
 			dependencies: ["3314FBC4FEAE1D08"]
 			id: "5979DE0E2BA3DAE5"
+			title: "Gleise"
+			description: [
+				"&aGleise&r sind die Adern deines Imperiums. Hier rollen bald die Züge zwischen den Kolonien."
+			]
 			rewards: [{
 				count: 32
 				id: "0DCC3B5FD11A6134"
@@ -2194,6 +2531,10 @@
 				"5979DE0E2BA3DAE5"
 			]
 			id: "77BE3D9D274F72F1"
+			title: "Bahnhof"
+			description: [
+				"Am &aBahnhof&r baust du Züge zusammen, gibst Fahrpläne und steigst ein. Alles einsteigen!"
+			]
 			rewards: [
 				{
 					count: 2
@@ -2228,6 +2569,11 @@
 				"77BE3D9D274F72F1"
 			]
 			id: "3FBCBBEBB78B83FC"
+			title: "Controls"
+			description: [
+				"Beschaffe &aControls&r — ein weiterer Baustein auf deinem Create-Weg."
+				"&7(In EMI siehst du, wie es hergestellt wird.)"
+			]
 			rewards: [
 				{
 					count: 8
@@ -2279,6 +2625,11 @@
 		{
 			dependencies: ["3FBCBBEBB78B83FC"]
 			id: "30AC43222FF9B18A"
+			title: "Track Signal"
+			description: [
+				"Beschaffe &aTrack Signal&r — ein weiterer Baustein auf deinem Create-Weg."
+				"&7(In EMI siehst du, wie es hergestellt wird.)"
+			]
 			rewards: [
 				{
 					count: 4
@@ -2317,6 +2668,11 @@
 		{
 			dependencies: ["3FBCBBEBB78B83FC"]
 			id: "5134C81D96C55375"
+			title: "Track Observer"
+			description: [
+				"Beschaffe &aTrack Observer&r — ein weiterer Baustein auf deinem Create-Weg."
+				"&7(In EMI siehst du, wie es hergestellt wird.)"
+			]
 			rewards: [
 				{
 					count: 3
@@ -2348,6 +2704,11 @@
 		{
 			dependencies: ["3FBCBBEBB78B83FC"]
 			id: "2D96965317D3CFEC"
+			title: "Schedule"
+			description: [
+				"Beschaffe &aSchedule&r — ein weiterer Baustein auf deinem Create-Weg."
+				"&7(In EMI siehst du, wie es hergestellt wird.)"
+			]
 			rewards: [
 				{
 					count: 3
@@ -2386,6 +2747,11 @@
 		{
 			dependencies: ["3FBCBBEBB78B83FC"]
 			id: "7F0F7111552F95A9"
+			title: "Controls"
+			description: [
+				"Beschaffe &aControls&r — ein weiterer Baustein auf deinem Create-Weg."
+				"&7(In EMI siehst du, wie es hergestellt wird.)"
+			]
 			rewards: [{
 				id: "03C8EA7C3AD5F831"
 				item: {
@@ -2405,6 +2771,10 @@
 		{
 			dependencies: ["3FBCBBEBB78B83FC"]
 			id: "12274935C3D20C74"
+			title: "Superkleber"
+			description: [
+				"&aSuperkleber&r verbindet Blöcke zu einer Kontraption. Alles, was zusammenklebt, fliegt zusammen."
+			]
 			rewards: [
 				{
 					count: 2
@@ -2462,6 +2832,11 @@
 		{
 			dependencies: ["13AEBC331F29BC3D"]
 			id: "2C2958E38293717E"
+			title: "Cardboard"
+			description: [
+				"Beschaffe &aCardboard&r — ein weiterer Baustein auf deinem Create-Weg."
+				"&7(In EMI siehst du, wie es hergestellt wird.)"
+			]
 			rewards: [{
 				count: 6
 				id: "75789E7CD771A056"
@@ -2483,6 +2858,11 @@
 		{
 			dependencies: ["16B0C1F7B951C19D"]
 			id: "737DC37E4310090C"
+			title: "Chain Conveyor"
+			description: [
+				"Beschaffe &aChain Conveyor&r — ein weiterer Baustein auf deinem Create-Weg."
+				"&7(In EMI siehst du, wie es hergestellt wird.)"
+			]
 			rewards: [
 				{
 					count: 2
@@ -2514,6 +2894,11 @@
 		{
 			dependencies: ["737DC37E4310090C"]
 			id: "3B3B38B17CF5D81C"
+			title: "Package Frogport"
+			description: [
+				"Beschaffe &aPackage Frogport&r — ein weiterer Baustein auf deinem Create-Weg."
+				"&7(In EMI siehst du, wie es hergestellt wird.)"
+			]
 			rewards: [
 				{
 					id: "72B587616874EB16"
@@ -2552,6 +2937,11 @@
 		{
 			dependencies: ["16B0C1F7B951C19D"]
 			id: "57A18F2E51952EB8"
+			title: "Blue Postbox"
+			description: [
+				"Beschaffe &aBlue Postbox&r — ein weiterer Baustein auf deinem Create-Weg."
+				"&7(In EMI siehst du, wie es hergestellt wird.)"
+			]
 			rewards: [
 				{
 					count: 3
@@ -2582,6 +2972,11 @@
 		{
 			dependencies: ["16B0C1F7B951C19D"]
 			id: "6353A39CBEE599A0"
+			title: "Stock Link"
+			description: [
+				"Beschaffe &aStock Link&r — ein weiterer Baustein auf deinem Create-Weg."
+				"&7(In EMI siehst du, wie es hergestellt wird.)"
+			]
 			rewards: [
 				{
 					id: "5BB660C3F484EF5E"
@@ -2621,6 +3016,11 @@
 		{
 			dependencies: ["6353A39CBEE599A0"]
 			id: "754B8F1FBCD983C5"
+			title: "Stock Ticker"
+			description: [
+				"Beschaffe &aStock Ticker&r — ein weiterer Baustein auf deinem Create-Weg."
+				"&7(In EMI siehst du, wie es hergestellt wird.)"
+			]
 			rewards: [
 				{
 					count: 2
@@ -2661,6 +3061,11 @@
 		{
 			dependencies: ["2C2958E38293717E"]
 			id: "672F9CF5B0E626F1"
+			title: "Packager"
+			description: [
+				"Beschaffe &aPackager&r — ein weiterer Baustein auf deinem Create-Weg."
+				"&7(In EMI siehst du, wie es hergestellt wird.)"
+			]
 			rewards: [
 				{
 					id: "68E92E63B3552943"
@@ -2690,6 +3095,11 @@
 		{
 			dependencies: ["672F9CF5B0E626F1"]
 			id: "16B0C1F7B951C19D"
+			title: "Cardboard Package 12X12"
+			description: [
+				"Beschaffe &aCardboard Package 12X12&r — ein weiterer Baustein auf deinem Create-Weg."
+				"&7(In EMI siehst du, wie es hergestellt wird.)"
+			]
 			rewards: [{
 				id: "7E26E2BE66E19CA9"
 				item: {
@@ -2735,6 +3145,11 @@
 		{
 			dependencies: ["13AEBC331F29BC3D"]
 			id: "0A4962728C98DAD9"
+			title: "Item Vault"
+			description: [
+				"Beschaffe &aItem Vault&r — ein weiterer Baustein auf deinem Create-Weg."
+				"&7(In EMI siehst du, wie es hergestellt wird.)"
+			]
 			rewards: [{
 				count: 3
 				id: "4D1CEF0A7D6B2C0F"
@@ -2758,6 +3173,11 @@
 				"754B8F1FBCD983C5"
 			]
 			id: "64860340A5BEBAB9"
+			title: "Andesite Table Cloth"
+			description: [
+				"Beschaffe &aAndesite Table Cloth&r — ein weiterer Baustein auf deinem Create-Weg."
+				"&7(In EMI siehst du, wie es hergestellt wird.)"
+			]
 			rewards: [
 				{
 					id: "1F6AB3B781D9B508"

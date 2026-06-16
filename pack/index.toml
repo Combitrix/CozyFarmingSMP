@@ -6,39 +6,43 @@ hash = "88ab692c43f2d51470028398381b893e50006ebf43596ce1919a5f143077a177"
 
 [[files]]
 file = "README.md"
-hash = "ae24b1b2486afb2e6f0a6402c89eb4bdc8d201ea5a78a9826c63e39d5eab5bb4"
+hash = "c31f8c3637b3f403c5b270ed6813dbf47c4e2f5b390e751190e4dce6bf7ebad5"
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
-hash = "0f9ffdc801a3598cd32450174019d3f540b18aa8a7bfa3eb88e714efa035f170"
+hash = "bd5d74af02ea8f7fddd2ddb3faeff50516b46818c76ec3e8ceaeb0747e50afa5"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/aeronautics.snbt"
+hash = "119980f2563f3c61ebdb2b7c4021cb0b9c80e7e6ceb9283cb1d035c153ef04a5"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/create.snbt"
-hash = "7e78df4467fa8409db226344aa59773343cc692f2e3a414eabf085c981de9046"
+hash = "327f5d79ee9cadde75f1f8f61b7d227738654e69595fccfd41b014a4d41126bf"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/endgame.snbt"
-hash = "d9700654639cb968c91c83a9c1fb2c74963665e635d89faf0053481a34c21f71"
+hash = "f2e19502c6a2d95955167b305bd25b9b1d6f70ec6308a5b2fac91f2b4d471f63"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/farmen_und_leben.snbt"
-hash = "b69d765c3b398ff145bcf2d08e78f386c17a13f83a2be2d5be4ab38b5e2fdd3a"
+hash = "3ce9f5064946cc4280db8f3c2b7a3d6896d1b40f53a573a4940bc6c86f880f15"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/kolonien.snbt"
-hash = "1b995ca4010596885210805d4b8c423ba4889db0ffbb9d10d232ab2dfc514c96"
+hash = "ece5f5c2663cdd302f4b8d7d0ab4914d0c0e258a96c82b3d14ee12021b2e5633"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welt.snbt"
-hash = "7ed5098c96bf591745fba538116bbcfcae765c7c39326f9c07a0725ecf1e3aea"
+hash = "71adfcb5510623a101a33647fc17422ac62890c4c022835f8494e14adbed6771"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/willkommen.snbt"
-hash = "3cb55735a259097f5354fc862cad6e9617a9ebf80e98345a2e0fd94b2d2c81ed"
+hash = "b11e4b5b781070f274923d31572a7588d3aeb4d5cf336f8c7963f9b6cfbd29ca"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/wirtschaft.snbt"
-hash = "1101c2b2f89e6b8b19f5b078b32f34e189c9d09abc9efbdcd2fb2244a4648c48"
+hash = "416ecd14307d437a2a08fd2b48c8e7102bb1db82ea90e723579e889ec4e1b45a"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -90,7 +94,7 @@ metafile = true
 
 [[files]]
 file = "mods/chunky.pw.toml"
-hash = "68cc51e721e993a8b7a2cbaf45369933b22b07a9c82327ab14757ee10684aa81"
+hash = "1d5cc2b6dcfd1fc3adba4566b1c29b57ff1175316678c1f22e63cbc3e28a5ba0"
 metafile = true
 
 [[files]]
