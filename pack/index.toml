@@ -39,6 +39,11 @@ hash = "05abf6fafe4a8adf5aaa24f09b7dedfbe199a8727d925e816fc608d6357f5ba8"
 metafile = true
 
 [[files]]
+file = "mods/bountiful-fares.pw.toml"
+hash = "7f58bd7adcb9cba3ff60fec0619a56a901043fd1c52b0038b52c382f1683206b"
+metafile = true
+
+[[files]]
 file = "mods/brewin-and-chewin.pw.toml"
 hash = "0236c16fae038f834245ad6c9b05f385f75db2e82630bdbf71a4b1a2e6def57d"
 metafile = true
@@ -476,6 +481,11 @@ metafile = true
 [[files]]
 file = "mods/naturalist.pw.toml"
 hash = "bcd24eb0db2625488682ca538416a87a301543e5b68bff6633677a6780422db5"
+metafile = true
+
+[[files]]
+file = "mods/nexuslib.pw.toml"
+hash = "fcff173bb66e38b8784881dd48616a69919778deff0b85be17feb72cd81bb132"
 metafile = true
 
 [[files]]
