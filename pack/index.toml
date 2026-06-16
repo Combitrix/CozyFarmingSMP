@@ -3,3 +3,73 @@ hash-format = "sha256"
 [[files]]
 file = "EXCLUDED.md"
 hash = "eb129104d6c105c9b8527ebce14ce73837d1c17da966aef531a25b146aa7466b"
+
+[[files]]
+file = "mods/blockui.pw.toml"
+hash = "05abf6fafe4a8adf5aaa24f09b7dedfbe199a8727d925e816fc608d6357f5ba8"
+metafile = true
+
+[[files]]
+file = "mods/clumps.pw.toml"
+hash = "2acaff560bbda5741538528a2967355ec86a8f7564adba0b2316989c66892374"
+metafile = true
+
+[[files]]
+file = "mods/distanthorizons.pw.toml"
+hash = "56cb2e8e396bf26b56ffe0a44c794984435c35e15959ff46539bb8aead85ad77"
+metafile = true
+
+[[files]]
+file = "mods/domum-ornamentum.pw.toml"
+hash = "acf14ebf63e023fd7b1a58c187f88f2091d5632e1723a816c460e511f6df711d"
+metafile = true
+
+[[files]]
+file = "mods/entityculling.pw.toml"
+hash = "590437e0f344c87791842b791a400e95ffd4154f02a04c2d8d78b43a76c659ad"
+metafile = true
+
+[[files]]
+file = "mods/ferrite-core.pw.toml"
+hash = "73360e397134d238ee8fd21d33fd7f9275e9441f74f8f1b6ed92278877c0b9f1"
+metafile = true
+
+[[files]]
+file = "mods/iris.pw.toml"
+hash = "db1c1e6382878b78e994dba1b9026935f8d1c5ca685c89d2437858e0a0dcab58"
+metafile = true
+
+[[files]]
+file = "mods/lithium.pw.toml"
+hash = "cc244fd35012f737a2c4e08693e81a3d851d7d976a22baff4530af81acb8a6fa"
+metafile = true
+
+[[files]]
+file = "mods/minecolonies.pw.toml"
+hash = "bfc16a49ef73733fc1faf92cc0560451cbb9ea1a133ea4162cf26e0019b998bf"
+metafile = true
+
+[[files]]
+file = "mods/modernfix.pw.toml"
+hash = "983d6ab9d9a7d40031f1789f5ae018cccb889832ac8ce741df60a9d8e5f42817"
+metafile = true
+
+[[files]]
+file = "mods/multi-piston.pw.toml"
+hash = "bc9449306cb2c32f16347779291d68e5fba67f85d7aca04b4b9cc1c033ec4083"
+metafile = true
+
+[[files]]
+file = "mods/sodium.pw.toml"
+hash = "25324a8a9cdc663d3d1952191e873f87531011715de49673cbf7c1b0da0504d6"
+metafile = true
+
+[[files]]
+file = "mods/structurize.pw.toml"
+hash = "16867de3e52d4f2115c1cad51cdf9d717032d1c750672ced8f2dc85a1a61e271"
+metafile = true
+
+[[files]]
+file = "mods/towntalk.pw.toml"
+hash = "a7074e8e499d34f5ce633dbd33f818e376dd1941ec5b1d97a33acd019df69b5a"
+metafile = true
