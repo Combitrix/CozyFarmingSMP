@@ -166,7 +166,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-liquid-fuel.pw.toml"
-hash = "2af9229718d9edb1eaa4b88fac0063ab2f5f7ba7650a4efa5f0a8e6ce25549cd"
+hash = "9b27b8381a81b711e574cf244ee5fc81abf64076e7aa81089e47512deb61b123"
 metafile = true
 
 [[files]]
@@ -411,7 +411,7 @@ metafile = true
 
 [[files]]
 file = "mods/lithostitched.pw.toml"
-hash = "f4ec9f142fbd572f9da8253241b6c532bc9234e2defbe0e67e7ea7ea164d019c"
+hash = "580e99aec4d935d7cf9a5835d4d94f576673f722fa7ba2ccda2b7154edf9dc60"
 metafile = true
 
 [[files]]
