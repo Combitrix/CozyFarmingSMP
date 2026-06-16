@@ -1,0 +1,345 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "create"
+	group: "4C0F000000000004"
+	icon: {
+		count: 1
+		id: "create:cogwheel"
+	}
+	id: "4C0F00000000000A"
+	order_index: 0
+	progression_mode: "flexible"
+	quest_links: [ ]
+	title: "⚙ Technik & Mobilität"
+	quests: [
+		{
+			id: "4C0F00000000001B"
+			x: 0.0d
+			y: 0.0d
+			title: "Kinetik-Grundlagen"
+			icon: {
+				count: 1
+				id: "create:cogwheel"
+			}
+			shape: "hexagon"
+			size: 1.5d
+			description: [
+				"Willkommen bei &bCreate&r. Alles beginnt mit Drehkraft: Stelle ein"
+				"&aZahnrad&r, ein &aWasserrad&r und eine &aMechanische Presse&r her."
+				""
+				"&7Andesite Alloy ist deine wichtigste Grundzutat."
+			]
+			tasks: [
+				{
+					id: "4C0F000000000060"
+					item: {
+						count: 1
+						id: "create:cogwheel"
+					}
+					type: "item"
+				}
+				{
+					id: "4C0F000000000061"
+					item: {
+						count: 1
+						id: "create:water_wheel"
+					}
+					type: "item"
+				}
+				{
+					id: "4C0F000000000062"
+					item: {
+						count: 1
+						id: "create:mechanical_press"
+					}
+					type: "item"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F000000000063"
+					item: {
+						count: 1
+						id: "create:andesite_alloy"
+					}
+					type: "item"
+					count: 16
+				}
+				{
+					id: "4C0F000000000064"
+					item: {
+						count: 1
+						id: "magic_coins:silver_coin"
+					}
+					type: "item"
+					count: 20
+				}
+				{
+					id: "4C0F000000000065"
+					type: "xp"
+					xp: 15
+				}
+			]
+		}
+		{
+			id: "4C0F00000000001C"
+			x: 2.0d
+			y: 0.0d
+			title: "Verarbeitung & Automatik"
+			icon: {
+				count: 1
+				id: "create:mechanical_mixer"
+			}
+			size: 1.25d
+			description: [
+				"Kombiniere &aMixer&r + &aBecken&r zum Rühren und nutze den"
+				"&aMechanischen Kruster&r für automatisches Crafting."
+				""
+				"&7Damit automatisierst du fast jede Produktionskette."
+			]
+			dependencies: [
+				"4C0F00000000001B"
+			]
+			tasks: [
+				{
+					id: "4C0F000000000066"
+					item: {
+						count: 1
+						id: "create:mechanical_mixer"
+					}
+					type: "item"
+				}
+				{
+					id: "4C0F000000000067"
+					item: {
+						count: 1
+						id: "create:basin"
+					}
+					type: "item"
+				}
+				{
+					id: "4C0F000000000068"
+					item: {
+						count: 1
+						id: "create:mechanical_crafter"
+					}
+					type: "item"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F000000000069"
+					item: {
+						count: 1
+						id: "magic_coins:gold_coin"
+					}
+					type: "item"
+					count: 2
+				}
+				{
+					id: "4C0F00000000006A"
+					type: "xp"
+					xp: 20
+				}
+			]
+		}
+		{
+			id: "4C0F00000000001D"
+			x: 4.0d
+			y: -1.0d
+			title: "Automatische Küche"
+			icon: {
+				count: 1
+				id: "farmersdelight:cooking_pot"
+			}
+			size: 1.0d
+			description: [
+				"Mit &aCreate: Central Kitchen&r verheiratest du Create und Farmer's Delight:"
+				"Kochtöpfe automatisch befüllen und Gerichte am Fließband produzieren."
+				""
+				"Baue eine automatisierte Koch-Anlage und hak ab."
+			]
+			dependencies: [
+				"4C0F00000000001C"
+			]
+			tasks: [
+				{
+					id: "4C0F00000000006B"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F00000000006C"
+					item: {
+						count: 1
+						id: "magic_coins:gold_coin"
+					}
+					type: "item"
+					count: 2
+				}
+				{
+					id: "4C0F00000000006D"
+					type: "xp"
+					xp: 15
+				}
+			]
+		}
+		{
+			id: "4C0F00000000001E"
+			x: 4.0d
+			y: 1.0d
+			title: "Energie & Addons"
+			icon: {
+				count: 1
+				id: "create:shaft"
+			}
+			size: 1.0d
+			description: [
+				"Strom und mehr: &aCreate New Age&r, &aDiesel Generators / TFMG&r,"
+				"&aCreateaddition&r, &aCreate Factory&r u.v.m. sind dabei."
+				""
+				"Baue mit einem dieser Addons eine Energiequelle und hak ab."
+			]
+			dependencies: [
+				"4C0F00000000001C"
+			]
+			tasks: [
+				{
+					id: "4C0F00000000006E"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F00000000006F"
+					item: {
+						count: 1
+						id: "magic_coins:gold_coin"
+					}
+					type: "item"
+					count: 2
+				}
+				{
+					id: "4C0F000000000070"
+					type: "xp"
+					xp: 15
+				}
+			]
+		}
+		{
+			id: "4C0F00000000001F"
+			x: 6.0d
+			y: 0.0d
+			title: "Schienen & Züge"
+			icon: {
+				count: 1
+				id: "create:track_station"
+			}
+			shape: "hexagon"
+			size: 1.5d
+			description: [
+				"Zeit für das &bSchienennetz&r (Steam 'n' Rails). Verlege &aGleise&r,"
+				"setze einen &aBahnhof&r und baue einen Zug zusammen."
+				""
+				"&7Mit dem &aSchedule&r (Fahrplan) fährt der Zug automatisch."
+			]
+			dependencies: [
+				"4C0F00000000001C"
+			]
+			tasks: [
+				{
+					id: "4C0F000000000071"
+					item: {
+						count: 1
+						id: "create:track"
+					}
+					type: "item"
+					count: 16L
+				}
+				{
+					id: "4C0F000000000072"
+					item: {
+						count: 1
+						id: "create:track_station"
+					}
+					type: "item"
+				}
+				{
+					id: "4C0F000000000073"
+					item: {
+						count: 1
+						id: "create:schedule"
+					}
+					type: "item"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F000000000074"
+					item: {
+						count: 1
+						id: "railways:conductor_cap"
+					}
+					type: "item"
+				}
+				{
+					id: "4C0F000000000075"
+					item: {
+						count: 1
+						id: "magic_coins:gold_coin"
+					}
+					type: "item"
+					count: 4
+				}
+				{
+					id: "4C0F000000000076"
+					type: "xp"
+					xp: 25
+				}
+			]
+		}
+		{
+			id: "4C0F000000000020"
+			x: 8.0d
+			y: 0.0d
+			title: "In die Lüfte (Create Aeronautics)"
+			icon: {
+				count: 1
+				id: "create:goggles"
+			}
+			size: 1.25d
+			description: [
+				"§oBonus / Endgame.§r Mit &aCreate Aeronautics&r baust du echte"
+				"&bLuftschiffe&r. (Alpha-Mod — kann zickig sein, Backups machen!)"
+				""
+				"Baue eine fliegende Kontraption und hak ab."
+			]
+			dependencies: [
+				"4C0F00000000001F"
+			]
+			tasks: [
+				{
+					id: "4C0F000000000077"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F000000000078"
+					item: {
+						count: 1
+						id: "magic_coins:crystal_coin"
+					}
+					type: "item"
+				}
+				{
+					id: "4C0F000000000079"
+					type: "xp"
+					xp: 40
+				}
+			]
+		}
+	]
+}

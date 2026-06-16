@@ -1,0 +1,150 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "welt"
+	group: "4C0F000000000005"
+	icon: {
+		count: 1
+		id: "minecraft:filled_map"
+	}
+	id: "4C0F00000000000B"
+	order_index: 0
+	progression_mode: "flexible"
+	quest_links: [ ]
+	title: "🌍 Welt & Vernetzung"
+	quests: [
+		{
+			id: "4C0F000000000021"
+			x: 0.0d
+			y: 0.0d
+			title: "Entdecke die Welt"
+			icon: {
+				count: 1
+				id: "minecraft:filled_map"
+			}
+			shape: "hexagon"
+			size: 1.5d
+			description: [
+				"Die Welt ist riesig und realistisch: &aTerralith&r + &aTectonic&r zaubern"
+				"epische Biome und Gebirge. Erkunde mindestens &e3 verschiedene&r Biome."
+				""
+				"&7Setze Wegpunkte in JourneyMap und hak ab, wenn du 3 Biome gesehen hast."
+			]
+			tasks: [
+				{
+					id: "4C0F00000000007A"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F00000000007B"
+					item: {
+						count: 1
+						id: "minecraft:map"
+					}
+					type: "item"
+				}
+				{
+					id: "4C0F00000000007C"
+					item: {
+						count: 1
+						id: "magic_coins:silver_coin"
+					}
+					type: "item"
+					count: 20
+				}
+				{
+					id: "4C0F00000000007D"
+					type: "xp"
+					xp: 15
+				}
+			]
+		}
+		{
+			id: "4C0F000000000022"
+			x: 2.0d
+			y: 0.0d
+			title: "Das Schienennetz"
+			icon: {
+				count: 1
+				id: "create:track"
+			}
+			size: 1.25d
+			description: [
+				"Der große Traum: Zivilisationen per Zug verbinden. Verlege eine"
+				"&bZugstrecke zwischen zwei Kolonien&r (Bahnhof ↔ Bahnhof)."
+				""
+				"Hak ab, sobald ein Zug zwischen zwei Stationen fährt."
+			]
+			dependencies: [
+				"4C0F000000000021"
+			]
+			tasks: [
+				{
+					id: "4C0F00000000007E"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F00000000007F"
+					item: {
+						count: 1
+						id: "magic_coins:gold_coin"
+					}
+					type: "item"
+					count: 5
+				}
+				{
+					id: "4C0F000000000080"
+					type: "xp"
+					xp: 30
+				}
+			]
+		}
+		{
+			id: "4C0F000000000023"
+			x: 0.0d
+			y: 1.5d
+			title: "Weite Sicht (Distant Horizons)"
+			icon: {
+				count: 1
+				id: "minecraft:spyglass"
+			}
+			size: 1.0d
+			description: [
+				"&aDistant Horizons&r rendert das Gelände als LODs bis weit zum Horizont —"
+				"perfekt für Bahnfahrten und Aussichten."
+				""
+				"&7Sichtweite/Qualität in den DH-Einstellungen justieren; Iris-Shader optional."
+				"Info gelesen? Hak ab."
+			]
+			dependencies: [
+				"4C0F000000000021"
+			]
+			tasks: [
+				{
+					id: "4C0F000000000081"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F000000000082"
+					item: {
+						count: 1
+						id: "magic_coins:silver_coin"
+					}
+					type: "item"
+					count: 10
+				}
+				{
+					id: "4C0F000000000083"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+	]
+}

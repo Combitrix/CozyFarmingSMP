@@ -7,14 +7,14 @@
 		count: 1
 		id: "ftbquests:book"
 	}
-	id: "4C0F000000000003"
+	id: "4C0F000000000007"
 	order_index: 0
 	progression_mode: "flexible"
 	quest_links: [ ]
 	title: "👋 Willkommen"
 	quests: [
 		{
-			id: "4C0F000000000005"
+			id: "4C0F00000000000D"
 			x: 0.0d
 			y: 0.0d
 			title: "Willkommen auf dem Cozy Farming SMP!"
@@ -36,7 +36,7 @@
 			]
 			tasks: [
 				{
-					id: "4C0F00000000000E"
+					id: "4C0F000000000027"
 					item: {
 						count: 1
 						id: "minecraft:crafting_table"
@@ -46,7 +46,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F00000000000F"
+					id: "4C0F000000000028"
 					item: {
 						count: 1
 						id: "minecraft:bread"
@@ -55,7 +55,7 @@
 					count: 4
 				}
 				{
-					id: "4C0F000000000010"
+					id: "4C0F000000000029"
 					item: {
 						count: 1
 						id: "magic_coins:silver_coin"
@@ -64,14 +64,14 @@
 					count: 10
 				}
 				{
-					id: "4C0F000000000011"
+					id: "4C0F00000000002A"
 					type: "xp"
 					xp: 10
 				}
 			]
 		}
 		{
-			id: "4C0F000000000006"
+			id: "4C0F00000000000E"
 			x: 2.0d
 			y: 0.0d
 			title: "Inventar-Komfort (Inventory Profiles Next)"
@@ -96,17 +96,17 @@
 				"Hak diese Quest ab, wenn du es gelesen hast."
 			]
 			dependencies: [
-				"4C0F000000000005"
+				"4C0F00000000000D"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000012"
+					id: "4C0F00000000002B"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "4C0F000000000013"
+					id: "4C0F00000000002C"
 					item: {
 						count: 1
 						id: "magic_coins:silver_coin"

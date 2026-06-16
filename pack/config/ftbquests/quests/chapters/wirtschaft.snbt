@@ -1,0 +1,173 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "wirtschaft"
+	group: "4C0F000000000006"
+	icon: {
+		count: 1
+		id: "magic_coins:gold_coin"
+	}
+	id: "4C0F00000000000C"
+	order_index: 0
+	progression_mode: "flexible"
+	quest_links: [ ]
+	title: "🪙 Ziele & Wirtschaft"
+	quests: [
+		{
+			id: "4C0F000000000024"
+			x: 0.0d
+			y: 0.0d
+			title: "Münzwirtschaft (Magic Coins)"
+			icon: {
+				count: 1
+				id: "magic_coins:gold_coin"
+			}
+			shape: "hexagon"
+			size: 1.5d
+			description: [
+				"&eMünzen&r sind der rote Faden: Quests belohnen dich mit Silber-, Gold-"
+				"und Kristallmünzen. Sammle etwas Vermögen an."
+				""
+				"Besitze gleichzeitig mindestens &e3 Goldmünzen&r."
+			]
+			tasks: [
+				{
+					id: "4C0F000000000084"
+					item: {
+						count: 1
+						id: "magic_coins:gold_coin"
+					}
+					type: "item"
+					count: 3L
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F000000000085"
+					item: {
+						count: 1
+						id: "magic_coins:gold_coin"
+					}
+					type: "item"
+					count: 2
+				}
+				{
+					id: "4C0F000000000086"
+					type: "xp"
+					xp: 15
+				}
+			]
+		}
+		{
+			id: "4C0F000000000025"
+			x: 2.0d
+			y: 0.0d
+			title: "Handel (Create: Numismatics)"
+			icon: {
+				count: 1
+				id: "numismatics:vendor"
+			}
+			size: 1.25d
+			description: [
+				"&aNumismatics&r bringt physische Münzen, Bankkarten und Automaten."
+				"Baue einen &aVendor&r (Verkaufsautomat) und wickle einen Handel ab."
+				""
+				"&7Passt perfekt zum Zug-/Handelsthema zwischen den Kolonien."
+			]
+			dependencies: [
+				"4C0F000000000024"
+			]
+			tasks: [
+				{
+					id: "4C0F000000000087"
+					item: {
+						count: 1
+						id: "numismatics:vendor"
+					}
+					type: "item"
+				}
+				{
+					id: "4C0F000000000088"
+					item: {
+						count: 1
+						id: "numismatics:spur"
+					}
+					type: "item"
+					count: 8L
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F000000000089"
+					item: {
+						count: 1
+						id: "magic_coins:gold_coin"
+					}
+					type: "item"
+					count: 3
+				}
+				{
+					id: "4C0F00000000008A"
+					type: "xp"
+					xp: 20
+				}
+			]
+		}
+		{
+			id: "4C0F000000000026"
+			x: 4.0d
+			y: 0.0d
+			title: "Endgame-Ziele"
+			icon: {
+				count: 1
+				id: "magic_coins:crystal_coin"
+			}
+			shape: "gear"
+			size: 1.5d
+			description: [
+				"Der große Showdown des SMP. Erfülle die Meilensteine:"
+				"&7• eine große Kolonie  • ein funktionierendes Zugnetz"
+				"&7• ein Aeronautics-Luftschiff  • ein ordentliches Münzvermögen"
+				""
+				"§oHook: Später kommt vielleicht ein optionaler &cKartoffelboss&r§o dazu …§r"
+			]
+			dependencies: [
+				"4C0F000000000025"
+			]
+			tasks: [
+				{
+					id: "4C0F00000000008B"
+					type: "checkmark"
+				}
+				{
+					id: "4C0F00000000008C"
+					type: "checkmark"
+				}
+				{
+					id: "4C0F00000000008D"
+					type: "checkmark"
+				}
+				{
+					id: "4C0F00000000008E"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F00000000008F"
+					item: {
+						count: 1
+						id: "magic_coins:crystal_coin"
+					}
+					type: "item"
+					count: 3
+				}
+				{
+					id: "4C0F000000000090"
+					type: "xp"
+					xp: 60
+				}
+			]
+		}
+	]
+}

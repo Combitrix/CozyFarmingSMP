@@ -8,5 +8,21 @@
 			id: "4C0F000000000002"
 			title: "§a🌱 Farmen & Leben"
 		}
+		{
+			id: "4C0F000000000003"
+			title: "§6🏘 Bauen & Gemeinschaft"
+		}
+		{
+			id: "4C0F000000000004"
+			title: "§b⚙ Technik & Mobilität"
+		}
+		{
+			id: "4C0F000000000005"
+			title: "§2🌍 Welt & Vernetzung"
+		}
+		{
+			id: "4C0F000000000006"
+			title: "§e🪙 Ziele & Wirtschaft"
+		}
 	]
 }

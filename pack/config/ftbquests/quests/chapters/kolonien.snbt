@@ -1,0 +1,275 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "kolonien"
+	group: "4C0F000000000003"
+	icon: {
+		count: 1
+		id: "minecolonies:blockhuttownhall"
+	}
+	id: "4C0F000000000009"
+	order_index: 0
+	progression_mode: "flexible"
+	quest_links: [ ]
+	title: "🏘 Bauen & Gemeinschaft"
+	quests: [
+		{
+			id: "4C0F000000000016"
+			x: 0.0d
+			y: 0.0d
+			title: "Die erste Kolonie"
+			icon: {
+				count: 1
+				id: "minecolonies:blockhuttownhall"
+			}
+			shape: "hexagon"
+			size: 1.5d
+			description: [
+				"Jede Zivilisation beginnt mit einem &6Versorgungslager&r. Platziere den"
+				"&aSupply Camp&r, packe die Kiste aus und setze dein &aRathaus&r (Town Hall)."
+				""
+				"&7Du darfst auf diesem Server §lbeliebig viele§r§7 Kolonien gründen!"
+			]
+			tasks: [
+				{
+					id: "4C0F00000000004C"
+					item: {
+						count: 1
+						id: "minecolonies:supplycampdeployer"
+					}
+					type: "item"
+				}
+				{
+					id: "4C0F00000000004D"
+					item: {
+						count: 1
+						id: "minecolonies:blockhuttownhall"
+					}
+					type: "item"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F00000000004E"
+					item: {
+						count: 1
+						id: "minecolonies:blockhutbuilder"
+					}
+					type: "item"
+				}
+				{
+					id: "4C0F00000000004F"
+					item: {
+						count: 1
+						id: "magic_coins:gold_coin"
+					}
+					type: "item"
+					count: 2
+				}
+				{
+					id: "4C0F000000000050"
+					type: "xp"
+					xp: 20
+				}
+			]
+		}
+		{
+			id: "4C0F000000000017"
+			x: 2.0d
+			y: 0.0d
+			title: "Der Baumeister"
+			icon: {
+				count: 1
+				id: "minecolonies:blockhutbuilder"
+			}
+			size: 1.25d
+			description: [
+				"Ohne Baumeister wächst keine Kolonie. Platziere die &aBuilder's Hut&r,"
+				"weise einen Bürger zu und gib deinen ersten Bauauftrag."
+				""
+				"&7Mit dem Bau-Werkzeug richtest du Gebäude aus und upgradest sie."
+			]
+			dependencies: [
+				"4C0F000000000016"
+			]
+			tasks: [
+				{
+					id: "4C0F000000000051"
+					item: {
+						count: 1
+						id: "minecolonies:blockhutbuilder"
+					}
+					type: "item"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F000000000052"
+					item: {
+						count: 1
+						id: "minecraft:oak_log"
+					}
+					type: "item"
+					count: 32
+				}
+				{
+					id: "4C0F000000000053"
+					item: {
+						count: 1
+						id: "magic_coins:gold_coin"
+					}
+					type: "item"
+					count: 2
+				}
+				{
+					id: "4C0F000000000054"
+					type: "xp"
+					xp: 15
+				}
+			]
+		}
+		{
+			id: "4C0F000000000018"
+			x: 4.0d
+			y: 0.0d
+			title: "Bürger & Versorgung"
+			icon: {
+				count: 1
+				id: "minecolonies:blockhutcook"
+			}
+			size: 1.25d
+			description: [
+				"Eine Kolonie lebt von ihren Bewohnern. Sorge für Häuser, hol dir Bürger"
+				"und versorge sie: Baue &aKüche&r und &aTaverne&r, damit gekocht und"
+				"rekrutiert wird. (Verbindet sich direkt mit deiner Farm!)"
+				""
+				"Hak ab, sobald Küche & Taverne stehen."
+			]
+			dependencies: [
+				"4C0F000000000017"
+			]
+			tasks: [
+				{
+					id: "4C0F000000000055"
+					item: {
+						count: 1
+						id: "minecolonies:blockhutcook"
+					}
+					type: "item"
+				}
+				{
+					id: "4C0F000000000056"
+					item: {
+						count: 1
+						id: "minecolonies:blockhuttavern"
+					}
+					type: "item"
+				}
+				{
+					id: "4C0F000000000057"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F000000000058"
+					item: {
+						count: 1
+						id: "magic_coins:gold_coin"
+					}
+					type: "item"
+					count: 3
+				}
+				{
+					id: "4C0F000000000059"
+					type: "xp"
+					xp: 20
+				}
+			]
+		}
+		{
+			id: "4C0F000000000019"
+			x: 6.0d
+			y: 0.0d
+			title: "Mehrere Zivilisationen"
+			icon: {
+				count: 1
+				id: "minecolonies:clipboard"
+			}
+			size: 1.25d
+			description: [
+				"Der Server erlaubt §lunbegrenzt viele Kolonien pro Spieler§r."
+				"Gründe eine &6zweite Kolonie&r an einem anderen Ort."
+				""
+				"&7Mindestabstand beachten (16 Chunks). Später verbindest du sie per Zug!"
+			]
+			dependencies: [
+				"4C0F000000000018"
+			]
+			tasks: [
+				{
+					id: "4C0F00000000005A"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F00000000005B"
+					item: {
+						count: 1
+						id: "magic_coins:gold_coin"
+					}
+					type: "item"
+					count: 5
+				}
+				{
+					id: "4C0F00000000005C"
+					type: "xp"
+					xp: 30
+				}
+			]
+		}
+		{
+			id: "4C0F00000000001A"
+			x: 4.0d
+			y: 1.5d
+			title: "Schöner Bauen"
+			icon: {
+				count: 1
+				id: "minecraft:painting"
+			}
+			size: 1.0d
+			description: [
+				"Mit &aStructurize&r und &aDomum Ornamentum&r baust und gestaltest du frei."
+				"Dazu gibt es Möbel von Macaw's & Another Furniture."
+				""
+				"Erstelle ein eigenes Blueprint oder dekoriere ein Gebäude und hak ab."
+			]
+			dependencies: [
+				"4C0F000000000018"
+			]
+			tasks: [
+				{
+					id: "4C0F00000000005D"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F00000000005E"
+					item: {
+						count: 1
+						id: "magic_coins:silver_coin"
+					}
+					type: "item"
+					count: 20
+				}
+				{
+					id: "4C0F00000000005F"
+					type: "xp"
+					xp: 15
+				}
+			]
+		}
+	]
+}
