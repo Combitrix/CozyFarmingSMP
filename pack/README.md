@@ -14,7 +14,8 @@ riesige Welt (Terralith + Tectonic) · FTB Quests + Coin-Wirtschaft.
 2. Die Datei `Cozy Farming SMP-0.1.0.mrpack` importieren
    (Modrinth App: *Add Instance → From file* · Prism: *Add Instance → Import → .mrpack*).
 3. Der Instanz **≥ 6–8 GB RAM** zuweisen (Einstellungen → Java/Memory).
-4. Starten. Erststart dauert länger (Mod-Setup).
+4. **Java-Args setzen** (siehe Abschnitt „Beste Java-Args" unten).
+5. Starten. Erststart dauert länger (Mod-Setup).
 
 > **Shader/Sichtweite:** Distant Horizons (extreme Sichtweite) und Iris-Shader sind enthalten,
 > standardmäßig dezent. Shader liegen nicht bei — ein DH-kompatibles Shaderpack (Iris 1.7+) selbst
@@ -30,8 +31,56 @@ riesige Welt (Terralith + Tectonic) · FTB Quests + Coin-Wirtschaft.
    ```
    → Client-only-Mods (Sodium, Iris, Distant Horizons, JourneyMap, Inventory Profiles) werden
    **nicht** geladen.
-4. RAM setzen: in `user_jvm_args.txt` → `-Xmx24G`.
+4. **Java-Args setzen** (siehe Abschnitt „Beste Java-Args" unten) — bei AMP ins Feld
+   *Configuration → Java/Startup → Additional Java Arguments* bzw. in `user_jvm_args.txt`.
 5. Start: `./run.sh`. Fertig bei `Done (...)! For help, type "help"`.
+
+---
+
+## Beste Java-Args (Performance)
+
+Beide Profile nutzen **Aikar's Flags** (G1GC, auf Minecraft abgestimmt) und setzen
+**dieselbe Zahl für `-Xms` und `-Xmx`** — das verhindert teures Heap-Resizing und GC-Spikes.
+Voraussetzung: ein **moderner Java-17+-Build** (Java 21 empfohlen für MC 1.21.1).
+
+> ⚠️ **Nicht** mehr RAM als nötig geben. G1GC arbeitet bei riesigen Heaps schlechter; lieber
+> 8–12 GB sauber konfiguriert als 24 GB ohne passende Flags.
+
+### Client (Prism Launcher) — ~8 GB
+
+Prism: *Instanz → Settings → Java → JVM arguments* (und „Memory" auf min=max=8192 MB stellen,
+oder via `-Xms`/`-Xmx` hier). Empfohlen **6–10 GB** je nach PC; unten 8 GB:
+
+```
+-Xms8G -Xmx8G -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:InitiatingHeapOccupancyPercent=15 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1 -Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true
+```
+
+> Distant Horizons + Sodium/Iris sind CPU/GPU-lastig, nicht RAM-lastig. Mehr als ~10 GB bringt
+> dem Client kaum etwas — eher DH-LOD-Threads und Render-Distanz justieren.
+
+### Server (AMP, 25 GB Box) — 16 GB Heap (`>12 GB`-Variante)
+
+**Nicht** die vollen 25 GB an die JVM geben! Reserviere RAM fürs OS, Distant-Horizons-Serverdaten
+und Off-Heap (Chunky/Worldgen). **16 GB Heap** ist für ~5 Spieler + MineColonies + Create reichlich;
+notfalls auf 20 GB erhöhen, falls GC-Logs Druck zeigen. Die Flags unten sind die offizielle Aikar-
+**>12-GB-Variante** (größere Young-Gen, früheres Mixed-GC):
+
+```
+-Xms16G -Xmx16G -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1NewSizePercent=40 -XX:G1MaxNewSizePercent=50 -XX:G1HeapRegionSize=16M -XX:G1ReservePercent=15 -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:InitiatingHeapOccupancyPercent=20 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1 -Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true
+```
+
+**Unterschiede zur Client-Variante** (>12 GB Heap): `G1NewSizePercent=40`,
+`G1MaxNewSizePercent=50`, `G1HeapRegionSize=16M`, `G1ReservePercent=15`,
+`InitiatingHeapOccupancyPercent=20`.
+
+**In AMP setzen:**
+- Heap-Größe: *Configuration → Java/Startup* → Min/Max-Heap **beide 16384 MB** (= `-Xms`/`-Xmx`).
+- Restliche Flags (ab `-XX:+UseG1GC` …) ins Feld **Additional Java Arguments**.
+- AMP verwaltet `-Xms`/`-Xmx` selbst — diese **nicht** zusätzlich in die Additional Args schreiben,
+  sonst doppelt. Nur die `-XX:`/`-D`-Flags dort eintragen.
+
+> RAM-Budget der 25-GB-Box (Richtwert): **16 GB JVM-Heap** + ~2–3 GB JVM-Off-Heap/Metaspace +
+> ~2 GB Distant-Horizons-Serverdaten/Chunky + Rest fürs LXC-OS. Lässt komfortablen Puffer.
 
 ---
 
