@@ -15,6 +15,11 @@ hash = "2acaff560bbda5741538528a2967355ec86a8f7564adba0b2316989c66892374"
 metafile = true
 
 [[files]]
+file = "mods/continents.pw.toml"
+hash = "2093cb1975cff3c2e584282bc19340d1d7567dc61c86a0461adce0066d6e3a62"
+metafile = true
+
+[[files]]
 file = "mods/distanthorizons.pw.toml"
 hash = "56cb2e8e396bf26b56ffe0a44c794984435c35e15959ff46539bb8aead85ad77"
 metafile = true
@@ -45,6 +50,11 @@ hash = "cc244fd35012f737a2c4e08693e81a3d851d7d976a22baff4530af81acb8a6fa"
 metafile = true
 
 [[files]]
+file = "mods/lithostitched.pw.toml"
+hash = "f4ec9f142fbd572f9da8253241b6c532bc9234e2defbe0e67e7ea7ea164d019c"
+metafile = true
+
+[[files]]
 file = "mods/minecolonies.pw.toml"
 hash = "bfc16a49ef73733fc1faf92cc0560451cbb9ea1a133ea4162cf26e0019b998bf"
 metafile = true
@@ -60,6 +70,11 @@ hash = "bc9449306cb2c32f16347779291d68e5fba67f85d7aca04b4b9cc1c033ec4083"
 metafile = true
 
 [[files]]
+file = "mods/nullscape.pw.toml"
+hash = "dcfbfa39abeaba554c2c5323f9b9a3ec58dfc386aca2d237f73948abdbdc7125"
+metafile = true
+
+[[files]]
 file = "mods/sodium.pw.toml"
 hash = "25324a8a9cdc663d3d1952191e873f87531011715de49673cbf7c1b0da0504d6"
 metafile = true
@@ -67,6 +82,16 @@ metafile = true
 [[files]]
 file = "mods/structurize.pw.toml"
 hash = "16867de3e52d4f2115c1cad51cdf9d717032d1c750672ced8f2dc85a1a61e271"
+metafile = true
+
+[[files]]
+file = "mods/tectonic.pw.toml"
+hash = "cd5c8c1f6183f5c2ca899daed14f272890566002dfcb2d9f9a59dfbfac0bc8f6"
+metafile = true
+
+[[files]]
+file = "mods/terralith.pw.toml"
+hash = "da7ee99189ad35aac094919fe33cac647d98533b23c228f10d4811f08989e2b8"
 metafile = true
 
 [[files]]
