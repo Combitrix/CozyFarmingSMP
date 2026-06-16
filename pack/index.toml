@@ -6,7 +6,7 @@ hash = "88ab692c43f2d51470028398381b893e50006ebf43596ce1919a5f143077a177"
 
 [[files]]
 file = "README.md"
-hash = "b25e4c43990d3a10c75b7a233168c3bdc25bf3039b25bba30c80a82c1fcf5a59"
+hash = "ae24b1b2486afb2e6f0a6402c89eb4bdc8d201ea5a78a9826c63e39d5eab5bb4"
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
