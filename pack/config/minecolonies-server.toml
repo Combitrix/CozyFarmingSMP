@@ -16,14 +16,14 @@
 	maxcitizenpercolony = 250
 
 [claims]
-	# Max. Claim-Radius einer Kolonie in CHUNKS (Default 20 = riesig). Kleiner gewählt, damit
-	# (a) viele Kolonien nebeneinander passen und (b) weniger Überschneidung mit FTB-Chunks-Claims.
-	maxColonySize = 10
-	# Mindestabstand zwischen Kolonie-Zentren in CHUNKS. > 2×maxColonySize hält Claims getrennt
-	# und lässt Platz für Zug-Trassen zwischen den Zivilisationen.
-	minColonyDistance = 12
-	# Wie weit vom Welt-Spawn dürfen Kolonien gegründet werden (große Terralith-Welt → großzügig).
-	maxdistancefromworldspawn = 200000
+	# Max. Claim-Radius einer Kolonie in CHUNKS (Default 20). Deutlich erhöht für GROSSE Kolonien.
+	# Erlaubt sind 1–250; 30 = ~480 Blöcke Radius, reichlich Platz für große Zivilisationen.
+	maxColonySize = 30
+	# Mindestabstand zwischen Kolonie-Zentren in CHUNKS. Etwas erhöht, damit große Kolonien sich
+	# beim Gründen nicht direkt überlappen und Platz für Zug-Trassen dazwischen bleibt.
+	minColonyDistance = 16
+	# maxdistancefromworldspawn NICHT gesetzt -> MineColonies-Default (30000 Blöcke). Reicht für
+	# die große Terralith-Welt locker (60.000 Blöcke Durchmesser ums Spawn).
 
 [permissions]
 	# Kolonie-Schutz AN — verhindert Grief durch Mobs/fremde Spieler im Claim (wichtig auf SMP).

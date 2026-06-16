@@ -96,9 +96,9 @@ Quellcode verifiziert, `ServerConfiguration.java`):
 | `[gameplay]` | `allowinfinitecolonies` | `true` | **Kernschalter** — erlaubt jedem Spieler beliebig viele Kolonien (Default = 1). |
 | `[gameplay]` | `forceloadcolony` | `true` | Kolonie-Chunks bleiben geladen (Arbeiter laufen auch ohne Spieler). |
 | `[gameplay]` | `colonyloadstrictness` | `3` | Geladener Radius (Chunks) je Kolonie. Höher = mehr RAM/TPS-Last. |
-| `[claims]` | `maxColonySize` | `10` | Claim-Radius je Kolonie in Chunks (Default 20). Kleiner = mehr Kolonien nebeneinander. |
-| `[claims]` | `minColonyDistance` | `12` | Mindestabstand zwischen Kolonien in Chunks. Lässt Platz für Zug-Trassen. |
-| `[claims]` | `maxdistancefromworldspawn` | `200000` | Kolonien dürfen weit draußen entstehen (große Terralith-Welt). |
+| `[claims]` | `maxColonySize` | `30` | Claim-Radius je Kolonie in Chunks (Default 20) — **erhöht für große Kolonien** (~480 Blöcke). |
+| `[claims]` | `minColonyDistance` | `16` | Mindestabstand zwischen Kolonien in Chunks. Verhindert Überlappung großer Claims, lässt Platz für Zug-Trassen. |
+| `[claims]` | `maxdistancefromworldspawn` | *(Default 30000)* | Nicht gesetzt — Default reicht für die große Terralith-Welt. |
 | `[permissions]` | `enablecolonyprotection` | `true` | Grief-Schutz im Claim (Mobs/fremde Spieler). |
 
 > Auf dem Server liegt die maßgebliche Datei in `config/minecolonies-server.toml` — sie wird beim
@@ -114,8 +114,9 @@ Quellcode verifiziert, `ServerConfiguration.java`):
 - FTB-Chunks-Limits (für große Bau-/Zug-Areale) bei Bedarf erhöhen — am einfachsten in-game über
   `/ftbchunks admin` (GUI), Keys: `max_claimed_chunks` (Default 500/Team) und
   `max_force_loaded_chunks` (Default 25/Team). Für ~5 Spieler reichen die Defaults meist.
-- Kleiner Kolonie-Claim (`maxColonySize=10`) ist bewusst gewählt, damit Spieler **rund um** ihre
-  Kolonie noch eigene FTB-Chunks claimen können, ohne dass sich die Schutzzonen stark überlagern.
+- Kolonie-Claims sind groß (`maxColonySize=30`). Wenn Spieler **zusätzlich** per FTB Chunks rund um
+  ihre Kolonie claimen wollen, ggf. das FTB-Claim-Limit (`max_claimed_chunks`) erhöhen — beide
+  Schutzzonen dürfen sich überlagern.
 
 **Wirtschaft:** **Magic Coins** = Währung für FTB-Quests-Belohnungen (Currency Rewards im Quest-Editor
 einstellbar). **Create: Numismatics** = physische Münzen/Handel/Automaten (passt zum Zug-/Handels-Thema).
