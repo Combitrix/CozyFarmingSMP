@@ -1,0 +1,13 @@
+name = "More Mob Variants: Renewed"
+filename = "moremobvariants-V1.0.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/2RlpMp81/versions/70909YBA/moremobvariants-V1.0.0.jar"
+hash-format = "sha512"
+hash = "bed905ec47edbbdb8cc11851b769e4294ecea662cb4bcde1b56211859702182d68c16ef6a8456987f8d25da2cc26f599debec3a6f857f72a92f2eeac70a5aceb"
+
+[update]
+[update.modrinth]
+mod-id = "2RlpMp81"
+version = "70909YBA"
