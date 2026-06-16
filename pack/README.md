@@ -87,14 +87,35 @@ notfalls auf 20 GB erhöhen, falls GC-Logs Druck zeigen. Die Flags unten sind di
 ## Wichtige Konfiguration (nach dem 1. Start)
 
 **MineColonies — mehrere Kolonien pro Spieler (unbegrenzt):**
-Datei `config/minecolonies-server.toml` (wird beim 1. Start erzeugt). Setzen:
-- `maxDistanceFromWorldSpawn` großzügig / aus
-- Kolonie-Limit pro Spieler deaktivieren bzw. sehr hoch
-- `minTownHallPadding` / Mindestabstand moderat (z.B. 8–16 Chunks), damit viele Kolonien koexistieren
-- Claim-Radius **klein** halten → kollidiert weniger mit FTB Chunks
+Liegt dem Pack als `config/minecolonies-server.toml` **bei** (wird mit ausgeliefert; fehlende Keys
+ergänzt MineColonies beim 1. Start mit Defaults). Gesetzte Werte (Keys gegen den MineColonies-
+Quellcode verifiziert, `ServerConfiguration.java`):
 
-**FTB Chunks ↔ MineColonies:** Beide claimen Land. Bei Konflikten MineColonies-Claim-Radius
-reduzieren oder FTB-Chunks-Force-Load-Limits anpassen.
+| Sektion | Key | Wert | Wirkung |
+|---|---|---|---|
+| `[gameplay]` | `allowinfinitecolonies` | `true` | **Kernschalter** — erlaubt jedem Spieler beliebig viele Kolonien (Default = 1). |
+| `[gameplay]` | `forceloadcolony` | `true` | Kolonie-Chunks bleiben geladen (Arbeiter laufen auch ohne Spieler). |
+| `[gameplay]` | `colonyloadstrictness` | `3` | Geladener Radius (Chunks) je Kolonie. Höher = mehr RAM/TPS-Last. |
+| `[claims]` | `maxColonySize` | `10` | Claim-Radius je Kolonie in Chunks (Default 20). Kleiner = mehr Kolonien nebeneinander. |
+| `[claims]` | `minColonyDistance` | `12` | Mindestabstand zwischen Kolonien in Chunks. Lässt Platz für Zug-Trassen. |
+| `[claims]` | `maxdistancefromworldspawn` | `200000` | Kolonien dürfen weit draußen entstehen (große Terralith-Welt). |
+| `[permissions]` | `enablecolonyprotection` | `true` | Grief-Schutz im Claim (Mobs/fremde Spieler). |
+
+> Auf dem Server liegt die maßgebliche Datei in `config/minecolonies-server.toml` — sie wird beim
+> Connect auf die Clients gesynct. Werte änderbar im laufenden Betrieb über das MineColonies-Config-
+> GUI oder direkt in der Datei (danach Server-Reload/-Neustart).
+
+**FTB Chunks ↔ MineColonies (zwei getrennte Claim-Systeme):**
+- MineColonies **lädt und schützt seine Kolonie-Chunks selbst** (`forceloadcolony`/`colonyloadstrictness`).
+  FTB-Chunks-Claims sind für **persönliche Bauten außerhalb** der Kolonien gedacht. Sie dürfen sich
+  optisch überlappen, kollidieren funktional aber nicht.
+- **Wichtig:** Kolonie-Chunks **nicht zusätzlich** per FTB Chunks force-loaden — spart das
+  FTB-Force-Load-Budget (Default **25** Chunks/Team, Key `max_force_loaded_chunks`).
+- FTB-Chunks-Limits (für große Bau-/Zug-Areale) bei Bedarf erhöhen — am einfachsten in-game über
+  `/ftbchunks admin` (GUI), Keys: `max_claimed_chunks` (Default 500/Team) und
+  `max_force_loaded_chunks` (Default 25/Team). Für ~5 Spieler reichen die Defaults meist.
+- Kleiner Kolonie-Claim (`maxColonySize=10`) ist bewusst gewählt, damit Spieler **rund um** ihre
+  Kolonie noch eigene FTB-Chunks claimen können, ohne dass sich die Schutzzonen stark überlagern.
 
 **Wirtschaft:** **Magic Coins** = Währung für FTB-Quests-Belohnungen (Currency Rewards im Quest-Editor
 einstellbar). **Create: Numismatics** = physische Münzen/Handel/Automaten (passt zum Zug-/Handels-Thema).

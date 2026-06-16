@@ -1,0 +1,30 @@
+# MineColonies — Server-Config (Cozy Farming SMP)
+# Synct beim Connect auf die Clients. Nur die bewusst gesetzten Keys stehen hier;
+# alle übrigen Keys ergänzt MineColonies beim 1. Start automatisch mit ihren Defaults
+# (ForgeConfigSpec füllt fehlende Einträge auf — diese Werte bleiben erhalten).
+# Key-Namen verifiziert gegen ldtteam/minecolonies (version/main), ServerConfiguration.java.
+
+[gameplay]
+	# UNBEGRENZTE Kolonien pro Spieler — Standard ist 1 Kolonie/Spieler.
+	# true = jeder Spieler darf beliebig viele Kolonien gründen (mehrere Zivilisationen/Spieler).
+	allowinfinitecolonies = true
+	# Kolonie-Chunks geladen halten, auch wenn niemand in der Nähe ist (Arbeiter laufen weiter).
+	forceloadcolony = true
+	# Radius (in Chunks) um eine Kolonie, der geladen bleibt. 3 reicht; höher = mehr RAM/TPS-Last.
+	colonyloadstrictness = 3
+	# Bürger pro Kolonie (Default 250 ist großzügig für ~5 Spieler).
+	maxcitizenpercolony = 250
+
+[claims]
+	# Max. Claim-Radius einer Kolonie in CHUNKS (Default 20 = riesig). Kleiner gewählt, damit
+	# (a) viele Kolonien nebeneinander passen und (b) weniger Überschneidung mit FTB-Chunks-Claims.
+	maxColonySize = 10
+	# Mindestabstand zwischen Kolonie-Zentren in CHUNKS. > 2×maxColonySize hält Claims getrennt
+	# und lässt Platz für Zug-Trassen zwischen den Zivilisationen.
+	minColonyDistance = 12
+	# Wie weit vom Welt-Spawn dürfen Kolonien gegründet werden (große Terralith-Welt → großzügig).
+	maxdistancefromworldspawn = 200000
+
+[permissions]
+	# Kolonie-Schutz AN — verhindert Grief durch Mobs/fremde Spieler im Claim (wichtig auf SMP).
+	enablecolonyprotection = true

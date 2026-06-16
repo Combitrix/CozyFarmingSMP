@@ -6,7 +6,11 @@ hash = "88ab692c43f2d51470028398381b893e50006ebf43596ce1919a5f143077a177"
 
 [[files]]
 file = "README.md"
-hash = "7b771ca7fa4ad794c2a32d31255f6d7b8b9e02c8fe667cc38f2c480d0bdb6fc1"
+hash = "88aca6a6b6dd56fcea944beda2d228a018188426e93d1303f75eea7db5cd8160"
+
+[[files]]
+file = "config/minecolonies-server.toml"
+hash = "485ee39f401a7bef2ad865b504ad531839059d15f1e06b933c2401402d10538a"
 
 [[files]]
 file = "mods/another-furniture.pw.toml"

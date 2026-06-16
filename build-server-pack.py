@@ -12,6 +12,7 @@ import os, re, sys, time, zipfile, tempfile, urllib.request, urllib.parse
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 MODS = os.path.join(ROOT, "pack", "mods")
+CONFIG = os.path.join(ROOT, "pack", "config")
 README = os.path.join(ROOT, "pack", "SERVER-README.txt")
 
 def pack_version():
@@ -58,7 +59,15 @@ def main():
             z.write(README, "SERVER-README.txt")
         for j in sorted(os.listdir(moddir)):
             z.write(os.path.join(moddir, j), "mods/" + j)
-    print(f"downloaded={ok} client-skipped={skip} failed={len(fails)} -> {zpath}")
+        # Config-Overrides (z.B. minecolonies-server.toml) mit ausliefern.
+        cfg_n = 0
+        for dirpath, _dirs, files in os.walk(CONFIG):
+            for cf in sorted(files):
+                full = os.path.join(dirpath, cf)
+                rel = os.path.relpath(full, os.path.join(ROOT, "pack"))
+                z.write(full, rel)
+                cfg_n += 1
+    print(f"downloaded={ok} client-skipped={skip} config-files={cfg_n} failed={len(fails)} -> {zpath}")
     for x in fails:
         print("  FAIL", x)
     return 1 if fails else 0
