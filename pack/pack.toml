@@ -1,0 +1,13 @@
+name = "Cozy Farming SMP"
+author = "Michael"
+version = "0.1.0"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "c4013e5bab85c93ac71cc26859be557a18414ce8182bea6dbe2e19e0bacefec7"
+
+[versions]
+minecraft = "1.21.1"
+neoforge = "21.1.233"

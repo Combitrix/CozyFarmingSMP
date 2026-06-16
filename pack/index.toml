@@ -1,0 +1,5 @@
+hash-format = "sha256"
+
+[[files]]
+file = "EXCLUDED.md"
+hash = "eb129104d6c105c9b8527ebce14ce73837d1c17da966aef531a25b146aa7466b"
