@@ -7,14 +7,14 @@
 		count: 1
 		id: "minecolonies:blockhuttownhall"
 	}
-	id: "4C0F000000000009"
+	id: "4C0F00000000000A"
 	order_index: 0
 	progression_mode: "flexible"
 	quest_links: [ ]
-	title: "🏘 Bauen & Gemeinschaft"
+	title: "🏘 Bauen \\& Gemeinschaft"
 	quests: [
 		{
-			id: "4C0F000000000016"
+			id: "4C0F000000000018"
 			x: 0.0d
 			y: 0.0d
 			title: "Die erste Kolonie"
@@ -32,7 +32,7 @@
 			]
 			tasks: [
 				{
-					id: "4C0F00000000004C"
+					id: "4C0F000000000054"
 					item: {
 						count: 1
 						id: "minecolonies:supplycampdeployer"
@@ -40,7 +40,7 @@
 					type: "item"
 				}
 				{
-					id: "4C0F00000000004D"
+					id: "4C0F000000000055"
 					item: {
 						count: 1
 						id: "minecolonies:blockhuttownhall"
@@ -50,7 +50,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F00000000004E"
+					id: "4C0F000000000056"
 					item: {
 						count: 1
 						id: "minecolonies:blockhutbuilder"
@@ -58,7 +58,7 @@
 					type: "item"
 				}
 				{
-					id: "4C0F00000000004F"
+					id: "4C0F000000000057"
 					item: {
 						count: 1
 						id: "magic_coins:gold_coin"
@@ -67,14 +67,14 @@
 					count: 2
 				}
 				{
-					id: "4C0F000000000050"
+					id: "4C0F000000000058"
 					type: "xp"
 					xp: 20
 				}
 			]
 		}
 		{
-			id: "4C0F000000000017"
+			id: "4C0F000000000019"
 			x: 2.0d
 			y: 0.0d
 			title: "Der Baumeister"
@@ -90,11 +90,11 @@
 				"&7Mit dem Bau-Werkzeug richtest du Gebäude aus und upgradest sie."
 			]
 			dependencies: [
-				"4C0F000000000016"
+				"4C0F000000000018"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000051"
+					id: "4C0F000000000059"
 					item: {
 						count: 1
 						id: "minecolonies:blockhutbuilder"
@@ -104,7 +104,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000052"
+					id: "4C0F00000000005A"
 					item: {
 						count: 1
 						id: "minecraft:oak_log"
@@ -113,7 +113,7 @@
 					count: 32
 				}
 				{
-					id: "4C0F000000000053"
+					id: "4C0F00000000005B"
 					item: {
 						count: 1
 						id: "magic_coins:gold_coin"
@@ -122,17 +122,17 @@
 					count: 2
 				}
 				{
-					id: "4C0F000000000054"
+					id: "4C0F00000000005C"
 					type: "xp"
 					xp: 15
 				}
 			]
 		}
 		{
-			id: "4C0F000000000018"
+			id: "4C0F00000000001A"
 			x: 4.0d
 			y: 0.0d
-			title: "Bürger & Versorgung"
+			title: "Bürger \\& Versorgung"
 			icon: {
 				count: 1
 				id: "minecolonies:blockhutcook"
@@ -143,14 +143,14 @@
 				"und versorge sie: Baue &aKüche&r und &aTaverne&r, damit gekocht und"
 				"rekrutiert wird. (Verbindet sich direkt mit deiner Farm!)"
 				""
-				"Hak ab, sobald Küche & Taverne stehen."
+				"Hak ab, sobald Küche \\& Taverne stehen."
 			]
 			dependencies: [
-				"4C0F000000000017"
+				"4C0F000000000019"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000055"
+					id: "4C0F00000000005D"
 					item: {
 						count: 1
 						id: "minecolonies:blockhutcook"
@@ -158,7 +158,7 @@
 					type: "item"
 				}
 				{
-					id: "4C0F000000000056"
+					id: "4C0F00000000005E"
 					item: {
 						count: 1
 						id: "minecolonies:blockhuttavern"
@@ -166,13 +166,13 @@
 					type: "item"
 				}
 				{
-					id: "4C0F000000000057"
+					id: "4C0F00000000005F"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "4C0F000000000058"
+					id: "4C0F000000000060"
 					item: {
 						count: 1
 						id: "magic_coins:gold_coin"
@@ -181,14 +181,14 @@
 					count: 3
 				}
 				{
-					id: "4C0F000000000059"
+					id: "4C0F000000000061"
 					type: "xp"
 					xp: 20
 				}
 			]
 		}
 		{
-			id: "4C0F000000000019"
+			id: "4C0F00000000001B"
 			x: 6.0d
 			y: 0.0d
 			title: "Mehrere Zivilisationen"
@@ -204,17 +204,17 @@
 				"&7Mindestabstand beachten (16 Chunks). Später verbindest du sie per Zug!"
 			]
 			dependencies: [
-				"4C0F000000000018"
+				"4C0F00000000001A"
 			]
 			tasks: [
 				{
-					id: "4C0F00000000005A"
+					id: "4C0F000000000062"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "4C0F00000000005B"
+					id: "4C0F000000000063"
 					item: {
 						count: 1
 						id: "magic_coins:gold_coin"
@@ -223,14 +223,14 @@
 					count: 5
 				}
 				{
-					id: "4C0F00000000005C"
+					id: "4C0F000000000064"
 					type: "xp"
 					xp: 30
 				}
 			]
 		}
 		{
-			id: "4C0F00000000001A"
+			id: "4C0F00000000001C"
 			x: 4.0d
 			y: 1.5d
 			title: "Schöner Bauen"
@@ -241,22 +241,22 @@
 			size: 1.0d
 			description: [
 				"Mit &aStructurize&r und &aDomum Ornamentum&r baust und gestaltest du frei."
-				"Dazu gibt es Möbel von Macaw's & Another Furniture."
+				"Dazu gibt es Möbel von Macaw's \\& Another Furniture."
 				""
 				"Erstelle ein eigenes Blueprint oder dekoriere ein Gebäude und hak ab."
 			]
 			dependencies: [
-				"4C0F000000000018"
+				"4C0F00000000001A"
 			]
 			tasks: [
 				{
-					id: "4C0F00000000005D"
+					id: "4C0F000000000065"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "4C0F00000000005E"
+					id: "4C0F000000000066"
 					item: {
 						count: 1
 						id: "magic_coins:silver_coin"
@@ -265,7 +265,7 @@
 					count: 20
 				}
 				{
-					id: "4C0F00000000005F"
+					id: "4C0F000000000067"
 					type: "xp"
 					xp: 15
 				}

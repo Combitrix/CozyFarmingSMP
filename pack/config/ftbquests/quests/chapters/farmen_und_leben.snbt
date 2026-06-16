@@ -7,14 +7,14 @@
 		count: 1
 		id: "farmersdelight:cooking_pot"
 	}
-	id: "4C0F000000000008"
+	id: "4C0F000000000009"
 	order_index: 0
 	progression_mode: "flexible"
 	quest_links: [ ]
-	title: "🌱 Farmen & Leben"
+	title: "🌱 Farmen \\& Leben"
 	quests: [
 		{
-			id: "4C0F00000000000F"
+			id: "4C0F000000000011"
 			x: 0.0d
 			y: 0.0d
 			title: "Die erste Ernte"
@@ -28,12 +28,12 @@
 				"Jedes Imperium beginnt mit einem Acker. Besorge dir eine &aHacke&r,"
 				"lege Felder an und ernte deine erste Frucht."
 				""
-				"&7Tipp: HarvestCraft 2, Veggies & die Delight-Mods bringen unzählige"
+				"&7Tipp: HarvestCraft 2, Veggies \\& die Delight-Mods bringen unzählige"
 				"neue Pflanzen — schau in EMI, was alles wächst!"
 			]
 			tasks: [
 				{
-					id: "4C0F00000000002D"
+					id: "4C0F000000000035"
 					item: {
 						count: 1
 						id: "minecraft:wheat"
@@ -42,7 +42,7 @@
 					count: 8L
 				}
 				{
-					id: "4C0F00000000002E"
+					id: "4C0F000000000036"
 					item: {
 						count: 1
 						id: "minecraft:wooden_hoe"
@@ -52,7 +52,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F00000000002F"
+					id: "4C0F000000000037"
 					item: {
 						count: 1
 						id: "farmersdelight:cabbage_seeds"
@@ -61,7 +61,7 @@
 					count: 3
 				}
 				{
-					id: "4C0F000000000030"
+					id: "4C0F000000000038"
 					item: {
 						count: 1
 						id: "farmersdelight:tomato_seeds"
@@ -70,7 +70,7 @@
 					count: 3
 				}
 				{
-					id: "4C0F000000000031"
+					id: "4C0F000000000039"
 					item: {
 						count: 1
 						id: "magic_coins:silver_coin"
@@ -79,14 +79,14 @@
 					count: 15
 				}
 				{
-					id: "4C0F000000000032"
+					id: "4C0F00000000003A"
 					type: "xp"
 					xp: 10
 				}
 			]
 		}
 		{
-			id: "4C0F000000000010"
+			id: "4C0F000000000012"
 			x: 2.0d
 			y: 0.0d
 			title: "Die Küche (Farmer's Delight)"
@@ -102,11 +102,11 @@
 				"&7Der Kochtopf braucht eine Hitzequelle darunter (z.B. Lagerfeuer/Ofen)."
 			]
 			dependencies: [
-				"4C0F00000000000F"
+				"4C0F000000000011"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000033"
+					id: "4C0F00000000003B"
 					item: {
 						count: 1
 						id: "farmersdelight:cooking_pot"
@@ -114,7 +114,7 @@
 					type: "item"
 				}
 				{
-					id: "4C0F000000000034"
+					id: "4C0F00000000003C"
 					item: {
 						count: 1
 						id: "farmersdelight:cutting_board"
@@ -122,7 +122,7 @@
 					type: "item"
 				}
 				{
-					id: "4C0F000000000035"
+					id: "4C0F00000000003D"
 					item: {
 						count: 1
 						id: "farmersdelight:vegetable_soup"
@@ -132,7 +132,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000036"
+					id: "4C0F00000000003E"
 					item: {
 						count: 1
 						id: "farmersdelight:skillet"
@@ -140,7 +140,7 @@
 					type: "item"
 				}
 				{
-					id: "4C0F000000000037"
+					id: "4C0F00000000003F"
 					item: {
 						count: 1
 						id: "magic_coins:gold_coin"
@@ -148,17 +148,17 @@
 					type: "item"
 				}
 				{
-					id: "4C0F000000000038"
+					id: "4C0F000000000040"
 					type: "xp"
 					xp: 15
 				}
 			]
 		}
 		{
-			id: "4C0F000000000011"
+			id: "4C0F000000000013"
 			x: 4.0d
 			y: 0.0d
-			title: "Genuss & Vielfalt"
+			title: "Genuss \\& Vielfalt"
 			icon: {
 				count: 1
 				id: "minecraft:cake"
@@ -166,124 +166,21 @@
 			size: 1.0d
 			description: [
 				"Das Pack steckt voller Lebensmittel-Mods: &aVinery&r (Wein), &aMeadow&r (Käse),"
-				"&aBakery/Confectionery&r, &aHerbalbrews&r (Tee), &aBrewin' & Chewin'&r u.v.m."
+				"&aBakery/Confectionery&r, &aHerbalbrews&r (Tee), &aBrewin' \\& Chewin'&r u.v.m."
 				""
 				"Probiere mindestens eine dieser Mods aus und stelle etwas her."
 				"Hak ab, wenn du ein Produkt aus einer der Delight-/Let's-Do-Mods hast."
 			]
 			dependencies: [
-				"4C0F000000000010"
+				"4C0F000000000012"
 			]
 			tasks: [
-				{
-					id: "4C0F000000000039"
-					type: "checkmark"
-				}
-			]
-			rewards: [
-				{
-					id: "4C0F00000000003A"
-					item: {
-						count: 1
-						id: "magic_coins:silver_coin"
-					}
-					type: "item"
-					count: 15
-				}
-				{
-					id: "4C0F00000000003B"
-					type: "xp"
-					xp: 10
-				}
-			]
-		}
-		{
-			id: "4C0F000000000012"
-			x: 2.0d
-			y: 1.5d
-			title: "Die Jahreszeiten (Serene Seasons)"
-			icon: {
-				count: 1
-				id: "minecraft:wheat_seeds"
-			}
-			size: 1.0d
-			description: [
-				"Pflanzen wachsen je nach &eJahreszeit&r unterschiedlich gut."
-				"Achte auf Frühling/Sommer/Herbst und plane deine Felder."
-				""
-				"Ernte eine Feldfrucht in ihrer passenden Saison (Infos: EMI / Saisons-Kalender)."
-				"Hak diese Info-Quest ab."
-			]
-			dependencies: [
-				"4C0F000000000010"
-			]
-			tasks: [
-				{
-					id: "4C0F00000000003C"
-					type: "checkmark"
-				}
-			]
-			rewards: [
-				{
-					id: "4C0F00000000003D"
-					item: {
-						count: 1
-						id: "magic_coins:silver_coin"
-					}
-					type: "item"
-					count: 15
-				}
-				{
-					id: "4C0F00000000003E"
-					type: "xp"
-					xp: 10
-				}
-			]
-		}
-		{
-			id: "4C0F000000000013"
-			x: 0.0d
-			y: 1.5d
-			title: "Tiere & Zucht (Naturalist)"
-			icon: {
-				count: 1
-				id: "minecraft:egg"
-			}
-			size: 1.0d
-			description: [
-				"Eine Farm lebt von ihren Tieren. Züchte mindestens zwei Tierarten"
-				"und entdecke die neuen Kreaturen von &aNaturalist&r."
-				""
-				"Sammle Weizen/Samen zum Füttern und hak ab, wenn du 2 Arten gezüchtet hast."
-			]
-			dependencies: [
-				"4C0F00000000000F"
-			]
-			tasks: [
-				{
-					id: "4C0F00000000003F"
-					item: {
-						count: 1
-						id: "minecraft:wheat"
-					}
-					type: "item"
-					count: 4L
-				}
-				{
-					id: "4C0F000000000040"
-					type: "checkmark"
-				}
-			]
-			rewards: [
 				{
 					id: "4C0F000000000041"
-					item: {
-						count: 1
-						id: "minecraft:wheat"
-					}
-					type: "item"
-					count: 16
+					type: "checkmark"
 				}
+			]
+			rewards: [
 				{
 					id: "4C0F000000000042"
 					item: {
@@ -302,6 +199,109 @@
 		}
 		{
 			id: "4C0F000000000014"
+			x: 2.0d
+			y: 1.5d
+			title: "Die Jahreszeiten (Serene Seasons)"
+			icon: {
+				count: 1
+				id: "minecraft:wheat_seeds"
+			}
+			size: 1.0d
+			description: [
+				"Pflanzen wachsen je nach &eJahreszeit&r unterschiedlich gut."
+				"Achte auf Frühling/Sommer/Herbst und plane deine Felder."
+				""
+				"Ernte eine Feldfrucht in ihrer passenden Saison (Infos: EMI / Saisons-Kalender)."
+				"Hak diese Info-Quest ab."
+			]
+			dependencies: [
+				"4C0F000000000012"
+			]
+			tasks: [
+				{
+					id: "4C0F000000000044"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F000000000045"
+					item: {
+						count: 1
+						id: "magic_coins:silver_coin"
+					}
+					type: "item"
+					count: 15
+				}
+				{
+					id: "4C0F000000000046"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			id: "4C0F000000000015"
+			x: 0.0d
+			y: 1.5d
+			title: "Tiere \\& Zucht (Naturalist)"
+			icon: {
+				count: 1
+				id: "minecraft:egg"
+			}
+			size: 1.0d
+			description: [
+				"Eine Farm lebt von ihren Tieren. Züchte mindestens zwei Tierarten"
+				"und entdecke die neuen Kreaturen von &aNaturalist&r."
+				""
+				"Sammle Weizen/Samen zum Füttern und hak ab, wenn du 2 Arten gezüchtet hast."
+			]
+			dependencies: [
+				"4C0F000000000011"
+			]
+			tasks: [
+				{
+					id: "4C0F000000000047"
+					item: {
+						count: 1
+						id: "minecraft:wheat"
+					}
+					type: "item"
+					count: 4L
+				}
+				{
+					id: "4C0F000000000048"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F000000000049"
+					item: {
+						count: 1
+						id: "minecraft:wheat"
+					}
+					type: "item"
+					count: 16
+				}
+				{
+					id: "4C0F00000000004A"
+					item: {
+						count: 1
+						id: "magic_coins:silver_coin"
+					}
+					type: "item"
+					count: 15
+				}
+				{
+					id: "4C0F00000000004B"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			id: "4C0F000000000016"
 			x: 4.0d
 			y: 1.5d
 			title: "Fähigkeiten (Pufferfish's Skills)"
@@ -318,17 +318,17 @@
 				"Hak ab, wenn du einen Skill freigeschaltet hast."
 			]
 			dependencies: [
-				"4C0F000000000011"
+				"4C0F000000000013"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000044"
+					id: "4C0F00000000004C"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "4C0F000000000045"
+					id: "4C0F00000000004D"
 					item: {
 						count: 1
 						id: "magic_coins:gold_coin"
@@ -336,14 +336,14 @@
 					type: "item"
 				}
 				{
-					id: "4C0F000000000046"
+					id: "4C0F00000000004E"
 					type: "xp"
 					xp: 20
 				}
 			]
 		}
 		{
-			id: "4C0F000000000015"
+			id: "4C0F000000000017"
 			x: -2.0d
 			y: 0.0d
 			title: "Angeln (Aquaculture)"
@@ -359,11 +359,11 @@
 				"Danach kannst du sie in der Küche zu Gerichten verarbeiten."
 			]
 			dependencies: [
-				"4C0F00000000000F"
+				"4C0F000000000011"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000047"
+					id: "4C0F00000000004F"
 					item: {
 						count: 1
 						id: "minecraft:fishing_rod"
@@ -371,7 +371,7 @@
 					type: "item"
 				}
 				{
-					id: "4C0F000000000048"
+					id: "4C0F000000000050"
 					item: {
 						count: 1
 						id: "minecraft:cod"
@@ -382,7 +382,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000049"
+					id: "4C0F000000000051"
 					item: {
 						count: 1
 						id: "farmersdelight:cooked_cod_slice"
@@ -391,7 +391,7 @@
 					count: 4
 				}
 				{
-					id: "4C0F00000000004A"
+					id: "4C0F000000000052"
 					item: {
 						count: 1
 						id: "magic_coins:silver_coin"
@@ -400,7 +400,7 @@
 					count: 15
 				}
 				{
-					id: "4C0F00000000004B"
+					id: "4C0F000000000053"
 					type: "xp"
 					xp: 10
 				}

@@ -15,8 +15,20 @@ def nid():
     return format(0x4C0F0000_00000000 + _counter, "016X")  # 16 Hex, kollisionsfrei
 
 # ---- SNBT-Serialisierung ---------------------------------------------------
+_FMT_CODES = set("0123456789abcdefklmnor")  # gültige FTB-&-Codes (Color4I / TextComponentParser)
+
 def esc(s):
-    return s.replace("\\", "\\\\").replace('"', '\\"')
+    # FTB TextComponentParser: '&' (und §) leiten einen Formatcode ein. '&'+Whitespace oder '&'+
+    # unbekanntes Zeichen ist ein Fehler. Literale '&' (z.B. "Farmen & Leben") als '\&' escapen.
+    out = []
+    for i, ch in enumerate(s):
+        if ch == "&":
+            nxt = s[i + 1] if i + 1 < len(s) else ""
+            out.append("&" if (nxt == "#" or nxt in _FMT_CODES) else "\\&")
+        else:
+            out.append(ch)
+    # erst unsere/echte Backslashes verdoppeln (SNBT), dann Quotes escapen
+    return "".join(out).replace("\\", "\\\\").replace('"', '\\"')
 
 def snbt(v, ind=0):
     t = "\t" * ind
@@ -78,16 +90,17 @@ def coin_gold(n):    return rew_item("magic_coins:gold_coin", n)
 def coin_crystal(n): return rew_item("magic_coins:crystal_coin", n)
 
 # ---- Quest-Helfer ----------------------------------------------------------
-def quest(key, x, y, title, desc, tasks, rewards, deps=None, icon=None, shape=None, size=None):
+def quest(key, x, y, title, desc, tasks, rewards, deps=None, icon=None, shape=None, size=None, optional=False):
     q = {"id": QIDS[key]}
     q["x"] = Double(x)
     q["y"] = Double(y)
     q["title"] = title
-    if icon:  q["icon"] = item(icon)
-    if shape: q["shape"] = shape
-    if size:  q["size"] = Double(size)
-    if desc:  q["description"] = desc
-    if deps:  q["dependencies"] = [QIDS[d] for d in deps]
+    if icon:     q["icon"] = item(icon)
+    if shape:    q["shape"] = shape
+    if size:     q["size"] = Double(size)
+    if optional: q["optional"] = True
+    if desc:     q["description"] = desc
+    if deps:     q["dependencies"] = [QIDS[d] for d in deps]
     q["tasks"] = tasks
     q["rewards"] = rewards
     return q
@@ -99,16 +112,17 @@ def reg(*keys):
         QIDS[k] = nid()
 
 # Gruppen- und Kapitel-IDs (alle vorab -> stabile dependencies)
-G0, G1, G2, G3, G4, G5 = (nid() for _ in range(6))
-CH_WELCOME, CH_FARM, CH_COLONY, CH_CREATE, CH_WORLD, CH_ECON = (nid() for _ in range(6))
+G0, G1, G2, G3, G4, G5, G6 = (nid() for _ in range(7))
+CH_WELCOME, CH_FARM, CH_COLONY, CH_CREATE, CH_WORLD, CH_ECON, CH_ENDGAME = (nid() for _ in range(7))
 
 # Quests registrieren
 reg("w_start", "w_ipn")
 reg("f_ernte", "f_kueche", "f_genuss", "f_saison", "f_tiere", "f_skills", "f_angeln")
 reg("c_supply", "c_builder", "c_buerger", "c_mehrere", "c_bauen")
-reg("t_kinetik", "t_verarbeitung", "t_kitchen", "t_energie", "t_zug", "t_aero")
 reg("w_biome", "w_netz", "w_dh")
 reg("e_coins", "e_handel", "e_endgame")
+reg("x_root", "x_megacolony", "x_trainnet", "x_aerofleet", "x_factory", "x_power",
+    "x_selfsufficient", "x_fortune", "x_tradeempire", "x_explorer", "x_kartoffelboss", "x_completionist")
 
 # ---- chapter_groups.snbt ---------------------------------------------------
 chapter_groups = {"chapter_groups": [
@@ -118,6 +132,7 @@ chapter_groups = {"chapter_groups": [
     {"id": G3, "title": "§b⚙ Technik & Mobilität"},
     {"id": G4, "title": "§2🌍 Welt & Vernetzung"},
     {"id": G5, "title": "§e🪙 Ziele & Wirtschaft"},
+    {"id": G6, "title": "§c🏆 Endgame"},
 ]}
 
 # ---- data.snbt -------------------------------------------------------------
@@ -272,7 +287,8 @@ farm = {
     ],
 }
 
-CHID = {"kolonien": CH_COLONY, "create": CH_CREATE, "welt": CH_WORLD, "wirtschaft": CH_ECON}
+CHID = {"kolonien": CH_COLONY, "create": CH_CREATE, "welt": CH_WORLD,
+        "wirtschaft": CH_ECON, "endgame": CH_ENDGAME}
 
 def chapter(filename, group, title, icon, quests):
     return {
@@ -335,56 +351,7 @@ colony = chapter("kolonien", G2, "🏘 Bauen & Gemeinschaft", "minecolonies:bloc
 ])
 
 # ---- Kapitel 3: Technik & Mobilität (Create) -------------------------------
-create_ch = chapter("create", G3, "⚙ Technik & Mobilität", "create:cogwheel", [
-    quest("t_kinetik", 0.0, 0.0, "Kinetik-Grundlagen",
-          ["Willkommen bei &bCreate&r. Alles beginnt mit Drehkraft: Stelle ein",
-           "&aZahnrad&r, ein &aWasserrad&r und eine &aMechanische Presse&r her.",
-           "",
-           "&7Andesite Alloy ist deine wichtigste Grundzutat."],
-          tasks=[task_item("create:cogwheel"), task_item("create:water_wheel"), task_item("create:mechanical_press")],
-          rewards=[rew_item("create:andesite_alloy", 16), coin_silver(20), rew_xp(15)],
-          icon="create:cogwheel", size=1.5, shape="hexagon"),
-    quest("t_verarbeitung", 2.0, 0.0, "Verarbeitung & Automatik",
-          ["Kombiniere &aMixer&r + &aBecken&r zum Rühren und nutze den",
-           "&aMechanischen Kruster&r für automatisches Crafting.",
-           "",
-           "&7Damit automatisierst du fast jede Produktionskette."],
-          tasks=[task_item("create:mechanical_mixer"), task_item("create:basin"), task_item("create:mechanical_crafter")],
-          rewards=[coin_gold(2), rew_xp(20)],
-          deps=["t_kinetik"], icon="create:mechanical_mixer", size=1.25),
-    quest("t_kitchen", 4.0, -1.0, "Automatische Küche",
-          ["Mit &aCreate: Central Kitchen&r verheiratest du Create und Farmer's Delight:",
-           "Kochtöpfe automatisch befüllen und Gerichte am Fließband produzieren.",
-           "",
-           "Baue eine automatisierte Koch-Anlage und hak ab."],
-          tasks=[task_check()],
-          rewards=[coin_gold(2), rew_xp(15)],
-          deps=["t_verarbeitung"], icon="farmersdelight:cooking_pot", size=1.0),
-    quest("t_energie", 4.0, 1.0, "Energie & Addons",
-          ["Strom und mehr: &aCreate New Age&r, &aDiesel Generators / TFMG&r,",
-           "&aCreateaddition&r, &aCreate Factory&r u.v.m. sind dabei.",
-           "",
-           "Baue mit einem dieser Addons eine Energiequelle und hak ab."],
-          tasks=[task_check()],
-          rewards=[coin_gold(2), rew_xp(15)],
-          deps=["t_verarbeitung"], icon="create:shaft", size=1.0),
-    quest("t_zug", 6.0, 0.0, "Schienen & Züge",
-          ["Zeit für das &bSchienennetz&r (Steam 'n' Rails). Verlege &aGleise&r,",
-           "setze einen &aBahnhof&r und baue einen Zug zusammen.",
-           "",
-           "&7Mit dem &aSchedule&r (Fahrplan) fährt der Zug automatisch."],
-          tasks=[task_item("create:track", 16), task_item("create:track_station"), task_item("create:schedule")],
-          rewards=[rew_item("railways:conductor_cap"), coin_gold(4), rew_xp(25)],
-          deps=["t_verarbeitung"], icon="create:track_station", size=1.5, shape="hexagon"),
-    quest("t_aero", 8.0, 0.0, "In die Lüfte (Create Aeronautics)",
-          ["§oBonus / Endgame.§r Mit &aCreate Aeronautics&r baust du echte",
-           "&bLuftschiffe&r. (Alpha-Mod — kann zickig sein, Backups machen!)",
-           "",
-           "Baue eine fliegende Kontraption und hak ab."],
-          tasks=[task_check()],
-          rewards=[coin_crystal(1), rew_xp(40)],
-          deps=["t_zug"], icon="create:goggles", size=1.25),
-])
+# Wird unten aus dem ATM-10-Create-Kapitel transformiert (siehe transform_atm_create()).
 
 # ---- Kapitel 4: Welt & Vernetzung ------------------------------------------
 world = chapter("welt", G4, "🌍 Welt & Vernetzung", "minecraft:filled_map", [
@@ -444,6 +411,132 @@ econ = chapter("wirtschaft", G5, "🪙 Ziele & Wirtschaft", "magic_coins:gold_co
           deps=["e_handel"], icon="magic_coins:crystal_coin", size=1.5, shape="gear"),
 ])
 
+# ---- Kapitel 7: Endgame (G6) -----------------------------------------------
+def m(*lines): return list(lines)
+endgame = chapter("endgame", G6, "🏆 Endgame", "magic_coins:crystal_coin", [
+    quest("x_root", 0.0, 0.0, "Der lange Weg",
+          ["Du hast die Grundlagen gemeistert — jetzt beginnt das große Spiel.",
+           "Hier warten die ganz großen Ziele für dich und deine Mitspieler.",
+           "",
+           "Schließe ein paar Endgame-Ziele ab und werde zur Legende des SMP."],
+          tasks=[task_check()], rewards=[coin_gold(5), rew_xp(30)],
+          icon="minecraft:nether_star", size=2.0, shape="gear"),
+    quest("x_megacolony", -3.0, -1.5, "Mega-Kolonie",
+          ["Lass eine deiner Kolonien zur echten Großstadt wachsen:",
+           "&750+ Bürger&r und mehrere voll ausgebaute Gebäude.",
+           "", "Hak ab, wenn deine Kolonie 50 Bürger erreicht."],
+          tasks=[task_check()], rewards=[coin_crystal(2), rew_xp(40)],
+          deps=["x_root"], icon="minecolonies:blockhuttownhall", size=1.25),
+    quest("x_trainnet", -1.5, -2.5, "Schienen-Imperium",
+          ["Verbinde &emindestens drei Kolonien&r zu einem funktionierenden",
+           "Zug-Netzwerk mit Fahrplänen und mehreren Linien.",
+           "", "Hak ab, wenn 3 Stationen per Zug verbunden sind."],
+          tasks=[task_check()], rewards=[coin_crystal(2), rew_xp(40)],
+          deps=["x_root"], icon="create:track_station", size=1.25),
+    quest("x_aerofleet", 1.5, -2.5, "Luftschiff-Flotte",
+          ["&bCreate Aeronautics&r-Meisterschaft: baue ein großes, steuerbares",
+           "Luftschiff (oder gleich mehrere).",
+           "", "&7Alpha-Mod — vorher Backup! Hak ab, wenn dein Schiff fliegt."],
+          tasks=[task_check()], rewards=[coin_crystal(3), rew_xp(50)],
+          deps=["x_root"], icon="create:goggles", size=1.25),
+    quest("x_factory", 3.0, -1.5, "Die Großfabrik",
+          ["Baue eine &evollautomatische Create-Fabrik&r, die ein komplexes",
+           "Endprodukt ohne Handarbeit fertigt (z.B. via Factory Gauges / Packages).",
+           "", "Hak ab, wenn die Linie autark läuft."],
+          tasks=[task_check()], rewards=[coin_crystal(2), rew_xp(40)],
+          deps=["x_root"], icon="create:mechanical_arm", size=1.25),
+    quest("x_power", 3.0, 1.5, "Energie-Imperium",
+          ["Errichte ein großes Stromnetz mit den Energie-Addons",
+           "(&aNew Age / Createaddition / Diesel / TFMG&r) und versorge deine Basis.",
+           "", "Hak ab, wenn deine Maschinen aus einem Netz laufen."],
+          tasks=[task_check()], rewards=[coin_crystal(2), rew_xp(40)],
+          deps=["x_root"], icon="create:shaft", size=1.25),
+    quest("x_selfsufficient", 1.5, 2.5, "Selbstversorger",
+          ["Vollautomatische Nahrung: &aCreate: Central Kitchen&r kocht deine",
+           "Gerichte am Fließband — nie wieder Hunger.",
+           "", "Hak ab, wenn Essen automatisch produziert wird."],
+          tasks=[task_check()], rewards=[coin_crystal(2), rew_xp(40)],
+          deps=["x_root"], icon="farmersdelight:cooking_pot", size=1.25),
+    quest("x_fortune", -3.0, 1.5, "Münz-Vermögen",
+          ["Häufe ein echtes Vermögen an: besitze gleichzeitig",
+           "&emindestens 5 Kristallmünzen&r.",
+           "", "&7Der Gipfel des Münz-Wohlstands."],
+          tasks=[task_item("magic_coins:crystal_coin", 5)], rewards=[coin_crystal(3), rew_xp(40)],
+          deps=["x_root"], icon="magic_coins:crystal_coin", size=1.25),
+    quest("x_tradeempire", -1.5, 2.5, "Handelsimperium",
+          ["Baue ein &aNumismatics&r-Handelsnetz mit mehreren Automaten und",
+           "Bankkarten zwischen den Kolonien auf.",
+           "", "Hak ab, wenn mehrere Vendor laufen."],
+          tasks=[task_check()], rewards=[coin_crystal(2), rew_xp(40)],
+          deps=["x_root"], icon="numismatics:vendor", size=1.25),
+    quest("x_explorer", 0.0, -3.5, "Welt-Entdecker",
+          ["Bereise die riesige Welt: entdecke &e15 verschiedene Biome&r",
+           "von Terralith & Tectonic.",
+           "", "Hak ab, wenn du 15 Biome gesehen hast."],
+          tasks=[task_check()], rewards=[coin_crystal(2), rew_xp(40)],
+          deps=["x_root"], icon="minecraft:filled_map", size=1.25),
+    quest("x_kartoffelboss", 4.5, 0.0, "Der Kartoffelboss (geplant)",
+          ["§oGeplantes Eigen-Projekt:§r ein optionaler Boss-Kampf — der",
+           "&6Kartoffelboss&r. Diese Quest wird aktiviert, sobald die Mod fertig ist.",
+           "", "&7Platzhalter — noch nichts zu tun."],
+          tasks=[task_check()], rewards=[coin_crystal(1)],
+          deps=["x_root"], icon="minecraft:baked_potato", size=1.0, optional=True),
+    quest("x_completionist", 0.0, 4.0, "Legende des SMP",
+          ["Du hast es geschafft: alle großen Ziele erreicht. Vollende die",
+           "wichtigsten Endgame-Quests und sichere dir den Titel.",
+           "", "&6Herzlichen Glückwunsch — du bist eine Legende!"],
+          tasks=[task_check()],
+          rewards=[coin_crystal(10), rew_item("minecraft:nether_star"), rew_xp(100)],
+          deps=["x_megacolony", "x_trainnet", "x_aerofleet", "x_factory", "x_power",
+                "x_selfsufficient", "x_fortune", "x_tradeempire", "x_explorer"],
+          icon="minecraft:nether_star", size=2.0, shape="gear"),
+])
+
+# ---- ATM-10 Create-Kapitel transformieren ----------------------------------
+# Quelle: AllTheMods/ATM-10 (config/ftbquests/quests/chapters/create.snbt), 206 Quests.
+# Anpassung an dieses Pack: Gruppe -> G3, Fremd-Items -> Pack-Äquivalente, ATM-Bilder entfernt.
+import re as _re
+def transform_atm_create():
+    src = open(os.path.join(ROOT, "vendor", "atm_create.snbt"), encoding="utf-8").read()
+
+    # 1) Fremd-Item-Referenzen auf vorhandene Pack-Items mappen
+    src = src.replace('id: "alltheores:brass_ingot"', 'id: "create:brass_ingot"')
+    src = src.replace('id: "the_bumblezone:honey_bucket"', 'id: "minecraft:honey_bottle"')
+    # 1b) ftbfiltersystem:smart_filter (Task-Items) -> konkretes Create-Item je nach Filterinhalt
+    filt_map = [
+        ("mechanical_piston", "create:mechanical_piston"),
+        ("cogwheel",          "create:cogwheel"),
+        ("water_wheel",       "create:water_wheel"),
+        ("seats",             "create:blue_seat"),
+        ("postboxes",         "create:blue_postbox"),
+        ("packages",          "create:cardboard_package_12x12"),
+        ("table_cloths",      "create:andesite_table_cloth"),
+    ]
+    def repl_filter(mobj):
+        inner = mobj.group(0)
+        for needle, repl in filt_map:
+            if needle in inner:
+                return '{ count: 1, id: "%s" }' % repl
+        return '{ count: 1, id: "create:cogwheel" }'  # Fallback
+    src = _re.sub(r'\{ components: \{ "ftbfiltersystem:filter":.*?id: "ftbfiltersystem:smart_filter" \}',
+                  repl_filter, src)
+
+    # 2) Kapitel-Header: Gruppe auf G3, Titel ergänzen, ATM-Bilder entfernen
+    src = _re.sub(r'group: "[0-9A-F]{16}"', 'group: "%s"' % G3, src, count=1)
+    src = _re.sub(r'\n\timages: \[.*?\n\t\]', '', src, count=1, flags=_re.S)  # images-Block raus
+    if "\n\ttitle:" not in src:
+        title_line = '\tfilename: "create"\n\ttitle: "%s"\n' % esc("⚙ Technik & Mobilität (Create)")
+        src = src.replace('\tfilename: "create"\n', title_line, 1)
+
+    p = os.path.join(OUT, "chapters", "create.snbt")
+    with open(p, "w", encoding="utf-8") as f:
+        f.write(src)
+    # Rückgabe: Liste aller IDs (für Kollisionsprüfung) + Restcheck Fremd-Namespaces
+    foreign = _re.findall(r'id: "(ftbfiltersystem|alltheores|the_bumblezone):', src)
+    ids = _re.findall(r'\bid: "([0-9A-F]{16})"', src)
+    print("wrote chapters/create.snbt (ATM, transformiert) ids:", len(ids), "foreign-left:", foreign)
+    return ids
+
 # ---- schreiben -------------------------------------------------------------
 os.makedirs(os.path.join(OUT, "chapters"), exist_ok=True)
 def write(relpath, obj):
@@ -458,7 +551,8 @@ write("data.snbt", data)
 write("chapters/willkommen.snbt", welcome)
 write("chapters/farmen_und_leben.snbt", farm)
 write("chapters/kolonien.snbt", colony)
-write("chapters/create.snbt", create_ch)
 write("chapters/welt.snbt", world)
 write("chapters/wirtschaft.snbt", econ)
-print("total ids used:", _counter)
+write("chapters/endgame.snbt", endgame)
+atm_ids = transform_atm_create()
+print("total ids used (generated):", _counter)

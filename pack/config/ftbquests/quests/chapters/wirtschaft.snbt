@@ -7,14 +7,14 @@
 		count: 1
 		id: "magic_coins:gold_coin"
 	}
-	id: "4C0F00000000000C"
+	id: "4C0F00000000000D"
 	order_index: 0
 	progression_mode: "flexible"
 	quest_links: [ ]
-	title: "🪙 Ziele & Wirtschaft"
+	title: "🪙 Ziele \\& Wirtschaft"
 	quests: [
 		{
-			id: "4C0F000000000024"
+			id: "4C0F000000000020"
 			x: 0.0d
 			y: 0.0d
 			title: "Münzwirtschaft (Magic Coins)"
@@ -32,7 +32,7 @@
 			]
 			tasks: [
 				{
-					id: "4C0F000000000084"
+					id: "4C0F000000000072"
 					item: {
 						count: 1
 						id: "magic_coins:gold_coin"
@@ -43,7 +43,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000085"
+					id: "4C0F000000000073"
 					item: {
 						count: 1
 						id: "magic_coins:gold_coin"
@@ -52,14 +52,14 @@
 					count: 2
 				}
 				{
-					id: "4C0F000000000086"
+					id: "4C0F000000000074"
 					type: "xp"
 					xp: 15
 				}
 			]
 		}
 		{
-			id: "4C0F000000000025"
+			id: "4C0F000000000021"
 			x: 2.0d
 			y: 0.0d
 			title: "Handel (Create: Numismatics)"
@@ -75,11 +75,11 @@
 				"&7Passt perfekt zum Zug-/Handelsthema zwischen den Kolonien."
 			]
 			dependencies: [
-				"4C0F000000000024"
+				"4C0F000000000020"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000087"
+					id: "4C0F000000000075"
 					item: {
 						count: 1
 						id: "numismatics:vendor"
@@ -87,7 +87,7 @@
 					type: "item"
 				}
 				{
-					id: "4C0F000000000088"
+					id: "4C0F000000000076"
 					item: {
 						count: 1
 						id: "numismatics:spur"
@@ -98,7 +98,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000089"
+					id: "4C0F000000000077"
 					item: {
 						count: 1
 						id: "magic_coins:gold_coin"
@@ -107,14 +107,14 @@
 					count: 3
 				}
 				{
-					id: "4C0F00000000008A"
+					id: "4C0F000000000078"
 					type: "xp"
 					xp: 20
 				}
 			]
 		}
 		{
-			id: "4C0F000000000026"
+			id: "4C0F000000000022"
 			x: 4.0d
 			y: 0.0d
 			title: "Endgame-Ziele"
@@ -132,29 +132,29 @@
 				"§oHook: Später kommt vielleicht ein optionaler &cKartoffelboss&r§o dazu …§r"
 			]
 			dependencies: [
-				"4C0F000000000025"
+				"4C0F000000000021"
 			]
 			tasks: [
 				{
-					id: "4C0F00000000008B"
+					id: "4C0F000000000079"
 					type: "checkmark"
 				}
 				{
-					id: "4C0F00000000008C"
+					id: "4C0F00000000007A"
 					type: "checkmark"
 				}
 				{
-					id: "4C0F00000000008D"
+					id: "4C0F00000000007B"
 					type: "checkmark"
 				}
 				{
-					id: "4C0F00000000008E"
+					id: "4C0F00000000007C"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "4C0F00000000008F"
+					id: "4C0F00000000007D"
 					item: {
 						count: 1
 						id: "magic_coins:crystal_coin"
@@ -163,7 +163,7 @@
 					count: 3
 				}
 				{
-					id: "4C0F000000000090"
+					id: "4C0F00000000007E"
 					type: "xp"
 					xp: 60
 				}

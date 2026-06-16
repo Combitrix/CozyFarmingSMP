@@ -121,12 +121,16 @@ Quellcode verifiziert, `ServerConfiguration.java`):
 **Wirtschaft:** **Magic Coins** = Währung für FTB-Quests-Belohnungen (Currency Rewards im Quest-Editor
 einstellbar). **Create: Numismatics** = physische Münzen/Handel/Automaten (passt zum Zug-/Handels-Thema).
 
-**Quest-Linie (liegt dem Pack bei, `config/ftbquests/quests/`):** 6 Kapitelgruppen entlang der 5 Säulen —
+**Quest-Linie (liegt dem Pack bei, `config/ftbquests/quests/`):** 7 Kapitelgruppen —
 👋 Willkommen (inkl. Erklärung der IPN-Hotbar-Pfeile) · 🌱 Farmen & Leben · 🏘 Bauen & Gemeinschaft
-(MineColonies) · ⚙ Technik & Mobilität (Create/Züge/Aeronautics) · 🌍 Welt & Vernetzung · 🪙 Ziele &
-Wirtschaft. Münz-Belohnungen (Silber/Gold/Kristall) als roter Faden. Bearbeitbar im FTB-Quests-Editor
-(Server-Op: `/ftbquests editing_mode true`). Blueprint/Erweiterung: `docs/quest-line-blueprint.md` +
-Generator `gen-quests.py`.
+(MineColonies) · ⚙ Technik & Mobilität — **großes Create-Kapitel (~200 Quests, basierend auf ATM-10,
+an dieses Pack angepasst)** · 🌍 Welt & Vernetzung · 🪙 Ziele & Wirtschaft · 🏆 Endgame (große
+Meilenstein-Ziele). Münz-Belohnungen (Silber/Gold/Kristall) als roter Faden. Bearbeitbar im
+FTB-Quests-Editor (Server-Op: `/ftbquests editing_mode true`).
+
+> Eigene Kapitel werden über `gen-quests.py` erzeugt; das Create-Kapitel wird aus
+> `vendor/atm_create.snbt` (ATM-10) transformiert (Fremd-Items → Pack-Items, Gruppe, Bilder entfernt).
+> Blueprint: `docs/quest-line-blueprint.md`.
 
 **Pregeneration (große Welt):** Server-Konsole → `chunky radius 5000` dann `chunky start`.
 

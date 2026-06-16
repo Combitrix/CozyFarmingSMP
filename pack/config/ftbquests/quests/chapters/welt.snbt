@@ -7,14 +7,14 @@
 		count: 1
 		id: "minecraft:filled_map"
 	}
-	id: "4C0F00000000000B"
+	id: "4C0F00000000000C"
 	order_index: 0
 	progression_mode: "flexible"
 	quest_links: [ ]
-	title: "🌍 Welt & Vernetzung"
+	title: "🌍 Welt \\& Vernetzung"
 	quests: [
 		{
-			id: "4C0F000000000021"
+			id: "4C0F00000000001D"
 			x: 0.0d
 			y: 0.0d
 			title: "Entdecke die Welt"
@@ -32,13 +32,13 @@
 			]
 			tasks: [
 				{
-					id: "4C0F00000000007A"
+					id: "4C0F000000000068"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "4C0F00000000007B"
+					id: "4C0F000000000069"
 					item: {
 						count: 1
 						id: "minecraft:map"
@@ -46,7 +46,7 @@
 					type: "item"
 				}
 				{
-					id: "4C0F00000000007C"
+					id: "4C0F00000000006A"
 					item: {
 						count: 1
 						id: "magic_coins:silver_coin"
@@ -55,14 +55,14 @@
 					count: 20
 				}
 				{
-					id: "4C0F00000000007D"
+					id: "4C0F00000000006B"
 					type: "xp"
 					xp: 15
 				}
 			]
 		}
 		{
-			id: "4C0F000000000022"
+			id: "4C0F00000000001E"
 			x: 2.0d
 			y: 0.0d
 			title: "Das Schienennetz"
@@ -78,17 +78,17 @@
 				"Hak ab, sobald ein Zug zwischen zwei Stationen fährt."
 			]
 			dependencies: [
-				"4C0F000000000021"
+				"4C0F00000000001D"
 			]
 			tasks: [
 				{
-					id: "4C0F00000000007E"
+					id: "4C0F00000000006C"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "4C0F00000000007F"
+					id: "4C0F00000000006D"
 					item: {
 						count: 1
 						id: "magic_coins:gold_coin"
@@ -97,14 +97,14 @@
 					count: 5
 				}
 				{
-					id: "4C0F000000000080"
+					id: "4C0F00000000006E"
 					type: "xp"
 					xp: 30
 				}
 			]
 		}
 		{
-			id: "4C0F000000000023"
+			id: "4C0F00000000001F"
 			x: 0.0d
 			y: 1.5d
 			title: "Weite Sicht (Distant Horizons)"
@@ -121,17 +121,17 @@
 				"Info gelesen? Hak ab."
 			]
 			dependencies: [
-				"4C0F000000000021"
+				"4C0F00000000001D"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000081"
+					id: "4C0F00000000006F"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "4C0F000000000082"
+					id: "4C0F000000000070"
 					item: {
 						count: 1
 						id: "magic_coins:silver_coin"
@@ -140,7 +140,7 @@
 					count: 10
 				}
 				{
-					id: "4C0F000000000083"
+					id: "4C0F000000000071"
 					type: "xp"
 					xp: 10
 				}
