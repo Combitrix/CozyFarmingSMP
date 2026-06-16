@@ -131,25 +131,28 @@ Quellcode verifiziert, `ServerConfiguration.java`):
 **Wirtschaft:** **Magic Coins** = Währung für FTB-Quests-Belohnungen (Currency Rewards im Quest-Editor
 einstellbar). **Create: Numismatics** = physische Münzen/Handel/Automaten (passt zum Zug-/Handels-Thema).
 
-**Quest-Linie (liegt dem Pack bei, `config/ftbquests/quests/`):** EIN großer Quest-Baum (eine
-Gruppe **🌾 Cozy Farming SMP**), der sich **progressiv freischaltet** — die Kapitel-Seiten sind über
-Abhängigkeiten verkettet, jede schaltet die nächste frei:
+**Quest-Linie (liegt dem Pack bei, `config/ftbquests/quests/`):** EIN großer Quest-Baum auf
+**einer einzigen Seite** (`chapters/questline.snbt`, **152 Quests**), der sich **progressiv
+aufbaut** — eine durchgehende Haupt-Linie mit Seitenzweigen, alles über Abhängigkeiten verkettet:
 
-1. **👋 Willkommen** (ATM-Style: zentrale Wurzel + EMI/JourneyMap/IPN/FTB-Chunks-Intro)
-2. **🌱 Farmen & Leben** → 3. **🏘 Bauen & Gemeinschaft** (MineColonies)
-4. **⚙ Technik (Create)** — **90 Quests** aus ATM-10, an dieses Pack angepasst, **jede mit
-   deutschem Titel + Beschreibung** (wofür/witzig/nett). Hinter Kolonie-Fortschritt freigeschaltet.
-5. **🎈 Aeronautics** — **25 Quests** rund um Create-Luftschiffe (Propeller → Hülle → Levitite →
-   Flotte → „Herr der Lüfte"). Hinter Create-Start freigeschaltet.
-6. **🌍 Welt & Vernetzung** → 7. **🪙 Ziele & Wirtschaft** → 8. **🏆 Endgame** (große Meilensteine,
-   freigeschaltet hinter Wirtschaft + Aeronautics-Meisterschaft).
+- **👋 Willkommen** (ATM-Style: zentrale Wurzel + EMI/JourneyMap/IPN/FTB-Chunks-Intro)
+  → **🌱 Farmen & Leben** → **🏘 Bauen & Gemeinschaft** (MineColonies)
+  → **⚙ Create** (**90 Quests** aus ATM-10, an dieses Pack angepasst, **jede mit deutschem
+  Titel + Beschreibung**) → **🌍 Welt** → **🪙 Wirtschaft** → **🏆 Endgame**.
+- **🎈 Aeronautics** (**25 Quests**: Propeller → Hülle → Levitite → Flotte → „Herr der Lüfte")
+  als großer Seitenzweig rechts, hinter dem Create-Start; mündet ins Endgame.
 
 Münz-Belohnungen (Silber/Gold/Kristall) als roter Faden. Bearbeitbar im FTB-Quests-Editor
 (Server-Op: `/ftbquests editing_mode true`).
 
-> Alle Kapitel werden von `gen-quests.py` erzeugt; das Create-Kapitel wird aus
-> `vendor/atm_create.snbt` (ATM-10) transformiert (Fremd-Items → Pack-Items, deutsche Beschreibungen,
-> Gruppe & Verkettung, ATM-Bilder entfernt). Blueprint: `docs/quest-line-blueprint.md`.
+> Erzeugt von `gen-quests.py` als **ein** Kapitel (alle Cluster versetzt zusammengeführt). Das
+> Create-Segment stammt aus `vendor/atm_create.snbt` (ATM-10): Fremd-Items → Pack-Items, deutsche
+> Beschreibungen injiziert, Koordinaten-Offset, ATM-Bilder entfernt. Blueprint: `docs/quest-line-blueprint.md`.
+
+**Distant Horizons + Chunky:** DH meldet evtl. „Chunky detected" — Chunky kann Chunks schneller
+erzeugen, als DH die LODs verarbeitet (→ Löcher in der Fernsicht). Abhilfe: entweder DHs **eigenen**
+Distant-Generator nutzen **oder** DHs CPU-Thread-Zahl erhöhen. Chunky ist absichtlich dabei (Pregen
+v.a. serverseitig sinnvoll).
 
 **Pregeneration (große Welt):** Server-Konsole → `chunky radius 5000` dann `chunky start`.
 

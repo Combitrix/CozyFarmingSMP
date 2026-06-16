@@ -6,43 +6,15 @@ hash = "88ab692c43f2d51470028398381b893e50006ebf43596ce1919a5f143077a177"
 
 [[files]]
 file = "README.md"
-hash = "c31f8c3637b3f403c5b270ed6813dbf47c4e2f5b390e751190e4dce6bf7ebad5"
+hash = "c4ac2f04be0e50ff309b11952f0bc3141a12bf5b6d3fd7be0042825397718dc1"
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
 hash = "bd5d74af02ea8f7fddd2ddb3faeff50516b46818c76ec3e8ceaeb0747e50afa5"
 
 [[files]]
-file = "config/ftbquests/quests/chapters/aeronautics.snbt"
-hash = "119980f2563f3c61ebdb2b7c4021cb0b9c80e7e6ceb9283cb1d035c153ef04a5"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/create.snbt"
-hash = "327f5d79ee9cadde75f1f8f61b7d227738654e69595fccfd41b014a4d41126bf"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/endgame.snbt"
-hash = "f2e19502c6a2d95955167b305bd25b9b1d6f70ec6308a5b2fac91f2b4d471f63"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/farmen_und_leben.snbt"
-hash = "3ce9f5064946cc4280db8f3c2b7a3d6896d1b40f53a573a4940bc6c86f880f15"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/kolonien.snbt"
-hash = "ece5f5c2663cdd302f4b8d7d0ab4914d0c0e258a96c82b3d14ee12021b2e5633"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/welt.snbt"
-hash = "71adfcb5510623a101a33647fc17422ac62890c4c022835f8494e14adbed6771"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/willkommen.snbt"
-hash = "b11e4b5b781070f274923d31572a7588d3aeb4d5cf336f8c7963f9b6cfbd29ca"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/wirtschaft.snbt"
-hash = "416ecd14307d437a2a08fd2b48c8e7102bb1db82ea90e723579e889ec4e1b45a"
+file = "config/ftbquests/quests/chapters/questline.snbt"
+hash = "63d242cd5ebc6b20190de1db91f3d0245e7c6648c949c669fa51d391dd582b63"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"

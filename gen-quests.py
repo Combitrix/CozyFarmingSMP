@@ -128,7 +128,7 @@ def chapter(filename, title, icon, quests, order):
     }
 
 # ---- Kapitel 0: Willkommen (ATM-Style: zentrale Wurzel + Speichen) ----------
-welcome = chapter("willkommen", "👋 Willkommen", "minecraft:cherry_sapling", [
+welcome_q = [
     quest("w_start", 0.0, 0.0, "Willkommen auf dem Cozy Farming SMP!",
           ["&6Hallo und herzlich willkommen!&r Schön, dass du dabei bist.",
            "Dieses Pack dreht sich um &aFarmen&r, &6Kolonien&r, &bCreate-Technik&r,",
@@ -181,10 +181,10 @@ welcome = chapter("willkommen", "👋 Willkommen", "minecraft:cherry_sapling", [
            "", "&8(Diese Quest ist optional.)"],
           tasks=[task_check()], rewards=[coin_silver(5), rew_xp(5)],
           deps=["w_start"], icon="minecraft:bell", size=1.0, optional=True),
-], order=0)
+]
 
 # ---- Kapitel 1: Farmen & Leben (gated hinter Willkommen) -------------------
-farm = chapter("farmen_und_leben", "🌱 Farmen & Leben", "farmersdelight:cooking_pot", [
+farm_q = [
     quest("f_ernte", 0.0, 0.0, "Die erste Ernte",
           ["Jedes Imperium beginnt mit einem Acker. Besorge dir eine &aHacke&r,",
            "lege Felder an und ernte deine erste Frucht.",
@@ -230,10 +230,10 @@ farm = chapter("farmen_und_leben", "🌱 Farmen & Leben", "farmersdelight:cookin
           tasks=[task_item("minecraft:fishing_rod"), task_item("minecraft:cod", 3)],
           rewards=[rew_item("farmersdelight:cooked_cod_slice", 4), coin_silver(15), rew_xp(10)],
           deps=["f_ernte"], icon="minecraft:fishing_rod", size=1.0),
-], order=1)
+]
 
 # ---- Kapitel 2: Bauen & Gemeinschaft (gated hinter Farmen) -----------------
-colony = chapter("kolonien", "🏘 Bauen & Gemeinschaft", "minecolonies:blockhuttownhall", [
+colony_q = [
     quest("c_supply", 0.0, 0.0, "Die erste Kolonie",
           ["Jede Zivilisation beginnt mit einem &6Versorgungslager&r. Platziere den",
            "&aSupply Camp&r, packe die Kiste aus und setze dein &aRathaus&r.",
@@ -264,11 +264,11 @@ colony = chapter("kolonien", "🏘 Bauen & Gemeinschaft", "minecolonies:blockhut
            "von Macaw's & Another Furniture. Dekoriere ein Gebäude und hak ab."],
           tasks=[task_check()], rewards=[coin_silver(20), rew_xp(15)],
           deps=["c_buerger"], icon="minecraft:painting", size=1.0),
-], order=2)
+]
 
 # ---- Kapitel 4: Aeronautics (25 Quests, gated hinter Create-Start) ---------
 A = "create_aeronautics"  # nur Doku; echte ID-Namespace ist "aeronautics:"
-aero = chapter("aeronautics", "🎈 Aeronautics — Erobere den Himmel", "aeronautics:aviators_goggles", [
+aero_q = [
     quest("ae_intro", 0.0, 0.0, "Werde Luftfahrer",
           ["Der Himmel ruft! &bCreate Aeronautics&r lässt dich echte &dLuftschiffe&r bauen.",
            "Schnapp dir die &aAviator's Goggles&r — dein Blick für alles, was fliegt.",
@@ -415,15 +415,15 @@ aero = chapter("aeronautics", "🎈 Aeronautics — Erobere den Himmel", "aerona
           rewards=[coin_crystal(4), rew_item("aeronautics:pearlescent_levitite", 4), rew_xp(60)],
           deps=["ae_armada", "ae_potato_cannon", "ae_pearl_levitite"],
           icon="aeronautics:aviators_goggles", size=2.0, shape="gear"),
-], order=4)
+]
 
 # ---- Kapitel 5: Welt & Vernetzung (gated hinter Kolonien) ------------------
-world = chapter("welt", "🌍 Welt & Vernetzung", "minecraft:filled_map", [
+world_q = [
     quest("w_biome", 0.0, 0.0, "Entdecke die Welt",
           ["Die Welt ist riesig und realistisch: &aTerralith&r + &aTectonic&r zaubern",
            "epische Biome und Gebirge. Erkunde mindestens &e3 verschiedene&r Biome."],
           tasks=[task_check()], rewards=[rew_item("minecraft:map"), coin_silver(20), rew_xp(15)],
-          deps=["c_builder"], icon="minecraft:filled_map", size=1.5, shape="hexagon"),
+          deps=["57A7A5C79389A96A"], icon="minecraft:filled_map", size=1.5, shape="hexagon"),
     quest("w_netz", 2.0, 0.0, "Das Schienennetz",
           ["Der große Traum: Zivilisationen per Zug verbinden. Verlege eine",
            "&bZugstrecke zwischen zwei Kolonien&r (Bahnhof ↔ Bahnhof)."],
@@ -435,10 +435,10 @@ world = chapter("welt", "🌍 Welt & Vernetzung", "minecraft:filled_map", [
            "Sichtweite/Qualität in den DH-Einstellungen justieren; Shader optional."],
           tasks=[task_check()], rewards=[coin_silver(10), rew_xp(10)],
           deps=["w_biome"], icon="minecraft:spyglass", size=1.0),
-], order=5)
+]
 
 # ---- Kapitel 6: Ziele & Wirtschaft (gated hinter Welt) ---------------------
-econ = chapter("wirtschaft", "🪙 Ziele & Wirtschaft", "magic_coins:gold_coin", [
+econ_q = [
     quest("e_coins", 0.0, 0.0, "Münzwirtschaft (Magic Coins)",
           ["&eMünzen&r sind der rote Faden: Quests belohnen dich mit Silber-, Gold-",
            "und Kristallmünzen. Besitze gleichzeitig mindestens &e3 Goldmünzen&r."],
@@ -456,10 +456,10 @@ econ = chapter("wirtschaft", "🪙 Ziele & Wirtschaft", "magic_coins:gold_coin",
            "", "Schließe deine erste Endgame-Quest ab!"],
           tasks=[task_check()], rewards=[coin_crystal(2), rew_xp(40)],
           deps=["e_handel"], icon="magic_coins:crystal_coin", size=1.25),
-], order=6)
+]
 
 # ---- Kapitel 7: Endgame (gated hinter Wirtschaft + Aeronautics) ------------
-endgame = chapter("endgame", "🏆 Endgame", "minecraft:nether_star", [
+endgame_q = [
     quest("x_root", 0.0, 0.0, "Der lange Weg",
           ["Du hast die Grundlagen gemeistert — jetzt beginnt das große Spiel.",
            "Hier warten die ganz großen Ziele. Werde zur &6Legende des SMP&r."],
@@ -514,7 +514,7 @@ endgame = chapter("endgame", "🏆 Endgame", "minecraft:nether_star", [
           deps=["x_megacolony", "x_trainnet", "x_aerofleet", "x_factory", "x_power",
                 "x_selfsufficient", "x_fortune", "x_tradeempire", "x_explorer"],
           icon="minecraft:nether_star", size=2.0, shape="gear"),
-], order=7)
+]
 
 # ============================================================================
 # Create-Kapitel aus ATM-10 transformieren + deutsche Titel/Beschreibungen
@@ -665,6 +665,8 @@ CREATE_FLAVOR = {
  "minecraft:andesite_block": ("Andesit-Block", ["Mehr Andesit, mehr Möglichkeiten."]),
 }
 
+CREATE_OX, CREATE_OY = 5.0, 27.0  # Offset des Create-Clusters im gemeinsamen Kapitel
+
 def transform_atm_create():
     src = open(os.path.join(ROOT, "vendor", "atm_create.snbt"), encoding="utf-8").read()
 
@@ -683,13 +685,8 @@ def transform_atm_create():
     src = _re.sub(r'\{ components: \{ "ftbfiltersystem:filter":.*?id: "ftbfiltersystem:smart_filter" \}',
                   repl_filter, src)
 
-    # 2) Header: Gruppe -> G, Titel, ATM-Bilder raus
-    src = _re.sub(r'group: "[0-9A-F]{16}"', 'group: "%s"' % G, src, count=1)
+    # 2) ATM-Bilder raus (Header/Gruppe verwerfen wir — die Quests kommen ins gemeinsame Kapitel)
     src = _re.sub(r'\n\timages: \[.*?\n\t\]', '', src, count=1, flags=_re.S)
-    if "\n\ttitle:" not in src:
-        src = src.replace('\tfilename: "create"\n',
-                          '\tfilename: "create"\n\ttitle: "%s"\n\torder_index: 3\n' % esc("⚙ Technik & Mobilität"),
-                          1)
 
     # 3) Pro Quest: primäres Task-Item bestimmen -> deutscher Titel + Beschreibung injizieren
     #    (Quest-IDs stehen auf 3-Tab-Ebene; Task-/Reward-IDs tiefer.)
@@ -744,29 +741,71 @@ def transform_atm_create():
     for pos, text in sorted(edits, reverse=True):
         src = src[:pos] + text + src[pos:]
 
-    with open(os.path.join(OUT, "chapters", "create.snbt"), "w", encoding="utf-8") as f:
-        f.write(src)
-    foreign = _re.findall(r'id: "(ftbfiltersystem|alltheores|the_bumblezone):', src)
-    ids = _re.findall(r'\bid: "([0-9A-F]{16})"', src)
-    descs = src.count("\n\t\t\tdescription: [")
-    print(f"wrote chapters/create.snbt (ATM): ids={len(ids)} descriptions={descs} foreign={foreign}")
-    return ids
+    # 4) Quest-Koordinaten um (CREATE_OX, CREATE_OY) verschieben
+    def _off(mo):
+        v = float(mo.group(2)) + (CREATE_OX if mo.group(1) == "x" else CREATE_OY)
+        return '\n\t\t\t%s: %sd' % (mo.group(1), v)
+    src = _re.sub(r'\n\t\t\t(x|y): ([\-0-9.]+)d', _off, src)
 
-# ---- schreiben -------------------------------------------------------------
+    # 5) reine Quest-Blöcke (\t\t{...}) zwischen 'quests: [' und schließendem '\n\t]' extrahieren
+    qs = src.index("quests: [") + len("quests: [")
+    qe = src.index("\n\t]", qs)
+    blocks_text = src[qs:qe].strip("\n")
+    foreign = _re.findall(r'id: "(ftbfiltersystem|alltheores|the_bumblezone):', blocks_text)
+    descs = blocks_text.count("\n\t\t\tdescription: [")
+    nq = len(_re.findall(r'\n\t\t\tx: ', blocks_text))
+    print(f"create-Blöcke: quests={nq} descriptions={descs} foreign={foreign}")
+    return blocks_text
+
+# ---- EIN Kapitel: alle Cluster versetzt zusammenführen ---------------------
+def shift(qs, dx, dy):
+    for q in qs:
+        q["x"] = Double(float(q["x"]) + dx); q["y"] = Double(float(q["y"]) + dy)
+    return qs
+
+# Cluster-Offsets -> überschneidungsfreie Anordnung auf EINER Seite.
+# Haupt-Spine vertikal: Willkommen -> Farm -> Kolonie -> (Create, großer Block) -> Welt -> Wirtschaft -> Endgame.
+# Aeronautics als Seitenzweig rechts neben dem Create-Block.
+all_custom = []
+all_custom += shift(welcome_q, 0.0, 0.0)     # y ~ -2..2
+all_custom += shift(farm_q,    0.0, 7.0)     # y ~ 7..8.5
+all_custom += shift(colony_q,  0.0, 13.0)    # y ~ 13..14.5
+# (Create-Block: y ~ 18.5..35.5, x ~ -7..7.5  — via CREATE_OX/OY)
+all_custom += shift(aero_q,    22.0, 19.0)   # rechts: x ~ 18.5..24, y ~ 19..34
+all_custom += shift(world_q,   0.0, 42.0)    # y ~ 42..43.5
+all_custom += shift(econ_q,    0.0, 48.0)    # y ~ 48..49.5
+all_custom += shift(endgame_q, 0.0, 56.0)    # y ~ 52.5..60
+
+main_chapter = {
+    "default_hide_dependency_lines": False, "default_quest_shape": "",
+    "filename": "questline", "group": G, "icon": item("minecraft:cake"),
+    "id": CH_WELCOME, "order_index": 0, "progression_mode": "flexible",
+    "quest_links": [], "title": "🌾 Cozy Farming SMP", "quests": all_custom,
+}
+
 os.makedirs(os.path.join(OUT, "chapters"), exist_ok=True)
 def write(relpath, obj):
     p = os.path.join(OUT, relpath); os.makedirs(os.path.dirname(p), exist_ok=True)
     with open(p, "w", encoding="utf-8") as f: f.write(snbt(obj) + "\n")
     print("wrote", relpath)
+def write_text(relpath, text):
+    p = os.path.join(OUT, relpath); os.makedirs(os.path.dirname(p), exist_ok=True)
+    with open(p, "w", encoding="utf-8") as f: f.write(text)
+    print("wrote", relpath)
 
 write("chapter_groups.snbt", chapter_groups)
 write("data.snbt", data)
-write("chapters/willkommen.snbt", welcome)
-write("chapters/farmen_und_leben.snbt", farm)
-write("chapters/kolonien.snbt", colony)
-write("chapters/aeronautics.snbt", aero)
-write("chapters/welt.snbt", world)
-write("chapters/wirtschaft.snbt", econ)
-write("chapters/endgame.snbt", endgame)
-transform_atm_create()
+
+# Create-Blöcke (offset) in das eine Kapitel einfügen (quests ist der letzte Key)
+create_blocks = transform_atm_create()
+ct = snbt(main_chapter)
+i = ct.rfind("\n\t]")  # Schließen des quests-Arrays
+merged = ct[:i] + "\n" + create_blocks + ct[i:] + "\n"
+write_text("chapters/questline.snbt", merged)
+
+# alte Einzel-Kapitel entfernen (alles ist jetzt EINE Seite)
+for old in ("willkommen", "farmen_und_leben", "kolonien", "create", "aeronautics", "welt", "wirtschaft", "endgame"):
+    p = os.path.join(OUT, "chapters", old + ".snbt")
+    if os.path.exists(p): os.remove(p); print("removed", old)
+
 print("total ids used (generated):", _counter)
