@@ -6,7 +6,7 @@ hash = "cac58b25be9750958e08989460e617325b27169b3e5eeaeb3022e63ba6798a4a"
 
 [[files]]
 file = "README.md"
-hash = "e7fcc67a90c45b29b51cff7a8c27ff2a03ddc2e865b959ef3587478fcd1fd272"
+hash = "d09ccf3c285a181604bcf77afa21818967426e8fd1d1fe1168b6cf24f7acde42"
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
@@ -14,7 +14,7 @@ hash = "bd5d74af02ea8f7fddd2ddb3faeff50516b46818c76ec3e8ceaeb0747e50afa5"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/questline.snbt"
-hash = "374604113e214e4568b105b46bde6db2f3f18d27151f2ae364c48a824c2be867"
+hash = "3850357829e31cca523d7194f2037559b31a9b8effeb0a13c7c51ae1d7e44dea"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"

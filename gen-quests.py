@@ -100,7 +100,7 @@ reg("z_garden", "z_sugar", "z_pumpkin", "z_berries", "z_rice", "z_soil", "z_toma
     "z_pasta", "z_stew", "z_drinks", "z_cocoa", "z_pumpkinfeast", "z_dairy", "z_wool", "z_honey",
     "z_venison", "z_duck", "z_roast", "z_fish", "z_grill", "z_cannery", "z_harvester", "z_soup")
 reg("ae_mass_envelope", "ae_mass_propeller", "ae_mass_pearl")
-reg("cr_start", "cr_press", "cr_power", "cr_processing", "cr_belt", "cr_mixing", "cr_farm",
+reg("cr_start", "cr_press", "cr_power", "cr_processing", "cr_belt", "cr_storage", "cr_mixing", "cr_farm",
     "cr_autocraft", "cr_contraption", "cr_energy", "cr_kitchen", "cr_factory", "cr_treefarm",
     "cr_train", "cr_trainnet", "cr_advanced")
 reg("ae_intro", "ae_wood_prop", "ae_andesite_prop", "ae_prop_bearing", "ae_burner", "ae_steam",
@@ -224,7 +224,7 @@ colony_q = [
            "&7Du darfst beliebig viele Kolonien gründen!"],
           tasks=[task_item("minecolonies:supplycampdeployer"), task_item("minecolonies:blockhuttownhall")],
           rewards=[rew_item("minecolonies:blockhutbuilder"), coin_gold(2), rew_xp(20)],
-          deps=["f_kueche"], icon="minecolonies:blockhuttownhall", size=1.5, shape="hexagon"),
+          deps=["w_start"], icon="minecolonies:blockhuttownhall", size=1.5, shape="hexagon"),
     quest("c_builder", 2.0, 0.0, "Der Baumeister",
           ["Platziere die &aBuilder's Hut&r, weise einen Bürger zu und gib einen Bauauftrag."],
           tasks=[task_item("minecolonies:blockhutbuilder")],
@@ -396,6 +396,14 @@ create_q = [
           tasks=[task_item("create:belt_connector", 4), task_item("create:brass_tunnel")],
           rewards=[coin_gold(2), rew_xp(20)],
           deps=["cr_press"], icon="create:brass_tunnel", size=1.25),
+    quest("cr_storage", 4.5, 3.0, "Das Lager",
+          ["Ordnung muss sein: baue ein zentrales &aWarenlager&r aus &aItem Vaults&r.",
+           "Per Trichter/Förderband befüllt, gibt dir eines deiner Maschinen-Outputs sauber",
+           "sortiert wieder aus — das Herz jeder Create-Basis.",
+           "", "&7Tipp: Vaults lassen sich zu riesigen Lagerblöcken zusammenbauen."],
+          tasks=[task_item("create:item_vault", 4)],
+          rewards=[coin_gold(1), rew_xp(20)],
+          deps=["cr_belt"], icon="create:item_vault", size=1.25),
     quest("cr_mixing", 0.0, 4.5, "Misch-Anlage",
           ["&aMixer&r + &aBecken&r mischen Legierungen in Serie — z.B. Andesite Alloy",
            "am Fließband."],
@@ -631,7 +639,7 @@ world_q = [
          ["Die Welt ist riesig und realistisch: epische Biome und Gebirge.",
           "Erkunde sie, setze Wegpunkte und finde schöne Kolonie-Plätze.",
           "", "&8(Info-Quest.)"],
-         deps=["cr_start"], icon="minecraft:filled_map", size=1.5),
+         deps=["w_start"], icon="minecraft:filled_map", size=1.5),
     info("w_dh", 0.0, 1.5, "Weite Sicht (Distant Horizons)",
          ["&aDistant Horizons&r rendert das Gelände als LODs bis zum Horizont.",
           "&7Tipp: Für flüssiges DH den ZGC-GC nutzen (Java 21); Chunky kann LOD-Löcher",
@@ -745,8 +753,64 @@ endgame_q = [
           icon="minecraft:nether_star", size=2.5, shape="gear"),
 ]
 
+# ---- MineColonies-Questline (groß; aus den echten Hütten-Blöcken erzeugt) ---
+MC_NAME = {
+ "warehouse":"Lagerhaus","deliveryman":"Bote","lumberjack":"Holzfäller","miner":"Bergmann",
+ "fisherman":"Fischer","stonemason":"Steinmetz","sawmill":"Sägewerk","smeltery":"Schmelze",
+ "stonesmeltery":"Steinschmelze","farmer":"Bauernhof","field":"Feld","kitchen":"Küche",
+ "baker":"Bäckerei","cowboy":"Rinderfarm","shepherd":"Schäferei","swineherder":"Schweinefarm",
+ "chickenherder":"Hühnerfarm","rabbithutch":"Kaninchenstall","beekeeper":"Imkerei",
+ "plantation":"Plantage","plantationfield":"Plantagen-Feld","florist":"Blumenladen",
+ "composter":"Komposter","blacksmith":"Schmied","mechanic":"Mechaniker","dyer":"Färberei",
+ "fletcher":"Bogner","glassblower":"Glasbläser","crusher":"Brecher","sifter":"Siebanlage",
+ "concretemixer":"Betonmischer","university":"Universität","library":"Bibliothek","school":"Schule",
+ "hospital":"Krankenhaus","graveyard":"Friedhof","guardtower":"Wachturm","archery":"Schießstand",
+ "barracks":"Kaserne","combatacademy":"Kampfakademie","gatehouse":"Torhaus","enchanter":"Verzauberer",
+ "alchemist":"Alchemist","mysticalsite":"Mystischer Ort","netherworker":"Nether-Arbeiter",
+ "stable":"Stall","citizen":"Wohnhaus",
+}
+MC_CATS = [
+ ("Logistik & Lager",      ["warehouse","deliveryman"]),
+ ("Rohstoffe",             ["lumberjack","miner","fisherman","stonemason","sawmill","smeltery","stonesmeltery"]),
+ ("Nahrung & Tiere",       ["farmer","field","kitchen","baker","cowboy","shepherd","swineherder",
+                            "chickenherder","rabbithutch","beekeeper","plantation","plantationfield",
+                            "florist","composter"]),
+ ("Handwerk",              ["blacksmith","mechanic","dyer","fletcher","glassblower","crusher","sifter","concretemixer"]),
+ ("Wissen & Gesundheit",   ["university","library","school","hospital","graveyard"]),
+ ("Verteidigung",          ["guardtower","archery","barracks","combatacademy","gatehouse"]),
+ ("Mystik & Spezial",      ["enchanter","alchemist","mysticalsite","netherworker","stable","citizen"]),
+]
+reg("mc_hub")
+for _cat, _huts in MC_CATS:
+    for _h in _huts: reg("mc_" + _h)
+
+mc_q = [
+    quest("mc_hub", 9.0, -2.0, "Eine wachsende Kolonie",
+          ["Deine Kolonie soll zur Großstadt werden! Schalte nach und nach alle",
+           "&aMineColonies-Hütten&r frei — Logistik, Rohstoffe, Nahrung, Handwerk,",
+           "Wissen, Verteidigung und Mystik. &7Jede Hütte = ein Bauauftrag für den Baumeister."],
+          tasks=[task_item("minecolonies:blockhutwarehouse")],
+          rewards=[coin_gold(2), rew_xp(25)],
+          deps=["c_buerger"], icon="minecolonies:blockhutwarehouse", size=2.0, shape="gear"),
+]
+for _ci, (_cat, _huts) in enumerate(MC_CATS):
+    _x = float(_ci * 3)
+    _prev = "mc_hub"
+    for _j, _h in enumerate(_huts):
+        _last = (_j == len(_huts) - 1)
+        mc_q.append(quest(
+            "mc_" + _h, _x, float((_j + 1) * 1.5), MC_NAME[_h] + (f"  §8({_cat})" if _j == 0 else ""),
+            [f"Errichte die &a{MC_NAME[_h]}&r in einer deiner Kolonien (Bauauftrag beim Baumeister).",
+             f"&7Kategorie: {_cat}."],
+            tasks=[task_item("minecolonies:blockhut" + _h)],
+            rewards=[(coin_gold(1) if (_j >= 3 or _last) else coin_silver(10)), rew_xp(12)],
+            deps=[_prev],
+            icon="minecolonies:blockhut" + _h,
+            shape=("hexagon" if _j == 0 else None), size=(1.25 if _j == 0 else None)))
+        _prev = "mc_" + _h
+
 # ============================================================================
-# Zusammenführen: alle Cluster versetzt in EIN Kapitel
+# Zusammenführen: alle Cluster RADIAL um die zentrale Willkommens-Quest
 # ============================================================================
 def shift(qs, dx, dy):
     for q in qs:
@@ -754,20 +818,23 @@ def shift(qs, dx, dy):
     return qs
 
 all_quests = []
-all_quests += shift(welcome_q, 0.0, 0.0)     # y ~ -2..2
-all_quests += shift(farm_q,    0.0, 7.0)     # y ~ 7..8.5
-all_quests += shift(colony_q,  0.0, 13.0)    # y ~ 13..14.5
-all_quests += shift(cozy_q,  -17.0, 2.0)     # Cozy/Sunlit-Cluster links: x ~ -21..-13, y ~ 2..9.5
-all_quests += shift(create_q,  0.0, 18.0)    # y ~ 18..28.5
-all_quests += shift(aero_q,    22.0, 19.0)   # rechts: x ~ 18.5..24, y ~ 19..34
-all_quests += shift(world_q,   0.0, 42.0)    # y ~ 42..43.5
-all_quests += shift(econ_q,    0.0, 47.0)    # y ~ 47..48.5
-all_quests += shift(endgame_q, 0.0, 54.0)    # y ~ 50..60
+all_quests += shift(welcome_q, 0.0,  0.0)    # ZENTRUM
+all_quests += shift(farm_q,    0.0, -5.0)    # NORD: Farm
+all_quests += shift(cozy_q,    0.0, -16.0)   # NORD: Cozy/Sunlit (über der Farm)
+all_quests += shift(colony_q,  8.0,  0.0)    # OST: Kolonie-Grundlagen
+all_quests += shift(mc_q,      8.0,  3.0)    # OST: große MineColonies-Questline
+all_quests += shift(create_q,  0.0,  5.0)    # SÜD: Create-Kontraptionen
+all_quests += shift(aero_q,   -1.0, 18.0)    # SÜD (unter Create): Aeronautics
+all_quests += shift(world_q,  -8.0,  0.0)    # WEST: Welt
+all_quests += shift(econ_q,   -8.0,  3.0)    # WEST: Wirtschaft
+all_quests += shift(endgame_q,-15.0, 7.0)    # WEST-SÜD: Endgame
 
 main_chapter = {
     "default_hide_dependency_lines": False, "default_quest_shape": "",
     "filename": "questline", "group": G, "icon": item("minecraft:cake"),
     "id": CH_MAIN, "order_index": 0, "progression_mode": "flexible",
+    # Quests sind VERSTECKT, bis ihre Voraussetzungen sichtbar/erreicht sind (nicht nur gelockt):
+    "hide_quest_until_deps_visible": True,
     "quest_links": [], "title": "🌾 Cozy Farming SMP", "quests": all_quests,
 }
 

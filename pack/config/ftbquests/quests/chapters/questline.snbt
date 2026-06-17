@@ -10,6 +10,7 @@
 	id: "4C0F000000000002"
 	order_index: 0
 	progression_mode: "flexible"
+	hide_quest_until_deps_visible: true
 	quest_links: [ ]
 	title: "🌾 Cozy Farming SMP"
 	quests: [
@@ -33,14 +34,14 @@
 			]
 			tasks: [
 				{
-					id: "4C0F00000000006C"
+					id: "4C0F00000000006D"
 					type: "dimension"
 					dimension: "minecraft:overworld"
 				}
 			]
 			rewards: [
 				{
-					id: "4C0F00000000006D"
+					id: "4C0F00000000006E"
 					item: {
 						count: 1
 						id: "minecraft:bread"
@@ -49,7 +50,7 @@
 					count: 4
 				}
 				{
-					id: "4C0F00000000006E"
+					id: "4C0F00000000006F"
 					item: {
 						count: 1
 						id: "magic_coins:silver_coin"
@@ -58,7 +59,7 @@
 					count: 10
 				}
 				{
-					id: "4C0F00000000006F"
+					id: "4C0F000000000070"
 					type: "xp"
 					xp: 10
 				}
@@ -82,7 +83,7 @@
 			]
 			tasks: [
 				{
-					id: "4C0F000000000070"
+					id: "4C0F000000000071"
 					item: {
 						count: 1
 						id: "minecraft:crafting_table"
@@ -92,7 +93,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000071"
+					id: "4C0F000000000072"
 					item: {
 						count: 1
 						id: "minecraft:oak_log"
@@ -101,7 +102,7 @@
 					count: 16
 				}
 				{
-					id: "4C0F000000000072"
+					id: "4C0F000000000073"
 					item: {
 						count: 1
 						id: "magic_coins:silver_coin"
@@ -132,7 +133,7 @@
 			]
 			tasks: [
 				{
-					id: "4C0F000000000073"
+					id: "4C0F000000000074"
 					type: "checkmark"
 				}
 			]
@@ -159,7 +160,7 @@
 			]
 			tasks: [
 				{
-					id: "4C0F000000000074"
+					id: "4C0F000000000075"
 					type: "checkmark"
 				}
 			]
@@ -190,7 +191,7 @@
 			]
 			tasks: [
 				{
-					id: "4C0F000000000075"
+					id: "4C0F000000000076"
 					type: "checkmark"
 				}
 			]
@@ -217,7 +218,7 @@
 			]
 			tasks: [
 				{
-					id: "4C0F000000000076"
+					id: "4C0F000000000077"
 					type: "checkmark"
 				}
 			]
@@ -245,7 +246,7 @@
 			]
 			tasks: [
 				{
-					id: "4C0F000000000077"
+					id: "4C0F000000000078"
 					type: "checkmark"
 				}
 			]
@@ -254,7 +255,7 @@
 		{
 			id: "4C0F00000000000A"
 			x: 0.0d
-			y: 7.0d
+			y: -5.0d
 			title: "Die erste Ernte"
 			icon: {
 				count: 1
@@ -271,7 +272,7 @@
 			]
 			tasks: [
 				{
-					id: "4C0F000000000078"
+					id: "4C0F000000000079"
 					item: {
 						count: 1
 						id: "minecraft:wheat"
@@ -280,7 +281,7 @@
 					count: 8L
 				}
 				{
-					id: "4C0F000000000079"
+					id: "4C0F00000000007A"
 					item: {
 						count: 1
 						id: "minecraft:wooden_hoe"
@@ -290,7 +291,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F00000000007A"
+					id: "4C0F00000000007B"
 					item: {
 						count: 1
 						id: "farmersdelight:cabbage_seeds"
@@ -299,7 +300,7 @@
 					count: 3
 				}
 				{
-					id: "4C0F00000000007B"
+					id: "4C0F00000000007C"
 					item: {
 						count: 1
 						id: "farmersdelight:tomato_seeds"
@@ -308,7 +309,7 @@
 					count: 3
 				}
 				{
-					id: "4C0F00000000007C"
+					id: "4C0F00000000007D"
 					item: {
 						count: 1
 						id: "magic_coins:silver_coin"
@@ -317,7 +318,7 @@
 					count: 15
 				}
 				{
-					id: "4C0F00000000007D"
+					id: "4C0F00000000007E"
 					type: "xp"
 					xp: 10
 				}
@@ -326,7 +327,7 @@
 		{
 			id: "4C0F00000000000B"
 			x: 2.0d
-			y: 7.0d
+			y: -5.0d
 			title: "Die Küche (Farmer's Delight)"
 			icon: {
 				count: 1
@@ -342,7 +343,7 @@
 			]
 			tasks: [
 				{
-					id: "4C0F00000000007E"
+					id: "4C0F00000000007F"
 					item: {
 						count: 1
 						id: "farmersdelight:cooking_pot"
@@ -350,7 +351,7 @@
 					type: "item"
 				}
 				{
-					id: "4C0F00000000007F"
+					id: "4C0F000000000080"
 					item: {
 						count: 1
 						id: "farmersdelight:cutting_board"
@@ -358,7 +359,7 @@
 					type: "item"
 				}
 				{
-					id: "4C0F000000000080"
+					id: "4C0F000000000081"
 					item: {
 						count: 1
 						id: "farmersdelight:vegetable_soup"
@@ -368,7 +369,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000081"
+					id: "4C0F000000000082"
 					item: {
 						count: 1
 						id: "farmersdelight:skillet"
@@ -376,7 +377,7 @@
 					type: "item"
 				}
 				{
-					id: "4C0F000000000082"
+					id: "4C0F000000000083"
 					item: {
 						count: 1
 						id: "magic_coins:gold_coin"
@@ -384,7 +385,7 @@
 					type: "item"
 				}
 				{
-					id: "4C0F000000000083"
+					id: "4C0F000000000084"
 					type: "xp"
 					xp: 15
 				}
@@ -393,7 +394,7 @@
 		{
 			id: "4C0F00000000000C"
 			x: 4.0d
-			y: 7.0d
+			y: -5.0d
 			title: "Genuss \\& Vielfalt"
 			icon: {
 				count: 1
@@ -409,7 +410,7 @@
 			]
 			tasks: [
 				{
-					id: "4C0F000000000084"
+					id: "4C0F000000000085"
 					item: {
 						count: 1
 						id: "farmersdelight:apple_pie"
@@ -419,7 +420,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000085"
+					id: "4C0F000000000086"
 					item: {
 						count: 1
 						id: "magic_coins:silver_coin"
@@ -428,7 +429,7 @@
 					count: 15
 				}
 				{
-					id: "4C0F000000000086"
+					id: "4C0F000000000087"
 					type: "xp"
 					xp: 10
 				}
@@ -437,7 +438,7 @@
 		{
 			id: "4C0F00000000000D"
 			x: 2.0d
-			y: 8.5d
+			y: -3.5d
 			title: "Die Jahreszeiten (Serene Seasons)"
 			icon: {
 				count: 1
@@ -455,7 +456,7 @@
 			]
 			tasks: [
 				{
-					id: "4C0F000000000087"
+					id: "4C0F000000000088"
 					type: "checkmark"
 				}
 			]
@@ -464,7 +465,7 @@
 		{
 			id: "4C0F00000000000E"
 			x: 0.0d
-			y: 8.5d
+			y: -3.5d
 			title: "Tiere \\& Zucht (Naturalist)"
 			icon: {
 				count: 1
@@ -480,7 +481,7 @@
 			]
 			tasks: [
 				{
-					id: "4C0F000000000088"
+					id: "4C0F000000000089"
 					item: {
 						count: 1
 						id: "minecraft:leather"
@@ -489,7 +490,7 @@
 					count: 8L
 				}
 				{
-					id: "4C0F000000000089"
+					id: "4C0F00000000008A"
 					item: {
 						count: 1
 						id: "minecraft:egg"
@@ -500,7 +501,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F00000000008A"
+					id: "4C0F00000000008B"
 					item: {
 						count: 1
 						id: "minecraft:wheat"
@@ -509,7 +510,7 @@
 					count: 16
 				}
 				{
-					id: "4C0F00000000008B"
+					id: "4C0F00000000008C"
 					item: {
 						count: 1
 						id: "magic_coins:silver_coin"
@@ -518,7 +519,7 @@
 					count: 15
 				}
 				{
-					id: "4C0F00000000008C"
+					id: "4C0F00000000008D"
 					type: "xp"
 					xp: 10
 				}
@@ -527,7 +528,7 @@
 		{
 			id: "4C0F00000000000F"
 			x: 4.0d
-			y: 8.5d
+			y: -3.5d
 			title: "Fähigkeiten (Pufferfish's Skills)"
 			icon: {
 				count: 1
@@ -545,7 +546,7 @@
 			]
 			tasks: [
 				{
-					id: "4C0F00000000008D"
+					id: "4C0F00000000008E"
 					type: "checkmark"
 				}
 			]
@@ -554,7 +555,7 @@
 		{
 			id: "4C0F000000000010"
 			x: -2.0d
-			y: 7.0d
+			y: -5.0d
 			title: "Angeln (Aquaculture)"
 			icon: {
 				count: 1
@@ -570,7 +571,7 @@
 			]
 			tasks: [
 				{
-					id: "4C0F00000000008E"
+					id: "4C0F00000000008F"
 					item: {
 						count: 1
 						id: "minecraft:fishing_rod"
@@ -578,7 +579,7 @@
 					type: "item"
 				}
 				{
-					id: "4C0F00000000008F"
+					id: "4C0F000000000090"
 					item: {
 						count: 1
 						id: "minecraft:cod"
@@ -589,7 +590,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000090"
+					id: "4C0F000000000091"
 					item: {
 						count: 1
 						id: "farmersdelight:cooked_cod_slice"
@@ -598,7 +599,7 @@
 					count: 4
 				}
 				{
-					id: "4C0F000000000091"
+					id: "4C0F000000000092"
 					item: {
 						count: 1
 						id: "magic_coins:silver_coin"
@@ -607,270 +608,16 @@
 					count: 15
 				}
 				{
-					id: "4C0F000000000092"
+					id: "4C0F000000000093"
 					type: "xp"
 					xp: 10
 				}
 			]
 		}
 		{
-			id: "4C0F000000000011"
-			x: 0.0d
-			y: 13.0d
-			title: "Die erste Kolonie"
-			icon: {
-				count: 1
-				id: "minecolonies:blockhuttownhall"
-			}
-			shape: "hexagon"
-			size: 1.5d
-			description: [
-				"Platziere den &aSupply Camp&r, packe die Kiste aus und setze dein &aRathaus&r."
-				"&7Du darfst beliebig viele Kolonien gründen!"
-			]
-			dependencies: [
-				"4C0F00000000000B"
-			]
-			tasks: [
-				{
-					id: "4C0F000000000093"
-					item: {
-						count: 1
-						id: "minecolonies:supplycampdeployer"
-					}
-					type: "item"
-				}
-				{
-					id: "4C0F000000000094"
-					item: {
-						count: 1
-						id: "minecolonies:blockhuttownhall"
-					}
-					type: "item"
-				}
-			]
-			rewards: [
-				{
-					id: "4C0F000000000095"
-					item: {
-						count: 1
-						id: "minecolonies:blockhutbuilder"
-					}
-					type: "item"
-				}
-				{
-					id: "4C0F000000000096"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
-					count: 2
-				}
-				{
-					id: "4C0F000000000097"
-					type: "xp"
-					xp: 20
-				}
-			]
-		}
-		{
-			id: "4C0F000000000012"
-			x: 2.0d
-			y: 13.0d
-			title: "Der Baumeister"
-			icon: {
-				count: 1
-				id: "minecolonies:blockhutbuilder"
-			}
-			size: 1.25d
-			description: [
-				"Platziere die &aBuilder's Hut&r, weise einen Bürger zu und gib einen Bauauftrag."
-			]
-			dependencies: [
-				"4C0F000000000011"
-			]
-			tasks: [
-				{
-					id: "4C0F000000000098"
-					item: {
-						count: 1
-						id: "minecolonies:blockhutbuilder"
-					}
-					type: "item"
-				}
-			]
-			rewards: [
-				{
-					id: "4C0F000000000099"
-					item: {
-						count: 1
-						id: "minecraft:oak_log"
-					}
-					type: "item"
-					count: 32
-				}
-				{
-					id: "4C0F00000000009A"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
-					count: 2
-				}
-				{
-					id: "4C0F00000000009B"
-					type: "xp"
-					xp: 15
-				}
-			]
-		}
-		{
-			id: "4C0F000000000013"
-			x: 4.0d
-			y: 13.0d
-			title: "Bürger \\& Versorgung"
-			icon: {
-				count: 1
-				id: "minecolonies:blockhutcook"
-			}
-			size: 1.25d
-			description: [
-				"Baue &aKüche&r und &aTaverne&r, damit gekocht und rekrutiert wird."
-				"&7(Verbindet sich direkt mit deiner Farm!)"
-			]
-			dependencies: [
-				"4C0F000000000012"
-			]
-			tasks: [
-				{
-					id: "4C0F00000000009C"
-					item: {
-						count: 1
-						id: "minecolonies:blockhutcook"
-					}
-					type: "item"
-				}
-				{
-					id: "4C0F00000000009D"
-					item: {
-						count: 1
-						id: "minecolonies:blockhuttavern"
-					}
-					type: "item"
-				}
-			]
-			rewards: [
-				{
-					id: "4C0F00000000009E"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
-					count: 3
-				}
-				{
-					id: "4C0F00000000009F"
-					type: "xp"
-					xp: 20
-				}
-			]
-		}
-		{
-			id: "4C0F000000000014"
-			x: 6.0d
-			y: 13.0d
-			title: "Mehrere Zivilisationen"
-			icon: {
-				count: 1
-				id: "minecolonies:clipboard"
-			}
-			size: 1.25d
-			description: [
-				"Der Server erlaubt §lunbegrenzt viele Kolonien§r. Stelle ein zweites"
-				"&aRathaus&r her und gründe eine weitere Kolonie (16 Chunks Abstand)."
-			]
-			dependencies: [
-				"4C0F000000000013"
-			]
-			tasks: [
-				{
-					id: "4C0F0000000000A0"
-					item: {
-						count: 1
-						id: "minecolonies:blockhuttownhall"
-					}
-					type: "item"
-				}
-			]
-			rewards: [
-				{
-					id: "4C0F0000000000A1"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
-					count: 5
-				}
-				{
-					id: "4C0F0000000000A2"
-					type: "xp"
-					xp: 30
-				}
-			]
-		}
-		{
-			id: "4C0F000000000015"
-			x: 4.0d
-			y: 14.5d
-			title: "Schöner Bauen"
-			icon: {
-				count: 1
-				id: "minecraft:painting"
-			}
-			size: 1.0d
-			description: [
-				"Mit &aStructurize&r \\& &aDomum Ornamentum&r baust du frei; dazu Möbel."
-				"Beschaffe ein paar &aGemälde&r zum Dekorieren."
-			]
-			dependencies: [
-				"4C0F000000000013"
-			]
-			tasks: [
-				{
-					id: "4C0F0000000000A3"
-					item: {
-						count: 1
-						id: "minecraft:painting"
-					}
-					type: "item"
-					count: 4L
-				}
-			]
-			rewards: [
-				{
-					id: "4C0F0000000000A4"
-					item: {
-						count: 1
-						id: "magic_coins:silver_coin"
-					}
-					type: "item"
-					count: 20
-				}
-				{
-					id: "4C0F0000000000A5"
-					type: "xp"
-					xp: 15
-				}
-			]
-		}
-		{
 			id: "4C0F000000000016"
-			x: -17.0d
-			y: 2.0d
+			x: 0.0d
+			y: -16.0d
 			title: "Der Gemüsegarten"
 			icon: {
 				count: 1
@@ -887,7 +634,7 @@
 			]
 			tasks: [
 				{
-					id: "4C0F0000000000A6"
+					id: "4C0F0000000000A7"
 					item: {
 						count: 1
 						id: "minecraft:carrot"
@@ -898,7 +645,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F0000000000A7"
+					id: "4C0F0000000000A8"
 					item: {
 						count: 1
 						id: "minecraft:bone_meal"
@@ -907,7 +654,7 @@
 					count: 16
 				}
 				{
-					id: "4C0F0000000000A8"
+					id: "4C0F0000000000A9"
 					item: {
 						count: 1
 						id: "magic_coins:silver_coin"
@@ -916,7 +663,7 @@
 					count: 15
 				}
 				{
-					id: "4C0F0000000000A9"
+					id: "4C0F0000000000AA"
 					type: "xp"
 					xp: 10
 				}
@@ -924,8 +671,8 @@
 		}
 		{
 			id: "4C0F000000000017"
-			x: -15.0d
-			y: 2.0d
+			x: 2.0d
+			y: -16.0d
 			title: "Süße Felder"
 			icon: {
 				count: 1
@@ -939,7 +686,7 @@
 			]
 			tasks: [
 				{
-					id: "4C0F0000000000AA"
+					id: "4C0F0000000000AB"
 					item: {
 						count: 1
 						id: "minecraft:sugar_cane"
@@ -950,7 +697,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F0000000000AB"
+					id: "4C0F0000000000AC"
 					item: {
 						count: 1
 						id: "magic_coins:silver_coin"
@@ -959,7 +706,7 @@
 					count: 10
 				}
 				{
-					id: "4C0F0000000000AC"
+					id: "4C0F0000000000AD"
 					type: "xp"
 					xp: 10
 				}
@@ -967,8 +714,8 @@
 		}
 		{
 			id: "4C0F000000000018"
-			x: -13.0d
-			y: 2.0d
+			x: 4.0d
+			y: -16.0d
 			title: "Kürbiszeit"
 			icon: {
 				count: 1
@@ -982,7 +729,7 @@
 			]
 			tasks: [
 				{
-					id: "4C0F0000000000AD"
+					id: "4C0F0000000000AE"
 					item: {
 						count: 1
 						id: "minecraft:pumpkin"
@@ -993,7 +740,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F0000000000AE"
+					id: "4C0F0000000000AF"
 					item: {
 						count: 1
 						id: "magic_coins:silver_coin"
@@ -1002,7 +749,7 @@
 					count: 10
 				}
 				{
-					id: "4C0F0000000000AF"
+					id: "4C0F0000000000B0"
 					type: "xp"
 					xp: 10
 				}
@@ -1010,8 +757,8 @@
 		}
 		{
 			id: "4C0F000000000019"
-			x: -19.0d
-			y: 2.0d
+			x: -2.0d
+			y: -16.0d
 			title: "Beeren für die Speisekammer"
 			icon: {
 				count: 1
@@ -1025,7 +772,7 @@
 			]
 			tasks: [
 				{
-					id: "4C0F0000000000B0"
+					id: "4C0F0000000000B1"
 					item: {
 						count: 1
 						id: "minecraft:sweet_berries"
@@ -1036,7 +783,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F0000000000B1"
+					id: "4C0F0000000000B2"
 					item: {
 						count: 1
 						id: "magic_coins:silver_coin"
@@ -1045,7 +792,7 @@
 					count: 10
 				}
 				{
-					id: "4C0F0000000000B2"
+					id: "4C0F0000000000B3"
 					type: "xp"
 					xp: 10
 				}
@@ -1053,8 +800,8 @@
 		}
 		{
 			id: "4C0F00000000001A"
-			x: -19.0d
-			y: 3.5d
+			x: -2.0d
+			y: -14.5d
 			title: "Reisterrassen"
 			icon: {
 				count: 1
@@ -1069,7 +816,7 @@
 			]
 			tasks: [
 				{
-					id: "4C0F0000000000B3"
+					id: "4C0F0000000000B4"
 					item: {
 						count: 1
 						id: "farmersdelight:rice_panicle"
@@ -1080,7 +827,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F0000000000B4"
+					id: "4C0F0000000000B5"
 					item: {
 						count: 1
 						id: "magic_coins:silver_coin"
@@ -1089,7 +836,7 @@
 					count: 15
 				}
 				{
-					id: "4C0F0000000000B5"
+					id: "4C0F0000000000B6"
 					type: "xp"
 					xp: 10
 				}
@@ -1097,8 +844,8 @@
 		}
 		{
 			id: "4C0F00000000001B"
-			x: -17.0d
-			y: 3.5d
+			x: 0.0d
+			y: -14.5d
 			title: "Reicher Boden"
 			icon: {
 				count: 1
@@ -1113,7 +860,7 @@
 			]
 			tasks: [
 				{
-					id: "4C0F0000000000B6"
+					id: "4C0F0000000000B7"
 					item: {
 						count: 1
 						id: "farmersdelight:rich_soil"
@@ -1124,7 +871,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F0000000000B7"
+					id: "4C0F0000000000B8"
 					item: {
 						count: 1
 						id: "farmersdelight:rich_soil"
@@ -1133,7 +880,7 @@
 					count: 16
 				}
 				{
-					id: "4C0F0000000000B8"
+					id: "4C0F0000000000B9"
 					item: {
 						count: 1
 						id: "magic_coins:gold_coin"
@@ -1141,7 +888,7 @@
 					type: "item"
 				}
 				{
-					id: "4C0F0000000000B9"
+					id: "4C0F0000000000BA"
 					type: "xp"
 					xp: 15
 				}
@@ -1149,8 +896,8 @@
 		}
 		{
 			id: "4C0F000000000025"
-			x: -21.0d
-			y: 3.5d
+			x: -4.0d
+			y: -14.5d
 			title: "Honig vom eigenen Bienenstock"
 			icon: {
 				count: 1
@@ -1165,7 +912,7 @@
 			]
 			tasks: [
 				{
-					id: "4C0F0000000000BA"
+					id: "4C0F0000000000BB"
 					item: {
 						count: 1
 						id: "minecraft:honey_bottle"
@@ -1176,7 +923,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F0000000000BB"
+					id: "4C0F0000000000BC"
 					item: {
 						count: 1
 						id: "magic_coins:silver_coin"
@@ -1185,7 +932,7 @@
 					count: 15
 				}
 				{
-					id: "4C0F0000000000BC"
+					id: "4C0F0000000000BD"
 					type: "xp"
 					xp: 10
 				}
@@ -1193,8 +940,8 @@
 		}
 		{
 			id: "4C0F000000000020"
-			x: -15.0d
-			y: 3.5d
+			x: 2.0d
+			y: -14.5d
 			title: "Hofladen-Getränke"
 			icon: {
 				count: 1
@@ -1208,7 +955,7 @@
 			]
 			tasks: [
 				{
-					id: "4C0F0000000000BD"
+					id: "4C0F0000000000BE"
 					item: {
 						count: 1
 						id: "farmersdelight:apple_cider"
@@ -1219,7 +966,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F0000000000BE"
+					id: "4C0F0000000000BF"
 					item: {
 						count: 1
 						id: "magic_coins:silver_coin"
@@ -1228,7 +975,7 @@
 					count: 15
 				}
 				{
-					id: "4C0F0000000000BF"
+					id: "4C0F0000000000C0"
 					type: "xp"
 					xp: 10
 				}
@@ -1236,8 +983,8 @@
 		}
 		{
 			id: "4C0F000000000022"
-			x: -13.0d
-			y: 3.5d
+			x: 4.0d
+			y: -14.5d
 			title: "Erntedank-Bankett"
 			icon: {
 				count: 1
@@ -1251,7 +998,7 @@
 			]
 			tasks: [
 				{
-					id: "4C0F0000000000C0"
+					id: "4C0F0000000000C1"
 					item: {
 						count: 1
 						id: "farmersdelight:stuffed_pumpkin"
@@ -1261,7 +1008,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F0000000000C1"
+					id: "4C0F0000000000C2"
 					item: {
 						count: 1
 						id: "magic_coins:gold_coin"
@@ -1269,7 +1016,7 @@
 					type: "item"
 				}
 				{
-					id: "4C0F0000000000C2"
+					id: "4C0F0000000000C3"
 					type: "xp"
 					xp: 15
 				}
@@ -1277,8 +1024,8 @@
 		}
 		{
 			id: "4C0F000000000029"
-			x: -21.0d
-			y: 5.0d
+			x: -4.0d
+			y: -13.0d
 			title: "Der Dorfteich (Aquaculture)"
 			icon: {
 				count: 1
@@ -1292,7 +1039,7 @@
 			]
 			tasks: [
 				{
-					id: "4C0F0000000000C3"
+					id: "4C0F0000000000C4"
 					item: {
 						count: 1
 						id: "aquaculture:iron_fillet_knife"
@@ -1302,7 +1049,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F0000000000C4"
+					id: "4C0F0000000000C5"
 					item: {
 						count: 1
 						id: "magic_coins:silver_coin"
@@ -1311,7 +1058,7 @@
 					count: 10
 				}
 				{
-					id: "4C0F0000000000C5"
+					id: "4C0F0000000000C6"
 					type: "xp"
 					xp: 10
 				}
@@ -1319,8 +1066,8 @@
 		}
 		{
 			id: "4C0F00000000001C"
-			x: -17.0d
-			y: 5.0d
+			x: 0.0d
+			y: -13.0d
 			title: "Tomatensauce einkochen"
 			icon: {
 				count: 1
@@ -1336,7 +1083,7 @@
 			]
 			tasks: [
 				{
-					id: "4C0F0000000000C6"
+					id: "4C0F0000000000C7"
 					item: {
 						count: 1
 						id: "farmersdelight:tomato_sauce"
@@ -1347,7 +1094,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F0000000000C7"
+					id: "4C0F0000000000C8"
 					item: {
 						count: 1
 						id: "magic_coins:silver_coin"
@@ -1356,7 +1103,7 @@
 					count: 15
 				}
 				{
-					id: "4C0F0000000000C8"
+					id: "4C0F0000000000C9"
 					type: "xp"
 					xp: 10
 				}
@@ -1364,8 +1111,8 @@
 		}
 		{
 			id: "4C0F00000000001D"
-			x: -15.0d
-			y: 5.0d
+			x: 2.0d
+			y: -13.0d
 			title: "Frischer Salat vom Beet"
 			icon: {
 				count: 1
@@ -1379,7 +1126,7 @@
 			]
 			tasks: [
 				{
-					id: "4C0F0000000000C9"
+					id: "4C0F0000000000CA"
 					item: {
 						count: 1
 						id: "farmersdelight:mixed_salad"
@@ -1390,7 +1137,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F0000000000CA"
+					id: "4C0F0000000000CB"
 					item: {
 						count: 1
 						id: "magic_coins:silver_coin"
@@ -1399,7 +1146,7 @@
 					count: 15
 				}
 				{
-					id: "4C0F0000000000CB"
+					id: "4C0F0000000000CC"
 					type: "xp"
 					xp: 10
 				}
@@ -1407,8 +1154,8 @@
 		}
 		{
 			id: "4C0F00000000001E"
-			x: -19.0d
-			y: 5.0d
+			x: -2.0d
+			y: -13.0d
 			title: "Pasta-Abend"
 			icon: {
 				count: 1
@@ -1423,7 +1170,7 @@
 			]
 			tasks: [
 				{
-					id: "4C0F0000000000CC"
+					id: "4C0F0000000000CD"
 					item: {
 						count: 1
 						id: "farmersdelight:pasta_with_meatballs"
@@ -1434,7 +1181,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F0000000000CD"
+					id: "4C0F0000000000CE"
 					item: {
 						count: 1
 						id: "magic_coins:gold_coin"
@@ -1442,7 +1189,7 @@
 					type: "item"
 				}
 				{
-					id: "4C0F0000000000CE"
+					id: "4C0F0000000000CF"
 					type: "xp"
 					xp: 15
 				}
@@ -1450,8 +1197,8 @@
 		}
 		{
 			id: "4C0F00000000001F"
-			x: -13.0d
-			y: 5.0d
+			x: 4.0d
+			y: -13.0d
 			title: "Eintopf-Küche"
 			icon: {
 				count: 1
@@ -1466,7 +1213,7 @@
 			]
 			tasks: [
 				{
-					id: "4C0F0000000000CF"
+					id: "4C0F0000000000D0"
 					item: {
 						count: 1
 						id: "farmersdelight:beef_stew"
@@ -1476,7 +1223,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F0000000000D0"
+					id: "4C0F0000000000D1"
 					item: {
 						count: 1
 						id: "magic_coins:silver_coin"
@@ -1485,7 +1232,7 @@
 					count: 15
 				}
 				{
-					id: "4C0F0000000000D1"
+					id: "4C0F0000000000D2"
 					type: "xp"
 					xp: 10
 				}
@@ -1493,8 +1240,8 @@
 		}
 		{
 			id: "4C0F00000000002A"
-			x: -21.0d
-			y: 6.5d
+			x: -4.0d
+			y: -11.5d
 			title: "Fisch vom Grill"
 			icon: {
 				count: 1
@@ -1508,7 +1255,7 @@
 			]
 			tasks: [
 				{
-					id: "4C0F0000000000D2"
+					id: "4C0F0000000000D3"
 					item: {
 						count: 1
 						id: "farmersdelight:grilled_salmon"
@@ -1519,7 +1266,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F0000000000D3"
+					id: "4C0F0000000000D4"
 					item: {
 						count: 1
 						id: "magic_coins:silver_coin"
@@ -1528,7 +1275,7 @@
 					count: 15
 				}
 				{
-					id: "4C0F0000000000D4"
+					id: "4C0F0000000000D5"
 					type: "xp"
 					xp: 10
 				}
@@ -1536,8 +1283,8 @@
 		}
 		{
 			id: "4C0F000000000021"
-			x: -15.0d
-			y: 6.5d
+			x: 2.0d
+			y: -11.5d
 			title: "Eine Kanne heißer Kakao"
 			icon: {
 				count: 1
@@ -1551,7 +1298,7 @@
 			]
 			tasks: [
 				{
-					id: "4C0F0000000000D5"
+					id: "4C0F0000000000D6"
 					item: {
 						count: 1
 						id: "farmersdelight:hot_cocoa"
@@ -1562,7 +1309,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F0000000000D6"
+					id: "4C0F0000000000D7"
 					item: {
 						count: 1
 						id: "magic_coins:silver_coin"
@@ -1571,7 +1318,7 @@
 					count: 15
 				}
 				{
-					id: "4C0F0000000000D7"
+					id: "4C0F0000000000D8"
 					type: "xp"
 					xp: 10
 				}
@@ -1579,8 +1326,8 @@
 		}
 		{
 			id: "4C0F000000000023"
-			x: -19.0d
-			y: 6.5d
+			x: -2.0d
+			y: -11.5d
 			title: "Die kleine Molkerei"
 			icon: {
 				count: 1
@@ -1595,7 +1342,7 @@
 			]
 			tasks: [
 				{
-					id: "4C0F0000000000D8"
+					id: "4C0F0000000000D9"
 					item: {
 						count: 1
 						id: "farmersdelight:milk_bottle"
@@ -1606,7 +1353,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F0000000000D9"
+					id: "4C0F0000000000DA"
 					item: {
 						count: 1
 						id: "magic_coins:silver_coin"
@@ -1615,7 +1362,7 @@
 					count: 15
 				}
 				{
-					id: "4C0F0000000000DA"
+					id: "4C0F0000000000DB"
 					type: "xp"
 					xp: 10
 				}
@@ -1623,8 +1370,8 @@
 		}
 		{
 			id: "4C0F000000000024"
-			x: -21.0d
-			y: 8.0d
+			x: -4.0d
+			y: -10.0d
 			title: "Wollige Mitbewohner"
 			icon: {
 				count: 1
@@ -1638,7 +1385,7 @@
 			]
 			tasks: [
 				{
-					id: "4C0F0000000000DB"
+					id: "4C0F0000000000DC"
 					item: {
 						count: 1
 						id: "minecraft:white_wool"
@@ -1649,7 +1396,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F0000000000DC"
+					id: "4C0F0000000000DD"
 					item: {
 						count: 1
 						id: "magic_coins:silver_coin"
@@ -1658,7 +1405,7 @@
 					count: 15
 				}
 				{
-					id: "4C0F0000000000DD"
+					id: "4C0F0000000000DE"
 					type: "xp"
 					xp: 10
 				}
@@ -1666,8 +1413,8 @@
 		}
 		{
 			id: "4C0F000000000026"
-			x: -19.0d
-			y: 8.0d
+			x: -2.0d
+			y: -10.0d
 			title: "Wild aus dem Wald (Naturalist)"
 			icon: {
 				count: 1
@@ -1681,7 +1428,7 @@
 			]
 			tasks: [
 				{
-					id: "4C0F0000000000DE"
+					id: "4C0F0000000000DF"
 					item: {
 						count: 1
 						id: "naturalist:venison"
@@ -1692,7 +1439,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F0000000000DF"
+					id: "4C0F0000000000E0"
 					item: {
 						count: 1
 						id: "magic_coins:silver_coin"
@@ -1701,7 +1448,7 @@
 					count: 15
 				}
 				{
-					id: "4C0F0000000000E0"
+					id: "4C0F0000000000E1"
 					type: "xp"
 					xp: 10
 				}
@@ -1709,8 +1456,8 @@
 		}
 		{
 			id: "4C0F000000000027"
-			x: -17.0d
-			y: 8.0d
+			x: 0.0d
+			y: -10.0d
 			title: "Ententeich"
 			icon: {
 				count: 1
@@ -1724,7 +1471,7 @@
 			]
 			tasks: [
 				{
-					id: "4C0F0000000000E1"
+					id: "4C0F0000000000E2"
 					item: {
 						count: 1
 						id: "naturalist:duck_egg"
@@ -1735,7 +1482,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F0000000000E2"
+					id: "4C0F0000000000E3"
 					item: {
 						count: 1
 						id: "magic_coins:silver_coin"
@@ -1744,7 +1491,7 @@
 					count: 15
 				}
 				{
-					id: "4C0F0000000000E3"
+					id: "4C0F0000000000E4"
 					type: "xp"
 					xp: 10
 				}
@@ -1752,8 +1499,8 @@
 		}
 		{
 			id: "4C0F000000000028"
-			x: -15.0d
-			y: 8.0d
+			x: 2.0d
+			y: -10.0d
 			title: "Sonntagsbraten"
 			icon: {
 				count: 1
@@ -1768,7 +1515,7 @@
 			]
 			tasks: [
 				{
-					id: "4C0F0000000000E4"
+					id: "4C0F0000000000E5"
 					item: {
 						count: 1
 						id: "farmersdelight:roast_chicken"
@@ -1778,7 +1525,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F0000000000E5"
+					id: "4C0F0000000000E6"
 					item: {
 						count: 1
 						id: "magic_coins:gold_coin"
@@ -1786,7 +1533,7 @@
 					type: "item"
 				}
 				{
-					id: "4C0F0000000000E6"
+					id: "4C0F0000000000E7"
 					type: "xp"
 					xp: 20
 				}
@@ -1794,8 +1541,8 @@
 		}
 		{
 			id: "4C0F00000000002C"
-			x: -19.0d
-			y: 9.5d
+			x: -2.0d
+			y: -8.5d
 			title: "Große Erntemaschine"
 			icon: {
 				count: 1
@@ -1808,11 +1555,11 @@
 			]
 			dependencies: [
 				"4C0F00000000001B"
-				"4C0F000000000037"
+				"4C0F000000000038"
 			]
 			tasks: [
 				{
-					id: "4C0F0000000000E7"
+					id: "4C0F0000000000E8"
 					item: {
 						count: 1
 						id: "minecraft:wheat"
@@ -1824,7 +1571,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F0000000000E8"
+					id: "4C0F0000000000E9"
 					item: {
 						count: 1
 						id: "magic_coins:gold_coin"
@@ -1833,7 +1580,7 @@
 					count: 3
 				}
 				{
-					id: "4C0F0000000000E9"
+					id: "4C0F0000000000EA"
 					type: "xp"
 					xp: 35
 				}
@@ -1841,8 +1588,8 @@
 		}
 		{
 			id: "4C0F00000000002B"
-			x: -17.0d
-			y: 9.5d
+			x: 0.0d
+			y: -8.5d
 			title: "Konservenfabrik"
 			icon: {
 				count: 1
@@ -1855,11 +1602,11 @@
 			]
 			dependencies: [
 				"4C0F00000000001C"
-				"4C0F000000000038"
+				"4C0F000000000039"
 			]
 			tasks: [
 				{
-					id: "4C0F0000000000EA"
+					id: "4C0F0000000000EB"
 					item: {
 						count: 1
 						id: "farmersdelight:tomato_sauce"
@@ -1871,7 +1618,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F0000000000EB"
+					id: "4C0F0000000000EC"
 					item: {
 						count: 1
 						id: "magic_coins:gold_coin"
@@ -1880,7 +1627,7 @@
 					count: 3
 				}
 				{
-					id: "4C0F0000000000EC"
+					id: "4C0F0000000000ED"
 					type: "xp"
 					xp: 35
 				}
@@ -1888,8 +1635,8 @@
 		}
 		{
 			id: "4C0F00000000002D"
-			x: -15.0d
-			y: 9.5d
+			x: 2.0d
+			y: -8.5d
 			title: "Suppenküche fürs Dorf"
 			icon: {
 				count: 1
@@ -1903,7 +1650,7 @@
 			]
 			tasks: [
 				{
-					id: "4C0F0000000000ED"
+					id: "4C0F0000000000EE"
 					item: {
 						count: 1
 						id: "farmersdelight:noodle_soup"
@@ -1915,7 +1662,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F0000000000EE"
+					id: "4C0F0000000000EF"
 					item: {
 						count: 1
 						id: "magic_coins:gold_coin"
@@ -1924,16 +1671,2323 @@
 					count: 2
 				}
 				{
-					id: "4C0F0000000000EF"
+					id: "4C0F0000000000F0"
 					type: "xp"
 					xp: 30
 				}
 			]
 		}
 		{
+			id: "4C0F000000000011"
+			x: 8.0d
+			y: 0.0d
+			title: "Die erste Kolonie"
+			icon: {
+				count: 1
+				id: "minecolonies:blockhuttownhall"
+			}
+			shape: "hexagon"
+			size: 1.5d
+			description: [
+				"Platziere den &aSupply Camp&r, packe die Kiste aus und setze dein &aRathaus&r."
+				"&7Du darfst beliebig viele Kolonien gründen!"
+			]
+			dependencies: [
+				"4C0F000000000003"
+			]
+			tasks: [
+				{
+					id: "4C0F000000000094"
+					item: {
+						count: 1
+						id: "minecolonies:supplycampdeployer"
+					}
+					type: "item"
+				}
+				{
+					id: "4C0F000000000095"
+					item: {
+						count: 1
+						id: "minecolonies:blockhuttownhall"
+					}
+					type: "item"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F000000000096"
+					item: {
+						count: 1
+						id: "minecolonies:blockhutbuilder"
+					}
+					type: "item"
+				}
+				{
+					id: "4C0F000000000097"
+					item: {
+						count: 1
+						id: "magic_coins:gold_coin"
+					}
+					type: "item"
+					count: 2
+				}
+				{
+					id: "4C0F000000000098"
+					type: "xp"
+					xp: 20
+				}
+			]
+		}
+		{
+			id: "4C0F000000000012"
+			x: 10.0d
+			y: 0.0d
+			title: "Der Baumeister"
+			icon: {
+				count: 1
+				id: "minecolonies:blockhutbuilder"
+			}
+			size: 1.25d
+			description: [
+				"Platziere die &aBuilder's Hut&r, weise einen Bürger zu und gib einen Bauauftrag."
+			]
+			dependencies: [
+				"4C0F000000000011"
+			]
+			tasks: [
+				{
+					id: "4C0F000000000099"
+					item: {
+						count: 1
+						id: "minecolonies:blockhutbuilder"
+					}
+					type: "item"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F00000000009A"
+					item: {
+						count: 1
+						id: "minecraft:oak_log"
+					}
+					type: "item"
+					count: 32
+				}
+				{
+					id: "4C0F00000000009B"
+					item: {
+						count: 1
+						id: "magic_coins:gold_coin"
+					}
+					type: "item"
+					count: 2
+				}
+				{
+					id: "4C0F00000000009C"
+					type: "xp"
+					xp: 15
+				}
+			]
+		}
+		{
+			id: "4C0F000000000013"
+			x: 12.0d
+			y: 0.0d
+			title: "Bürger \\& Versorgung"
+			icon: {
+				count: 1
+				id: "minecolonies:blockhutcook"
+			}
+			size: 1.25d
+			description: [
+				"Baue &aKüche&r und &aTaverne&r, damit gekocht und rekrutiert wird."
+				"&7(Verbindet sich direkt mit deiner Farm!)"
+			]
+			dependencies: [
+				"4C0F000000000012"
+			]
+			tasks: [
+				{
+					id: "4C0F00000000009D"
+					item: {
+						count: 1
+						id: "minecolonies:blockhutcook"
+					}
+					type: "item"
+				}
+				{
+					id: "4C0F00000000009E"
+					item: {
+						count: 1
+						id: "minecolonies:blockhuttavern"
+					}
+					type: "item"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F00000000009F"
+					item: {
+						count: 1
+						id: "magic_coins:gold_coin"
+					}
+					type: "item"
+					count: 3
+				}
+				{
+					id: "4C0F0000000000A0"
+					type: "xp"
+					xp: 20
+				}
+			]
+		}
+		{
+			id: "4C0F000000000014"
+			x: 14.0d
+			y: 0.0d
+			title: "Mehrere Zivilisationen"
+			icon: {
+				count: 1
+				id: "minecolonies:clipboard"
+			}
+			size: 1.25d
+			description: [
+				"Der Server erlaubt §lunbegrenzt viele Kolonien§r. Stelle ein zweites"
+				"&aRathaus&r her und gründe eine weitere Kolonie (16 Chunks Abstand)."
+			]
+			dependencies: [
+				"4C0F000000000013"
+			]
+			tasks: [
+				{
+					id: "4C0F0000000000A1"
+					item: {
+						count: 1
+						id: "minecolonies:blockhuttownhall"
+					}
+					type: "item"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F0000000000A2"
+					item: {
+						count: 1
+						id: "magic_coins:gold_coin"
+					}
+					type: "item"
+					count: 5
+				}
+				{
+					id: "4C0F0000000000A3"
+					type: "xp"
+					xp: 30
+				}
+			]
+		}
+		{
+			id: "4C0F000000000015"
+			x: 12.0d
+			y: 1.5d
+			title: "Schöner Bauen"
+			icon: {
+				count: 1
+				id: "minecraft:painting"
+			}
+			size: 1.0d
+			description: [
+				"Mit &aStructurize&r \\& &aDomum Ornamentum&r baust du frei; dazu Möbel."
+				"Beschaffe ein paar &aGemälde&r zum Dekorieren."
+			]
+			dependencies: [
+				"4C0F000000000013"
+			]
+			tasks: [
+				{
+					id: "4C0F0000000000A4"
+					item: {
+						count: 1
+						id: "minecraft:painting"
+					}
+					type: "item"
+					count: 4L
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F0000000000A5"
+					item: {
+						count: 1
+						id: "magic_coins:silver_coin"
+					}
+					type: "item"
+					count: 20
+				}
+				{
+					id: "4C0F0000000000A6"
+					type: "xp"
+					xp: 15
+				}
+			]
+		}
+		{
+			id: "4C0F0000000001BF"
+			x: 17.0d
+			y: 1.0d
+			title: "Eine wachsende Kolonie"
+			icon: {
+				count: 1
+				id: "minecolonies:blockhutwarehouse"
+			}
+			shape: "gear"
+			size: 2.0d
+			description: [
+				"Deine Kolonie soll zur Großstadt werden! Schalte nach und nach alle"
+				"&aMineColonies-Hütten&r frei — Logistik, Rohstoffe, Nahrung, Handwerk,"
+				"Wissen, Verteidigung und Mystik. &7Jede Hütte = ein Bauauftrag für den Baumeister."
+			]
+			dependencies: [
+				"4C0F000000000013"
+			]
+			tasks: [
+				{
+					id: "4C0F0000000001EF"
+					item: {
+						count: 1
+						id: "minecolonies:blockhutwarehouse"
+					}
+					type: "item"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F0000000001F0"
+					item: {
+						count: 1
+						id: "magic_coins:gold_coin"
+					}
+					type: "item"
+					count: 2
+				}
+				{
+					id: "4C0F0000000001F1"
+					type: "xp"
+					xp: 25
+				}
+			]
+		}
+		{
+			id: "4C0F0000000001C0"
+			x: 8.0d
+			y: 4.5d
+			title: "Lagerhaus  §8(Logistik \\& Lager)"
+			icon: {
+				count: 1
+				id: "minecolonies:blockhutwarehouse"
+			}
+			shape: "hexagon"
+			size: 1.25d
+			description: [
+				"Errichte die &aLagerhaus&r in einer deiner Kolonien (Bauauftrag beim Baumeister)."
+				"&7Kategorie: Logistik \\& Lager."
+			]
+			dependencies: [
+				"4C0F0000000001BF"
+			]
+			tasks: [
+				{
+					id: "4C0F0000000001F2"
+					item: {
+						count: 1
+						id: "minecolonies:blockhutwarehouse"
+					}
+					type: "item"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F0000000001F3"
+					item: {
+						count: 1
+						id: "magic_coins:silver_coin"
+					}
+					type: "item"
+					count: 10
+				}
+				{
+					id: "4C0F0000000001F4"
+					type: "xp"
+					xp: 12
+				}
+			]
+		}
+		{
+			id: "4C0F0000000001C1"
+			x: 8.0d
+			y: 6.0d
+			title: "Bote"
+			icon: {
+				count: 1
+				id: "minecolonies:blockhutdeliveryman"
+			}
+			description: [
+				"Errichte die &aBote&r in einer deiner Kolonien (Bauauftrag beim Baumeister)."
+				"&7Kategorie: Logistik \\& Lager."
+			]
+			dependencies: [
+				"4C0F0000000001C0"
+			]
+			tasks: [
+				{
+					id: "4C0F0000000001F5"
+					item: {
+						count: 1
+						id: "minecolonies:blockhutdeliveryman"
+					}
+					type: "item"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F0000000001F6"
+					item: {
+						count: 1
+						id: "magic_coins:gold_coin"
+					}
+					type: "item"
+				}
+				{
+					id: "4C0F0000000001F7"
+					type: "xp"
+					xp: 12
+				}
+			]
+		}
+		{
+			id: "4C0F0000000001C2"
+			x: 11.0d
+			y: 4.5d
+			title: "Holzfäller  §8(Rohstoffe)"
+			icon: {
+				count: 1
+				id: "minecolonies:blockhutlumberjack"
+			}
+			shape: "hexagon"
+			size: 1.25d
+			description: [
+				"Errichte die &aHolzfäller&r in einer deiner Kolonien (Bauauftrag beim Baumeister)."
+				"&7Kategorie: Rohstoffe."
+			]
+			dependencies: [
+				"4C0F0000000001BF"
+			]
+			tasks: [
+				{
+					id: "4C0F0000000001F8"
+					item: {
+						count: 1
+						id: "minecolonies:blockhutlumberjack"
+					}
+					type: "item"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F0000000001F9"
+					item: {
+						count: 1
+						id: "magic_coins:silver_coin"
+					}
+					type: "item"
+					count: 10
+				}
+				{
+					id: "4C0F0000000001FA"
+					type: "xp"
+					xp: 12
+				}
+			]
+		}
+		{
+			id: "4C0F0000000001C3"
+			x: 11.0d
+			y: 6.0d
+			title: "Bergmann"
+			icon: {
+				count: 1
+				id: "minecolonies:blockhutminer"
+			}
+			description: [
+				"Errichte die &aBergmann&r in einer deiner Kolonien (Bauauftrag beim Baumeister)."
+				"&7Kategorie: Rohstoffe."
+			]
+			dependencies: [
+				"4C0F0000000001C2"
+			]
+			tasks: [
+				{
+					id: "4C0F0000000001FB"
+					item: {
+						count: 1
+						id: "minecolonies:blockhutminer"
+					}
+					type: "item"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F0000000001FC"
+					item: {
+						count: 1
+						id: "magic_coins:silver_coin"
+					}
+					type: "item"
+					count: 10
+				}
+				{
+					id: "4C0F0000000001FD"
+					type: "xp"
+					xp: 12
+				}
+			]
+		}
+		{
+			id: "4C0F0000000001C4"
+			x: 11.0d
+			y: 7.5d
+			title: "Fischer"
+			icon: {
+				count: 1
+				id: "minecolonies:blockhutfisherman"
+			}
+			description: [
+				"Errichte die &aFischer&r in einer deiner Kolonien (Bauauftrag beim Baumeister)."
+				"&7Kategorie: Rohstoffe."
+			]
+			dependencies: [
+				"4C0F0000000001C3"
+			]
+			tasks: [
+				{
+					id: "4C0F0000000001FE"
+					item: {
+						count: 1
+						id: "minecolonies:blockhutfisherman"
+					}
+					type: "item"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F0000000001FF"
+					item: {
+						count: 1
+						id: "magic_coins:silver_coin"
+					}
+					type: "item"
+					count: 10
+				}
+				{
+					id: "4C0F000000000200"
+					type: "xp"
+					xp: 12
+				}
+			]
+		}
+		{
+			id: "4C0F0000000001C5"
+			x: 11.0d
+			y: 9.0d
+			title: "Steinmetz"
+			icon: {
+				count: 1
+				id: "minecolonies:blockhutstonemason"
+			}
+			description: [
+				"Errichte die &aSteinmetz&r in einer deiner Kolonien (Bauauftrag beim Baumeister)."
+				"&7Kategorie: Rohstoffe."
+			]
+			dependencies: [
+				"4C0F0000000001C4"
+			]
+			tasks: [
+				{
+					id: "4C0F000000000201"
+					item: {
+						count: 1
+						id: "minecolonies:blockhutstonemason"
+					}
+					type: "item"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F000000000202"
+					item: {
+						count: 1
+						id: "magic_coins:gold_coin"
+					}
+					type: "item"
+				}
+				{
+					id: "4C0F000000000203"
+					type: "xp"
+					xp: 12
+				}
+			]
+		}
+		{
+			id: "4C0F0000000001C6"
+			x: 11.0d
+			y: 10.5d
+			title: "Sägewerk"
+			icon: {
+				count: 1
+				id: "minecolonies:blockhutsawmill"
+			}
+			description: [
+				"Errichte die &aSägewerk&r in einer deiner Kolonien (Bauauftrag beim Baumeister)."
+				"&7Kategorie: Rohstoffe."
+			]
+			dependencies: [
+				"4C0F0000000001C5"
+			]
+			tasks: [
+				{
+					id: "4C0F000000000204"
+					item: {
+						count: 1
+						id: "minecolonies:blockhutsawmill"
+					}
+					type: "item"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F000000000205"
+					item: {
+						count: 1
+						id: "magic_coins:gold_coin"
+					}
+					type: "item"
+				}
+				{
+					id: "4C0F000000000206"
+					type: "xp"
+					xp: 12
+				}
+			]
+		}
+		{
+			id: "4C0F0000000001C7"
+			x: 11.0d
+			y: 12.0d
+			title: "Schmelze"
+			icon: {
+				count: 1
+				id: "minecolonies:blockhutsmeltery"
+			}
+			description: [
+				"Errichte die &aSchmelze&r in einer deiner Kolonien (Bauauftrag beim Baumeister)."
+				"&7Kategorie: Rohstoffe."
+			]
+			dependencies: [
+				"4C0F0000000001C6"
+			]
+			tasks: [
+				{
+					id: "4C0F000000000207"
+					item: {
+						count: 1
+						id: "minecolonies:blockhutsmeltery"
+					}
+					type: "item"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F000000000208"
+					item: {
+						count: 1
+						id: "magic_coins:gold_coin"
+					}
+					type: "item"
+				}
+				{
+					id: "4C0F000000000209"
+					type: "xp"
+					xp: 12
+				}
+			]
+		}
+		{
+			id: "4C0F0000000001C8"
+			x: 11.0d
+			y: 13.5d
+			title: "Steinschmelze"
+			icon: {
+				count: 1
+				id: "minecolonies:blockhutstonesmeltery"
+			}
+			description: [
+				"Errichte die &aSteinschmelze&r in einer deiner Kolonien (Bauauftrag beim Baumeister)."
+				"&7Kategorie: Rohstoffe."
+			]
+			dependencies: [
+				"4C0F0000000001C7"
+			]
+			tasks: [
+				{
+					id: "4C0F00000000020A"
+					item: {
+						count: 1
+						id: "minecolonies:blockhutstonesmeltery"
+					}
+					type: "item"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F00000000020B"
+					item: {
+						count: 1
+						id: "magic_coins:gold_coin"
+					}
+					type: "item"
+				}
+				{
+					id: "4C0F00000000020C"
+					type: "xp"
+					xp: 12
+				}
+			]
+		}
+		{
+			id: "4C0F0000000001C9"
+			x: 14.0d
+			y: 4.5d
+			title: "Bauernhof  §8(Nahrung \\& Tiere)"
+			icon: {
+				count: 1
+				id: "minecolonies:blockhutfarmer"
+			}
+			shape: "hexagon"
+			size: 1.25d
+			description: [
+				"Errichte die &aBauernhof&r in einer deiner Kolonien (Bauauftrag beim Baumeister)."
+				"&7Kategorie: Nahrung \\& Tiere."
+			]
+			dependencies: [
+				"4C0F0000000001BF"
+			]
+			tasks: [
+				{
+					id: "4C0F00000000020D"
+					item: {
+						count: 1
+						id: "minecolonies:blockhutfarmer"
+					}
+					type: "item"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F00000000020E"
+					item: {
+						count: 1
+						id: "magic_coins:silver_coin"
+					}
+					type: "item"
+					count: 10
+				}
+				{
+					id: "4C0F00000000020F"
+					type: "xp"
+					xp: 12
+				}
+			]
+		}
+		{
+			id: "4C0F0000000001CA"
+			x: 14.0d
+			y: 6.0d
+			title: "Feld"
+			icon: {
+				count: 1
+				id: "minecolonies:blockhutfield"
+			}
+			description: [
+				"Errichte die &aFeld&r in einer deiner Kolonien (Bauauftrag beim Baumeister)."
+				"&7Kategorie: Nahrung \\& Tiere."
+			]
+			dependencies: [
+				"4C0F0000000001C9"
+			]
+			tasks: [
+				{
+					id: "4C0F000000000210"
+					item: {
+						count: 1
+						id: "minecolonies:blockhutfield"
+					}
+					type: "item"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F000000000211"
+					item: {
+						count: 1
+						id: "magic_coins:silver_coin"
+					}
+					type: "item"
+					count: 10
+				}
+				{
+					id: "4C0F000000000212"
+					type: "xp"
+					xp: 12
+				}
+			]
+		}
+		{
+			id: "4C0F0000000001CB"
+			x: 14.0d
+			y: 7.5d
+			title: "Küche"
+			icon: {
+				count: 1
+				id: "minecolonies:blockhutkitchen"
+			}
+			description: [
+				"Errichte die &aKüche&r in einer deiner Kolonien (Bauauftrag beim Baumeister)."
+				"&7Kategorie: Nahrung \\& Tiere."
+			]
+			dependencies: [
+				"4C0F0000000001CA"
+			]
+			tasks: [
+				{
+					id: "4C0F000000000213"
+					item: {
+						count: 1
+						id: "minecolonies:blockhutkitchen"
+					}
+					type: "item"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F000000000214"
+					item: {
+						count: 1
+						id: "magic_coins:silver_coin"
+					}
+					type: "item"
+					count: 10
+				}
+				{
+					id: "4C0F000000000215"
+					type: "xp"
+					xp: 12
+				}
+			]
+		}
+		{
+			id: "4C0F0000000001CC"
+			x: 14.0d
+			y: 9.0d
+			title: "Bäckerei"
+			icon: {
+				count: 1
+				id: "minecolonies:blockhutbaker"
+			}
+			description: [
+				"Errichte die &aBäckerei&r in einer deiner Kolonien (Bauauftrag beim Baumeister)."
+				"&7Kategorie: Nahrung \\& Tiere."
+			]
+			dependencies: [
+				"4C0F0000000001CB"
+			]
+			tasks: [
+				{
+					id: "4C0F000000000216"
+					item: {
+						count: 1
+						id: "minecolonies:blockhutbaker"
+					}
+					type: "item"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F000000000217"
+					item: {
+						count: 1
+						id: "magic_coins:gold_coin"
+					}
+					type: "item"
+				}
+				{
+					id: "4C0F000000000218"
+					type: "xp"
+					xp: 12
+				}
+			]
+		}
+		{
+			id: "4C0F0000000001CD"
+			x: 14.0d
+			y: 10.5d
+			title: "Rinderfarm"
+			icon: {
+				count: 1
+				id: "minecolonies:blockhutcowboy"
+			}
+			description: [
+				"Errichte die &aRinderfarm&r in einer deiner Kolonien (Bauauftrag beim Baumeister)."
+				"&7Kategorie: Nahrung \\& Tiere."
+			]
+			dependencies: [
+				"4C0F0000000001CC"
+			]
+			tasks: [
+				{
+					id: "4C0F000000000219"
+					item: {
+						count: 1
+						id: "minecolonies:blockhutcowboy"
+					}
+					type: "item"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F00000000021A"
+					item: {
+						count: 1
+						id: "magic_coins:gold_coin"
+					}
+					type: "item"
+				}
+				{
+					id: "4C0F00000000021B"
+					type: "xp"
+					xp: 12
+				}
+			]
+		}
+		{
+			id: "4C0F0000000001CE"
+			x: 14.0d
+			y: 12.0d
+			title: "Schäferei"
+			icon: {
+				count: 1
+				id: "minecolonies:blockhutshepherd"
+			}
+			description: [
+				"Errichte die &aSchäferei&r in einer deiner Kolonien (Bauauftrag beim Baumeister)."
+				"&7Kategorie: Nahrung \\& Tiere."
+			]
+			dependencies: [
+				"4C0F0000000001CD"
+			]
+			tasks: [
+				{
+					id: "4C0F00000000021C"
+					item: {
+						count: 1
+						id: "minecolonies:blockhutshepherd"
+					}
+					type: "item"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F00000000021D"
+					item: {
+						count: 1
+						id: "magic_coins:gold_coin"
+					}
+					type: "item"
+				}
+				{
+					id: "4C0F00000000021E"
+					type: "xp"
+					xp: 12
+				}
+			]
+		}
+		{
+			id: "4C0F0000000001CF"
+			x: 14.0d
+			y: 13.5d
+			title: "Schweinefarm"
+			icon: {
+				count: 1
+				id: "minecolonies:blockhutswineherder"
+			}
+			description: [
+				"Errichte die &aSchweinefarm&r in einer deiner Kolonien (Bauauftrag beim Baumeister)."
+				"&7Kategorie: Nahrung \\& Tiere."
+			]
+			dependencies: [
+				"4C0F0000000001CE"
+			]
+			tasks: [
+				{
+					id: "4C0F00000000021F"
+					item: {
+						count: 1
+						id: "minecolonies:blockhutswineherder"
+					}
+					type: "item"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F000000000220"
+					item: {
+						count: 1
+						id: "magic_coins:gold_coin"
+					}
+					type: "item"
+				}
+				{
+					id: "4C0F000000000221"
+					type: "xp"
+					xp: 12
+				}
+			]
+		}
+		{
+			id: "4C0F0000000001D0"
+			x: 14.0d
+			y: 15.0d
+			title: "Hühnerfarm"
+			icon: {
+				count: 1
+				id: "minecolonies:blockhutchickenherder"
+			}
+			description: [
+				"Errichte die &aHühnerfarm&r in einer deiner Kolonien (Bauauftrag beim Baumeister)."
+				"&7Kategorie: Nahrung \\& Tiere."
+			]
+			dependencies: [
+				"4C0F0000000001CF"
+			]
+			tasks: [
+				{
+					id: "4C0F000000000222"
+					item: {
+						count: 1
+						id: "minecolonies:blockhutchickenherder"
+					}
+					type: "item"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F000000000223"
+					item: {
+						count: 1
+						id: "magic_coins:gold_coin"
+					}
+					type: "item"
+				}
+				{
+					id: "4C0F000000000224"
+					type: "xp"
+					xp: 12
+				}
+			]
+		}
+		{
+			id: "4C0F0000000001D1"
+			x: 14.0d
+			y: 16.5d
+			title: "Kaninchenstall"
+			icon: {
+				count: 1
+				id: "minecolonies:blockhutrabbithutch"
+			}
+			description: [
+				"Errichte die &aKaninchenstall&r in einer deiner Kolonien (Bauauftrag beim Baumeister)."
+				"&7Kategorie: Nahrung \\& Tiere."
+			]
+			dependencies: [
+				"4C0F0000000001D0"
+			]
+			tasks: [
+				{
+					id: "4C0F000000000225"
+					item: {
+						count: 1
+						id: "minecolonies:blockhutrabbithutch"
+					}
+					type: "item"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F000000000226"
+					item: {
+						count: 1
+						id: "magic_coins:gold_coin"
+					}
+					type: "item"
+				}
+				{
+					id: "4C0F000000000227"
+					type: "xp"
+					xp: 12
+				}
+			]
+		}
+		{
+			id: "4C0F0000000001D2"
+			x: 14.0d
+			y: 18.0d
+			title: "Imkerei"
+			icon: {
+				count: 1
+				id: "minecolonies:blockhutbeekeeper"
+			}
+			description: [
+				"Errichte die &aImkerei&r in einer deiner Kolonien (Bauauftrag beim Baumeister)."
+				"&7Kategorie: Nahrung \\& Tiere."
+			]
+			dependencies: [
+				"4C0F0000000001D1"
+			]
+			tasks: [
+				{
+					id: "4C0F000000000228"
+					item: {
+						count: 1
+						id: "minecolonies:blockhutbeekeeper"
+					}
+					type: "item"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F000000000229"
+					item: {
+						count: 1
+						id: "magic_coins:gold_coin"
+					}
+					type: "item"
+				}
+				{
+					id: "4C0F00000000022A"
+					type: "xp"
+					xp: 12
+				}
+			]
+		}
+		{
+			id: "4C0F0000000001D3"
+			x: 14.0d
+			y: 19.5d
+			title: "Plantage"
+			icon: {
+				count: 1
+				id: "minecolonies:blockhutplantation"
+			}
+			description: [
+				"Errichte die &aPlantage&r in einer deiner Kolonien (Bauauftrag beim Baumeister)."
+				"&7Kategorie: Nahrung \\& Tiere."
+			]
+			dependencies: [
+				"4C0F0000000001D2"
+			]
+			tasks: [
+				{
+					id: "4C0F00000000022B"
+					item: {
+						count: 1
+						id: "minecolonies:blockhutplantation"
+					}
+					type: "item"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F00000000022C"
+					item: {
+						count: 1
+						id: "magic_coins:gold_coin"
+					}
+					type: "item"
+				}
+				{
+					id: "4C0F00000000022D"
+					type: "xp"
+					xp: 12
+				}
+			]
+		}
+		{
+			id: "4C0F0000000001D4"
+			x: 14.0d
+			y: 21.0d
+			title: "Plantagen-Feld"
+			icon: {
+				count: 1
+				id: "minecolonies:blockhutplantationfield"
+			}
+			description: [
+				"Errichte die &aPlantagen-Feld&r in einer deiner Kolonien (Bauauftrag beim Baumeister)."
+				"&7Kategorie: Nahrung \\& Tiere."
+			]
+			dependencies: [
+				"4C0F0000000001D3"
+			]
+			tasks: [
+				{
+					id: "4C0F00000000022E"
+					item: {
+						count: 1
+						id: "minecolonies:blockhutplantationfield"
+					}
+					type: "item"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F00000000022F"
+					item: {
+						count: 1
+						id: "magic_coins:gold_coin"
+					}
+					type: "item"
+				}
+				{
+					id: "4C0F000000000230"
+					type: "xp"
+					xp: 12
+				}
+			]
+		}
+		{
+			id: "4C0F0000000001D5"
+			x: 14.0d
+			y: 22.5d
+			title: "Blumenladen"
+			icon: {
+				count: 1
+				id: "minecolonies:blockhutflorist"
+			}
+			description: [
+				"Errichte die &aBlumenladen&r in einer deiner Kolonien (Bauauftrag beim Baumeister)."
+				"&7Kategorie: Nahrung \\& Tiere."
+			]
+			dependencies: [
+				"4C0F0000000001D4"
+			]
+			tasks: [
+				{
+					id: "4C0F000000000231"
+					item: {
+						count: 1
+						id: "minecolonies:blockhutflorist"
+					}
+					type: "item"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F000000000232"
+					item: {
+						count: 1
+						id: "magic_coins:gold_coin"
+					}
+					type: "item"
+				}
+				{
+					id: "4C0F000000000233"
+					type: "xp"
+					xp: 12
+				}
+			]
+		}
+		{
+			id: "4C0F0000000001D6"
+			x: 14.0d
+			y: 24.0d
+			title: "Komposter"
+			icon: {
+				count: 1
+				id: "minecolonies:blockhutcomposter"
+			}
+			description: [
+				"Errichte die &aKomposter&r in einer deiner Kolonien (Bauauftrag beim Baumeister)."
+				"&7Kategorie: Nahrung \\& Tiere."
+			]
+			dependencies: [
+				"4C0F0000000001D5"
+			]
+			tasks: [
+				{
+					id: "4C0F000000000234"
+					item: {
+						count: 1
+						id: "minecolonies:blockhutcomposter"
+					}
+					type: "item"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F000000000235"
+					item: {
+						count: 1
+						id: "magic_coins:gold_coin"
+					}
+					type: "item"
+				}
+				{
+					id: "4C0F000000000236"
+					type: "xp"
+					xp: 12
+				}
+			]
+		}
+		{
+			id: "4C0F0000000001D7"
+			x: 17.0d
+			y: 4.5d
+			title: "Schmied  §8(Handwerk)"
+			icon: {
+				count: 1
+				id: "minecolonies:blockhutblacksmith"
+			}
+			shape: "hexagon"
+			size: 1.25d
+			description: [
+				"Errichte die &aSchmied&r in einer deiner Kolonien (Bauauftrag beim Baumeister)."
+				"&7Kategorie: Handwerk."
+			]
+			dependencies: [
+				"4C0F0000000001BF"
+			]
+			tasks: [
+				{
+					id: "4C0F000000000237"
+					item: {
+						count: 1
+						id: "minecolonies:blockhutblacksmith"
+					}
+					type: "item"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F000000000238"
+					item: {
+						count: 1
+						id: "magic_coins:silver_coin"
+					}
+					type: "item"
+					count: 10
+				}
+				{
+					id: "4C0F000000000239"
+					type: "xp"
+					xp: 12
+				}
+			]
+		}
+		{
+			id: "4C0F0000000001D8"
+			x: 17.0d
+			y: 6.0d
+			title: "Mechaniker"
+			icon: {
+				count: 1
+				id: "minecolonies:blockhutmechanic"
+			}
+			description: [
+				"Errichte die &aMechaniker&r in einer deiner Kolonien (Bauauftrag beim Baumeister)."
+				"&7Kategorie: Handwerk."
+			]
+			dependencies: [
+				"4C0F0000000001D7"
+			]
+			tasks: [
+				{
+					id: "4C0F00000000023A"
+					item: {
+						count: 1
+						id: "minecolonies:blockhutmechanic"
+					}
+					type: "item"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F00000000023B"
+					item: {
+						count: 1
+						id: "magic_coins:silver_coin"
+					}
+					type: "item"
+					count: 10
+				}
+				{
+					id: "4C0F00000000023C"
+					type: "xp"
+					xp: 12
+				}
+			]
+		}
+		{
+			id: "4C0F0000000001D9"
+			x: 17.0d
+			y: 7.5d
+			title: "Färberei"
+			icon: {
+				count: 1
+				id: "minecolonies:blockhutdyer"
+			}
+			description: [
+				"Errichte die &aFärberei&r in einer deiner Kolonien (Bauauftrag beim Baumeister)."
+				"&7Kategorie: Handwerk."
+			]
+			dependencies: [
+				"4C0F0000000001D8"
+			]
+			tasks: [
+				{
+					id: "4C0F00000000023D"
+					item: {
+						count: 1
+						id: "minecolonies:blockhutdyer"
+					}
+					type: "item"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F00000000023E"
+					item: {
+						count: 1
+						id: "magic_coins:silver_coin"
+					}
+					type: "item"
+					count: 10
+				}
+				{
+					id: "4C0F00000000023F"
+					type: "xp"
+					xp: 12
+				}
+			]
+		}
+		{
+			id: "4C0F0000000001DA"
+			x: 17.0d
+			y: 9.0d
+			title: "Bogner"
+			icon: {
+				count: 1
+				id: "minecolonies:blockhutfletcher"
+			}
+			description: [
+				"Errichte die &aBogner&r in einer deiner Kolonien (Bauauftrag beim Baumeister)."
+				"&7Kategorie: Handwerk."
+			]
+			dependencies: [
+				"4C0F0000000001D9"
+			]
+			tasks: [
+				{
+					id: "4C0F000000000240"
+					item: {
+						count: 1
+						id: "minecolonies:blockhutfletcher"
+					}
+					type: "item"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F000000000241"
+					item: {
+						count: 1
+						id: "magic_coins:gold_coin"
+					}
+					type: "item"
+				}
+				{
+					id: "4C0F000000000242"
+					type: "xp"
+					xp: 12
+				}
+			]
+		}
+		{
+			id: "4C0F0000000001DB"
+			x: 17.0d
+			y: 10.5d
+			title: "Glasbläser"
+			icon: {
+				count: 1
+				id: "minecolonies:blockhutglassblower"
+			}
+			description: [
+				"Errichte die &aGlasbläser&r in einer deiner Kolonien (Bauauftrag beim Baumeister)."
+				"&7Kategorie: Handwerk."
+			]
+			dependencies: [
+				"4C0F0000000001DA"
+			]
+			tasks: [
+				{
+					id: "4C0F000000000243"
+					item: {
+						count: 1
+						id: "minecolonies:blockhutglassblower"
+					}
+					type: "item"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F000000000244"
+					item: {
+						count: 1
+						id: "magic_coins:gold_coin"
+					}
+					type: "item"
+				}
+				{
+					id: "4C0F000000000245"
+					type: "xp"
+					xp: 12
+				}
+			]
+		}
+		{
+			id: "4C0F0000000001DC"
+			x: 17.0d
+			y: 12.0d
+			title: "Brecher"
+			icon: {
+				count: 1
+				id: "minecolonies:blockhutcrusher"
+			}
+			description: [
+				"Errichte die &aBrecher&r in einer deiner Kolonien (Bauauftrag beim Baumeister)."
+				"&7Kategorie: Handwerk."
+			]
+			dependencies: [
+				"4C0F0000000001DB"
+			]
+			tasks: [
+				{
+					id: "4C0F000000000246"
+					item: {
+						count: 1
+						id: "minecolonies:blockhutcrusher"
+					}
+					type: "item"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F000000000247"
+					item: {
+						count: 1
+						id: "magic_coins:gold_coin"
+					}
+					type: "item"
+				}
+				{
+					id: "4C0F000000000248"
+					type: "xp"
+					xp: 12
+				}
+			]
+		}
+		{
+			id: "4C0F0000000001DD"
+			x: 17.0d
+			y: 13.5d
+			title: "Siebanlage"
+			icon: {
+				count: 1
+				id: "minecolonies:blockhutsifter"
+			}
+			description: [
+				"Errichte die &aSiebanlage&r in einer deiner Kolonien (Bauauftrag beim Baumeister)."
+				"&7Kategorie: Handwerk."
+			]
+			dependencies: [
+				"4C0F0000000001DC"
+			]
+			tasks: [
+				{
+					id: "4C0F000000000249"
+					item: {
+						count: 1
+						id: "minecolonies:blockhutsifter"
+					}
+					type: "item"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F00000000024A"
+					item: {
+						count: 1
+						id: "magic_coins:gold_coin"
+					}
+					type: "item"
+				}
+				{
+					id: "4C0F00000000024B"
+					type: "xp"
+					xp: 12
+				}
+			]
+		}
+		{
+			id: "4C0F0000000001DE"
+			x: 17.0d
+			y: 15.0d
+			title: "Betonmischer"
+			icon: {
+				count: 1
+				id: "minecolonies:blockhutconcretemixer"
+			}
+			description: [
+				"Errichte die &aBetonmischer&r in einer deiner Kolonien (Bauauftrag beim Baumeister)."
+				"&7Kategorie: Handwerk."
+			]
+			dependencies: [
+				"4C0F0000000001DD"
+			]
+			tasks: [
+				{
+					id: "4C0F00000000024C"
+					item: {
+						count: 1
+						id: "minecolonies:blockhutconcretemixer"
+					}
+					type: "item"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F00000000024D"
+					item: {
+						count: 1
+						id: "magic_coins:gold_coin"
+					}
+					type: "item"
+				}
+				{
+					id: "4C0F00000000024E"
+					type: "xp"
+					xp: 12
+				}
+			]
+		}
+		{
+			id: "4C0F0000000001DF"
+			x: 20.0d
+			y: 4.5d
+			title: "Universität  §8(Wissen \\& Gesundheit)"
+			icon: {
+				count: 1
+				id: "minecolonies:blockhutuniversity"
+			}
+			shape: "hexagon"
+			size: 1.25d
+			description: [
+				"Errichte die &aUniversität&r in einer deiner Kolonien (Bauauftrag beim Baumeister)."
+				"&7Kategorie: Wissen \\& Gesundheit."
+			]
+			dependencies: [
+				"4C0F0000000001BF"
+			]
+			tasks: [
+				{
+					id: "4C0F00000000024F"
+					item: {
+						count: 1
+						id: "minecolonies:blockhutuniversity"
+					}
+					type: "item"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F000000000250"
+					item: {
+						count: 1
+						id: "magic_coins:silver_coin"
+					}
+					type: "item"
+					count: 10
+				}
+				{
+					id: "4C0F000000000251"
+					type: "xp"
+					xp: 12
+				}
+			]
+		}
+		{
+			id: "4C0F0000000001E0"
+			x: 20.0d
+			y: 6.0d
+			title: "Bibliothek"
+			icon: {
+				count: 1
+				id: "minecolonies:blockhutlibrary"
+			}
+			description: [
+				"Errichte die &aBibliothek&r in einer deiner Kolonien (Bauauftrag beim Baumeister)."
+				"&7Kategorie: Wissen \\& Gesundheit."
+			]
+			dependencies: [
+				"4C0F0000000001DF"
+			]
+			tasks: [
+				{
+					id: "4C0F000000000252"
+					item: {
+						count: 1
+						id: "minecolonies:blockhutlibrary"
+					}
+					type: "item"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F000000000253"
+					item: {
+						count: 1
+						id: "magic_coins:silver_coin"
+					}
+					type: "item"
+					count: 10
+				}
+				{
+					id: "4C0F000000000254"
+					type: "xp"
+					xp: 12
+				}
+			]
+		}
+		{
+			id: "4C0F0000000001E1"
+			x: 20.0d
+			y: 7.5d
+			title: "Schule"
+			icon: {
+				count: 1
+				id: "minecolonies:blockhutschool"
+			}
+			description: [
+				"Errichte die &aSchule&r in einer deiner Kolonien (Bauauftrag beim Baumeister)."
+				"&7Kategorie: Wissen \\& Gesundheit."
+			]
+			dependencies: [
+				"4C0F0000000001E0"
+			]
+			tasks: [
+				{
+					id: "4C0F000000000255"
+					item: {
+						count: 1
+						id: "minecolonies:blockhutschool"
+					}
+					type: "item"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F000000000256"
+					item: {
+						count: 1
+						id: "magic_coins:silver_coin"
+					}
+					type: "item"
+					count: 10
+				}
+				{
+					id: "4C0F000000000257"
+					type: "xp"
+					xp: 12
+				}
+			]
+		}
+		{
+			id: "4C0F0000000001E2"
+			x: 20.0d
+			y: 9.0d
+			title: "Krankenhaus"
+			icon: {
+				count: 1
+				id: "minecolonies:blockhuthospital"
+			}
+			description: [
+				"Errichte die &aKrankenhaus&r in einer deiner Kolonien (Bauauftrag beim Baumeister)."
+				"&7Kategorie: Wissen \\& Gesundheit."
+			]
+			dependencies: [
+				"4C0F0000000001E1"
+			]
+			tasks: [
+				{
+					id: "4C0F000000000258"
+					item: {
+						count: 1
+						id: "minecolonies:blockhuthospital"
+					}
+					type: "item"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F000000000259"
+					item: {
+						count: 1
+						id: "magic_coins:gold_coin"
+					}
+					type: "item"
+				}
+				{
+					id: "4C0F00000000025A"
+					type: "xp"
+					xp: 12
+				}
+			]
+		}
+		{
+			id: "4C0F0000000001E3"
+			x: 20.0d
+			y: 10.5d
+			title: "Friedhof"
+			icon: {
+				count: 1
+				id: "minecolonies:blockhutgraveyard"
+			}
+			description: [
+				"Errichte die &aFriedhof&r in einer deiner Kolonien (Bauauftrag beim Baumeister)."
+				"&7Kategorie: Wissen \\& Gesundheit."
+			]
+			dependencies: [
+				"4C0F0000000001E2"
+			]
+			tasks: [
+				{
+					id: "4C0F00000000025B"
+					item: {
+						count: 1
+						id: "minecolonies:blockhutgraveyard"
+					}
+					type: "item"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F00000000025C"
+					item: {
+						count: 1
+						id: "magic_coins:gold_coin"
+					}
+					type: "item"
+				}
+				{
+					id: "4C0F00000000025D"
+					type: "xp"
+					xp: 12
+				}
+			]
+		}
+		{
+			id: "4C0F0000000001E4"
+			x: 23.0d
+			y: 4.5d
+			title: "Wachturm  §8(Verteidigung)"
+			icon: {
+				count: 1
+				id: "minecolonies:blockhutguardtower"
+			}
+			shape: "hexagon"
+			size: 1.25d
+			description: [
+				"Errichte die &aWachturm&r in einer deiner Kolonien (Bauauftrag beim Baumeister)."
+				"&7Kategorie: Verteidigung."
+			]
+			dependencies: [
+				"4C0F0000000001BF"
+			]
+			tasks: [
+				{
+					id: "4C0F00000000025E"
+					item: {
+						count: 1
+						id: "minecolonies:blockhutguardtower"
+					}
+					type: "item"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F00000000025F"
+					item: {
+						count: 1
+						id: "magic_coins:silver_coin"
+					}
+					type: "item"
+					count: 10
+				}
+				{
+					id: "4C0F000000000260"
+					type: "xp"
+					xp: 12
+				}
+			]
+		}
+		{
+			id: "4C0F0000000001E5"
+			x: 23.0d
+			y: 6.0d
+			title: "Schießstand"
+			icon: {
+				count: 1
+				id: "minecolonies:blockhutarchery"
+			}
+			description: [
+				"Errichte die &aSchießstand&r in einer deiner Kolonien (Bauauftrag beim Baumeister)."
+				"&7Kategorie: Verteidigung."
+			]
+			dependencies: [
+				"4C0F0000000001E4"
+			]
+			tasks: [
+				{
+					id: "4C0F000000000261"
+					item: {
+						count: 1
+						id: "minecolonies:blockhutarchery"
+					}
+					type: "item"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F000000000262"
+					item: {
+						count: 1
+						id: "magic_coins:silver_coin"
+					}
+					type: "item"
+					count: 10
+				}
+				{
+					id: "4C0F000000000263"
+					type: "xp"
+					xp: 12
+				}
+			]
+		}
+		{
+			id: "4C0F0000000001E6"
+			x: 23.0d
+			y: 7.5d
+			title: "Kaserne"
+			icon: {
+				count: 1
+				id: "minecolonies:blockhutbarracks"
+			}
+			description: [
+				"Errichte die &aKaserne&r in einer deiner Kolonien (Bauauftrag beim Baumeister)."
+				"&7Kategorie: Verteidigung."
+			]
+			dependencies: [
+				"4C0F0000000001E5"
+			]
+			tasks: [
+				{
+					id: "4C0F000000000264"
+					item: {
+						count: 1
+						id: "minecolonies:blockhutbarracks"
+					}
+					type: "item"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F000000000265"
+					item: {
+						count: 1
+						id: "magic_coins:silver_coin"
+					}
+					type: "item"
+					count: 10
+				}
+				{
+					id: "4C0F000000000266"
+					type: "xp"
+					xp: 12
+				}
+			]
+		}
+		{
+			id: "4C0F0000000001E7"
+			x: 23.0d
+			y: 9.0d
+			title: "Kampfakademie"
+			icon: {
+				count: 1
+				id: "minecolonies:blockhutcombatacademy"
+			}
+			description: [
+				"Errichte die &aKampfakademie&r in einer deiner Kolonien (Bauauftrag beim Baumeister)."
+				"&7Kategorie: Verteidigung."
+			]
+			dependencies: [
+				"4C0F0000000001E6"
+			]
+			tasks: [
+				{
+					id: "4C0F000000000267"
+					item: {
+						count: 1
+						id: "minecolonies:blockhutcombatacademy"
+					}
+					type: "item"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F000000000268"
+					item: {
+						count: 1
+						id: "magic_coins:gold_coin"
+					}
+					type: "item"
+				}
+				{
+					id: "4C0F000000000269"
+					type: "xp"
+					xp: 12
+				}
+			]
+		}
+		{
+			id: "4C0F0000000001E8"
+			x: 23.0d
+			y: 10.5d
+			title: "Torhaus"
+			icon: {
+				count: 1
+				id: "minecolonies:blockhutgatehouse"
+			}
+			description: [
+				"Errichte die &aTorhaus&r in einer deiner Kolonien (Bauauftrag beim Baumeister)."
+				"&7Kategorie: Verteidigung."
+			]
+			dependencies: [
+				"4C0F0000000001E7"
+			]
+			tasks: [
+				{
+					id: "4C0F00000000026A"
+					item: {
+						count: 1
+						id: "minecolonies:blockhutgatehouse"
+					}
+					type: "item"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F00000000026B"
+					item: {
+						count: 1
+						id: "magic_coins:gold_coin"
+					}
+					type: "item"
+				}
+				{
+					id: "4C0F00000000026C"
+					type: "xp"
+					xp: 12
+				}
+			]
+		}
+		{
+			id: "4C0F0000000001E9"
+			x: 26.0d
+			y: 4.5d
+			title: "Verzauberer  §8(Mystik \\& Spezial)"
+			icon: {
+				count: 1
+				id: "minecolonies:blockhutenchanter"
+			}
+			shape: "hexagon"
+			size: 1.25d
+			description: [
+				"Errichte die &aVerzauberer&r in einer deiner Kolonien (Bauauftrag beim Baumeister)."
+				"&7Kategorie: Mystik \\& Spezial."
+			]
+			dependencies: [
+				"4C0F0000000001BF"
+			]
+			tasks: [
+				{
+					id: "4C0F00000000026D"
+					item: {
+						count: 1
+						id: "minecolonies:blockhutenchanter"
+					}
+					type: "item"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F00000000026E"
+					item: {
+						count: 1
+						id: "magic_coins:silver_coin"
+					}
+					type: "item"
+					count: 10
+				}
+				{
+					id: "4C0F00000000026F"
+					type: "xp"
+					xp: 12
+				}
+			]
+		}
+		{
+			id: "4C0F0000000001EA"
+			x: 26.0d
+			y: 6.0d
+			title: "Alchemist"
+			icon: {
+				count: 1
+				id: "minecolonies:blockhutalchemist"
+			}
+			description: [
+				"Errichte die &aAlchemist&r in einer deiner Kolonien (Bauauftrag beim Baumeister)."
+				"&7Kategorie: Mystik \\& Spezial."
+			]
+			dependencies: [
+				"4C0F0000000001E9"
+			]
+			tasks: [
+				{
+					id: "4C0F000000000270"
+					item: {
+						count: 1
+						id: "minecolonies:blockhutalchemist"
+					}
+					type: "item"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F000000000271"
+					item: {
+						count: 1
+						id: "magic_coins:silver_coin"
+					}
+					type: "item"
+					count: 10
+				}
+				{
+					id: "4C0F000000000272"
+					type: "xp"
+					xp: 12
+				}
+			]
+		}
+		{
+			id: "4C0F0000000001EB"
+			x: 26.0d
+			y: 7.5d
+			title: "Mystischer Ort"
+			icon: {
+				count: 1
+				id: "minecolonies:blockhutmysticalsite"
+			}
+			description: [
+				"Errichte die &aMystischer Ort&r in einer deiner Kolonien (Bauauftrag beim Baumeister)."
+				"&7Kategorie: Mystik \\& Spezial."
+			]
+			dependencies: [
+				"4C0F0000000001EA"
+			]
+			tasks: [
+				{
+					id: "4C0F000000000273"
+					item: {
+						count: 1
+						id: "minecolonies:blockhutmysticalsite"
+					}
+					type: "item"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F000000000274"
+					item: {
+						count: 1
+						id: "magic_coins:silver_coin"
+					}
+					type: "item"
+					count: 10
+				}
+				{
+					id: "4C0F000000000275"
+					type: "xp"
+					xp: 12
+				}
+			]
+		}
+		{
+			id: "4C0F0000000001EC"
+			x: 26.0d
+			y: 9.0d
+			title: "Nether-Arbeiter"
+			icon: {
+				count: 1
+				id: "minecolonies:blockhutnetherworker"
+			}
+			description: [
+				"Errichte die &aNether-Arbeiter&r in einer deiner Kolonien (Bauauftrag beim Baumeister)."
+				"&7Kategorie: Mystik \\& Spezial."
+			]
+			dependencies: [
+				"4C0F0000000001EB"
+			]
+			tasks: [
+				{
+					id: "4C0F000000000276"
+					item: {
+						count: 1
+						id: "minecolonies:blockhutnetherworker"
+					}
+					type: "item"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F000000000277"
+					item: {
+						count: 1
+						id: "magic_coins:gold_coin"
+					}
+					type: "item"
+				}
+				{
+					id: "4C0F000000000278"
+					type: "xp"
+					xp: 12
+				}
+			]
+		}
+		{
+			id: "4C0F0000000001ED"
+			x: 26.0d
+			y: 10.5d
+			title: "Stall"
+			icon: {
+				count: 1
+				id: "minecolonies:blockhutstable"
+			}
+			description: [
+				"Errichte die &aStall&r in einer deiner Kolonien (Bauauftrag beim Baumeister)."
+				"&7Kategorie: Mystik \\& Spezial."
+			]
+			dependencies: [
+				"4C0F0000000001EC"
+			]
+			tasks: [
+				{
+					id: "4C0F000000000279"
+					item: {
+						count: 1
+						id: "minecolonies:blockhutstable"
+					}
+					type: "item"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F00000000027A"
+					item: {
+						count: 1
+						id: "magic_coins:gold_coin"
+					}
+					type: "item"
+				}
+				{
+					id: "4C0F00000000027B"
+					type: "xp"
+					xp: 12
+				}
+			]
+		}
+		{
+			id: "4C0F0000000001EE"
+			x: 26.0d
+			y: 12.0d
+			title: "Wohnhaus"
+			icon: {
+				count: 1
+				id: "minecolonies:blockhutcitizen"
+			}
+			description: [
+				"Errichte die &aWohnhaus&r in einer deiner Kolonien (Bauauftrag beim Baumeister)."
+				"&7Kategorie: Mystik \\& Spezial."
+			]
+			dependencies: [
+				"4C0F0000000001ED"
+			]
+			tasks: [
+				{
+					id: "4C0F00000000027C"
+					item: {
+						count: 1
+						id: "minecolonies:blockhutcitizen"
+					}
+					type: "item"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F00000000027D"
+					item: {
+						count: 1
+						id: "magic_coins:gold_coin"
+					}
+					type: "item"
+				}
+				{
+					id: "4C0F00000000027E"
+					type: "xp"
+					xp: 12
+				}
+			]
+		}
+		{
 			id: "4C0F000000000031"
 			x: 0.0d
-			y: 18.0d
+			y: 5.0d
 			title: "Die erste Maschine"
 			icon: {
 				count: 1
@@ -1950,7 +4004,7 @@
 			]
 			tasks: [
 				{
-					id: "4C0F0000000000F0"
+					id: "4C0F0000000000F1"
 					item: {
 						count: 1
 						id: "create:water_wheel"
@@ -1961,7 +4015,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F0000000000F1"
+					id: "4C0F0000000000F2"
 					item: {
 						count: 1
 						id: "create:andesite_alloy"
@@ -1970,7 +4024,7 @@
 					count: 32
 				}
 				{
-					id: "4C0F0000000000F2"
+					id: "4C0F0000000000F3"
 					item: {
 						count: 1
 						id: "magic_coins:gold_coin"
@@ -1979,7 +4033,7 @@
 					count: 2
 				}
 				{
-					id: "4C0F0000000000F3"
+					id: "4C0F0000000000F4"
 					type: "xp"
 					xp: 25
 				}
@@ -1988,7 +4042,7 @@
 		{
 			id: "4C0F000000000033"
 			x: -2.5d
-			y: 19.5d
+			y: 6.5d
 			title: "Mehr Schwung"
 			icon: {
 				count: 1
@@ -2004,7 +4058,7 @@
 			]
 			tasks: [
 				{
-					id: "4C0F0000000000F4"
+					id: "4C0F0000000000F5"
 					item: {
 						count: 1
 						id: "create:windmill_bearing"
@@ -2012,7 +4066,7 @@
 					type: "item"
 				}
 				{
-					id: "4C0F0000000000F5"
+					id: "4C0F0000000000F6"
 					item: {
 						count: 1
 						id: "create:white_sail"
@@ -2023,7 +4077,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F0000000000F6"
+					id: "4C0F0000000000F7"
 					item: {
 						count: 1
 						id: "magic_coins:gold_coin"
@@ -2032,7 +4086,7 @@
 					count: 2
 				}
 				{
-					id: "4C0F0000000000F7"
+					id: "4C0F0000000000F8"
 					type: "xp"
 					xp: 20
 				}
@@ -2041,7 +4095,7 @@
 		{
 			id: "4C0F000000000032"
 			x: 0.0d
-			y: 19.5d
+			y: 6.5d
 			title: "Pressen am Fließband"
 			icon: {
 				count: 1
@@ -2056,7 +4110,7 @@
 			]
 			tasks: [
 				{
-					id: "4C0F0000000000F8"
+					id: "4C0F0000000000F9"
 					item: {
 						count: 1
 						id: "create:mechanical_press"
@@ -2066,7 +4120,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F0000000000F9"
+					id: "4C0F0000000000FA"
 					item: {
 						count: 1
 						id: "magic_coins:gold_coin"
@@ -2075,7 +4129,7 @@
 					count: 2
 				}
 				{
-					id: "4C0F0000000000FA"
+					id: "4C0F0000000000FB"
 					type: "xp"
 					xp: 20
 				}
@@ -2084,7 +4138,7 @@
 		{
 			id: "4C0F000000000034"
 			x: 0.0d
-			y: 21.0d
+			y: 8.0d
 			title: "Erz-Verarbeitung"
 			icon: {
 				count: 1
@@ -2101,7 +4155,7 @@
 			]
 			tasks: [
 				{
-					id: "4C0F0000000000FB"
+					id: "4C0F0000000000FC"
 					item: {
 						count: 1
 						id: "create:crushing_wheel"
@@ -2112,7 +4166,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F0000000000FC"
+					id: "4C0F0000000000FD"
 					item: {
 						count: 1
 						id: "magic_coins:gold_coin"
@@ -2121,7 +4175,7 @@
 					count: 3
 				}
 				{
-					id: "4C0F0000000000FD"
+					id: "4C0F0000000000FE"
 					type: "xp"
 					xp: 30
 				}
@@ -2130,7 +4184,7 @@
 		{
 			id: "4C0F000000000035"
 			x: 2.5d
-			y: 21.0d
+			y: 8.0d
 			title: "Logistik mit Bändern"
 			icon: {
 				count: 1
@@ -2146,7 +4200,7 @@
 			]
 			tasks: [
 				{
-					id: "4C0F0000000000FE"
+					id: "4C0F0000000000FF"
 					item: {
 						count: 1
 						id: "create:belt_connector"
@@ -2155,7 +4209,7 @@
 					count: 4L
 				}
 				{
-					id: "4C0F0000000000FF"
+					id: "4C0F000000000100"
 					item: {
 						count: 1
 						id: "create:brass_tunnel"
@@ -2165,7 +4219,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000100"
+					id: "4C0F000000000101"
 					item: {
 						count: 1
 						id: "magic_coins:gold_coin"
@@ -2174,7 +4228,7 @@
 					count: 2
 				}
 				{
-					id: "4C0F000000000101"
+					id: "4C0F000000000102"
 					type: "xp"
 					xp: 20
 				}
@@ -2182,8 +4236,55 @@
 		}
 		{
 			id: "4C0F000000000036"
+			x: 4.5d
+			y: 8.0d
+			title: "Das Lager"
+			icon: {
+				count: 1
+				id: "create:item_vault"
+			}
+			size: 1.25d
+			description: [
+				"Ordnung muss sein: baue ein zentrales &aWarenlager&r aus &aItem Vaults&r."
+				"Per Trichter/Förderband befüllt, gibt dir eines deiner Maschinen-Outputs sauber"
+				"sortiert wieder aus — das Herz jeder Create-Basis."
+				""
+				"&7Tipp: Vaults lassen sich zu riesigen Lagerblöcken zusammenbauen."
+			]
+			dependencies: [
+				"4C0F000000000035"
+			]
+			tasks: [
+				{
+					id: "4C0F000000000103"
+					item: {
+						count: 1
+						id: "create:item_vault"
+					}
+					type: "item"
+					count: 4L
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F000000000104"
+					item: {
+						count: 1
+						id: "magic_coins:gold_coin"
+					}
+					type: "item"
+				}
+				{
+					id: "4C0F000000000105"
+					type: "xp"
+					xp: 20
+				}
+			]
+		}
+		{
+			id: "4C0F000000000037"
 			x: 0.0d
-			y: 22.5d
+			y: 9.5d
 			title: "Misch-Anlage"
 			icon: {
 				count: 1
@@ -2199,7 +4300,7 @@
 			]
 			tasks: [
 				{
-					id: "4C0F000000000102"
+					id: "4C0F000000000106"
 					item: {
 						count: 1
 						id: "create:mechanical_mixer"
@@ -2207,7 +4308,7 @@
 					type: "item"
 				}
 				{
-					id: "4C0F000000000103"
+					id: "4C0F000000000107"
 					item: {
 						count: 1
 						id: "create:basin"
@@ -2217,7 +4318,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000104"
+					id: "4C0F000000000108"
 					item: {
 						count: 1
 						id: "magic_coins:gold_coin"
@@ -2226,16 +4327,16 @@
 					count: 3
 				}
 				{
-					id: "4C0F000000000105"
+					id: "4C0F000000000109"
 					type: "xp"
 					xp: 30
 				}
 			]
 		}
 		{
-			id: "4C0F000000000037"
+			id: "4C0F000000000038"
 			x: 2.5d
-			y: 22.5d
+			y: 9.5d
 			title: "Automatische Farm"
 			icon: {
 				count: 1
@@ -2252,63 +4353,10 @@
 			]
 			tasks: [
 				{
-					id: "4C0F000000000106"
-					item: {
-						count: 1
-						id: "create:mechanical_harvester"
-					}
-					type: "item"
-				}
-			]
-			rewards: [
-				{
-					id: "4C0F000000000107"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
-					count: 4
-				}
-				{
-					id: "4C0F000000000108"
-					type: "xp"
-					xp: 35
-				}
-			]
-		}
-		{
-			id: "4C0F000000000039"
-			x: -2.5d
-			y: 24.0d
-			title: "Die erste bewegte Kontraption"
-			icon: {
-				count: 1
-				id: "create:mechanical_bearing"
-			}
-			shape: "hexagon"
-			size: 1.5d
-			description: [
-				"Mit &aKleber&r \\& &aLager&r wird aus Blöcken eine bewegliche Kontraption —"
-				"Zugbrücke, Drehturm, Aufzug … &7Hier wird Create magisch."
-			]
-			dependencies: [
-				"4C0F000000000036"
-			]
-			tasks: [
-				{
-					id: "4C0F000000000109"
-					item: {
-						count: 1
-						id: "create:mechanical_bearing"
-					}
-					type: "item"
-				}
-				{
 					id: "4C0F00000000010A"
 					item: {
 						count: 1
-						id: "create:super_glue"
+						id: "create:mechanical_harvester"
 					}
 					type: "item"
 				}
@@ -2331,9 +4379,62 @@
 			]
 		}
 		{
-			id: "4C0F000000000038"
+			id: "4C0F00000000003A"
+			x: -2.5d
+			y: 11.0d
+			title: "Die erste bewegte Kontraption"
+			icon: {
+				count: 1
+				id: "create:mechanical_bearing"
+			}
+			shape: "hexagon"
+			size: 1.5d
+			description: [
+				"Mit &aKleber&r \\& &aLager&r wird aus Blöcken eine bewegliche Kontraption —"
+				"Zugbrücke, Drehturm, Aufzug … &7Hier wird Create magisch."
+			]
+			dependencies: [
+				"4C0F000000000037"
+			]
+			tasks: [
+				{
+					id: "4C0F00000000010D"
+					item: {
+						count: 1
+						id: "create:mechanical_bearing"
+					}
+					type: "item"
+				}
+				{
+					id: "4C0F00000000010E"
+					item: {
+						count: 1
+						id: "create:super_glue"
+					}
+					type: "item"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F00000000010F"
+					item: {
+						count: 1
+						id: "magic_coins:gold_coin"
+					}
+					type: "item"
+					count: 4
+				}
+				{
+					id: "4C0F000000000110"
+					type: "xp"
+					xp: 35
+				}
+			]
+		}
+		{
+			id: "4C0F000000000039"
 			x: 0.0d
-			y: 24.0d
+			y: 11.0d
 			title: "Automatische Fertigung"
 			icon: {
 				count: 1
@@ -2345,11 +4446,11 @@
 				"fertigt. &7(8 Crafter sind ein guter Start.)"
 			]
 			dependencies: [
-				"4C0F000000000036"
+				"4C0F000000000037"
 			]
 			tasks: [
 				{
-					id: "4C0F00000000010D"
+					id: "4C0F000000000111"
 					item: {
 						count: 1
 						id: "create:mechanical_crafter"
@@ -2360,7 +4461,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F00000000010E"
+					id: "4C0F000000000112"
 					item: {
 						count: 1
 						id: "magic_coins:crystal_coin"
@@ -2368,16 +4469,16 @@
 					type: "item"
 				}
 				{
-					id: "4C0F00000000010F"
+					id: "4C0F000000000113"
 					type: "xp"
 					xp: 40
 				}
 			]
 		}
 		{
-			id: "4C0F00000000003D"
+			id: "4C0F00000000003E"
 			x: -2.5d
-			y: 25.5d
+			y: 12.5d
 			title: "Baumfarm"
 			icon: {
 				count: 1
@@ -2389,11 +4490,11 @@
 				"&7Liefere &e1.000 Holz&r ab — das schafft nur Automatisierung."
 			]
 			dependencies: [
-				"4C0F000000000039"
+				"4C0F00000000003A"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000110"
+					id: "4C0F000000000114"
 					item: {
 						count: 1
 						id: "minecraft:oak_log"
@@ -2404,7 +4505,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000111"
+					id: "4C0F000000000115"
 					item: {
 						count: 1
 						id: "magic_coins:crystal_coin"
@@ -2412,16 +4513,16 @@
 					type: "item"
 				}
 				{
-					id: "4C0F000000000112"
+					id: "4C0F000000000116"
 					type: "xp"
 					xp: 40
 				}
 			]
 		}
 		{
-			id: "4C0F00000000003B"
+			id: "4C0F00000000003C"
 			x: 0.0d
-			y: 25.5d
+			y: 12.5d
 			title: "Automatische Küche"
 			icon: {
 				count: 1
@@ -2433,11 +4534,11 @@
 				"vollautomatisch."
 			]
 			dependencies: [
-				"4C0F000000000038"
+				"4C0F000000000039"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000113"
+					id: "4C0F000000000117"
 					item: {
 						count: 1
 						id: "farmersdelight:cooked_rice"
@@ -2448,7 +4549,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000114"
+					id: "4C0F000000000118"
 					item: {
 						count: 1
 						id: "magic_coins:crystal_coin"
@@ -2456,16 +4557,16 @@
 					type: "item"
 				}
 				{
-					id: "4C0F000000000115"
+					id: "4C0F000000000119"
 					type: "xp"
 					xp: 40
 				}
 			]
 		}
 		{
-			id: "4C0F00000000003C"
+			id: "4C0F00000000003D"
 			x: 2.5d
-			y: 25.5d
+			y: 12.5d
 			title: "Fabrik-Linie"
 			icon: {
 				count: 1
@@ -2477,69 +4578,17 @@
 				"eine Produktionslinie auf Bestellung."
 			]
 			dependencies: [
-				"4C0F000000000038"
+				"4C0F000000000039"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000116"
+					id: "4C0F00000000011A"
 					item: {
 						count: 1
 						id: "create:mechanical_arm"
 					}
 					type: "item"
 					count: 2L
-				}
-			]
-			rewards: [
-				{
-					id: "4C0F000000000117"
-					item: {
-						count: 1
-						id: "magic_coins:crystal_coin"
-					}
-					type: "item"
-					count: 2
-				}
-				{
-					id: "4C0F000000000118"
-					type: "xp"
-					xp: 45
-				}
-			]
-		}
-		{
-			id: "4C0F00000000003A"
-			x: -4.5d
-			y: 21.0d
-			title: "Strom-Netz (Createaddition)"
-			icon: {
-				count: 1
-				id: "createaddition:alternator"
-			}
-			size: 1.25d
-			description: [
-				"Bring Elektrizität ins Spiel: ein &aAlternator&r erzeugt FE aus Drehkraft,"
-				"ein &aCapacitor&r speichert sie. Baue dein erstes Stromnetz."
-			]
-			dependencies: [
-				"4C0F000000000033"
-			]
-			tasks: [
-				{
-					id: "4C0F000000000119"
-					item: {
-						count: 1
-						id: "createaddition:alternator"
-					}
-					type: "item"
-				}
-				{
-					id: "4C0F00000000011A"
-					item: {
-						count: 1
-						id: "createaddition:capacitor"
-					}
-					type: "item"
 				}
 			]
 			rewards: [
@@ -2560,9 +4609,61 @@
 			]
 		}
 		{
-			id: "4C0F00000000003E"
+			id: "4C0F00000000003B"
 			x: -4.5d
-			y: 25.5d
+			y: 8.0d
+			title: "Strom-Netz (Createaddition)"
+			icon: {
+				count: 1
+				id: "createaddition:alternator"
+			}
+			size: 1.25d
+			description: [
+				"Bring Elektrizität ins Spiel: ein &aAlternator&r erzeugt FE aus Drehkraft,"
+				"ein &aCapacitor&r speichert sie. Baue dein erstes Stromnetz."
+			]
+			dependencies: [
+				"4C0F000000000033"
+			]
+			tasks: [
+				{
+					id: "4C0F00000000011D"
+					item: {
+						count: 1
+						id: "createaddition:alternator"
+					}
+					type: "item"
+				}
+				{
+					id: "4C0F00000000011E"
+					item: {
+						count: 1
+						id: "createaddition:capacitor"
+					}
+					type: "item"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F00000000011F"
+					item: {
+						count: 1
+						id: "magic_coins:crystal_coin"
+					}
+					type: "item"
+					count: 2
+				}
+				{
+					id: "4C0F000000000120"
+					type: "xp"
+					xp: 45
+				}
+			]
+		}
+		{
+			id: "4C0F00000000003F"
+			x: -4.5d
+			y: 12.5d
 			title: "Der erste Zug"
 			icon: {
 				count: 1
@@ -2575,11 +4676,11 @@
 				"(Steam 'n' Rails)."
 			]
 			dependencies: [
-				"4C0F000000000039"
+				"4C0F00000000003A"
 			]
 			tasks: [
 				{
-					id: "4C0F00000000011D"
+					id: "4C0F000000000121"
 					item: {
 						count: 1
 						id: "create:track_station"
@@ -2587,7 +4688,7 @@
 					type: "item"
 				}
 				{
-					id: "4C0F00000000011E"
+					id: "4C0F000000000122"
 					item: {
 						count: 1
 						id: "create:track"
@@ -2598,7 +4699,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F00000000011F"
+					id: "4C0F000000000123"
 					item: {
 						count: 1
 						id: "railways:conductor_cap"
@@ -2606,7 +4707,7 @@
 					type: "item"
 				}
 				{
-					id: "4C0F000000000120"
+					id: "4C0F000000000124"
 					item: {
 						count: 1
 						id: "magic_coins:crystal_coin"
@@ -2614,16 +4715,16 @@
 					type: "item"
 				}
 				{
-					id: "4C0F000000000121"
+					id: "4C0F000000000125"
 					type: "xp"
 					xp: 40
 				}
 			]
 		}
 		{
-			id: "4C0F00000000003F"
+			id: "4C0F000000000040"
 			x: -4.5d
-			y: 27.0d
+			y: 14.0d
 			title: "Schienen-Netz"
 			icon: {
 				count: 1
@@ -2635,11 +4736,11 @@
 				"sodass Züge automatisch fahren. &7(3 Stationen + Fahrplan.)"
 			]
 			dependencies: [
-				"4C0F00000000003E"
+				"4C0F00000000003F"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000122"
+					id: "4C0F000000000126"
 					item: {
 						count: 1
 						id: "create:track_station"
@@ -2648,7 +4749,7 @@
 					count: 3L
 				}
 				{
-					id: "4C0F000000000123"
+					id: "4C0F000000000127"
 					item: {
 						count: 1
 						id: "create:schedule"
@@ -2658,7 +4759,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000124"
+					id: "4C0F000000000128"
 					item: {
 						count: 1
 						id: "magic_coins:crystal_coin"
@@ -2667,16 +4768,16 @@
 					count: 2
 				}
 				{
-					id: "4C0F000000000125"
+					id: "4C0F000000000129"
 					type: "xp"
 					xp: 45
 				}
 			]
 		}
 		{
-			id: "4C0F000000000040"
+			id: "4C0F000000000041"
 			x: 0.0d
-			y: 28.5d
+			y: 15.5d
 			title: "Industrie-Komplex"
 			icon: {
 				count: 1
@@ -2691,14 +4792,14 @@
 				"&6Das Sprungbrett in die Lüfte und ins Endgame.&r"
 			]
 			dependencies: [
-				"4C0F00000000003B"
 				"4C0F00000000003C"
-				"4C0F00000000003A"
-				"4C0F00000000003F"
+				"4C0F00000000003D"
+				"4C0F00000000003B"
+				"4C0F000000000040"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000126"
+					id: "4C0F00000000012A"
 					item: {
 						count: 1
 						id: "create:precision_mechanism"
@@ -2709,7 +4810,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000127"
+					id: "4C0F00000000012B"
 					item: {
 						count: 1
 						id: "magic_coins:crystal_coin"
@@ -2718,7 +4819,7 @@
 					count: 5
 				}
 				{
-					id: "4C0F000000000128"
+					id: "4C0F00000000012C"
 					item: {
 						count: 1
 						id: "create:precision_mechanism"
@@ -2727,16 +4828,16 @@
 					count: 16
 				}
 				{
-					id: "4C0F000000000129"
+					id: "4C0F00000000012D"
 					type: "xp"
 					xp: 80
 				}
 			]
 		}
 		{
-			id: "4C0F000000000041"
-			x: 22.0d
-			y: 19.0d
+			id: "4C0F000000000042"
+			x: -1.0d
+			y: 18.0d
 			title: "Werde Luftfahrer"
 			icon: {
 				count: 1
@@ -2749,11 +4850,11 @@
 				"Schnapp dir die &aAviator's Goggles&r. &7(Alpha-Mod: Backups!)"
 			]
 			dependencies: [
-				"4C0F000000000039"
+				"4C0F00000000003A"
 			]
 			tasks: [
 				{
-					id: "4C0F00000000012A"
+					id: "4C0F00000000012E"
 					item: {
 						count: 1
 						id: "aeronautics:aviators_goggles"
@@ -2763,7 +4864,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F00000000012B"
+					id: "4C0F00000000012F"
 					item: {
 						count: 1
 						id: "magic_coins:gold_coin"
@@ -2772,16 +4873,16 @@
 					count: 2
 				}
 				{
-					id: "4C0F00000000012C"
+					id: "4C0F000000000130"
 					type: "xp"
 					xp: 20
 				}
 			]
 		}
 		{
-			id: "4C0F000000000042"
-			x: 22.0d
-			y: 20.5d
+			id: "4C0F000000000043"
+			x: -1.0d
+			y: 19.5d
 			title: "Der erste Propeller"
 			icon: {
 				count: 1
@@ -2791,11 +4892,11 @@
 				"Jeder Flug beginnt mit Schub. Bastle einen &aHölzernen Propeller&r."
 			]
 			dependencies: [
-				"4C0F000000000041"
+				"4C0F000000000042"
 			]
 			tasks: [
 				{
-					id: "4C0F00000000012D"
+					id: "4C0F000000000131"
 					item: {
 						count: 1
 						id: "aeronautics:wooden_propeller"
@@ -2805,7 +4906,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F00000000012E"
+					id: "4C0F000000000132"
 					item: {
 						count: 1
 						id: "magic_coins:silver_coin"
@@ -2814,16 +4915,16 @@
 					count: 10
 				}
 				{
-					id: "4C0F00000000012F"
+					id: "4C0F000000000133"
 					type: "xp"
 					xp: 10
 				}
 			]
 		}
 		{
-			id: "4C0F000000000043"
-			x: 20.5d
-			y: 21.5d
+			id: "4C0F000000000044"
+			x: -2.5d
+			y: 20.5d
 			title: "Solider Antrieb"
 			icon: {
 				count: 1
@@ -2833,11 +4934,11 @@
 				"Der &aAndesite-Propeller&r packt mehr Schub. Mehr Drehzahl = mehr Auftrieb."
 			]
 			dependencies: [
-				"4C0F000000000042"
+				"4C0F000000000043"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000130"
+					id: "4C0F000000000134"
 					item: {
 						count: 1
 						id: "aeronautics:andesite_propeller"
@@ -2847,7 +4948,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000131"
+					id: "4C0F000000000135"
 					item: {
 						count: 1
 						id: "magic_coins:silver_coin"
@@ -2856,16 +4957,16 @@
 					count: 15
 				}
 				{
-					id: "4C0F000000000132"
+					id: "4C0F000000000136"
 					type: "xp"
 					xp: 10
 				}
 			]
 		}
 		{
-			id: "4C0F000000000044"
-			x: 23.5d
-			y: 21.5d
+			id: "4C0F000000000045"
+			x: 0.5d
+			y: 20.5d
 			title: "Das Propellerlager"
 			icon: {
 				count: 1
@@ -2875,11 +4976,11 @@
 				"Das &aPropeller Bearing&r überträgt Create-Drehkraft auf den Propeller."
 			]
 			dependencies: [
-				"4C0F000000000042"
+				"4C0F000000000043"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000133"
+					id: "4C0F000000000137"
 					item: {
 						count: 1
 						id: "aeronautics:propeller_bearing"
@@ -2889,7 +4990,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000134"
+					id: "4C0F000000000138"
 					item: {
 						count: 1
 						id: "magic_coins:silver_coin"
@@ -2898,16 +4999,16 @@
 					count: 15
 				}
 				{
-					id: "4C0F000000000135"
+					id: "4C0F000000000139"
 					type: "xp"
 					xp: 10
 				}
 			]
 		}
 		{
-			id: "4C0F000000000045"
-			x: 22.0d
-			y: 22.0d
+			id: "4C0F000000000046"
+			x: -1.0d
+			y: 21.0d
 			title: "Heiße Luft"
 			icon: {
 				count: 1
@@ -2917,11 +5018,11 @@
 				"Der &aAdjustable Burner&r erzeugt heiße Luft — leichter als Luft werden!"
 			]
 			dependencies: [
-				"4C0F000000000044"
+				"4C0F000000000045"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000136"
+					id: "4C0F00000000013A"
 					item: {
 						count: 1
 						id: "aeronautics:adjustable_burner"
@@ -2931,7 +5032,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000137"
+					id: "4C0F00000000013B"
 					item: {
 						count: 1
 						id: "magic_coins:gold_coin"
@@ -2939,16 +5040,16 @@
 					type: "item"
 				}
 				{
-					id: "4C0F000000000138"
+					id: "4C0F00000000013C"
 					type: "xp"
 					xp: 15
 				}
 			]
 		}
 		{
-			id: "4C0F000000000046"
-			x: 23.5d
-			y: 23.0d
+			id: "4C0F000000000047"
+			x: 0.5d
+			y: 22.0d
 			title: "Unter Dampf"
 			icon: {
 				count: 1
@@ -2958,11 +5059,11 @@
 				"Mit dem &aSteam Vent&r nutzt du Dampfkraft für deine Flugmaschine."
 			]
 			dependencies: [
-				"4C0F000000000045"
+				"4C0F000000000046"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000139"
+					id: "4C0F00000000013D"
 					item: {
 						count: 1
 						id: "aeronautics:steam_vent"
@@ -2972,7 +5073,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F00000000013A"
+					id: "4C0F00000000013E"
 					item: {
 						count: 1
 						id: "magic_coins:silver_coin"
@@ -2981,16 +5082,16 @@
 					count: 15
 				}
 				{
-					id: "4C0F00000000013B"
+					id: "4C0F00000000013F"
 					type: "xp"
 					xp: 10
 				}
 			]
 		}
 		{
-			id: "4C0F000000000047"
-			x: 22.0d
-			y: 23.5d
+			id: "4C0F000000000048"
+			x: -1.0d
+			y: 22.5d
 			title: "Die Hülle"
 			icon: {
 				count: 1
@@ -3001,11 +5102,11 @@
 				"Eine &aEnvelope&r (Ballonhülle) gibt Auftrieb. Gibt's in allen Farben!"
 			]
 			dependencies: [
-				"4C0F000000000045"
+				"4C0F000000000046"
 			]
 			tasks: [
 				{
-					id: "4C0F00000000013C"
+					id: "4C0F000000000140"
 					item: {
 						count: 1
 						id: "aeronautics:white_envelope"
@@ -3015,7 +5116,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F00000000013D"
+					id: "4C0F000000000141"
 					item: {
 						count: 1
 						id: "magic_coins:silver_coin"
@@ -3024,16 +5125,16 @@
 					count: 15
 				}
 				{
-					id: "4C0F00000000013E"
+					id: "4C0F000000000142"
 					type: "xp"
 					xp: 10
 				}
 			]
 		}
 		{
-			id: "4C0F000000000048"
-			x: 20.5d
-			y: 24.5d
+			id: "4C0F000000000049"
+			x: -2.5d
+			y: 23.5d
 			title: "Hülle trifft Technik"
 			icon: {
 				count: 1
@@ -3043,11 +5144,11 @@
 				"Der &aEnvelope Encased Shaft&r führt eine Welle sauber durch die Hülle."
 			]
 			dependencies: [
-				"4C0F000000000047"
+				"4C0F000000000048"
 			]
 			tasks: [
 				{
-					id: "4C0F00000000013F"
+					id: "4C0F000000000143"
 					item: {
 						count: 1
 						id: "aeronautics:white_envelope_encased_shaft"
@@ -3057,7 +5158,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000140"
+					id: "4C0F000000000144"
 					item: {
 						count: 1
 						id: "magic_coins:silver_coin"
@@ -3066,16 +5167,16 @@
 					count: 15
 				}
 				{
-					id: "4C0F000000000141"
+					id: "4C0F000000000145"
 					type: "xp"
 					xp: 10
 				}
 			]
 		}
 		{
-			id: "4C0F000000000049"
-			x: 23.5d
-			y: 24.5d
+			id: "4C0F00000000004A"
+			x: 0.5d
+			y: 23.5d
 			title: "Großer Ballon"
 			icon: {
 				count: 1
@@ -3085,11 +5186,11 @@
 				"Größer fliegt besser. Sammle &e16 Envelopes&r für ein ordentliches Schiff."
 			]
 			dependencies: [
-				"4C0F000000000047"
+				"4C0F000000000048"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000142"
+					id: "4C0F000000000146"
 					item: {
 						count: 1
 						id: "aeronautics:white_envelope"
@@ -3100,7 +5201,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000143"
+					id: "4C0F000000000147"
 					item: {
 						count: 1
 						id: "magic_coins:gold_coin"
@@ -3108,16 +5209,16 @@
 					type: "item"
 				}
 				{
-					id: "4C0F000000000144"
+					id: "4C0F000000000148"
 					type: "xp"
 					xp: 15
 				}
 			]
 		}
 		{
-			id: "4C0F00000000004A"
-			x: 22.0d
-			y: 25.0d
+			id: "4C0F00000000004B"
+			x: -1.0d
+			y: 24.0d
 			title: "Der erste Auftrieb"
 			icon: {
 				count: 1
@@ -3130,11 +5231,11 @@
 				"Hülle + Brenner. &7Dann ab in die Luft!"
 			]
 			dependencies: [
-				"4C0F000000000047"
+				"4C0F000000000048"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000145"
+					id: "4C0F000000000149"
 					item: {
 						count: 1
 						id: "aeronautics:white_envelope"
@@ -3143,7 +5244,7 @@
 					count: 4L
 				}
 				{
-					id: "4C0F000000000146"
+					id: "4C0F00000000014A"
 					item: {
 						count: 1
 						id: "aeronautics:adjustable_burner"
@@ -3153,7 +5254,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000147"
+					id: "4C0F00000000014B"
 					item: {
 						count: 1
 						id: "magic_coins:gold_coin"
@@ -3162,16 +5263,16 @@
 					count: 2
 				}
 				{
-					id: "4C0F000000000148"
+					id: "4C0F00000000014C"
 					type: "xp"
 					xp: 25
 				}
 			]
 		}
 		{
-			id: "4C0F00000000004B"
-			x: 19.5d
-			y: 26.0d
+			id: "4C0F00000000004C"
+			x: -3.5d
+			y: 25.0d
 			title: "Schwebe-Forschung"
 			icon: {
 				count: 1
@@ -3181,11 +5282,11 @@
 				"&aEnd Stone Powder&r ist die Basis des schwebenden Wundermaterials."
 			]
 			dependencies: [
-				"4C0F00000000004A"
+				"4C0F00000000004B"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000149"
+					id: "4C0F00000000014D"
 					item: {
 						count: 1
 						id: "aeronautics:end_stone_powder"
@@ -3196,7 +5297,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F00000000014A"
+					id: "4C0F00000000014E"
 					item: {
 						count: 1
 						id: "magic_coins:silver_coin"
@@ -3205,16 +5306,16 @@
 					count: 15
 				}
 				{
-					id: "4C0F00000000014B"
+					id: "4C0F00000000014F"
 					type: "xp"
 					xp: 10
 				}
 			]
 		}
 		{
-			id: "4C0F00000000004C"
-			x: 19.5d
-			y: 27.5d
+			id: "4C0F00000000004D"
+			x: -3.5d
+			y: 26.5d
 			title: "Flüssiger Auftrieb"
 			icon: {
 				count: 1
@@ -3224,11 +5325,11 @@
 				"Im &aLevitite Blend Bucket&r schwappt die Vorstufe. &7Nicht trinken."
 			]
 			dependencies: [
-				"4C0F00000000004B"
+				"4C0F00000000004C"
 			]
 			tasks: [
 				{
-					id: "4C0F00000000014C"
+					id: "4C0F000000000150"
 					item: {
 						count: 1
 						id: "aeronautics:levitite_blend_bucket"
@@ -3238,7 +5339,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F00000000014D"
+					id: "4C0F000000000151"
 					item: {
 						count: 1
 						id: "magic_coins:silver_coin"
@@ -3247,16 +5348,16 @@
 					count: 15
 				}
 				{
-					id: "4C0F00000000014E"
+					id: "4C0F000000000152"
 					type: "xp"
 					xp: 10
 				}
 			]
 		}
 		{
-			id: "4C0F00000000004D"
-			x: 19.5d
-			y: 29.0d
+			id: "4C0F00000000004E"
+			x: -3.5d
+			y: 28.0d
 			title: "Levitite"
 			icon: {
 				count: 1
@@ -3268,11 +5369,11 @@
 				"Damit schwebt selbst schwerer Stahl."
 			]
 			dependencies: [
-				"4C0F00000000004C"
+				"4C0F00000000004D"
 			]
 			tasks: [
 				{
-					id: "4C0F00000000014F"
+					id: "4C0F000000000153"
 					item: {
 						count: 1
 						id: "aeronautics:levitite"
@@ -3283,7 +5384,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000150"
+					id: "4C0F000000000154"
 					item: {
 						count: 1
 						id: "magic_coins:gold_coin"
@@ -3292,16 +5393,16 @@
 					count: 2
 				}
 				{
-					id: "4C0F000000000151"
+					id: "4C0F000000000155"
 					type: "xp"
 					xp: 20
 				}
 			]
 		}
 		{
-			id: "4C0F00000000004E"
-			x: 18.5d
-			y: 30.5d
+			id: "4C0F00000000004F"
+			x: -4.5d
+			y: 29.5d
 			title: "Perlglanz-Levitite"
 			icon: {
 				count: 1
@@ -3311,11 +5412,11 @@
 				"&dPearlescent Levitite&r: mehr Auftrieb, mehr Glanz — für Schiffe mit Stil."
 			]
 			dependencies: [
-				"4C0F00000000004D"
+				"4C0F00000000004E"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000152"
+					id: "4C0F000000000156"
 					item: {
 						count: 1
 						id: "aeronautics:pearlescent_levitite"
@@ -3326,7 +5427,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000153"
+					id: "4C0F000000000157"
 					item: {
 						count: 1
 						id: "magic_coins:gold_coin"
@@ -3335,16 +5436,16 @@
 					count: 3
 				}
 				{
-					id: "4C0F000000000154"
+					id: "4C0F000000000158"
 					type: "xp"
 					xp: 25
 				}
 			]
 		}
 		{
-			id: "4C0F00000000004F"
-			x: 24.0d
-			y: 26.0d
+			id: "4C0F000000000050"
+			x: 1.0d
+			y: 25.0d
 			title: "Smarter Schub"
 			icon: {
 				count: 1
@@ -3354,11 +5455,11 @@
 				"Der &aSmart Propeller&r lässt sich fein steuern — Anstellwinkel inklusive."
 			]
 			dependencies: [
-				"4C0F000000000043"
+				"4C0F000000000044"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000155"
+					id: "4C0F000000000159"
 					item: {
 						count: 1
 						id: "aeronautics:smart_propeller"
@@ -3368,7 +5469,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000156"
+					id: "4C0F00000000015A"
 					item: {
 						count: 1
 						id: "magic_coins:gold_coin"
@@ -3376,16 +5477,16 @@
 					type: "item"
 				}
 				{
-					id: "4C0F000000000157"
+					id: "4C0F00000000015B"
 					type: "xp"
 					xp: 15
 				}
 			]
 		}
 		{
-			id: "4C0F000000000050"
-			x: 24.0d
-			y: 27.5d
+			id: "4C0F000000000051"
+			x: 1.0d
+			y: 26.5d
 			title: "Gleichgewicht"
 			icon: {
 				count: 1
@@ -3395,11 +5496,11 @@
 				"Das &aGyroscopic Propeller Bearing&r hält dein Schiff stabil in der Luft."
 			]
 			dependencies: [
-				"4C0F00000000004F"
+				"4C0F000000000050"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000158"
+					id: "4C0F00000000015C"
 					item: {
 						count: 1
 						id: "aeronautics:gyroscopic_propeller_bearing"
@@ -3409,7 +5510,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000159"
+					id: "4C0F00000000015D"
 					item: {
 						count: 1
 						id: "magic_coins:gold_coin"
@@ -3418,16 +5519,16 @@
 					count: 2
 				}
 				{
-					id: "4C0F00000000015A"
+					id: "4C0F00000000015E"
 					type: "xp"
 					xp: 20
 				}
 			]
 		}
 		{
-			id: "4C0F000000000051"
-			x: 22.0d
-			y: 28.0d
+			id: "4C0F000000000052"
+			x: -1.0d
+			y: 27.0d
 			title: "Dein erstes Luftschiff"
 			icon: {
 				count: 1
@@ -3440,12 +5541,12 @@
 				"und bau dein erstes abhebendes &dLuftschiff&r."
 			]
 			dependencies: [
-				"4C0F00000000004A"
-				"4C0F000000000044"
+				"4C0F00000000004B"
+				"4C0F000000000045"
 			]
 			tasks: [
 				{
-					id: "4C0F00000000015B"
+					id: "4C0F00000000015F"
 					item: {
 						count: 1
 						id: "aeronautics:propeller_bearing"
@@ -3454,7 +5555,7 @@
 					count: 2L
 				}
 				{
-					id: "4C0F00000000015C"
+					id: "4C0F000000000160"
 					item: {
 						count: 1
 						id: "aeronautics:white_envelope"
@@ -3465,7 +5566,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F00000000015D"
+					id: "4C0F000000000161"
 					item: {
 						count: 1
 						id: "magic_coins:crystal_coin"
@@ -3473,16 +5574,16 @@
 					type: "item"
 				}
 				{
-					id: "4C0F00000000015E"
+					id: "4C0F000000000162"
 					type: "xp"
 					xp: 40
 				}
 			]
 		}
 		{
-			id: "4C0F000000000052"
-			x: 24.0d
-			y: 29.0d
+			id: "4C0F000000000053"
+			x: 1.0d
+			y: 28.0d
 			title: "Bordkanone (Kartoffel!)"
 			icon: {
 				count: 1
@@ -3493,67 +5594,14 @@
 				"&7(Passt zum Kartoffelboss-Plan …)"
 			]
 			dependencies: [
-				"4C0F000000000051"
+				"4C0F000000000052"
 			]
 			tasks: [
-				{
-					id: "4C0F00000000015F"
-					item: {
-						count: 1
-						id: "aeronautics:mounted_potato_cannon"
-					}
-					type: "item"
-				}
-			]
-			rewards: [
-				{
-					id: "4C0F000000000160"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
-					count: 2
-				}
-				{
-					id: "4C0F000000000161"
-					type: "xp"
-					xp: 20
-				}
-			]
-		}
-		{
-			id: "4C0F000000000053"
-			x: 22.0d
-			y: 29.5d
-			title: "Volle Kontrolle"
-			icon: {
-				count: 1
-				id: "aeronautics:smart_propeller"
-			}
-			size: 1.25d
-			description: [
-				"Für ruhiges, präzises Fliegen: &aSmart Propeller&r + &aGyroskop&r ans Schiff."
-			]
-			dependencies: [
-				"4C0F000000000051"
-				"4C0F000000000050"
-			]
-			tasks: [
-				{
-					id: "4C0F000000000162"
-					item: {
-						count: 1
-						id: "aeronautics:smart_propeller"
-					}
-					type: "item"
-					count: 2L
-				}
 				{
 					id: "4C0F000000000163"
 					item: {
 						count: 1
-						id: "aeronautics:gyroscopic_propeller_bearing"
+						id: "aeronautics:mounted_potato_cannon"
 					}
 					type: "item"
 				}
@@ -3566,19 +5614,72 @@
 						id: "magic_coins:gold_coin"
 					}
 					type: "item"
-					count: 3
+					count: 2
 				}
 				{
 					id: "4C0F000000000165"
+					type: "xp"
+					xp: 20
+				}
+			]
+		}
+		{
+			id: "4C0F000000000054"
+			x: -1.0d
+			y: 28.5d
+			title: "Volle Kontrolle"
+			icon: {
+				count: 1
+				id: "aeronautics:smart_propeller"
+			}
+			size: 1.25d
+			description: [
+				"Für ruhiges, präzises Fliegen: &aSmart Propeller&r + &aGyroskop&r ans Schiff."
+			]
+			dependencies: [
+				"4C0F000000000052"
+				"4C0F000000000051"
+			]
+			tasks: [
+				{
+					id: "4C0F000000000166"
+					item: {
+						count: 1
+						id: "aeronautics:smart_propeller"
+					}
+					type: "item"
+					count: 2L
+				}
+				{
+					id: "4C0F000000000167"
+					item: {
+						count: 1
+						id: "aeronautics:gyroscopic_propeller_bearing"
+					}
+					type: "item"
+				}
+			]
+			rewards: [
+				{
+					id: "4C0F000000000168"
+					item: {
+						count: 1
+						id: "magic_coins:gold_coin"
+					}
+					type: "item"
+					count: 3
+				}
+				{
+					id: "4C0F000000000169"
 					type: "xp"
 					xp: 30
 				}
 			]
 		}
 		{
-			id: "4C0F000000000054"
-			x: 20.5d
-			y: 30.0d
+			id: "4C0F000000000055"
+			x: -2.5d
+			y: 29.0d
 			title: "Cloud Skipper"
 			icon: {
 				count: 1
@@ -3588,11 +5689,11 @@
 				"Spür die Freiheit über den Wolken: die Musik-Disc &aCloud Skipper&r."
 			]
 			dependencies: [
-				"4C0F000000000051"
+				"4C0F000000000052"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000166"
+					id: "4C0F00000000016A"
 					item: {
 						count: 1
 						id: "aeronautics:music_disc_cloud_skipper"
@@ -3602,7 +5703,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000167"
+					id: "4C0F00000000016B"
 					item: {
 						count: 1
 						id: "magic_coins:gold_coin"
@@ -3610,16 +5711,16 @@
 					type: "item"
 				}
 				{
-					id: "4C0F000000000168"
+					id: "4C0F00000000016C"
 					type: "xp"
 					xp: 15
 				}
 			]
 		}
 		{
-			id: "4C0F000000000055"
-			x: 23.5d
-			y: 31.0d
+			id: "4C0F000000000056"
+			x: 0.5d
+			y: 30.0d
 			title: "Hoch hinaus"
 			icon: {
 				count: 1
@@ -3630,11 +5731,11 @@
 				"&dPearlescent Levitite&r und steig auf."
 			]
 			dependencies: [
-				"4C0F000000000053"
+				"4C0F000000000054"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000169"
+					id: "4C0F00000000016D"
 					item: {
 						count: 1
 						id: "aeronautics:pearlescent_levitite"
@@ -3645,7 +5746,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F00000000016A"
+					id: "4C0F00000000016E"
 					item: {
 						count: 1
 						id: "magic_coins:gold_coin"
@@ -3654,16 +5755,16 @@
 					count: 3
 				}
 				{
-					id: "4C0F00000000016B"
+					id: "4C0F00000000016F"
 					type: "xp"
 					xp: 30
 				}
 			]
 		}
 		{
-			id: "4C0F000000000056"
-			x: 22.0d
-			y: 31.0d
+			id: "4C0F000000000057"
+			x: -1.0d
+			y: 30.0d
 			title: "Luftfracht"
 			icon: {
 				count: 1
@@ -3675,11 +5776,11 @@
 				"&7Schneller als jeder Zug über Berge."
 			]
 			dependencies: [
-				"4C0F000000000053"
+				"4C0F000000000054"
 			]
 			tasks: [
 				{
-					id: "4C0F00000000016C"
+					id: "4C0F000000000170"
 					item: {
 						count: 1
 						id: "aeronautics:white_envelope"
@@ -3690,7 +5791,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F00000000016D"
+					id: "4C0F000000000171"
 					item: {
 						count: 1
 						id: "magic_coins:crystal_coin"
@@ -3698,16 +5799,16 @@
 					type: "item"
 				}
 				{
-					id: "4C0F00000000016E"
+					id: "4C0F000000000172"
 					type: "xp"
 					xp: 35
 				}
 			]
 		}
 		{
-			id: "4C0F000000000057"
-			x: 20.5d
-			y: 31.5d
+			id: "4C0F000000000058"
+			x: -2.5d
+			y: 30.5d
 			title: "Gemeinsam abheben"
 			icon: {
 				count: 1
@@ -3717,11 +5818,11 @@
 				"Bau Sitzplätze ein und nimm Mitspieler an Bord. &7SMP-Momente!"
 			]
 			dependencies: [
-				"4C0F000000000053"
+				"4C0F000000000054"
 			]
 			tasks: [
 				{
-					id: "4C0F00000000016F"
+					id: "4C0F000000000173"
 					item: {
 						count: 1
 						id: "create:blue_seat"
@@ -3732,7 +5833,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000170"
+					id: "4C0F000000000174"
 					item: {
 						count: 1
 						id: "magic_coins:gold_coin"
@@ -3741,16 +5842,16 @@
 					count: 3
 				}
 				{
-					id: "4C0F000000000171"
+					id: "4C0F000000000175"
 					type: "xp"
 					xp: 25
 				}
 			]
 		}
 		{
-			id: "4C0F000000000058"
-			x: 22.0d
-			y: 32.5d
+			id: "4C0F000000000059"
+			x: -1.0d
+			y: 31.5d
 			title: "Die kleine Flotte"
 			icon: {
 				count: 1
@@ -3762,11 +5863,11 @@
 				"Schiffe: &e8 Lager + 48 Hüllen&r."
 			]
 			dependencies: [
-				"4C0F000000000056"
+				"4C0F000000000057"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000172"
+					id: "4C0F000000000176"
 					item: {
 						count: 1
 						id: "aeronautics:propeller_bearing"
@@ -3775,7 +5876,7 @@
 					count: 8L
 				}
 				{
-					id: "4C0F000000000173"
+					id: "4C0F000000000177"
 					item: {
 						count: 1
 						id: "aeronautics:white_envelope"
@@ -3786,7 +5887,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000174"
+					id: "4C0F000000000178"
 					item: {
 						count: 1
 						id: "magic_coins:crystal_coin"
@@ -3795,16 +5896,16 @@
 					count: 2
 				}
 				{
-					id: "4C0F000000000175"
+					id: "4C0F000000000179"
 					type: "xp"
 					xp: 45
 				}
 			]
 		}
 		{
-			id: "4C0F000000000059"
-			x: 22.0d
-			y: 34.0d
+			id: "4C0F00000000005A"
+			x: -1.0d
+			y: 33.0d
 			title: "Herr der Lüfte"
 			icon: {
 				count: 1
@@ -3817,13 +5918,13 @@
 				"Levitite&r und &aSmart Propellers&r für die ultimative Flotte."
 			]
 			dependencies: [
-				"4C0F000000000058"
-				"4C0F000000000052"
-				"4C0F00000000004E"
+				"4C0F000000000059"
+				"4C0F000000000053"
+				"4C0F00000000004F"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000176"
+					id: "4C0F00000000017A"
 					item: {
 						count: 1
 						id: "aeronautics:pearlescent_levitite"
@@ -3832,7 +5933,7 @@
 					count: 32L
 				}
 				{
-					id: "4C0F000000000177"
+					id: "4C0F00000000017B"
 					item: {
 						count: 1
 						id: "aeronautics:smart_propeller"
@@ -3843,7 +5944,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000178"
+					id: "4C0F00000000017C"
 					item: {
 						count: 1
 						id: "magic_coins:crystal_coin"
@@ -3852,7 +5953,7 @@
 					count: 4
 				}
 				{
-					id: "4C0F000000000179"
+					id: "4C0F00000000017D"
 					item: {
 						count: 1
 						id: "aeronautics:pearlescent_levitite"
@@ -3861,7 +5962,7 @@
 					count: 8
 				}
 				{
-					id: "4C0F00000000017A"
+					id: "4C0F00000000017E"
 					type: "xp"
 					xp: 60
 				}
@@ -3869,8 +5970,8 @@
 		}
 		{
 			id: "4C0F00000000002E"
-			x: 20.0d
-			y: 35.5d
+			x: -3.0d
+			y: 34.5d
 			title: "Hüllen-Manufaktur"
 			icon: {
 				count: 1
@@ -3882,11 +5983,11 @@
 				"vollautomatisch."
 			]
 			dependencies: [
-				"4C0F000000000059"
+				"4C0F00000000005A"
 			]
 			tasks: [
 				{
-					id: "4C0F00000000017B"
+					id: "4C0F00000000017F"
 					item: {
 						count: 1
 						id: "aeronautics:white_envelope"
@@ -3898,7 +5999,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F00000000017C"
+					id: "4C0F000000000180"
 					item: {
 						count: 1
 						id: "magic_coins:crystal_coin"
@@ -3907,7 +6008,7 @@
 					count: 8
 				}
 				{
-					id: "4C0F00000000017D"
+					id: "4C0F000000000181"
 					type: "xp"
 					xp: 80
 				}
@@ -3915,8 +6016,8 @@
 		}
 		{
 			id: "4C0F00000000002F"
-			x: 22.0d
-			y: 35.5d
+			x: -1.0d
+			y: 34.5d
 			title: "Propeller-Fließband"
 			icon: {
 				count: 1
@@ -3927,11 +6028,11 @@
 				"Schub für eine ganze Armada: produziere &e2.000 Smart Propellers&r."
 			]
 			dependencies: [
-				"4C0F000000000059"
+				"4C0F00000000005A"
 			]
 			tasks: [
 				{
-					id: "4C0F00000000017E"
+					id: "4C0F000000000182"
 					item: {
 						count: 1
 						id: "aeronautics:smart_propeller"
@@ -3943,7 +6044,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F00000000017F"
+					id: "4C0F000000000183"
 					item: {
 						count: 1
 						id: "magic_coins:crystal_coin"
@@ -3952,7 +6053,7 @@
 					count: 10
 				}
 				{
-					id: "4C0F000000000180"
+					id: "4C0F000000000184"
 					type: "xp"
 					xp: 90
 				}
@@ -3960,8 +6061,8 @@
 		}
 		{
 			id: "4C0F000000000030"
-			x: 24.0d
-			y: 35.5d
+			x: 1.0d
+			y: 34.5d
 			title: "Levitite-Großwerk"
 			icon: {
 				count: 1
@@ -3972,11 +6073,11 @@
 				"Auftrieb im Industriemaßstab: stelle &e2.000 Pearlescent Levitite&r her."
 			]
 			dependencies: [
-				"4C0F000000000059"
+				"4C0F00000000005A"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000181"
+					id: "4C0F000000000185"
 					item: {
 						count: 1
 						id: "aeronautics:pearlescent_levitite"
@@ -3988,7 +6089,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000182"
+					id: "4C0F000000000186"
 					item: {
 						count: 1
 						id: "magic_coins:crystal_coin"
@@ -3997,16 +6098,16 @@
 					count: 12
 				}
 				{
-					id: "4C0F000000000183"
+					id: "4C0F000000000187"
 					type: "xp"
 					xp: 100
 				}
 			]
 		}
 		{
-			id: "4C0F00000000005A"
-			x: 0.0d
-			y: 42.0d
+			id: "4C0F00000000005B"
+			x: -8.0d
+			y: 0.0d
 			title: "Die große Welt (Terralith + Tectonic)"
 			icon: {
 				count: 1
@@ -4020,20 +6121,20 @@
 				"&8(Info-Quest.)"
 			]
 			dependencies: [
-				"4C0F000000000031"
+				"4C0F000000000003"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000184"
+					id: "4C0F000000000188"
 					type: "checkmark"
 				}
 			]
 			rewards: [ ]
 		}
 		{
-			id: "4C0F00000000005B"
-			x: 0.0d
-			y: 43.5d
+			id: "4C0F00000000005C"
+			x: -8.0d
+			y: 1.5d
 			title: "Weite Sicht (Distant Horizons)"
 			icon: {
 				count: 1
@@ -4048,20 +6149,20 @@
 				"&8(Info-Quest.)"
 			]
 			dependencies: [
-				"4C0F00000000005A"
+				"4C0F00000000005B"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000185"
+					id: "4C0F000000000189"
 					type: "checkmark"
 				}
 			]
 			rewards: [ ]
 		}
 		{
-			id: "4C0F00000000005C"
-			x: 0.0d
-			y: 47.0d
+			id: "4C0F00000000005D"
+			x: -8.0d
+			y: 3.0d
 			title: "Münzwirtschaft (Magic Coins)"
 			icon: {
 				count: 1
@@ -4073,11 +6174,11 @@
 				"&eMünzen&r sind der rote Faden. Besitze mindestens &e3 Goldmünzen&r."
 			]
 			dependencies: [
-				"4C0F00000000005A"
+				"4C0F00000000005B"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000186"
+					id: "4C0F00000000018A"
 					item: {
 						count: 1
 						id: "magic_coins:gold_coin"
@@ -4088,7 +6189,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000187"
+					id: "4C0F00000000018B"
 					item: {
 						count: 1
 						id: "magic_coins:gold_coin"
@@ -4097,16 +6198,16 @@
 					count: 2
 				}
 				{
-					id: "4C0F000000000188"
+					id: "4C0F00000000018C"
 					type: "xp"
 					xp: 15
 				}
 			]
 		}
 		{
-			id: "4C0F00000000005D"
-			x: 2.0d
-			y: 47.0d
+			id: "4C0F00000000005E"
+			x: -6.0d
+			y: 3.0d
 			title: "Handel (Create: Numismatics)"
 			icon: {
 				count: 1
@@ -4118,11 +6219,11 @@
 				"Baue einen &aVendor&r und sammle erste Spurs."
 			]
 			dependencies: [
-				"4C0F00000000005C"
+				"4C0F00000000005D"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000189"
+					id: "4C0F00000000018D"
 					item: {
 						count: 1
 						id: "numismatics:vendor"
@@ -4130,7 +6231,7 @@
 					type: "item"
 				}
 				{
-					id: "4C0F00000000018A"
+					id: "4C0F00000000018E"
 					item: {
 						count: 1
 						id: "numismatics:spur"
@@ -4141,7 +6242,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F00000000018B"
+					id: "4C0F00000000018F"
 					item: {
 						count: 1
 						id: "magic_coins:gold_coin"
@@ -4150,16 +6251,16 @@
 					count: 3
 				}
 				{
-					id: "4C0F00000000018C"
+					id: "4C0F000000000190"
 					type: "xp"
 					xp: 20
 				}
 			]
 		}
 		{
-			id: "4C0F00000000005E"
-			x: 4.0d
-			y: 47.0d
+			id: "4C0F00000000005F"
+			x: -4.0d
+			y: 3.0d
 			title: "Reich werden"
 			icon: {
 				count: 1
@@ -4171,11 +6272,11 @@
 				"und mach dich bereit fürs &cEndgame&r."
 			]
 			dependencies: [
-				"4C0F00000000005D"
+				"4C0F00000000005E"
 			]
 			tasks: [
 				{
-					id: "4C0F00000000018D"
+					id: "4C0F000000000191"
 					item: {
 						count: 1
 						id: "magic_coins:crystal_coin"
@@ -4185,7 +6286,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F00000000018E"
+					id: "4C0F000000000192"
 					item: {
 						count: 1
 						id: "magic_coins:crystal_coin"
@@ -4194,16 +6295,16 @@
 					count: 2
 				}
 				{
-					id: "4C0F00000000018F"
+					id: "4C0F000000000193"
 					type: "xp"
 					xp: 40
 				}
 			]
 		}
 		{
-			id: "4C0F00000000005F"
-			x: 0.0d
-			y: 54.0d
+			id: "4C0F000000000060"
+			x: -15.0d
+			y: 7.0d
 			title: "Tor zum Endgame"
 			icon: {
 				count: 1
@@ -4220,13 +6321,13 @@
 				"&7produziere sie also vollautomatisch."
 			]
 			dependencies: [
-				"4C0F00000000005E"
-				"4C0F000000000059"
-				"4C0F000000000040"
+				"4C0F00000000005F"
+				"4C0F00000000005A"
+				"4C0F000000000041"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000190"
+					id: "4C0F000000000194"
 					item: {
 						count: 1
 						id: "create:precision_mechanism"
@@ -4238,7 +6339,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000191"
+					id: "4C0F000000000195"
 					item: {
 						count: 1
 						id: "magic_coins:crystal_coin"
@@ -4247,16 +6348,16 @@
 					count: 5
 				}
 				{
-					id: "4C0F000000000192"
+					id: "4C0F000000000196"
 					type: "xp"
 					xp: 50
 				}
 			]
 		}
 		{
-			id: "4C0F000000000060"
-			x: -3.5d
-			y: 52.0d
+			id: "4C0F000000000061"
+			x: -18.5d
+			y: 5.0d
 			title: "Andesit-Industrie"
 			icon: {
 				count: 1
@@ -4267,11 +6368,11 @@
 				"Das Fundament von Create im großen Stil: liefere &e50.000 Andesite Alloy&r."
 			]
 			dependencies: [
-				"4C0F00000000005F"
+				"4C0F000000000060"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000193"
+					id: "4C0F000000000197"
 					item: {
 						count: 1
 						id: "create:andesite_alloy"
@@ -4283,7 +6384,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000194"
+					id: "4C0F000000000198"
 					item: {
 						count: 1
 						id: "magic_coins:crystal_coin"
@@ -4292,16 +6393,16 @@
 					count: 10
 				}
 				{
-					id: "4C0F000000000195"
+					id: "4C0F000000000199"
 					type: "xp"
 					xp: 80
 				}
 			]
 		}
 		{
-			id: "4C0F000000000061"
-			x: -1.8d
-			y: 51.0d
+			id: "4C0F000000000062"
+			x: -16.8d
+			y: 4.0d
 			title: "Messing-Werk"
 			icon: {
 				count: 1
@@ -4313,11 +6414,11 @@
 				"liefere &e20.000 Messing-Barren&r."
 			]
 			dependencies: [
-				"4C0F00000000005F"
+				"4C0F000000000060"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000196"
+					id: "4C0F00000000019A"
 					item: {
 						count: 1
 						id: "create:brass_ingot"
@@ -4329,7 +6430,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000197"
+					id: "4C0F00000000019B"
 					item: {
 						count: 1
 						id: "magic_coins:crystal_coin"
@@ -4338,16 +6439,16 @@
 					count: 10
 				}
 				{
-					id: "4C0F000000000198"
+					id: "4C0F00000000019C"
 					type: "xp"
 					xp: 80
 				}
 			]
 		}
 		{
-			id: "4C0F000000000062"
-			x: 1.8d
-			y: 51.0d
+			id: "4C0F000000000063"
+			x: -13.2d
+			y: 4.0d
 			title: "Eisen-Imperium"
 			icon: {
 				count: 1
@@ -4359,11 +6460,11 @@
 				"Erz-Verarbeitung sei Dank."
 			]
 			dependencies: [
-				"4C0F00000000005F"
+				"4C0F000000000060"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000199"
+					id: "4C0F00000000019D"
 					item: {
 						count: 1
 						id: "minecraft:iron_ingot"
@@ -4375,7 +6476,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F00000000019A"
+					id: "4C0F00000000019E"
 					item: {
 						count: 1
 						id: "magic_coins:crystal_coin"
@@ -4384,16 +6485,16 @@
 					count: 10
 				}
 				{
-					id: "4C0F00000000019B"
+					id: "4C0F00000000019F"
 					type: "xp"
 					xp: 80
 				}
 			]
 		}
 		{
-			id: "4C0F000000000063"
-			x: 3.5d
-			y: 52.0d
+			id: "4C0F000000000064"
+			x: -11.5d
+			y: 5.0d
 			title: "Kupfer-Flut"
 			icon: {
 				count: 1
@@ -4404,11 +6505,11 @@
 				"Create läuft auf Kupfer. Liefere &e30.000 Kupferbarren&r."
 			]
 			dependencies: [
-				"4C0F00000000005F"
+				"4C0F000000000060"
 			]
 			tasks: [
 				{
-					id: "4C0F00000000019C"
+					id: "4C0F0000000001A0"
 					item: {
 						count: 1
 						id: "minecraft:copper_ingot"
@@ -4420,7 +6521,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F00000000019D"
+					id: "4C0F0000000001A1"
 					item: {
 						count: 1
 						id: "magic_coins:crystal_coin"
@@ -4429,16 +6530,16 @@
 					count: 8
 				}
 				{
-					id: "4C0F00000000019E"
+					id: "4C0F0000000001A2"
 					type: "xp"
 					xp: 70
 				}
 			]
 		}
 		{
-			id: "4C0F000000000064"
-			x: 0.0d
-			y: 50.2d
+			id: "4C0F000000000065"
+			x: -15.0d
+			y: 3.2d
 			title: "Präzisions-Massenfertigung"
 			icon: {
 				count: 1
@@ -4451,11 +6552,11 @@
 				"Mechanisms&r vollautomatisch. &7Mechanical Crafters glühen lassen!"
 			]
 			dependencies: [
-				"4C0F00000000005F"
+				"4C0F000000000060"
 			]
 			tasks: [
 				{
-					id: "4C0F00000000019F"
+					id: "4C0F0000000001A3"
 					item: {
 						count: 1
 						id: "create:precision_mechanism"
@@ -4467,7 +6568,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F0000000001A0"
+					id: "4C0F0000000001A4"
 					item: {
 						count: 1
 						id: "magic_coins:crystal_coin"
@@ -4476,7 +6577,7 @@
 					count: 15
 				}
 				{
-					id: "4C0F0000000001A1"
+					id: "4C0F0000000001A5"
 					item: {
 						count: 1
 						id: "magic_coins:crystal_coin"
@@ -4485,16 +6586,16 @@
 					count: 5
 				}
 				{
-					id: "4C0F0000000001A2"
+					id: "4C0F0000000001A6"
 					type: "xp"
 					xp: 120
 				}
 			]
 		}
 		{
-			id: "4C0F000000000065"
-			x: -3.5d
-			y: 56.0d
+			id: "4C0F000000000066"
+			x: -18.5d
+			y: 9.0d
 			title: "Endlos-Holz"
 			icon: {
 				count: 1
@@ -4505,11 +6606,11 @@
 				"Deine Baumfarm läuft heiß: liefere &e50.000 Holz&r."
 			]
 			dependencies: [
-				"4C0F00000000005F"
+				"4C0F000000000060"
 			]
 			tasks: [
 				{
-					id: "4C0F0000000001A3"
+					id: "4C0F0000000001A7"
 					item: {
 						count: 1
 						id: "minecraft:oak_log"
@@ -4521,7 +6622,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F0000000001A4"
+					id: "4C0F0000000001A8"
 					item: {
 						count: 1
 						id: "magic_coins:crystal_coin"
@@ -4530,16 +6631,16 @@
 					count: 8
 				}
 				{
-					id: "4C0F0000000001A5"
+					id: "4C0F0000000001A9"
 					type: "xp"
 					xp: 70
 				}
 			]
 		}
 		{
-			id: "4C0F000000000066"
-			x: -1.8d
-			y: 57.0d
+			id: "4C0F000000000067"
+			x: -16.8d
+			y: 10.0d
 			title: "Großküche"
 			icon: {
 				count: 1
@@ -4551,11 +6652,11 @@
 				"Central Kitchen."
 			]
 			dependencies: [
-				"4C0F00000000005F"
+				"4C0F000000000060"
 			]
 			tasks: [
 				{
-					id: "4C0F0000000001A6"
+					id: "4C0F0000000001AA"
 					item: {
 						count: 1
 						id: "farmersdelight:cooked_rice"
@@ -4567,7 +6668,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F0000000001A7"
+					id: "4C0F0000000001AB"
 					item: {
 						count: 1
 						id: "magic_coins:crystal_coin"
@@ -4576,16 +6677,16 @@
 					count: 8
 				}
 				{
-					id: "4C0F0000000001A8"
+					id: "4C0F0000000001AC"
 					type: "xp"
 					xp: 70
 				}
 			]
 		}
 		{
-			id: "4C0F000000000067"
-			x: 1.8d
-			y: 57.0d
+			id: "4C0F000000000068"
+			x: -13.2d
+			y: 10.0d
 			title: "Schwebe-Manufaktur"
 			icon: {
 				count: 1
@@ -4596,11 +6697,11 @@
 				"Halte deine Luftflotte am Schweben: produziere &e5.000 Levitite&r."
 			]
 			dependencies: [
-				"4C0F00000000005F"
+				"4C0F000000000060"
 			]
 			tasks: [
 				{
-					id: "4C0F0000000001A9"
+					id: "4C0F0000000001AD"
 					item: {
 						count: 1
 						id: "aeronautics:levitite"
@@ -4612,7 +6713,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F0000000001AA"
+					id: "4C0F0000000001AE"
 					item: {
 						count: 1
 						id: "magic_coins:crystal_coin"
@@ -4621,16 +6722,16 @@
 					count: 12
 				}
 				{
-					id: "4C0F0000000001AB"
+					id: "4C0F0000000001AF"
 					type: "xp"
 					xp: 90
 				}
 			]
 		}
 		{
-			id: "4C0F000000000068"
-			x: 3.5d
-			y: 56.0d
+			id: "4C0F000000000069"
+			x: -11.5d
+			y: 9.0d
 			title: "Kartoffel-Armee"
 			icon: {
 				count: 1
@@ -4642,11 +6743,11 @@
 				"liefere &e50.000 Kartoffeln&r."
 			]
 			dependencies: [
-				"4C0F00000000005F"
+				"4C0F000000000060"
 			]
 			tasks: [
 				{
-					id: "4C0F0000000001AC"
+					id: "4C0F0000000001B0"
 					item: {
 						count: 1
 						id: "minecraft:potato"
@@ -4658,7 +6759,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F0000000001AD"
+					id: "4C0F0000000001B1"
 					item: {
 						count: 1
 						id: "magic_coins:crystal_coin"
@@ -4667,16 +6768,16 @@
 					count: 8
 				}
 				{
-					id: "4C0F0000000001AE"
+					id: "4C0F0000000001B2"
 					type: "xp"
 					xp: 70
 				}
 			]
 		}
 		{
-			id: "4C0F00000000006A"
-			x: 0.0d
-			y: 57.8d
+			id: "4C0F00000000006B"
+			x: -15.0d
+			y: 10.8d
 			title: "Diamant-Mine"
 			icon: {
 				count: 1
@@ -4687,11 +6788,11 @@
 				"Reichtum aus der Tiefe (oder per Create-Steinfarm): liefere &e10.000 Diamanten&r."
 			]
 			dependencies: [
-				"4C0F00000000005F"
+				"4C0F000000000060"
 			]
 			tasks: [
 				{
-					id: "4C0F0000000001AF"
+					id: "4C0F0000000001B3"
 					item: {
 						count: 1
 						id: "minecraft:diamond"
@@ -4703,7 +6804,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F0000000001B0"
+					id: "4C0F0000000001B4"
 					item: {
 						count: 1
 						id: "magic_coins:crystal_coin"
@@ -4712,16 +6813,16 @@
 					count: 12
 				}
 				{
-					id: "4C0F0000000001B1"
+					id: "4C0F0000000001B5"
 					type: "xp"
 					xp: 90
 				}
 			]
 		}
 		{
-			id: "4C0F000000000069"
-			x: -5.0d
-			y: 54.0d
+			id: "4C0F00000000006A"
+			x: -20.0d
+			y: 7.0d
 			title: "Münz-Magnat"
 			icon: {
 				count: 1
@@ -4732,11 +6833,11 @@
 				"Schwimme im Geld: besitze &e64 Kristallmünzen&r gleichzeitig."
 			]
 			dependencies: [
-				"4C0F00000000005F"
+				"4C0F000000000060"
 			]
 			tasks: [
 				{
-					id: "4C0F0000000001B2"
+					id: "4C0F0000000001B6"
 					item: {
 						count: 1
 						id: "magic_coins:crystal_coin"
@@ -4747,7 +6848,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F0000000001B3"
+					id: "4C0F0000000001B7"
 					item: {
 						count: 1
 						id: "magic_coins:crystal_coin"
@@ -4756,7 +6857,7 @@
 					count: 10
 				}
 				{
-					id: "4C0F0000000001B4"
+					id: "4C0F0000000001B8"
 					item: {
 						count: 1
 						id: "magic_coins:prosperity_amulet"
@@ -4764,16 +6865,16 @@
 					type: "item"
 				}
 				{
-					id: "4C0F0000000001B5"
+					id: "4C0F0000000001B9"
 					type: "xp"
 					xp: 80
 				}
 			]
 		}
 		{
-			id: "4C0F00000000006B"
-			x: 0.0d
-			y: 60.0d
+			id: "4C0F00000000006C"
+			x: -15.0d
+			y: 13.0d
 			title: "Legende des SMP"
 			icon: {
 				count: 1
@@ -4788,7 +6889,6 @@
 				"&6Herzlichen Glückwunsch — du bist eine wahre Legende!&r"
 			]
 			dependencies: [
-				"4C0F000000000060"
 				"4C0F000000000061"
 				"4C0F000000000062"
 				"4C0F000000000063"
@@ -4797,12 +6897,13 @@
 				"4C0F000000000066"
 				"4C0F000000000067"
 				"4C0F000000000068"
-				"4C0F00000000006A"
 				"4C0F000000000069"
+				"4C0F00000000006B"
+				"4C0F00000000006A"
 			]
 			tasks: [
 				{
-					id: "4C0F0000000001B6"
+					id: "4C0F0000000001BA"
 					item: {
 						count: 1
 						id: "create:precision_mechanism"
@@ -4812,7 +6913,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F0000000001B7"
+					id: "4C0F0000000001BB"
 					item: {
 						count: 1
 						id: "magic_coins:crystal_coin"
@@ -4821,7 +6922,7 @@
 					count: 50
 				}
 				{
-					id: "4C0F0000000001B8"
+					id: "4C0F0000000001BC"
 					item: {
 						count: 1
 						id: "minecraft:nether_star"
@@ -4830,7 +6931,7 @@
 					count: 4
 				}
 				{
-					id: "4C0F0000000001B9"
+					id: "4C0F0000000001BD"
 					item: {
 						count: 1
 						id: "magic_coins:prosperity_amulet"
@@ -4838,7 +6939,7 @@
 					type: "item"
 				}
 				{
-					id: "4C0F0000000001BA"
+					id: "4C0F0000000001BE"
 					type: "xp"
 					xp: 200
 				}

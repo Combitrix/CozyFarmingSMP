@@ -132,7 +132,7 @@ Quellcode verifiziert, `ServerConfiguration.java`):
 einstellbar). **Create: Numismatics** = physische Münzen/Handel/Automaten (passt zum Zug-/Handels-Thema).
 
 **Quest-Linie (liegt dem Pack bei, `config/ftbquests/quests/`):** EIN großer Quest-Baum auf
-**einer einzigen Seite** (`chapters/questline.snbt`, **105 Quests**), der sich **progressiv
+**einer einzigen Seite** (`chapters/questline.snbt`, **154 Quests**), der sich **progressiv
 aufbaut** — eine durchgehende Haupt-Linie mit Seitenzweigen, alles über Abhängigkeiten verkettet:
 
 - **👋 Willkommen** (ATM-Style: zentrale Wurzel + EMI/JourneyMap/IPN/FTB-Chunks-Intro)
