@@ -4,6 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cozy Farming SMP — Quest Viewer</title>
+  <!-- Web fonts enhance the look online; graceful system fallbacks offline. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -30,7 +34,10 @@
       <div class="hint">Ziehen zum Verschieben · Mausrad zum Zoomen · Knoten anklicken für Details</div>
     </section>
     <aside id="detail-panel">
-      <p class="empty placeholder">Wähle eine Quest im Baum aus, um Details zu sehen.</p>
+      <div class="empty placeholder">
+        <span class="placeholder-icon">🗺️</span>
+        <p>Wähle eine Quest im Baum aus,<br>um Details zu sehen.</p>
+      </div>
     </aside>
   </main>
 

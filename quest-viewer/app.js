@@ -34,6 +34,84 @@
   }
 
   // ---------------------------------------------------------------------------
+  // Item icon glyphs. No real textures available, so we map item id/name
+  // keywords to recognisable emoji; otherwise fall back to a monogram.
+  // Order matters: first matching keyword wins (most specific first).
+  // ---------------------------------------------------------------------------
+  var ITEM_EMOJI = [
+    [/silver_coin|gold_coin|coin|numismatic|spur|cog$|bevel/, "🪙"],
+    [/cogwheel|gear|shaft|cog\b|kinetic|mechanical|create:|press|mixer|crank/, "⚙️"],
+    [/airship|aeronaut|propeller|balloon|rotor|wing|hull|gondola/, "🎈"],
+    [/builder|colony|minecolon|hut|town_hall|guard|citizen|clipboard/, "🏘️"],
+    [/wheat|grain|hay|straw/, "🌾"],
+    [/seed|sapling|kernel|grain_/, "🌱"],
+    /* prepared foods first, so "apple_pie" -> 🥧 not 🍎 */
+    [/bread|dough|toast|sandwich|sundae/, "🍞"], [/cake/, "🍰"], [/pie/, "🥧"],
+    [/cookie|biscuit/, "🍪"], [/stew|soup|bowl|curry|noodle|roast/, "🍲"],
+    [/carrot/, "🥕"], [/potato/, "🥔"], [/beet/, "🍠"],
+    [/apple/, "🍎"], [/berry|berries|grape/, "🫐"], [/tomato/, "🍅"],
+    [/pumpkin|melon/, "🎃"], [/corn|maize/, "🌽"], [/onion/, "🧅"],
+    [/cabbage|lettuce|leaf|leaves/, "🥬"], [/mushroom/, "🍄"],
+    [/egg/, "🥚"], [/milk/, "🥛"], [/cheese/, "🧀"], [/honey/, "🍯"],
+    [/fish|salmon|cod|tuna|sushi/, "🐟"], [/chicken/, "🍗"],
+    [/beef|steak|pork|bacon|meat|ham\b/, "🍖"],
+    [/juice|cider|wine|ale|beer|drink|bottle|potion/, "🍶"],
+    [/diamond/, "💎"], [/emerald/, "💚"], [/netherite/, "🟪"],
+    [/iron/, "🔩"], [/copper/, "🟧"], [/gold/, "🟨"],
+    [/coal|charcoal/, "⚫"], [/redstone/, "🔴"], [/lapis/, "🔵"],
+    [/quartz/, "⬜"], [/amethyst|crystal/, "🔮"],
+    [/log|wood|plank|timber|stick|branch/, "🪵"],
+    [/leaf_|oak|birch|spruce|tree|sapling/, "🌳"],
+    [/flower|rose|tulip|poppy|daisy|petal/, "🌸"],
+    [/stone|cobble|rock|granite|andesite|diorite|deepslate/, "🪨"],
+    [/dirt|soil|mud|loam|farmland/, "🟫"], [/sand|gravel/, "🟨"],
+    [/glass|pane/, "🪟"], [/brick/, "🧱"],
+    [/wool|string|thread|yarn|cloth|fabric/, "🧵"], [/leather|hide/, "🟫"],
+    [/chest|crate|barrel|box|storage/, "📦"],
+    [/map|atlas/, "🗺️"], [/knowledge_book|guide|manual/, "📘"], [/book|paper|page|scroll/, "📖"],
+    [/crafting|workbench|table|anvil|hammer|tool/, "🛠️"],
+    [/bucket|water/, "🪣"], [/lava|magma|fire|flame|blaze/, "🔥"],
+    [/torch|lantern|lamp|candle|light/, "🏮"], [/bell/, "🔔"],
+    [/key\b|lock/, "🗝️"], [/gem|jewel|ruby|sapphire/, "💎"],
+    [/bone|skull|skeleton/, "🦴"], [/ender|pearl|eye/, "🟢"],
+    [/star|nether_star/, "⭐"], [/snow|ice/, "❄️"],
+    [/feather/, "🪶"], [/bee|beehive/, "🐝"], [/spider|web/, "🕸️"],
+    [/saddle|horse|cow|sheep|pig|animal/, "🐄"],
+    [/slime|magma_cream/, "🟩"], [/chain|anchor/, "⛓️"],
+    [/lead\b|leash/, "🪢"], [/painting|frame|art/, "🖼️"],
+    [/minecart|rail|cart|track/, "🛒"], [/bamboo/, "🎋"],
+    [/lever|button|switch|repeater|comparator|piston|hopper|dropper|dispenser|observer|mechanism/, "🧰"],
+    [/dandelion|wart|fungus|nylium|netherrack/, "🟥"]
+  ];
+
+  function itemEmoji(entry) {
+    var hay = ((entry.item || "") + " " + (entry.displayName || "")).toLowerCase();
+    for (var i = 0; i < ITEM_EMOJI.length; i++) {
+      if (ITEM_EMOJI[i][0].test(hay)) return ITEM_EMOJI[i][1];
+    }
+    return null;
+  }
+
+  // Monogram fallback: 1-2 uppercase letters from the display name.
+  function itemMonogram(entry) {
+    var name = entry.displayName || entry.item || "?";
+    name = String(name).replace(/^.*:/, "").replace(/_/g, " ").trim();
+    var words = name.split(/\s+/).filter(Boolean);
+    if (!words.length) return "?";
+    if (words.length === 1) return words[0].slice(0, 2).toUpperCase();
+    return (words[0].charAt(0) + words[1].charAt(0)).toUpperCase();
+  }
+
+  // A single glyph for an entry (item/xp/dimension/checkmark) for use in nodes.
+  function entryGlyph(entry) {
+    if (!entry) return null;
+    if (entry.type === "xp") return "✨";
+    if (entry.type === "dimension") return "🌍";
+    if (entry.type === "checkmark") return "✓";
+    return itemEmoji(entry); // may be null -> caller uses monogram
+  }
+
+  // ---------------------------------------------------------------------------
   // HTML escaping
   // ---------------------------------------------------------------------------
   function escapeHtml(str) {
@@ -280,18 +358,25 @@
         shapeEl.setAttribute("fill", mc.bg);
         g.appendChild(shapeEl);
 
-        // Icon placeholder: first letter of displayName, mod-coloured text.
+        // Icon: recognisable emoji for the quest's item icon, else a monogram.
+        var emoji = q.icon ? itemEmoji(q.icon) : null;
         var label = document.createElementNS(SVG_NS, "text");
         label.setAttribute("x", n.cx);
         label.setAttribute("y", n.cy);
         label.setAttribute("class", "node-glyph");
-        label.setAttribute("fill", mc.fg);
         label.setAttribute("text-anchor", "middle");
         label.setAttribute("dominant-baseline", "central");
-        label.style.fontSize = Math.max(10, n.r * 0.8) + "px";
-        var glyph = q.icon && q.icon.displayName ? q.icon.displayName.charAt(0).toUpperCase()
-          : stripFormat(q.title).charAt(0).toUpperCase() || "?";
-        label.textContent = glyph;
+        if (emoji) {
+          label.setAttribute("fill", "#ffffff");
+          label.style.fontSize = Math.max(11, n.r * 1.05) + "px";
+          label.textContent = emoji;
+        } else {
+          label.setAttribute("fill", mc.fg);
+          label.style.fontSize = Math.max(9, n.r * 0.72) + "px";
+          label.classList.add("monogram");
+          label.textContent = q.icon ? itemMonogram(q.icon)
+            : (stripFormat(q.title).charAt(0).toUpperCase() || "?");
+        }
         g.appendChild(label);
 
         // Tooltip via <title>
@@ -373,35 +458,59 @@
 
     function renderEntryList(entries, emptyMsg) {
       if (!entries.length) return '<p class="empty">' + escapeHtml(emptyMsg) + "</p>";
-      var html = '<ul class="entry-list">';
-      entries.forEach(function (e) {
-        html += "<li>" + renderEntry(e) + "</li>";
-      });
-      html += "</ul>";
+      var html = '<div class="entry-grid">';
+      entries.forEach(function (e) { html += renderEntry(e); });
+      html += "</div>";
       return html;
+    }
+
+    // Build one Minecraft-style inventory slot for an entry.
+    // slotInner: the glyph markup; count: optional count badge; tint: slot accent.
+    function slot(glyphHtml, count, tint, isEmoji) {
+      var cnt = (count && count > 1)
+        ? '<span class="slot-count">' + escapeHtml(count) + "</span>" : "";
+      var cls = "mc-slot" + (isEmoji ? " is-emoji" : "");
+      var style = tint ? ' style="--slot-tint:' + tint + '"' : "";
+      return '<div class="' + cls + '"' + style + '>' +
+        '<span class="slot-glyph">' + glyphHtml + "</span>" + cnt + "</div>";
     }
 
     function renderEntry(e) {
       var type = e.type || "unknown";
+      var box, label, sub;
+
       if (type === "item") {
         var mc = modColor(e.mod);
         var name = e.displayName || e.item || "Item";
-        var badge = '<span class="mod-badge" style="background:' + mc.bg + ";color:" + mc.fg +
+        var emoji = itemEmoji(e);
+        var glyph = emoji
+          ? emoji
+          : '<span class="slot-mono" style="color:' + mc.fg + '">' + escapeHtml(itemMonogram(e)) + "</span>";
+        box = slot(glyph, e.count, mc.bg, !!emoji);
+        label = escapeHtml(name);
+        sub = '<span class="mod-badge" style="background:' + mc.bg + ";color:" + mc.fg +
           '">' + escapeHtml(e.mod || "?") + "</span>";
-        var count = (e.count && e.count > 1) ? ' <span class="count">×' + escapeHtml(e.count) + "</span>" : "";
-        return badge + " " + escapeHtml(name) + count;
+      } else if (type === "xp") {
+        box = slot("✨", null, "#7bce4b", true);
+        label = escapeHtml((e.xp != null ? e.xp : 0)) + " XP";
+        sub = '<span class="kind-tag">Erfahrung</span>';
+      } else if (type === "dimension") {
+        box = slot("🌍", null, "#4a87c9", true);
+        label = escapeHtml(prettyDimension(e.dimension));
+        sub = '<span class="kind-tag">Dimension besuchen</span>';
+      } else if (type === "checkmark") {
+        box = slot("✓", null, "#caa14a", false);
+        label = "Bestätigen";
+        sub = '<span class="kind-tag">Manuell abhaken</span>';
+      } else {
+        box = slot('<span class="slot-mono">?</span>', null, "#555a66", false);
+        label = escapeHtml(type);
+        sub = '<span class="kind-tag">unbekannt</span>';
       }
-      if (type === "xp") {
-        return '<span class="xp-tag">' + escapeHtml(e.xp != null ? e.xp : 0) + " XP</span>";
-      }
-      if (type === "dimension") {
-        return '<span class="dim-tag">Dimension: ' + escapeHtml(prettyDimension(e.dimension)) + "</span>";
-      }
-      if (type === "checkmark") {
-        return '<span class="check-tag">✓ Manuell bestätigen</span>';
-      }
-      // unknown type — show generically
-      return '<span class="unknown-tag">' + escapeHtml(type) + "</span>";
+
+      return '<div class="entry">' + box +
+        '<div class="entry-meta"><span class="entry-name">' + label + "</span>" +
+        '<span class="entry-sub">' + sub + "</span></div></div>";
     }
 
     function prettyDimension(dim) {
@@ -518,6 +627,9 @@
     computeLines: computeLines,
     shapePoints: shapePoints,
     modColor: modColor,
+    itemEmoji: itemEmoji,
+    itemMonogram: itemMonogram,
+    entryGlyph: entryGlyph,
     GRID: GRID
   };
 
