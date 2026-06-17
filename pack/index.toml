@@ -6,7 +6,7 @@ hash = "cac58b25be9750958e08989460e617325b27169b3e5eeaeb3022e63ba6798a4a"
 
 [[files]]
 file = "README.md"
-hash = "d09ccf3c285a181604bcf77afa21818967426e8fd1d1fe1168b6cf24f7acde42"
+hash = "66383ca98dbd432c799196d4cdf81e3d3a00efb26eeb6ffe31f5f6210bde3a57"
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
@@ -23,6 +23,30 @@ hash = "0cf75fb43c097b6bbc010af6b3305f5b6215c684c65da7aa347823a6af6bf2e7"
 [[files]]
 file = "config/minecolonies-server.toml"
 hash = "ef52aacac2654ba4143f9d05c60c528938191fcee74410a73f7e04fedbc21990"
+
+[[files]]
+file = "config/puffish_skills/config.json"
+hash = "bf73ccff24326bf3caeb9e434d02fb2c31556105ded9ebe782ac11a3db4a6836"
+
+[[files]]
+file = "config/puffish_skills/farming/category.json"
+hash = "0036887cae9ab93f171195471ac65439590ed4b0dd5da883b540436fdeb2e1f5"
+
+[[files]]
+file = "config/puffish_skills/farming/connections.json"
+hash = "05ae623b583fe24be25833d6f001d743e314f6cfd721ac54e5f2e9a4942414f8"
+
+[[files]]
+file = "config/puffish_skills/farming/definitions.json"
+hash = "999bad4e59cd51a297f14d66989a291bfa5ba8e1849973305ee5358899dffc33"
+
+[[files]]
+file = "config/puffish_skills/farming/experience.json"
+hash = "7ce740f8fe92fc03d4623f003ac9468582e2c967917279f84d5a6c2312610eeb"
+
+[[files]]
+file = "config/puffish_skills/farming/skills.json"
+hash = "c3e7aa530497447b8a5e557d7e285aa7db3e5e25064536a0b7b3b169563d3682"
 
 [[files]]
 file = "mods/ambient-environment.pw.toml"

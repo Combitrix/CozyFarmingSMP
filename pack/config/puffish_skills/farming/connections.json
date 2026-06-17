@@ -1,0 +1,15 @@
+[
+  ["root", "bs1"],
+  ["bs1", "bs2"],
+  ["bs2", "bs3"],
+  ["bs3", "cap"],
+  ["root", "reach1"],
+  ["reach1", "reach2"],
+  ["root", "speed1"],
+  ["speed1", "speed2"],
+  ["root", "health1"],
+  ["health1", "health2"],
+  ["root", "luck1"],
+  ["luck1", "luck2"],
+  ["root", "animals"]
+]

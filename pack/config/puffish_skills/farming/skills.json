@@ -1,0 +1,16 @@
+{
+  "root":    { "x": 0,   "y": 0,    "definition": "root_farm", "root": true },
+  "bs1":     { "x": 0,   "y": -26,  "definition": "break_speed" },
+  "bs2":     { "x": 0,   "y": -52,  "definition": "break_speed" },
+  "bs3":     { "x": 0,   "y": -78,  "definition": "break_speed" },
+  "cap":     { "x": 0,   "y": -104, "definition": "capstone" },
+  "reach1":  { "x": 26,  "y": -13,  "definition": "reach" },
+  "reach2":  { "x": 52,  "y": -26,  "definition": "reach" },
+  "speed1":  { "x": -26, "y": -13,  "definition": "speed" },
+  "speed2":  { "x": -52, "y": -26,  "definition": "speed" },
+  "health1": { "x": 26,  "y": 13,   "definition": "health" },
+  "health2": { "x": 52,  "y": 26,   "definition": "health" },
+  "luck1":   { "x": -26, "y": 13,   "definition": "luck" },
+  "luck2":   { "x": -52, "y": 26,   "definition": "luck" },
+  "animals": { "x": 0,   "y": 26,   "definition": "entity_reach" }
+}
