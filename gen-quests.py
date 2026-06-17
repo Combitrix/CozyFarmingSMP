@@ -94,7 +94,7 @@ G = nid()                 # die eine Quest-Gruppe
 CH_MAIN = nid()           # das eine Kapitel
 
 reg("w_start", "w_table", "w_emi", "w_map", "w_ipn", "w_claim", "w_info")
-reg("f_ernte", "f_kueche", "f_genuss", "f_saison", "f_tiere", "f_skills", "f_angeln")
+reg("f_ernte", "f_kueche", "f_genuss", "f_saison", "f_tiere", "f_angeln")
 reg("c_supply", "c_builder", "c_buerger", "c_mehrere", "c_bauen")
 reg("z_garden", "z_sugar", "z_pumpkin", "z_berries", "z_rice", "z_soil", "z_tomato", "z_salad",
     "z_pasta", "z_stew", "z_drinks", "z_cocoa", "z_pumpkinfeast", "z_dairy", "z_wool", "z_honey",
@@ -205,10 +205,6 @@ farm_q = [
           tasks=[task_item("minecraft:leather", 8), task_item("minecraft:egg", 8)],
           rewards=[rew_item("minecraft:wheat", 16), coin_silver(15), rew_xp(10)],
           deps=["f_ernte"], icon="minecraft:egg", size=1.0),
-    info("f_skills", 4.0, 1.5, "Fähigkeiten (Pufferfish's Skills)",
-         ["Mit &aPufferfish's Skills&r levelst du Farming, Mining, Fishing & Co.",
-          "Öffne den Skill-Bildschirm und investiere deine Punkte.", "", "&8(Info-Quest.)"],
-         deps=["f_genuss"], icon="minecraft:experience_bottle"),
     quest("f_angeln", -2.0, 0.0, "Angeln (Aquaculture)",
           ["Am Wasser wartet eine zweite Speisekammer. Bastle eine &aAngel&r",
            "und fange ein paar Fische."],

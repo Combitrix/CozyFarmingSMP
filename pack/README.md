@@ -1,7 +1,7 @@
 # Cozy Farming SMP — Modpack
 
 Ein farm-lastiges Kitchen-Sink-SMP für **Minecraft 1.21.1 / NeoForge 21.1.233**.
-Verwaltet mit [Packwiz](https://packwiz.infra.link/). **158 Mods** (Stand 0.9.2) — stark Create- & Farming-lastig.
+Verwaltet mit [Packwiz](https://packwiz.infra.link/). **157 Mods** (Stand 0.9.7) — stark Create- & Farming-lastig.
 
 Säulen: Farmen & Leben · MineColonies (mehrere Kolonien/Spieler) · Create + Aeronautics + Zug-Netz ·
 riesige Welt (Terralith + Tectonic) · FTB Quests + Coin-Wirtschaft.
@@ -156,16 +156,6 @@ Bearbeitbar im FTB-Quests-Editor (Server-Op: `/ftbquests editing_mode true`).
 
 > Erzeugt von `gen-quests.py` als **ein** Kapitel (`chapters/questline.snbt`, alle Cluster versetzt
 > zusammengeführt). Blueprint: `docs/quest-line-blueprint.md`.
-
-**Skilltree (Pufferfish's Skills) — Farming:** Ein eigener **Farming-Skilltree** liegt dem Pack bei
-(`config/puffish_skills/farming/`, geladen über die Config-Folder-Methode — keine World-Datapacks nötig).
-Skill-Punkte verdienst du durchs **Ernten von Feldfrüchten** (Weizen/Karotten/Kartoffeln/… geben XP),
-pro Level ein Punkt. Skills: *Grüner Daumen* (schnellere Ernte), *Weite Arme* (Block-Reichweite),
-*Flinke Füße* (Tempo), *Robuste Konstitution* (Leben), *Glückspilz* (Glück), *Tierflüsterer* → Capstone
-*Meister-Landwirt*.
-> 🖐️ In-game prüfen: Pufferfish empfiehlt seinen **eingebauten Editor** zum Feintunen. Falls einzelne
-> Attribut-Belohnungen nicht greifen, im Editor die Attribut-IDs anpassen (schreibt gültige Config).
-> Weitere Bäume (Mining/Fishing …) analog unter `config/puffish_skills/<name>/` + in `config.json` eintragen.
 
 **Distant Horizons + Chunky:** DH meldet evtl. „Chunky detected" — Chunky kann Chunks schneller
 erzeugen, als DH die LODs verarbeitet (→ Löcher in der Fernsicht). Abhilfe: entweder DHs **eigenen**

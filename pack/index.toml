@@ -6,7 +6,7 @@ hash = "cac58b25be9750958e08989460e617325b27169b3e5eeaeb3022e63ba6798a4a"
 
 [[files]]
 file = "README.md"
-hash = "78e4e41717a02535bc3f959927f26e5cc46a89433b53f17c930ef96b39b2d09b"
+hash = "381f310ba944e6588afc526021116a183697ba89965280baeacdefcd36d8b292"
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
@@ -14,7 +14,7 @@ hash = "bd5d74af02ea8f7fddd2ddb3faeff50516b46818c76ec3e8ceaeb0747e50afa5"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/questline.snbt"
-hash = "72787bfe722d9af7a20ce4ef6585131dd2267e460603154e5f6dbf7b13632047"
+hash = "5fd49f60d1552102ff3ba3cb645c5d9fbadf3709f4c34abb87876c617a15d1a2"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -23,30 +23,6 @@ hash = "0cf75fb43c097b6bbc010af6b3305f5b6215c684c65da7aa347823a6af6bf2e7"
 [[files]]
 file = "config/minecolonies-server.toml"
 hash = "ef52aacac2654ba4143f9d05c60c528938191fcee74410a73f7e04fedbc21990"
-
-[[files]]
-file = "config/puffish_skills/categories/farming/category.json"
-hash = "19034c00b1475e52fc4c3a403e81b3c5ef9c126e51763e9d19b809ef9682e877"
-
-[[files]]
-file = "config/puffish_skills/categories/farming/connections.json"
-hash = "984378f966258973f6e3e5f05dc91652bd2997a23cf58011b7768e04bb776499"
-
-[[files]]
-file = "config/puffish_skills/categories/farming/definitions.json"
-hash = "3dd813962856e2fe6f63dccec7ae86cb860729515741b5f25bf2dac82330980e"
-
-[[files]]
-file = "config/puffish_skills/categories/farming/experience.json"
-hash = "1f05e8587e66f3d70a825eafdb9596a8d24afc400b84ccdd679fe2db961edbb1"
-
-[[files]]
-file = "config/puffish_skills/categories/farming/skills.json"
-hash = "0c9d769ed6de2ea56a32700d06097eaf1ae3d208b4a5a39d7ae373a9dc55a9c7"
-
-[[files]]
-file = "config/puffish_skills/config.json"
-hash = "bf73ccff24326bf3caeb9e434d02fb2c31556105ded9ebe782ac11a3db4a6836"
 
 [[files]]
 file = "mods/ambient-environment.pw.toml"
@@ -776,11 +752,6 @@ metafile = true
 [[files]]
 file = "mods/simple-backups.pw.toml"
 hash = "bb3916bd466676b43fa6e5298a964c445191fa9178b956bf1692cc08249069a1"
-metafile = true
-
-[[files]]
-file = "mods/skills.pw.toml"
-hash = "c17ec242bcbb6cd66cfd1a5fa8005b19134bc26b0040b94bfaabab02f19db80b"
 metafile = true
 
 [[files]]
