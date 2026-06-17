@@ -39,3 +39,6 @@ Tiere/Atmosphäre: critters-and-companions, companions-dogfolk, ribbits (+yungs-
 - Karte: **JourneyMap** (Xaero weggelassen, um Redundanz zu vermeiden).
 - Rezept-Viewer: **EMI** (statt JEI).
 - Wirtschaft: **Magic Coins** (FTB-Quests-Integration) + **Create: Numismatics** (Handel/Trains-Thema).
+
+## ❌ Entfernt nach Crash-Test 0.8.0
+- **create-applied-kinetics** — harter Crash beim Start: braucht **Applied Energistics 2** (`appeng.block.AEBaseEntityBlock`), das NICHT installiert ist (auf Modrinth nicht als *required* deklariert → Auto-Audit verfehlte es). AE2 ist bewusst **nicht** im Pack (Cozy-Farming-Fokus, kein schweres Tech-Storage). Bridge-Mod daher entfernt.

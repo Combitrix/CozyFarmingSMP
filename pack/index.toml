@@ -2,11 +2,11 @@ hash-format = "sha256"
 
 [[files]]
 file = "EXCLUDED.md"
-hash = "6fc06b14aaa2586110085631dbb187b7b7b5a4998dac60cfb52d8434158ad554"
+hash = "cac58b25be9750958e08989460e617325b27169b3e5eeaeb3022e63ba6798a4a"
 
 [[files]]
 file = "README.md"
-hash = "a117673f96982ff3f1abf7a212b2672f99df00b922edccc0cc68b8a995a53138"
+hash = "e7fcc67a90c45b29b51cff7a8c27ff2a03ddc2e865b959ef3587478fcd1fd272"
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
@@ -142,11 +142,6 @@ metafile = true
 [[files]]
 file = "mods/create-aeronautics.pw.toml"
 hash = "5fab8d2e412683dfd72f08cf6750e51b03cb43192e8eb783e962ba28d20978bc"
-metafile = true
-
-[[files]]
-file = "mods/create-applied-kinetics.pw.toml"
-hash = "b3b2c990023501cc95e4061ef73e541bcd6e54db6e392a8694147b6da75eee71"
 metafile = true
 
 [[files]]

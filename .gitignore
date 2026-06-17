@@ -2,3 +2,8 @@
 pack/*.mrpack
 pack/*.zip
 __pycache__/
+
+# Minecraft-Logs (User-Uploads, nicht ins Pack)
+pack/latest.log
+pack/*.log
+pack/crash-reports/
