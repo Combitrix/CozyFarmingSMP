@@ -833,8 +833,9 @@ main_chapter = {
     "default_hide_dependency_lines": False, "default_quest_shape": "",
     "filename": "questline", "group": G, "icon": item("minecraft:cake"),
     "id": CH_MAIN, "order_index": 0, "progression_mode": "flexible",
-    # Quests sind VERSTECKT, bis ihre Voraussetzungen sichtbar/erreicht sind (nicht nur gelockt):
-    "hide_quest_until_deps_visible": True,
+    # Quests sind VERSTECKT, bis ihre Voraussetzung ABGESCHLOSSEN ist (nicht nur gelockt;
+    # _visible würde kaskadierend alles aufdecken, _complete zeigt nur die nächste Stufe):
+    "hide_quest_until_deps_complete": True,
     "quest_links": [], "title": "🌾 Cozy Farming SMP", "quests": all_quests,
 }
 

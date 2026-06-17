@@ -3,57 +3,57 @@
     "title": "Bauernhof",
     "icon": { "type": "item", "data": { "item": "minecraft:wheat" } },
     "rewards": [
-      { "type": "puffish_skills:attribute", "data": { "attribute": "movement_speed", "value": 0.02, "operation": "multiply_base" } }
+      { "type": "puffish_skills:attribute", "data": { "attribute": "generic.movement_speed", "value": 0.02, "operation": "multiply_base" } }
     ]
   },
   "break_speed": {
     "title": "Grüner Daumen",
     "icon": { "type": "item", "data": { "item": "minecraft:iron_hoe" } },
     "rewards": [
-      { "type": "puffish_skills:attribute", "data": { "attribute": "block_break_speed", "value": 0.15, "operation": "multiply_base" } }
+      { "type": "puffish_skills:attribute", "data": { "attribute": "player.block_break_speed", "value": 0.15, "operation": "multiply_base" } }
     ]
   },
   "reach": {
     "title": "Weite Arme",
     "icon": { "type": "item", "data": { "item": "minecraft:bamboo" } },
     "rewards": [
-      { "type": "puffish_skills:attribute", "data": { "attribute": "block_interaction_range", "value": 0.5, "operation": "addition" } }
+      { "type": "puffish_skills:attribute", "data": { "attribute": "player.block_interaction_range", "value": 0.5, "operation": "addition" } }
     ]
   },
   "speed": {
     "title": "Flinke Füße",
     "icon": { "type": "item", "data": { "item": "minecraft:leather_boots" } },
     "rewards": [
-      { "type": "puffish_skills:attribute", "data": { "attribute": "movement_speed", "value": 0.05, "operation": "multiply_base" } }
+      { "type": "puffish_skills:attribute", "data": { "attribute": "generic.movement_speed", "value": 0.05, "operation": "multiply_base" } }
     ]
   },
   "health": {
     "title": "Robuste Konstitution",
     "icon": { "type": "item", "data": { "item": "minecraft:golden_carrot" } },
     "rewards": [
-      { "type": "puffish_skills:attribute", "data": { "attribute": "max_health", "value": 2, "operation": "addition" } }
+      { "type": "puffish_skills:attribute", "data": { "attribute": "generic.max_health", "value": 2, "operation": "addition" } }
     ]
   },
   "luck": {
     "title": "Glückspilz",
     "icon": { "type": "item", "data": { "item": "minecraft:rabbit_foot" } },
     "rewards": [
-      { "type": "puffish_skills:attribute", "data": { "attribute": "luck", "value": 1, "operation": "addition" } }
+      { "type": "puffish_skills:attribute", "data": { "attribute": "generic.luck", "value": 1, "operation": "addition" } }
     ]
   },
   "entity_reach": {
     "title": "Tierflüsterer",
     "icon": { "type": "item", "data": { "item": "minecraft:lead" } },
     "rewards": [
-      { "type": "puffish_skills:attribute", "data": { "attribute": "entity_interaction_range", "value": 0.5, "operation": "addition" } }
+      { "type": "puffish_skills:attribute", "data": { "attribute": "player.entity_interaction_range", "value": 0.5, "operation": "addition" } }
     ]
   },
   "capstone": {
     "title": "Meister-Landwirt",
     "icon": { "type": "item", "data": { "item": "minecraft:golden_hoe" } },
     "rewards": [
-      { "type": "puffish_skills:attribute", "data": { "attribute": "max_health", "value": 4, "operation": "addition" } },
-      { "type": "puffish_skills:attribute", "data": { "attribute": "block_break_speed", "value": 0.25, "operation": "multiply_base" } }
+      { "type": "puffish_skills:attribute", "data": { "attribute": "generic.max_health", "value": 4, "operation": "addition" } },
+      { "type": "puffish_skills:attribute", "data": { "attribute": "player.block_break_speed", "value": 0.25, "operation": "multiply_base" } }
     ]
   }
 }

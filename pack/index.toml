@@ -14,7 +14,7 @@ hash = "bd5d74af02ea8f7fddd2ddb3faeff50516b46818c76ec3e8ceaeb0747e50afa5"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/questline.snbt"
-hash = "3850357829e31cca523d7194f2037559b31a9b8effeb0a13c7c51ae1d7e44dea"
+hash = "72787bfe722d9af7a20ce4ef6585131dd2267e460603154e5f6dbf7b13632047"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -26,7 +26,7 @@ hash = "ef52aacac2654ba4143f9d05c60c528938191fcee74410a73f7e04fedbc21990"
 
 [[files]]
 file = "config/puffish_skills/categories/farming/category.json"
-hash = "0036887cae9ab93f171195471ac65439590ed4b0dd5da883b540436fdeb2e1f5"
+hash = "e6a19766f11fdb8f64dcd3be2ed4d93a1ccc92dcdc744fdb0a911f8228f3ad8a"
 
 [[files]]
 file = "config/puffish_skills/categories/farming/connections.json"
@@ -34,11 +34,7 @@ hash = "05ae623b583fe24be25833d6f001d743e314f6cfd721ac54e5f2e9a4942414f8"
 
 [[files]]
 file = "config/puffish_skills/categories/farming/definitions.json"
-hash = "999bad4e59cd51a297f14d66989a291bfa5ba8e1849973305ee5358899dffc33"
-
-[[files]]
-file = "config/puffish_skills/categories/farming/experience.json"
-hash = "7ce740f8fe92fc03d4623f003ac9468582e2c967917279f84d5a6c2312610eeb"
+hash = "12ce859f9bedc9418a663ff86355a849640b827f6e9eb8751f95576f46f516d9"
 
 [[files]]
 file = "config/puffish_skills/categories/farming/skills.json"
@@ -837,3 +833,7 @@ metafile = true
 file = "mods/yungs-api.pw.toml"
 hash = "d9c0c9209bac0b693af2a7c1e47ffb28d366bad19c91df31dc6d345fa75250a1"
 metafile = true
+
+[[files]]
+file = "options.txt"
+hash = "624a8e4974cae64389b28e8046c3cc18a94e609a02df63f5397ec2ca0c0f7ee8"
