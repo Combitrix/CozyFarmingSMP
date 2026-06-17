@@ -1,0 +1,28 @@
+{
+  "level_limit": 30,
+  "experience_per_level": {
+    "type": "expression",
+    "data": {
+      "expression": "level * 60 + 100"
+    }
+  },
+  "sources": [
+    {
+      "type": "puffish_skills:break_block",
+      "data": {
+        "variables": {
+          "wheat":     { "operations": [ { "type": "get_broken_block_state" }, { "type": "puffish_skills:test", "data": { "block": "wheat" } } ] },
+          "carrots":   { "operations": [ { "type": "get_broken_block_state" }, { "type": "puffish_skills:test", "data": { "block": "carrots" } } ] },
+          "potatoes":  { "operations": [ { "type": "get_broken_block_state" }, { "type": "puffish_skills:test", "data": { "block": "potatoes" } } ] },
+          "beetroots": { "operations": [ { "type": "get_broken_block_state" }, { "type": "puffish_skills:test", "data": { "block": "beetroots" } } ] }
+        },
+        "experience": [
+          { "condition": "wheat",     "expression": "5" },
+          { "condition": "carrots",   "expression": "5" },
+          { "condition": "potatoes",  "expression": "5" },
+          { "condition": "beetroots", "expression": "5" }
+        ]
+      }
+    }
+  ]
+}

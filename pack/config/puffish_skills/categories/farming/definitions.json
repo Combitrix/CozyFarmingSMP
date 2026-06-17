@@ -1,6 +1,7 @@
 {
   "root_farm": {
     "title": "Bauernhof",
+    "description": "Der Einstieg ins Farmer-Leben. §a+2% Lauftempo.",
     "icon": { "type": "item", "data": { "item": "minecraft:wheat" } },
     "rewards": [
       { "type": "puffish_skills:attribute", "data": { "attribute": "generic.movement_speed", "value": 0.02, "operation": "multiply_base" } }
@@ -8,6 +9,7 @@
   },
   "break_speed": {
     "title": "Grüner Daumen",
+    "description": "§a+15% Abbau-/Ernte-Geschwindigkeit.§r Schneller pflügen, ernten, abbauen.",
     "icon": { "type": "item", "data": { "item": "minecraft:iron_hoe" } },
     "rewards": [
       { "type": "puffish_skills:attribute", "data": { "attribute": "player.block_break_speed", "value": 0.15, "operation": "multiply_base" } }
@@ -15,6 +17,7 @@
   },
   "reach": {
     "title": "Weite Arme",
+    "description": "§a+0,5 Block-Reichweite.§r Pflanzen & ernten, ohne dich zu bücken.",
     "icon": { "type": "item", "data": { "item": "minecraft:bamboo" } },
     "rewards": [
       { "type": "puffish_skills:attribute", "data": { "attribute": "player.block_interaction_range", "value": 0.5, "operation": "addition" } }
@@ -22,6 +25,7 @@
   },
   "speed": {
     "title": "Flinke Füße",
+    "description": "§a+5% Lauftempo.§r Schneller über die Felder.",
     "icon": { "type": "item", "data": { "item": "minecraft:leather_boots" } },
     "rewards": [
       { "type": "puffish_skills:attribute", "data": { "attribute": "generic.movement_speed", "value": 0.05, "operation": "multiply_base" } }
@@ -29,6 +33,7 @@
   },
   "health": {
     "title": "Robuste Konstitution",
+    "description": "§a+1 Herz (2 Lebenspunkte).§r Hartarbeitende Landwirte halten mehr aus.",
     "icon": { "type": "item", "data": { "item": "minecraft:golden_carrot" } },
     "rewards": [
       { "type": "puffish_skills:attribute", "data": { "attribute": "generic.max_health", "value": 2, "operation": "addition" } }
@@ -36,6 +41,7 @@
   },
   "luck": {
     "title": "Glückspilz",
+    "description": "§a+1 Glück.§r Bessere Beute & Angel-Funde.",
     "icon": { "type": "item", "data": { "item": "minecraft:rabbit_foot" } },
     "rewards": [
       { "type": "puffish_skills:attribute", "data": { "attribute": "generic.luck", "value": 1, "operation": "addition" } }
@@ -43,6 +49,7 @@
   },
   "entity_reach": {
     "title": "Tierflüsterer",
+    "description": "§a+0,5 Reichweite für Tier-Interaktion.§r Füttern & melken aus der Ferne.",
     "icon": { "type": "item", "data": { "item": "minecraft:lead" } },
     "rewards": [
       { "type": "puffish_skills:attribute", "data": { "attribute": "player.entity_interaction_range", "value": 0.5, "operation": "addition" } }
@@ -50,6 +57,7 @@
   },
   "capstone": {
     "title": "Meister-Landwirt",
+    "description": "§6Meisterschaft:§r §a+2 Herzen§r und §a+25% Ernte-Geschwindigkeit.",
     "icon": { "type": "item", "data": { "item": "minecraft:golden_hoe" } },
     "rewards": [
       { "type": "puffish_skills:attribute", "data": { "attribute": "generic.max_health", "value": 4, "operation": "addition" } },

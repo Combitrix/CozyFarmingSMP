@@ -26,7 +26,7 @@ hash = "ef52aacac2654ba4143f9d05c60c528938191fcee74410a73f7e04fedbc21990"
 
 [[files]]
 file = "config/puffish_skills/categories/farming/category.json"
-hash = "e6a19766f11fdb8f64dcd3be2ed4d93a1ccc92dcdc744fdb0a911f8228f3ad8a"
+hash = "19034c00b1475e52fc4c3a403e81b3c5ef9c126e51763e9d19b809ef9682e877"
 
 [[files]]
 file = "config/puffish_skills/categories/farming/connections.json"
@@ -34,11 +34,15 @@ hash = "05ae623b583fe24be25833d6f001d743e314f6cfd721ac54e5f2e9a4942414f8"
 
 [[files]]
 file = "config/puffish_skills/categories/farming/definitions.json"
-hash = "12ce859f9bedc9418a663ff86355a849640b827f6e9eb8751f95576f46f516d9"
+hash = "1bbe343b991565954a73002dfad387bc293e5270c4ff6685d93e555cc6840b7b"
+
+[[files]]
+file = "config/puffish_skills/categories/farming/experience.json"
+hash = "7e731c44f9a94598b769d00ebd6dd84fb39e99962e49f9b371eb8956f6c81e88"
 
 [[files]]
 file = "config/puffish_skills/categories/farming/skills.json"
-hash = "c3e7aa530497447b8a5e557d7e285aa7db3e5e25064536a0b7b3b169563d3682"
+hash = "aabbbbb6c235459376bb8870deeded5b85761715b101ca064d7356694aa44cd7"
 
 [[files]]
 file = "config/puffish_skills/config.json"
