@@ -1,7 +1,7 @@
 # Cozy Farming SMP — Modpack
 
 Ein farm-lastiges Kitchen-Sink-SMP für **Minecraft 1.21.1 / NeoForge 21.1.233**.
-Verwaltet mit [Packwiz](https://packwiz.infra.link/). **112 Mods** in 0.1.0.
+Verwaltet mit [Packwiz](https://packwiz.infra.link/). **155 Mods** (Stand 0.8.0) — stark Create- & Farming-lastig.
 
 Säulen: Farmen & Leben · MineColonies (mehrere Kolonien/Spieler) · Create + Aeronautics + Zug-Netz ·
 riesige Welt (Terralith + Tectonic) · FTB Quests + Coin-Wirtschaft.
@@ -11,7 +11,7 @@ riesige Welt (Terralith + Tectonic) · FTB Quests + Coin-Wirtschaft.
 ## Installation — Client
 
 1. **Modrinth App** oder **Prism Launcher** installieren.
-2. Die Datei `Cozy Farming SMP-0.1.0.mrpack` importieren
+2. Die aktuelle `.mrpack`-Datei importieren
    (Modrinth App: *Add Instance → From file* · Prism: *Add Instance → Import → .mrpack*).
 3. Der Instanz **≥ 6–8 GB RAM** zuweisen (Einstellungen → Java/Memory).
 4. **Java-Args setzen** (siehe Abschnitt „Beste Java-Args" unten).
@@ -132,7 +132,7 @@ Quellcode verifiziert, `ServerConfiguration.java`):
 einstellbar). **Create: Numismatics** = physische Münzen/Handel/Automaten (passt zum Zug-/Handels-Thema).
 
 **Quest-Linie (liegt dem Pack bei, `config/ftbquests/quests/`):** EIN großer Quest-Baum auf
-**einer einzigen Seite** (`chapters/questline.snbt`, **152 Quests**), der sich **progressiv
+**einer einzigen Seite** (`chapters/questline.snbt`, **105 Quests**), der sich **progressiv
 aufbaut** — eine durchgehende Haupt-Linie mit Seitenzweigen, alles über Abhängigkeiten verkettet:
 
 - **👋 Willkommen** (ATM-Style: zentrale Wurzel + EMI/JourneyMap/IPN/FTB-Chunks-Intro)
@@ -140,7 +140,7 @@ aufbaut** — eine durchgehende Haupt-Linie mit Seitenzweigen, alles über Abhä
   → **⚙ Create** (~**16 aufbauende Kontraptions-Meilensteine**: erste Maschine → Pressen → Erz-
   Verarbeitung → Auto-Crafting → Farm-/Baumfarm-Kontraption → Küche/Fabrik/Strom → Züge →
   **Industrie-Komplex**) → **🌍 Welt** → **🪙 Wirtschaft** → **🏆 Endgame**.
-- **🎈 Aeronautics** (**25 Quests**: Propeller → Hülle → Levitite → Flotte → „Herr der Lüfte")
+- **🎈 Aeronautics** (**28 Quests**, inkl. Massenproduktion: Propeller → Hülle → Levitite → Flotte → „Herr der Lüfte")
   als großer Seitenzweig rechts, hinter den Create-Kontraptionen; mündet ins Endgame.
 
 **Keine Klick-Checkmarks als Fortschritt:** Fortschritts-Quests sind **Item-Tasks**, die

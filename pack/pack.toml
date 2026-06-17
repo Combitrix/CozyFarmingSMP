@@ -1,12 +1,12 @@
 name = "Cozy Farming SMP"
 author = "Michael"
-version = "0.7.0"
+version = "0.8.0"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "d36e1272dfa8162fd4c774e69c6410a8798f98607d932a649277b1bd9ecaec3e"
+hash = "5bb6041118923dc7cd82bbffd06b9219fb655af43e5d92771487343f9d184049"
 
 [versions]
 minecraft = "1.21.1"

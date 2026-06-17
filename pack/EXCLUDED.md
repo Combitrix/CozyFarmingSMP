@@ -12,6 +12,19 @@ beim ersten Start auf Crashes/Mixin-Konflikte prüfen, ggf. einzeln entfernen:
 - create-enchantment-industry (preview-alpha)
 - create-railways-navigator (Beta)
 
+### Neu dazu (v0.8.0) — Create-6-Kompat & Stabilität in-game prüfen
+Create-Addons: create-cafe, create-ratatouille, create-food, create-deepfried (+create-bitterballen),
+create-integrated-farming, create-applied-kinetics, create-vibrant-vaults, create-storage-neo-forge,
+create-mechanical-spawner (+mechanicals-lib).
+Farming/Cooking: chefs-delight, more-delight (+delight-lib), rustic-delight, corn-delight (+mmlib),
+fruits-delight, storage-delight, farming-for-blockheads (+balm), harvest-with-ease (+cobweb, server-side).
+Cozy/Deko: handcrafted (+resourceful-lib), macaws-roofs, macaws-paths-and-pavings, chipped
+(+athena-ctm client, +resourceful-lib), every-compat (+moonlight), dye-depot.
+Tiere/Atmosphäre: critters-and-companions, companions-dogfolk, ribbits (+yungs-api), falling-leaves
+(client), ambient-environment (client), sound-physics-remastered (client).
+→ Alle Dependencies wurden gegen die Modrinth-API auditiert (vollständig vorhanden). Bei Crash einzeln
+  via `packwiz remove <slug>` entfernen.
+
 ## ❌ Nicht verfügbar für 1.21.1 / NeoForge (weggelassen)
 - **croptopia** — nur Fabric. Ersetzt durch Pam's HarvestCraft 2 + Farmer's-Delight-Addon-Suite.
 - **farmers-croptopia** (Bridge) — hängt an Croptopia, daher unnötig.
