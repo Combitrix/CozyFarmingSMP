@@ -1,16 +1,598 @@
 {
-  "root":    { "x": 0,   "y": 0,    "definition": "root_farm", "root": true },
-  "bs1":     { "x": 0,   "y": -36,  "definition": "break_speed" },
-  "bs2":     { "x": 0,   "y": -72,  "definition": "break_speed" },
-  "bs3":     { "x": 0,   "y": -108, "definition": "break_speed" },
-  "cap":     { "x": 0,   "y": -144, "definition": "capstone" },
-  "reach1":  { "x": 36,  "y": -18,  "definition": "reach" },
-  "reach2":  { "x": 72,  "y": -36,  "definition": "reach" },
-  "speed1":  { "x": -36, "y": -18,  "definition": "speed" },
-  "speed2":  { "x": -72, "y": -36,  "definition": "speed" },
-  "health1": { "x": 36,  "y": 18,   "definition": "health" },
-  "health2": { "x": 72,  "y": 36,   "definition": "health" },
-  "luck1":   { "x": -36, "y": 18,   "definition": "luck" },
-  "luck2":   { "x": -72, "y": 36,   "definition": "luck" },
-  "animals": { "x": 0,   "y": 36,   "definition": "entity_reach" }
+  "root": {
+    "x": 0,
+    "y": 0,
+    "definition": "root_farm",
+    "root": true
+  },
+  "bspd1": {
+    "x": 64,
+    "y": 0,
+    "definition": "bspd"
+  },
+  "bspd2": {
+    "x": 94,
+    "y": 0,
+    "definition": "bspd"
+  },
+  "bspd3": {
+    "x": 124,
+    "y": 0,
+    "definition": "bspd"
+  },
+  "bspd4": {
+    "x": 154,
+    "y": 0,
+    "definition": "bspd"
+  },
+  "bspd5": {
+    "x": 184,
+    "y": 0,
+    "definition": "bspd"
+  },
+  "bspd6": {
+    "x": 214,
+    "y": 0,
+    "definition": "bspd"
+  },
+  "bspd7": {
+    "x": 244,
+    "y": 0,
+    "definition": "bspd"
+  },
+  "bspd8": {
+    "x": 274,
+    "y": 0,
+    "definition": "bspd"
+  },
+  "bspd9": {
+    "x": 304,
+    "y": 0,
+    "definition": "bspd"
+  },
+  "bspd10": {
+    "x": 334,
+    "y": 0,
+    "definition": "bspd"
+  },
+  "bspd11": {
+    "x": 364,
+    "y": 0,
+    "definition": "bspd"
+  },
+  "bspd12": {
+    "x": 394,
+    "y": 0,
+    "definition": "bspd"
+  },
+  "meff1": {
+    "x": 58,
+    "y": 28,
+    "definition": "meff"
+  },
+  "meff2": {
+    "x": 85,
+    "y": 41,
+    "definition": "meff"
+  },
+  "meff3": {
+    "x": 112,
+    "y": 54,
+    "definition": "meff"
+  },
+  "meff4": {
+    "x": 139,
+    "y": 67,
+    "definition": "meff"
+  },
+  "meff5": {
+    "x": 166,
+    "y": 80,
+    "definition": "meff"
+  },
+  "meff6": {
+    "x": 193,
+    "y": 93,
+    "definition": "meff"
+  },
+  "meff7": {
+    "x": 220,
+    "y": 106,
+    "definition": "meff"
+  },
+  "meff8": {
+    "x": 247,
+    "y": 119,
+    "definition": "meff"
+  },
+  "meff9": {
+    "x": 274,
+    "y": 132,
+    "definition": "meff"
+  },
+  "meff10": {
+    "x": 301,
+    "y": 145,
+    "definition": "meff"
+  },
+  "mspd1": {
+    "x": 40,
+    "y": 50,
+    "definition": "mspd"
+  },
+  "mspd2": {
+    "x": 59,
+    "y": 73,
+    "definition": "mspd"
+  },
+  "mspd3": {
+    "x": 77,
+    "y": 97,
+    "definition": "mspd"
+  },
+  "mspd4": {
+    "x": 96,
+    "y": 120,
+    "definition": "mspd"
+  },
+  "mspd5": {
+    "x": 115,
+    "y": 144,
+    "definition": "mspd"
+  },
+  "mspd6": {
+    "x": 133,
+    "y": 167,
+    "definition": "mspd"
+  },
+  "mspd7": {
+    "x": 152,
+    "y": 191,
+    "definition": "mspd"
+  },
+  "mspd8": {
+    "x": 171,
+    "y": 214,
+    "definition": "mspd"
+  },
+  "mspd9": {
+    "x": 190,
+    "y": 238,
+    "definition": "mspd"
+  },
+  "mspd10": {
+    "x": 208,
+    "y": 261,
+    "definition": "mspd"
+  },
+  "brange1": {
+    "x": 14,
+    "y": 62,
+    "definition": "brange"
+  },
+  "brange2": {
+    "x": 21,
+    "y": 92,
+    "definition": "brange"
+  },
+  "brange3": {
+    "x": 28,
+    "y": 121,
+    "definition": "brange"
+  },
+  "brange4": {
+    "x": 34,
+    "y": 150,
+    "definition": "brange"
+  },
+  "brange5": {
+    "x": 41,
+    "y": 179,
+    "definition": "brange"
+  },
+  "brange6": {
+    "x": 48,
+    "y": 209,
+    "definition": "brange"
+  },
+  "brange7": {
+    "x": 54,
+    "y": 238,
+    "definition": "brange"
+  },
+  "brange8": {
+    "x": 61,
+    "y": 267,
+    "definition": "brange"
+  },
+  "erange1": {
+    "x": -14,
+    "y": 62,
+    "definition": "erange"
+  },
+  "erange2": {
+    "x": -21,
+    "y": 92,
+    "definition": "erange"
+  },
+  "erange3": {
+    "x": -28,
+    "y": 121,
+    "definition": "erange"
+  },
+  "erange4": {
+    "x": -34,
+    "y": 150,
+    "definition": "erange"
+  },
+  "erange5": {
+    "x": -41,
+    "y": 179,
+    "definition": "erange"
+  },
+  "erange6": {
+    "x": -48,
+    "y": 209,
+    "definition": "erange"
+  },
+  "erange7": {
+    "x": -54,
+    "y": 238,
+    "definition": "erange"
+  },
+  "erange8": {
+    "x": -61,
+    "y": 267,
+    "definition": "erange"
+  },
+  "hp1": {
+    "x": -40,
+    "y": 50,
+    "definition": "hp"
+  },
+  "hp2": {
+    "x": -59,
+    "y": 73,
+    "definition": "hp"
+  },
+  "hp3": {
+    "x": -77,
+    "y": 97,
+    "definition": "hp"
+  },
+  "hp4": {
+    "x": -96,
+    "y": 120,
+    "definition": "hp"
+  },
+  "hp5": {
+    "x": -115,
+    "y": 144,
+    "definition": "hp"
+  },
+  "hp6": {
+    "x": -133,
+    "y": 167,
+    "definition": "hp"
+  },
+  "hp7": {
+    "x": -152,
+    "y": 191,
+    "definition": "hp"
+  },
+  "hp8": {
+    "x": -171,
+    "y": 214,
+    "definition": "hp"
+  },
+  "hp9": {
+    "x": -190,
+    "y": 238,
+    "definition": "hp"
+  },
+  "hp10": {
+    "x": -208,
+    "y": 261,
+    "definition": "hp"
+  },
+  "hp11": {
+    "x": -227,
+    "y": 285,
+    "definition": "hp"
+  },
+  "hp12": {
+    "x": -246,
+    "y": 308,
+    "definition": "hp"
+  },
+  "armor1": {
+    "x": -58,
+    "y": 28,
+    "definition": "armor"
+  },
+  "armor2": {
+    "x": -85,
+    "y": 41,
+    "definition": "armor"
+  },
+  "armor3": {
+    "x": -112,
+    "y": 54,
+    "definition": "armor"
+  },
+  "armor4": {
+    "x": -139,
+    "y": 67,
+    "definition": "armor"
+  },
+  "armor5": {
+    "x": -166,
+    "y": 80,
+    "definition": "armor"
+  },
+  "armor6": {
+    "x": -193,
+    "y": 93,
+    "definition": "armor"
+  },
+  "armor7": {
+    "x": -220,
+    "y": 106,
+    "definition": "armor"
+  },
+  "armor8": {
+    "x": -247,
+    "y": 119,
+    "definition": "armor"
+  },
+  "armor9": {
+    "x": -274,
+    "y": 132,
+    "definition": "armor"
+  },
+  "armor10": {
+    "x": -301,
+    "y": 145,
+    "definition": "armor"
+  },
+  "absorp1": {
+    "x": -64,
+    "y": 0,
+    "definition": "absorp"
+  },
+  "absorp2": {
+    "x": -94,
+    "y": 0,
+    "definition": "absorp"
+  },
+  "absorp3": {
+    "x": -124,
+    "y": 0,
+    "definition": "absorp"
+  },
+  "absorp4": {
+    "x": -154,
+    "y": 0,
+    "definition": "absorp"
+  },
+  "absorp5": {
+    "x": -184,
+    "y": 0,
+    "definition": "absorp"
+  },
+  "absorp6": {
+    "x": -214,
+    "y": 0,
+    "definition": "absorp"
+  },
+  "absorp7": {
+    "x": -244,
+    "y": 0,
+    "definition": "absorp"
+  },
+  "absorp8": {
+    "x": -274,
+    "y": 0,
+    "definition": "absorp"
+  },
+  "luck1": {
+    "x": -58,
+    "y": -28,
+    "definition": "luck"
+  },
+  "luck2": {
+    "x": -85,
+    "y": -41,
+    "definition": "luck"
+  },
+  "luck3": {
+    "x": -112,
+    "y": -54,
+    "definition": "luck"
+  },
+  "luck4": {
+    "x": -139,
+    "y": -67,
+    "definition": "luck"
+  },
+  "luck5": {
+    "x": -166,
+    "y": -80,
+    "definition": "luck"
+  },
+  "luck6": {
+    "x": -193,
+    "y": -93,
+    "definition": "luck"
+  },
+  "luck7": {
+    "x": -220,
+    "y": -106,
+    "definition": "luck"
+  },
+  "luck8": {
+    "x": -247,
+    "y": -119,
+    "definition": "luck"
+  },
+  "subm1": {
+    "x": -40,
+    "y": -50,
+    "definition": "subm"
+  },
+  "subm2": {
+    "x": -59,
+    "y": -73,
+    "definition": "subm"
+  },
+  "subm3": {
+    "x": -77,
+    "y": -97,
+    "definition": "subm"
+  },
+  "subm4": {
+    "x": -96,
+    "y": -120,
+    "definition": "subm"
+  },
+  "subm5": {
+    "x": -115,
+    "y": -144,
+    "definition": "subm"
+  },
+  "subm6": {
+    "x": -133,
+    "y": -167,
+    "definition": "subm"
+  },
+  "sneak1": {
+    "x": -14,
+    "y": -62,
+    "definition": "sneak"
+  },
+  "sneak2": {
+    "x": -21,
+    "y": -92,
+    "definition": "sneak"
+  },
+  "sneak3": {
+    "x": -28,
+    "y": -121,
+    "definition": "sneak"
+  },
+  "sneak4": {
+    "x": -34,
+    "y": -150,
+    "definition": "sneak"
+  },
+  "sneak5": {
+    "x": -41,
+    "y": -179,
+    "definition": "sneak"
+  },
+  "sneak6": {
+    "x": -48,
+    "y": -209,
+    "definition": "sneak"
+  },
+  "kb1": {
+    "x": 14,
+    "y": -62,
+    "definition": "kb"
+  },
+  "kb2": {
+    "x": 21,
+    "y": -92,
+    "definition": "kb"
+  },
+  "kb3": {
+    "x": 28,
+    "y": -121,
+    "definition": "kb"
+  },
+  "kb4": {
+    "x": 34,
+    "y": -150,
+    "definition": "kb"
+  },
+  "kb5": {
+    "x": 41,
+    "y": -179,
+    "definition": "kb"
+  },
+  "kb6": {
+    "x": 48,
+    "y": -209,
+    "definition": "kb"
+  },
+  "atkdmg1": {
+    "x": 40,
+    "y": -50,
+    "definition": "atkdmg"
+  },
+  "atkdmg2": {
+    "x": 59,
+    "y": -73,
+    "definition": "atkdmg"
+  },
+  "atkdmg3": {
+    "x": 77,
+    "y": -97,
+    "definition": "atkdmg"
+  },
+  "atkdmg4": {
+    "x": 96,
+    "y": -120,
+    "definition": "atkdmg"
+  },
+  "atkdmg5": {
+    "x": 115,
+    "y": -144,
+    "definition": "atkdmg"
+  },
+  "atkdmg6": {
+    "x": 133,
+    "y": -167,
+    "definition": "atkdmg"
+  },
+  "atkdmg7": {
+    "x": 152,
+    "y": -191,
+    "definition": "atkdmg"
+  },
+  "atkdmg8": {
+    "x": 171,
+    "y": -214,
+    "definition": "atkdmg"
+  },
+  "atkspd1": {
+    "x": 58,
+    "y": -28,
+    "definition": "atkspd"
+  },
+  "atkspd2": {
+    "x": 85,
+    "y": -41,
+    "definition": "atkspd"
+  },
+  "atkspd3": {
+    "x": 112,
+    "y": -54,
+    "definition": "atkspd"
+  },
+  "atkspd4": {
+    "x": 139,
+    "y": -67,
+    "definition": "atkspd"
+  },
+  "atkspd5": {
+    "x": 166,
+    "y": -80,
+    "definition": "atkspd"
+  },
+  "atkspd6": {
+    "x": 193,
+    "y": -93,
+    "definition": "atkspd"
+  }
 }

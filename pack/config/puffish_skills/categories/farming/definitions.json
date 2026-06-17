@@ -1,67 +1,293 @@
 {
   "root_farm": {
     "title": "Bauernhof",
-    "description": "Der Einstieg ins Farmer-Leben. §a+2% Lauftempo.",
-    "icon": { "type": "item", "data": { "item": "minecraft:wheat" } },
-    "rewards": [
-      { "type": "puffish_skills:attribute", "data": { "attribute": "generic.movement_speed", "value": 0.02, "operation": "multiply_base" } }
-    ]
+    "description": "§7Der Einstieg ins Farmer-Leben. Verdiene Skill-Punkte durchs §aErnten von Feldfrüchten§7.",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:wheat"
+      }
+    },
+    "rewards": []
   },
-  "break_speed": {
+  "bspd": {
     "title": "Grüner Daumen",
-    "description": "§a+15% Abbau-/Ernte-Geschwindigkeit.§r Schneller pflügen, ernten, abbauen.",
-    "icon": { "type": "item", "data": { "item": "minecraft:iron_hoe" } },
+    "description": "§a+3% Ernte-/Abbau-Tempo §7je Stufe.",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:iron_hoe"
+      }
+    },
     "rewards": [
-      { "type": "puffish_skills:attribute", "data": { "attribute": "player.block_break_speed", "value": 0.15, "operation": "multiply_base" } }
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "player.block_break_speed",
+          "value": 0.03,
+          "operation": "multiply_base"
+        }
+      }
     ]
   },
-  "reach": {
-    "title": "Weite Arme",
-    "description": "§a+0,5 Block-Reichweite.§r Pflanzen & ernten, ohne dich zu bücken.",
-    "icon": { "type": "item", "data": { "item": "minecraft:bamboo" } },
+  "meff": {
+    "title": "Geübte Hände",
+    "description": "§a+0,2 Abbau-Effizienz §7je Stufe.",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:diamond_hoe"
+      }
+    },
     "rewards": [
-      { "type": "puffish_skills:attribute", "data": { "attribute": "player.block_interaction_range", "value": 0.5, "operation": "addition" } }
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "player.mining_efficiency",
+          "value": 0.2,
+          "operation": "addition"
+        }
+      }
     ]
   },
-  "speed": {
+  "mspd": {
     "title": "Flinke Füße",
-    "description": "§a+5% Lauftempo.§r Schneller über die Felder.",
-    "icon": { "type": "item", "data": { "item": "minecraft:leather_boots" } },
+    "description": "§a+2% Lauftempo §7je Stufe.",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:leather_boots"
+      }
+    },
     "rewards": [
-      { "type": "puffish_skills:attribute", "data": { "attribute": "generic.movement_speed", "value": 0.05, "operation": "multiply_base" } }
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "generic.movement_speed",
+          "value": 0.02,
+          "operation": "multiply_base"
+        }
+      }
     ]
   },
-  "health": {
-    "title": "Robuste Konstitution",
-    "description": "§a+1 Herz (2 Lebenspunkte).§r Hartarbeitende Landwirte halten mehr aus.",
-    "icon": { "type": "item", "data": { "item": "minecraft:golden_carrot" } },
+  "brange": {
+    "title": "Weite Arme",
+    "description": "§a+0,15 Block-Reichweite §7je Stufe.",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:bamboo"
+      }
+    },
     "rewards": [
-      { "type": "puffish_skills:attribute", "data": { "attribute": "generic.max_health", "value": 2, "operation": "addition" } }
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "player.block_interaction_range",
+          "value": 0.15,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "erange": {
+    "title": "Tierflüsterer",
+    "description": "§a+0,15 Tier-Reichweite §7je Stufe.",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:lead"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "player.entity_interaction_range",
+          "value": 0.15,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "hp": {
+    "title": "Konstitution",
+    "description": "§a+0,5 Herz §7je Stufe.",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:golden_carrot"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "generic.max_health",
+          "value": 1,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "armor": {
+    "title": "Robuste Kleidung",
+    "description": "§a+0,5 Rüstung §7je Stufe.",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:iron_chestplate"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "generic.armor",
+          "value": 0.5,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "absorp": {
+    "title": "Zähe Ausdauer",
+    "description": "§a+0,5 Extra-Absorption §7je Stufe.",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:golden_apple"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "generic.max_absorption",
+          "value": 1,
+          "operation": "addition"
+        }
+      }
     ]
   },
   "luck": {
     "title": "Glückspilz",
-    "description": "§a+1 Glück.§r Bessere Beute & Angel-Funde.",
-    "icon": { "type": "item", "data": { "item": "minecraft:rabbit_foot" } },
+    "description": "§a+0,5 Glück §7je Stufe.",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:rabbit_foot"
+      }
+    },
     "rewards": [
-      { "type": "puffish_skills:attribute", "data": { "attribute": "generic.luck", "value": 1, "operation": "addition" } }
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "generic.luck",
+          "value": 0.5,
+          "operation": "addition"
+        }
+      }
     ]
   },
-  "entity_reach": {
-    "title": "Tierflüsterer",
-    "description": "§a+0,5 Reichweite für Tier-Interaktion.§r Füttern & melken aus der Ferne.",
-    "icon": { "type": "item", "data": { "item": "minecraft:lead" } },
+  "subm": {
+    "title": "Reisbauer",
+    "description": "§a+0,3 Abbau-Tempo unter Wasser §7je Stufe.",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:kelp"
+      }
+    },
     "rewards": [
-      { "type": "puffish_skills:attribute", "data": { "attribute": "player.entity_interaction_range", "value": 0.5, "operation": "addition" } }
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "player.submerged_mining_speed",
+          "value": 0.3,
+          "operation": "addition"
+        }
+      }
     ]
   },
-  "capstone": {
-    "title": "Meister-Landwirt",
-    "description": "§6Meisterschaft:§r §a+2 Herzen§r und §a+25% Ernte-Geschwindigkeit.",
-    "icon": { "type": "item", "data": { "item": "minecraft:golden_hoe" } },
+  "sneak": {
+    "title": "Leise Schritte",
+    "description": "§a+4% Schleich-Tempo §7je Stufe.",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:moss_block"
+      }
+    },
     "rewards": [
-      { "type": "puffish_skills:attribute", "data": { "attribute": "generic.max_health", "value": 4, "operation": "addition" } },
-      { "type": "puffish_skills:attribute", "data": { "attribute": "player.block_break_speed", "value": 0.25, "operation": "multiply_base" } }
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "player.sneaking_speed",
+          "value": 0.04,
+          "operation": "multiply_base"
+        }
+      }
+    ]
+  },
+  "kb": {
+    "title": "Standfest",
+    "description": "§a+4% Rückstoß-Resistenz §7je Stufe.",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:shield"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "generic.knockback_resistance",
+          "value": 0.04,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "atkdmg": {
+    "title": "Wehrhafter Bauer",
+    "description": "§a+0,25 Angriffsschaden §7je Stufe.",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:iron_sword"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "generic.attack_damage",
+          "value": 0.25,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "atkspd": {
+    "title": "Schnelle Sense",
+    "description": "§a+4% Angriffs-Tempo §7je Stufe.",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:golden_sword"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "generic.attack_speed",
+          "value": 0.04,
+          "operation": "multiply_base"
+        }
+      }
     ]
   }
 }

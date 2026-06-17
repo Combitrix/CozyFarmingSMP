@@ -1,9 +1,9 @@
 {
-  "level_limit": 30,
+  "level_limit": 60,
   "experience_per_level": {
     "type": "expression",
     "data": {
-      "expression": "level * 60 + 100"
+      "expression": "level * 50 + 80"
     }
   },
   "sources": [
@@ -11,16 +11,195 @@
       "type": "puffish_skills:break_block",
       "data": {
         "variables": {
-          "wheat":     { "operations": [ { "type": "get_broken_block_state" }, { "type": "puffish_skills:test", "data": { "block": "wheat" } } ] },
-          "carrots":   { "operations": [ { "type": "get_broken_block_state" }, { "type": "puffish_skills:test", "data": { "block": "carrots" } } ] },
-          "potatoes":  { "operations": [ { "type": "get_broken_block_state" }, { "type": "puffish_skills:test", "data": { "block": "potatoes" } } ] },
-          "beetroots": { "operations": [ { "type": "get_broken_block_state" }, { "type": "puffish_skills:test", "data": { "block": "beetroots" } } ] }
+          "wheat": {
+            "operations": [
+              {
+                "type": "get_broken_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "wheat"
+                }
+              }
+            ]
+          },
+          "carrots": {
+            "operations": [
+              {
+                "type": "get_broken_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "carrots"
+                }
+              }
+            ]
+          },
+          "potatoes": {
+            "operations": [
+              {
+                "type": "get_broken_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "potatoes"
+                }
+              }
+            ]
+          },
+          "beetroots": {
+            "operations": [
+              {
+                "type": "get_broken_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "beetroots"
+                }
+              }
+            ]
+          },
+          "nether_wart": {
+            "operations": [
+              {
+                "type": "get_broken_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "nether_wart"
+                }
+              }
+            ]
+          },
+          "melon": {
+            "operations": [
+              {
+                "type": "get_broken_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "melon"
+                }
+              }
+            ]
+          },
+          "pumpkin": {
+            "operations": [
+              {
+                "type": "get_broken_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "pumpkin"
+                }
+              }
+            ]
+          },
+          "sweet_berry_bush": {
+            "operations": [
+              {
+                "type": "get_broken_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "sweet_berry_bush"
+                }
+              }
+            ]
+          },
+          "cocoa": {
+            "operations": [
+              {
+                "type": "get_broken_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "cocoa"
+                }
+              }
+            ]
+          },
+          "torchflower_crop": {
+            "operations": [
+              {
+                "type": "get_broken_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "torchflower_crop"
+                }
+              }
+            ]
+          },
+          "pitcher_crop": {
+            "operations": [
+              {
+                "type": "get_broken_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "pitcher_crop"
+                }
+              }
+            ]
+          }
         },
         "experience": [
-          { "condition": "wheat",     "expression": "5" },
-          { "condition": "carrots",   "expression": "5" },
-          { "condition": "potatoes",  "expression": "5" },
-          { "condition": "beetroots", "expression": "5" }
+          {
+            "condition": "wheat",
+            "expression": "5"
+          },
+          {
+            "condition": "carrots",
+            "expression": "5"
+          },
+          {
+            "condition": "potatoes",
+            "expression": "5"
+          },
+          {
+            "condition": "beetroots",
+            "expression": "5"
+          },
+          {
+            "condition": "nether_wart",
+            "expression": "5"
+          },
+          {
+            "condition": "melon",
+            "expression": "8"
+          },
+          {
+            "condition": "pumpkin",
+            "expression": "8"
+          },
+          {
+            "condition": "sweet_berry_bush",
+            "expression": "4"
+          },
+          {
+            "condition": "cocoa",
+            "expression": "5"
+          },
+          {
+            "condition": "torchflower_crop",
+            "expression": "8"
+          },
+          {
+            "condition": "pitcher_crop",
+            "expression": "8"
+          }
         ]
       }
     }
