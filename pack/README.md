@@ -137,17 +137,18 @@ aufbaut** — eine durchgehende Haupt-Linie mit Seitenzweigen, alles über Abhä
 
 - **👋 Willkommen** (ATM-Style: zentrale Wurzel + EMI/JourneyMap/IPN/FTB-Chunks-Intro)
   → **🌱 Farmen & Leben** → **🏘 Bauen & Gemeinschaft** (MineColonies)
-  → **⚙ Create** (**90 Quests** aus ATM-10, an dieses Pack angepasst, **jede mit deutschem
-  Titel + Beschreibung**) → **🌍 Welt** → **🪙 Wirtschaft** → **🏆 Endgame**.
+  → **⚙ Create** (~**16 aufbauende Kontraptions-Meilensteine**: erste Maschine → Pressen → Erz-
+  Verarbeitung → Auto-Crafting → Farm-/Baumfarm-Kontraption → Küche/Fabrik/Strom → Züge →
+  **Industrie-Komplex**) → **🌍 Welt** → **🪙 Wirtschaft** → **🏆 Endgame**.
 - **🎈 Aeronautics** (**25 Quests**: Propeller → Hülle → Levitite → Flotte → „Herr der Lüfte")
-  als großer Seitenzweig rechts, hinter dem Create-Start; mündet ins Endgame.
+  als großer Seitenzweig rechts, hinter den Create-Kontraptionen; mündet ins Endgame.
 
-Münz-Belohnungen (Silber/Gold/Kristall) als roter Faden. Bearbeitbar im FTB-Quests-Editor
+Belohnt werden **fertige, laufende Kontraptionen** — nicht jedes einzelne Bauteil; die Belohnungen
+(Silber→Gold→Kristall) skalieren mit der Größe des Meilensteins. Bearbeitbar im FTB-Quests-Editor
 (Server-Op: `/ftbquests editing_mode true`).
 
-> Erzeugt von `gen-quests.py` als **ein** Kapitel (alle Cluster versetzt zusammengeführt). Das
-> Create-Segment stammt aus `vendor/atm_create.snbt` (ATM-10): Fremd-Items → Pack-Items, deutsche
-> Beschreibungen injiziert, Koordinaten-Offset, ATM-Bilder entfernt. Blueprint: `docs/quest-line-blueprint.md`.
+> Erzeugt von `gen-quests.py` als **ein** Kapitel (`chapters/questline.snbt`, alle Cluster versetzt
+> zusammengeführt). Blueprint: `docs/quest-line-blueprint.md`.
 
 **Distant Horizons + Chunky:** DH meldet evtl. „Chunky detected" — Chunky kann Chunks schneller
 erzeugen, als DH die LODs verarbeitet (→ Löcher in der Fernsicht). Abhilfe: entweder DHs **eigenen**

@@ -93,6 +93,9 @@ ATM_CREATE_ROOT = "57A7A5C79389A96A"  # Wurzel-Quest im ATM-Create-Kapitel (für
 reg("w_start", "w_table", "w_emi", "w_map", "w_ipn", "w_claim", "w_info")
 reg("f_ernte", "f_kueche", "f_genuss", "f_saison", "f_tiere", "f_skills", "f_angeln")
 reg("c_supply", "c_builder", "c_buerger", "c_mehrere", "c_bauen")
+reg("cr_start", "cr_press", "cr_power", "cr_processing", "cr_belt", "cr_mixing", "cr_farm",
+    "cr_autocraft", "cr_contraption", "cr_energy", "cr_kitchen", "cr_factory", "cr_treefarm",
+    "cr_train", "cr_trainnet", "cr_advanced")
 reg("ae_intro", "ae_wood_prop", "ae_andesite_prop", "ae_prop_bearing", "ae_burner", "ae_steam",
     "ae_envelope", "ae_envelope_shaft", "ae_big_envelope", "ae_first_flight", "ae_levitite_powder",
     "ae_levitite_bucket", "ae_levitite", "ae_pearl_levitite", "ae_smart_prop", "ae_gyro",
@@ -266,6 +269,103 @@ colony_q = [
           deps=["c_buerger"], icon="minecraft:painting", size=1.0),
 ]
 
+# ---- Kapitel 3: Technik (Create) — aufbauende KONTRAPTIONEN, nicht Einzelteile ----
+# Belohnt werden die fertigen, laufenden Maschinen/Kontraptionen — nicht jedes Bauteil.
+create_q = [
+    quest("cr_start", 0.0, 0.0, "Die erste Maschine",
+          ["&bCreate&r dreht sich um Drehkraft. Baue dein erstes &alaufendes Setup&r:",
+           "ein &aWasserrad&r, das über Wellen & Zahnräder eine Maschine antreibt.",
+           "", "&7Ziel ist die fertige Anlage — nicht das einzelne Zahnrad."],
+          tasks=[task_item("create:water_wheel"), task_check()],
+          rewards=[rew_item("create:andesite_alloy", 32), coin_gold(2), rew_xp(25)],
+          deps=["c_builder"], icon="create:water_wheel", size=2.0, shape="gear"),
+    quest("cr_power", -2.5, 1.5, "Mehr Schwung",
+          ["Eine Maschine ist nie genug. Errichte eine &astärkere Energiequelle&r —",
+           "eine &aWindmühle&r (Segel!) oder ein großes Wasserrad-Array.",
+           "", "Hak ab, wenn deine Anlage spürbar mehr Stress-Kapazität hat."],
+          tasks=[task_check()], rewards=[coin_gold(2), rew_xp(20)],
+          deps=["cr_start"], icon="create:white_sail", size=1.25),
+    quest("cr_press", 0.0, 1.5, "Pressen am Fließband",
+          ["Bau eine Anlage, die &aBleche automatisch presst&r: Presse über Förderband,",
+           "Material rein, fertige Sheets raus.",
+           "", "&7Eine laufende Press-Straße, kein einzelnes Pressen von Hand."],
+          tasks=[task_check()], rewards=[coin_gold(2), rew_xp(20)],
+          deps=["cr_start"], icon="create:mechanical_press", size=1.25),
+    quest("cr_processing", 0.0, 3.0, "Erz-Verarbeitung",
+          ["Verdopple deine Ausbeute: baue eine &aErz-Verarbeitungs-Straße&r mit",
+           "Crushing Wheels oder Mühle — Erz rein, Schrot raus, automatisch verhüttet.",
+           "", "Hak ab, wenn Erz ohne Handarbeit verarbeitet wird."],
+          tasks=[task_check()], rewards=[coin_gold(3), rew_xp(30)],
+          deps=["cr_press"], icon="create:crushing_wheel", size=1.5, shape="hexagon"),
+    quest("cr_belt", 2.5, 3.0, "Logistik mit Bändern",
+          ["Items sollen sich selbst bewegen. Baue ein &aFörderband-System&r mit",
+           "Trichtern/Tunneln, das Waren sortiert und transportiert.",
+           "", "Eine funktionierende Sortier-/Transportlinie genügt."],
+          tasks=[task_check()], rewards=[coin_gold(2), rew_xp(20)],
+          deps=["cr_press"], icon="create:brass_tunnel", size=1.25),
+    quest("cr_mixing", 0.0, 4.5, "Misch-Anlage",
+          ["Mixer + Becken (+ Hitze) machen Legierungen & mehr in Serie. Baue eine",
+           "&aautomatische Misch-Anlage&r, die z.B. Andesite Alloy am Fließband produziert."],
+          tasks=[task_check()], rewards=[coin_gold(3), rew_xp(30)],
+          deps=["cr_processing"], icon="create:mechanical_mixer", size=1.25),
+    quest("cr_farm", 2.5, 4.5, "Automatische Farm",
+          ["Schluss mit Handarbeit auf dem Acker: baue eine &aCreate-Erntemaschine&r",
+           "(Mechanical Harvester/Plough auf beweglicher Kontraption), die Felder",
+           "selbsttätig abfährt und erntet. &7(Perfekt mit deiner Farm-Säule!)"],
+          tasks=[task_check()], rewards=[coin_gold(4), rew_xp(35)],
+          deps=["cr_belt"], icon="create:mechanical_harvester", size=1.5, shape="hexagon"),
+    quest("cr_contraption", -2.5, 6.0, "Die erste bewegte Kontraption",
+          ["Mit Kleber, Lager & Chassis wird aus Blöcken eine &abewegliche Kontraption&r.",
+           "Baue etwas, das sich dreht oder fährt — Zugbrücke, Drehturm, Aufzug …",
+           "", "&7Der Moment, in dem Create wirklich magisch wird."],
+          tasks=[task_check()], rewards=[coin_gold(4), rew_xp(35)],
+          deps=["cr_mixing"], icon="create:mechanical_bearing", size=1.5, shape="hexagon"),
+    quest("cr_autocraft", 0.0, 6.0, "Automatische Fertigung",
+          ["Baue eine Anlage aus &aMechanical Crafters&r, die ein komplettes Item",
+           "&avollautomatisch craftet&r — du legst die Zutaten an, der Rest passiert von selbst."],
+          tasks=[task_check()], rewards=[coin_crystal(1), rew_xp(40)],
+          deps=["cr_mixing"], icon="create:mechanical_crafter", size=1.25),
+    quest("cr_treefarm", -2.5, 7.5, "Baumfarm",
+          ["Holz für immer: baue eine &aautomatische Baumfarm&r — bewegte Kontraption",
+           "mit Sägen/Bohrern, die Bäume fällt und neu pflanzt."],
+          tasks=[task_check()], rewards=[coin_crystal(1), rew_xp(40)],
+          deps=["cr_contraption"], icon="minecraft:oak_log", size=1.25),
+    quest("cr_kitchen", 0.0, 7.5, "Automatische Küche",
+          ["&aCreate: Central Kitchen&r verheiratet Create & Farmer's Delight: baue eine",
+           "&aKoch-Straße&r, die Gerichte am Fließband zubereitet. Nie wieder Hunger."],
+          tasks=[task_check()], rewards=[coin_crystal(1), rew_xp(40)],
+          deps=["cr_autocraft"], icon="farmersdelight:cooking_pot", size=1.25),
+    quest("cr_factory", 2.5, 7.5, "Fabrik-Linie",
+          ["Nutze die &aFactory Gauges & Packages&r von Create 6: baue eine Linie, die",
+           "ein komplexes Produkt &aauf Bestellung&r vollautomatisch herstellt und verpackt."],
+          tasks=[task_check()], rewards=[coin_crystal(2), rew_xp(45)],
+          deps=["cr_autocraft"], icon="create:mechanical_arm", size=1.25),
+    quest("cr_energy", -4.5, 3.0, "Strom-Netz (Addons)",
+          ["Bring Elektrizität ins Spiel: baue mit &aCreate New Age / Createaddition /",
+           "Diesel / TFMG&r ein &aStromnetz&r, das deine Maschinen versorgt."],
+          tasks=[task_check()], rewards=[coin_crystal(2), rew_xp(45)],
+          deps=["cr_power"], icon="create:shaft", size=1.25),
+    quest("cr_train", -4.5, 7.5, "Der erste Zug",
+          ["Verlege Gleise, setze einen &aBahnhof&r und baue einen fahrenden Zug",
+           "(Steam 'n' Rails). &7Bald rollt er zwischen deinen Kolonien."],
+          tasks=[task_item("create:track_station"), task_check()],
+          rewards=[rew_item("railways:conductor_cap"), coin_crystal(1), rew_xp(40)],
+          deps=["cr_contraption"], icon="create:track_station", size=1.5, shape="hexagon"),
+    quest("cr_trainnet", -4.5, 9.0, "Schienen-Netz",
+          ["Mehr als eine Strecke: baue ein &aZug-Netz&r mit mehreren Stationen und",
+           "&aFahrplänen&r, sodass Züge automatisch ihre Routen fahren."],
+          tasks=[task_check()], rewards=[coin_crystal(2), rew_xp(45)],
+          deps=["cr_train"], icon="create:schedule", size=1.25),
+    quest("cr_advanced", 0.0, 10.5, "Industrie-Komplex",
+          ["Führe alles zusammen: ein &agroßer, weitgehend autarker Create-Komplex&r",
+           "aus Energie, Verarbeitung, Auto-Crafting, Küche und Schiene.",
+           "", "&6Das Herzstück deiner Zivilisation — und Sprungbrett in die Lüfte.&r"],
+          tasks=[task_check()],
+          rewards=[coin_crystal(5), rew_item("create:precision_mechanism", 8), rew_xp(80)],
+          deps=["cr_kitchen", "cr_factory", "cr_energy", "cr_trainnet"],
+          icon="create:large_cogwheel", size=2.0, shape="gear"),
+]
+
 # ---- Kapitel 4: Aeronautics (25 Quests, gated hinter Create-Start) ---------
 A = "create_aeronautics"  # nur Doku; echte ID-Namespace ist "aeronautics:"
 aero_q = [
@@ -275,7 +375,7 @@ aero_q = [
            "", "&7Alpha-Mod: mach vor großen Bauten ein Backup."],
           tasks=[task_item("aeronautics:aviators_goggles")],
           rewards=[coin_gold(2), rew_xp(20)],
-          deps=[ATM_CREATE_ROOT], icon="aeronautics:aviators_goggles", size=2.0, shape="gear"),
+          deps=["cr_contraption"], icon="aeronautics:aviators_goggles", size=2.0, shape="gear"),
     quest("ae_wood_prop", 0.0, 1.5, "Der erste Propeller",
           ["Jeder Flug beginnt mit Schub. Bastle einen &aHölzernen Propeller&r —",
            "simpel, aber er dreht sich. &7Aus Holz wird Höhe."],
@@ -423,7 +523,7 @@ world_q = [
           ["Die Welt ist riesig und realistisch: &aTerralith&r + &aTectonic&r zaubern",
            "epische Biome und Gebirge. Erkunde mindestens &e3 verschiedene&r Biome."],
           tasks=[task_check()], rewards=[rew_item("minecraft:map"), coin_silver(20), rew_xp(15)],
-          deps=["57A7A5C79389A96A"], icon="minecraft:filled_map", size=1.5, shape="hexagon"),
+          deps=["cr_start"], icon="minecraft:filled_map", size=1.5, shape="hexagon"),
     quest("w_netz", 2.0, 0.0, "Das Schienennetz",
           ["Der große Traum: Zivilisationen per Zug verbinden. Verlege eine",
            "&bZugstrecke zwischen zwei Kolonien&r (Bahnhof ↔ Bahnhof)."],
@@ -516,246 +616,6 @@ endgame_q = [
           icon="minecraft:nether_star", size=2.0, shape="gear"),
 ]
 
-# ============================================================================
-# Create-Kapitel aus ATM-10 transformieren + deutsche Titel/Beschreibungen
-# ============================================================================
-def hum(item_id):
-    return item_id.split(":", 1)[1].replace("_", " ").title()
-
-# (Titel, [Beschreibungszeilen]) je Primär-Task-Item. Fallback: hum() + generischer Flavor.
-CREATE_FLAVOR = {
- "minecraft:andesite": ("Andesit — der Anfang von allem",
-    ["&bCreate&r liebt Andesit. Grab eine ordentliche Menge ab —",
-     "daraus wird gleich die wichtigste Zutat überhaupt."]),
- "create:andesite_alloy": ("Andesite Alloy",
-    ["Die &aAndesit-Legierung&r ist das Brot-und-Butter-Material von Create.",
-     "&7Ohne sie läuft hier gar nichts. Stell einen Vorrat her!"]),
- "create:cogwheel": ("Das Zahnrad",
-    ["Das &aZahnrad&r überträgt Drehkraft. Der Herzschlag jeder Maschine.",
-     "&7Zwei davon nebeneinander? Vorsicht — die mögen sich nicht."]),
- "create:large_cogwheel": ("Großes Zahnrad",
-    ["Mit dem &agroßen Zahnrad&r änderst du Drehzahl und Richtung.",
-     "&7Übersetzung gefällig?"]),
- "create:shaft": ("Die Welle",
-    ["Die &aWelle&r leitet Rotation von A nach B. Unscheinbar, unverzichtbar."]),
- "create:water_wheel": ("Wasserrad",
-    ["Das &aWasserrad&r macht aus fließendem Wasser saubere, kostenlose Drehkraft.",
-     "&7Die gemütlichste Energiequelle überhaupt."]),
- "create:large_water_wheel": ("Großes Wasserrad",
-    ["Mehr Wasser, mehr Power. Das &agroße Wasserrad&r liefert ordentlich Schwung."]),
- "create:windmill_bearing": ("Windmühlen-Lager",
-    ["Bau dir eine &aWindmühle&r — Segel dran, und der Wind erledigt den Rest."]),
- "create:white_sail": ("Segel",
-    ["&aSegel&r fangen den Wind für deine Windmühle. Je mehr, desto mehr Drehkraft."]),
- "create:mechanical_press": ("Mechanische Presse",
-    ["Die &aPresse&r plättet, prägt und presst. Bleche, Pflaster, Münzrohlinge …",
-     "&7Das nützlichste *Klonk* im Spiel."]),
- "create:mechanical_mixer": ("Mechanischer Mixer",
-    ["Der &aMixer&r rührt über einem Becken alles zusammen — Legierungen, Teige, Tränke."]),
- "create:basin": ("Das Becken",
-    ["Das &aBecken&r sammelt Zutaten für Mixer und Presse. Die kleine Küche der Maschinen."]),
- "create:mechanical_crafter": ("Mechanischer Kruster",
-    ["Mehrere &aKruster&r craften ganze Rezepte automatisch. Endlich Schluss mit Handarbeit!"]),
- "create:mechanical_arm": ("Mechanischer Arm",
-    ["Der &aArm&r sortiert und befüllt punktgenau. Dein fleißigster Mitarbeiter."]),
- "create:mechanical_bearing": ("Mechanisches Lager",
-    ["Mit dem &aLager&r drehst und bewegst du ganze Bauwerke — willkommen bei Kontraptionen!"]),
- "create:andesite_casing": ("Andesite Casing",
-    ["Das &aAndesit-Gehäuse&r ummantelt Wellen und Maschinen. Hübsch und praktisch."]),
- "create:copper_casing": ("Copper Casing",
-    ["Das &aKupfer-Gehäuse&r ist die Stufe für alles rund um Flüssigkeiten."]),
- "create:brass_casing": ("Brass Casing",
-    ["Das &aMessing-Gehäuse&r markiert die Mittelstufe — jetzt wird's clever."]),
- "create:railway_casing": ("Railway Casing",
-    ["Das &aSchienen-Gehäuse&r ist die Basis für Züge, Bahnhöfe und Schienenfahrzeuge."]),
- "create:fluid_tank": ("Flüssigkeitstank",
-    ["Der &aTank&r lagert Lava, Wasser, Honig & Co. Stapelbar zu riesigen Reservoirs."]),
- "create:fluid_pipe": ("Flüssigkeitsrohr",
-    ["&aRohre&r pumpen Flüssigkeiten dorthin, wo du sie brauchst. Mit Pumpe, versteht sich."]),
- "create:portable_fluid_interface": ("Portable Fluid Interface",
-    ["Tankt fahrende Kontraptionen automatisch ab oder auf. Praktisch für Züge & Schiffe."]),
- "create:nozzle": ("Düse",
-    ["Die &aDüse&r verteilt den Effekt eines Encased Fan im Umkreis. Wind in alle Richtungen."]),
- "create:chute": ("Schacht",
-    ["Der &aSchacht&r lässt Items vertikal rieseln — die Schwerkraft arbeitet für dich."]),
- "create:belt_connector": ("Förderband",
-    ["Zwei Wellen, ein &aRiemen&r dazwischen — fertig ist das Fließband. Klassiker."]),
- "create:depot": ("Ablage",
-    ["Das &aDepot&r hält ein einzelnes Item für die Bearbeitung bereit. Mini-Werkbank."]),
- "create:andesite_funnel": ("Andesite Funnel",
-    ["Der &aTrichter&r zieht Items ein oder gibt sie aus. Andesit = die Einsteigerklasse."]),
- "create:brass_funnel": ("Brass Funnel",
-    ["Der &aMessing-Trichter&r kann filtern — nur genau das durchlassen, was du willst."]),
- "create:andesite_tunnel": ("Andesite Tunnel",
-    ["Der &aTunnel&r verteilt Items auf Förderbändern sauber weiter."]),
- "create:brass_tunnel": ("Brass Tunnel",
-    ["Der &aMessing-Tunnel&r verteilt und sortiert über mehrere Bänder. Logistik-Magie."]),
- "create:encased_chain_drive": ("Kettenantrieb",
-    ["Der &aKettenantrieb&r verteilt Drehkraft elegant um Ecken und über Strecken."]),
- "create:adjustable_chain_gearshift": ("Regelbares Kettengetriebe",
-    ["Damit steuerst du die Drehzahl per Redstone. Tempo nach Bedarf."]),
- "create:gantry_shaft": ("Portal-Welle",
-    ["&aGantry&r-Aufbauten bewegen Kontraptionen kontrolliert hin und her. Schiebetüren, Aufzüge …"]),
- "create:piston_extension_pole": ("Kolben-Verlängerung",
-    ["Verlängert den mechanischen Kolben — schiebe Dinge richtig weit."]),
- "create:radial_chassis": ("Radial-Chassis",
-    ["Das &aChassis&r hält große Kontraptionen zusammen, wenn sie sich drehen."]),
- "create:empty_blaze_burner": ("Leerer Blaze Burner",
-    ["Erst leer, dann mit einem Blaze gefüttert: der &aBlaze Burner&r ist deine Heizung",
-     "für Mixer und Presse. &7Hunger auf Kuchen?"]),
- "create:blaze_cake": ("Blaze-Kuchen",
-    ["Ein &aBlaze Cake&r macht den Blaze Burner so richtig heiß — für die harten Rezepte.",
-     "&7Backen für Fortgeschrittene."]),
- "create:precision_mechanism": ("Präzisionsmechanismus",
-    ["Das &aPräzisionsmechanismus&r ist das Herz fortgeschrittener Geräte. Fummelig, aber lohnend."]),
- "create:brass_ingot": ("Messing",
-    ["&aMessing&r aus Kupfer und Zink schaltet die Mittelstufe von Create frei."]),
- "create:copper_valve_handle": ("Ventilgriff",
-    ["Mit dem &aVentilgriff&r gibst du von Hand exakte Drehimpulse. Feinjustage für Bastler."]),
- "create:super_glue": ("Superkleber",
-    ["&aSuperkleber&r verbindet Blöcke zu einer Kontraption. Alles, was zusammenklebt, fliegt zusammen."]),
- "create:schematic_table": ("Schematik-Tisch",
-    ["Am &aSchematik-Tisch&r lädst du Baupläne — kopiere ganze Bauwerke."]),
- "create:schematicannon": ("Schematik-Kanone",
-    ["Die &aSchematik-Kanone&r baut gespeicherte Schematics automatisch auf. Faulheit, aber effizient."]),
- "create:track": ("Gleise",
-    ["&aGleise&r sind die Adern deines Imperiums. Hier rollen bald die Züge zwischen den Kolonien."]),
- "create:track_station": ("Bahnhof",
-    ["Am &aBahnhof&r baust du Züge zusammen, gibst Fahrpläne und steigst ein. Alles einsteigen!"]),
- "create:nixie_tube": ("Nixie-Röhre",
-    ["&aNixie-Röhren&r zeigen Zahlen und Signale schön stilvoll an. Retro-Chic."]),
- "minecraft:water_bucket": ("Ein Eimer Wasser",
-    ["Wasser treibt Räder an und kühlt Rezepte. Hol einen &aEimer&r voll."]),
- "minecraft:bucket": ("Der Eimer",
-    ["Ein simpler &aEimer&r — Anfang jeder Flüssigkeits-Logistik."]),
- "minecraft:gold_ingot": ("Gold",
-    ["&aGold&r brauchst du für feinere Mechanik und glänzende Bauteile."]),
- "minecraft:iron_ingot": ("Eisen",
-    ["&aEisen&r — das Rückgrat jeder Maschine. Davon nie genug."]),
- "minecraft:iron_ore": ("Eisenerz",
-    ["Grab &aEisenerz&r ab — Create verdoppelt deine Ausbeute später spielend."]),
- "minecraft:diamond_ore": ("Diamanterz",
-    ["&bDiamanten&r für die harten Werkzeuge und edlen Rezepte. Tief graben lohnt sich."]),
- "minecraft:copper_block": ("Kupferblock",
-    ["&aKupfer&r ist überall in Create — Gehäuse, Bleche, Rohre. Hamstern!"]),
- "minecraft:glowstone_dust": ("Glowstone-Staub",
-    ["&eGlowstone&r leuchtet und beschleunigt manche Create-Rezepte."]),
- "minecraft:slime_ball": ("Schleimball",
-    ["&aSchleim&r macht Dinge klebrig und beweglich — Kolben, Bänder, mehr."]),
- "minecraft:honey_bottle": ("Honig",
-    ["Süßer &eHonig&r — Zutat und Flüssigkeit zugleich. Bienenfleißig sammeln."]),
- "minecraft:minecart": ("Lore",
-    ["Die gute alte &aLore&r — Create macht daraus rollende Wunderwerke."]),
- "minecraft:lever": ("Hebel",
-    ["Ein &aHebel&r schaltet, was geschaltet werden muss. Redstone-Grundlage."]),
- "minecraft:clock": ("Uhr",
-    ["Eine &aUhr&r für Zeitgefühl und manche Mechaniken."]),
- "minecraft:repeater": ("Redstone-Verstärker",
-    ["Der &aRepeater&r verlängert und verzögert Redstone-Signale. Timing ist alles."]),
- "minecraft:oak_sapling": ("Setzling",
-    ["Ein &aSetzling&r — Holz wächst nach, Create automatisiert die Ernte."]),
- "minecraft:wheat_seeds": ("Saatgut",
-    ["&aSaatgut&r für automatische Farmen à la Create."]),
- "minecraft:dirt": ("Erde",
-    ["Schlichte &aErde&r — Baustoff und Ackerland. Manchmal braucht's einfach Dreck."]),
- "minecraft:snowball": ("Schneeball",
-    ["&aSchneebälle&r — Create macht daraus Eis, Kühlung und mehr."]),
- "minecraft:cornflower": ("Kornblume",
-    ["Eine &9Kornblume&r — blaue Farbe und ein hübscher Tupfer im Feld."]),
- "minecraft:andesite_block": ("Andesit-Block", ["Mehr Andesit, mehr Möglichkeiten."]),
-}
-
-CREATE_OX, CREATE_OY = 5.0, 27.0  # Offset des Create-Clusters im gemeinsamen Kapitel
-
-def transform_atm_create():
-    src = open(os.path.join(ROOT, "vendor", "atm_create.snbt"), encoding="utf-8").read()
-
-    # 1) Fremd-Items -> Pack-Items
-    src = src.replace('id: "alltheores:brass_ingot"', 'id: "create:brass_ingot"')
-    src = src.replace('id: "the_bumblezone:honey_bucket"', 'id: "minecraft:honey_bottle"')
-    filt_map = [("mechanical_piston", "create:mechanical_piston"), ("cogwheel", "create:cogwheel"),
-                ("water_wheel", "create:water_wheel"), ("seats", "create:blue_seat"),
-                ("postboxes", "create:blue_postbox"), ("packages", "create:cardboard_package_12x12"),
-                ("table_cloths", "create:andesite_table_cloth")]
-    def repl_filter(mobj):
-        inner = mobj.group(0)
-        for needle, repl in filt_map:
-            if needle in inner: return '{ count: 1, id: "%s" }' % repl
-        return '{ count: 1, id: "create:cogwheel" }'
-    src = _re.sub(r'\{ components: \{ "ftbfiltersystem:filter":.*?id: "ftbfiltersystem:smart_filter" \}',
-                  repl_filter, src)
-
-    # 2) ATM-Bilder raus (Header/Gruppe verwerfen wir — die Quests kommen ins gemeinsame Kapitel)
-    src = _re.sub(r'\n\timages: \[.*?\n\t\]', '', src, count=1, flags=_re.S)
-
-    # 3) Pro Quest: primäres Task-Item bestimmen -> deutscher Titel + Beschreibung injizieren
-    #    (Quest-IDs stehen auf 3-Tab-Ebene; Task-/Reward-IDs tiefer.)
-    blocks = []
-    j = src.index("quests: [") + len("quests: [")
-    d = 0; collect = False; buf = ""; start = 0
-    for k in range(j, len(src)):
-        ch = src[k]
-        if ch == "{":
-            d += 1
-            if d == 1: collect = True; buf = "{"; start = k; continue
-        elif ch == "}":
-            d -= 1
-            if d == 0 and collect:
-                buf += "}"; blocks.append((start, k + 1, buf)); collect = False; buf = ""; continue
-        if collect: buf += ch
-
-    def primary_item(block):
-        ti = block.find("tasks:"); ri = block.find("rewards:")
-        seg = block[ti: ri if 0 <= ri and ri > ti else len(block)] if ti >= 0 else block
-        mm = _re.search(r'id: "([a-z0-9_]+:[a-z0-9_/]+)"', seg)
-        return mm.group(1) if mm else None
-
-    roots = {"57A7A5C79389A96A", "1B182A30604655E2"}  # ATM-Wurzeln -> hinter c_builder gaten
-    c_builder = QIDS["c_builder"]
-    edits = []  # (insert_pos, text)  -- von hinten einfügen
-    for s0, s1, block in blocks:
-        qid_m = _re.search(r'\bid: "([0-9A-F]{16})"', block)
-        if not qid_m: continue
-        qid = qid_m.group(1)
-        it = primary_item(block)
-        if it and it in CREATE_FLAVOR:
-            title, lines = CREATE_FLAVOR[it]
-        elif it:
-            title = hum(it)
-            lines = ["Beschaffe &a%s&r — ein weiterer Baustein auf deinem Create-Weg." % title,
-                     "&7(In EMI siehst du, wie es hergestellt wird.)"]
-        else:
-            title = "Create-Aufgabe"
-            lines = ["Erfülle diese Aufgabe und bring dein Create-Imperium voran."]
-        # Einfügetext nach der Quest-id-Zeile "\n\t\t\tid: \"<qid>\"\n"
-        id_line = '\n\t\t\tid: "%s"' % qid
-        pos = src.find(id_line, s0, s1)
-        if pos < 0: continue
-        insert_at = pos + len(id_line)
-        inj = ""
-        if qid in roots:
-            inj += '\n\t\t\tdependencies: ["%s"]' % c_builder
-        inj += '\n\t\t\ttitle: "%s"' % esc(title)
-        inj += '\n\t\t\tdescription: [\n' + "\n".join('\t\t\t\t"%s"' % esc(L) for L in lines) + '\n\t\t\t]'
-        edits.append((insert_at, inj))
-    for pos, text in sorted(edits, reverse=True):
-        src = src[:pos] + text + src[pos:]
-
-    # 4) Quest-Koordinaten um (CREATE_OX, CREATE_OY) verschieben
-    def _off(mo):
-        v = float(mo.group(2)) + (CREATE_OX if mo.group(1) == "x" else CREATE_OY)
-        return '\n\t\t\t%s: %sd' % (mo.group(1), v)
-    src = _re.sub(r'\n\t\t\t(x|y): ([\-0-9.]+)d', _off, src)
-
-    # 5) reine Quest-Blöcke (\t\t{...}) zwischen 'quests: [' und schließendem '\n\t]' extrahieren
-    qs = src.index("quests: [") + len("quests: [")
-    qe = src.index("\n\t]", qs)
-    blocks_text = src[qs:qe].strip("\n")
-    foreign = _re.findall(r'id: "(ftbfiltersystem|alltheores|the_bumblezone):', blocks_text)
-    descs = blocks_text.count("\n\t\t\tdescription: [")
-    nq = len(_re.findall(r'\n\t\t\tx: ', blocks_text))
-    print(f"create-Blöcke: quests={nq} descriptions={descs} foreign={foreign}")
-    return blocks_text
 
 # ---- EIN Kapitel: alle Cluster versetzt zusammenführen ---------------------
 def shift(qs, dx, dy):
@@ -770,7 +630,7 @@ all_custom = []
 all_custom += shift(welcome_q, 0.0, 0.0)     # y ~ -2..2
 all_custom += shift(farm_q,    0.0, 7.0)     # y ~ 7..8.5
 all_custom += shift(colony_q,  0.0, 13.0)    # y ~ 13..14.5
-# (Create-Block: y ~ 18.5..35.5, x ~ -7..7.5  — via CREATE_OX/OY)
+all_custom += shift(create_q,  0.0, 18.0)    # Kontraptions-Progression: y ~ 18..28.5, x ~ -4.5..2.5
 all_custom += shift(aero_q,    22.0, 19.0)   # rechts: x ~ 18.5..24, y ~ 19..34
 all_custom += shift(world_q,   0.0, 42.0)    # y ~ 42..43.5
 all_custom += shift(econ_q,    0.0, 48.0)    # y ~ 48..49.5
@@ -788,20 +648,9 @@ def write(relpath, obj):
     p = os.path.join(OUT, relpath); os.makedirs(os.path.dirname(p), exist_ok=True)
     with open(p, "w", encoding="utf-8") as f: f.write(snbt(obj) + "\n")
     print("wrote", relpath)
-def write_text(relpath, text):
-    p = os.path.join(OUT, relpath); os.makedirs(os.path.dirname(p), exist_ok=True)
-    with open(p, "w", encoding="utf-8") as f: f.write(text)
-    print("wrote", relpath)
-
 write("chapter_groups.snbt", chapter_groups)
 write("data.snbt", data)
-
-# Create-Blöcke (offset) in das eine Kapitel einfügen (quests ist der letzte Key)
-create_blocks = transform_atm_create()
-ct = snbt(main_chapter)
-i = ct.rfind("\n\t]")  # Schließen des quests-Arrays
-merged = ct[:i] + "\n" + create_blocks + ct[i:] + "\n"
-write_text("chapters/questline.snbt", merged)
+write("chapters/questline.snbt", main_chapter)
 
 # alte Einzel-Kapitel entfernen (alles ist jetzt EINE Seite)
 for old in ("willkommen", "farmen_und_leben", "kolonien", "create", "aeronautics", "welt", "wirtschaft", "endgame"):
