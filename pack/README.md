@@ -143,9 +143,16 @@ aufbaut** — eine durchgehende Haupt-Linie mit Seitenzweigen, alles über Abhä
 - **🎈 Aeronautics** (**25 Quests**: Propeller → Hülle → Levitite → Flotte → „Herr der Lüfte")
   als großer Seitenzweig rechts, hinter den Create-Kontraptionen; mündet ins Endgame.
 
-Belohnt werden **fertige, laufende Kontraptionen** — nicht jedes einzelne Bauteil; die Belohnungen
-(Silber→Gold→Kristall) skalieren mit der Größe des Meilensteins. Bearbeitbar im FTB-Quests-Editor
-(Server-Op: `/ftbquests editing_mode true`).
+**Keine Klick-Checkmarks als Fortschritt:** Fortschritts-Quests sind **Item-Tasks**, die
+**automatisch erfasst** werden, sobald man die Items/Maschinen hat. Checkmarks gibt es nur für
+reine **Info-Quests** (EMI, Karte, IPN, Jahreszeiten, Skills, DH) — diese geben **keine Belohnung**.
+Belohnungen (Silber→Gold→Kristall) skalieren mit der Größe des Meilensteins.
+
+**Endgame = Massenautomatisierung:** sehr große, automatisierbare Ziele, die per Quest-Buch
+abgegeben werden (`consume_items`) — u. a. **10.000 Precision Mechanisms**, 50.000 Andesite Alloy,
+50.000 Eisen, 50.000 Holz, 50.000 Kartoffeln, 30.000 Kupfer, 20.000 Messing, 10.000 Diamanten,
+10.000 gekochter Reis, 5.000 Levitite, 64 Kristallmünzen → Capstone **„Legende des SMP"**.
+Bearbeitbar im FTB-Quests-Editor (Server-Op: `/ftbquests editing_mode true`).
 
 > Erzeugt von `gen-quests.py` als **ein** Kapitel (`chapters/questline.snbt`, alle Cluster versetzt
 > zusammengeführt). Blueprint: `docs/quest-line-blueprint.md`.
