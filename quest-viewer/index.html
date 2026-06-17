@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cozy Farming SMP — Quest Viewer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="topbar">
+    <div class="brand">
+      <span class="brand-icon">🌾</span>
+      <div class="brand-text">
+        <h1 id="pack-title">Quest Viewer</h1>
+        <span id="pack-version" class="version"></span>
+      </div>
+    </div>
+    <nav id="chapter-tabs" class="chapter-tabs"></nav>
+    <div class="controls">
+      <input id="search" type="search" placeholder="Quests suchen…" autocomplete="off">
+      <button id="reset-btn" type="button" title="Ansicht zurücksetzen">Reset</button>
+    </div>
+  </header>
+
+  <main id="layout">
+    <section id="graph-wrap">
+      <svg id="graph" xmlns="http://www.w3.org/2000/svg">
+        <g id="graph-root"></g>
+      </svg>
+      <div class="hint">Ziehen zum Verschieben · Mausrad zum Zoomen · Knoten anklicken für Details</div>
+    </section>
+    <aside id="detail-panel">
+      <p class="empty placeholder">Wähle eine Quest im Baum aus, um Details zu sehen.</p>
+    </aside>
+  </main>
+
+  <!-- load order matters: data first, then app -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,3 +1,4 @@
 *.zip
 pack/*.mrpack
 pack/*.zip
+__pycache__/
