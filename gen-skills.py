@@ -47,25 +47,35 @@ for did, title, attr, val, op, _n, icon, eff in BRANCHES:
         ],
     }
 
-# ---- skills.json + connections.json (radiale Äste) -------------------------
+# ---- skills.json + connections.json ----------------------------------------
+# Layout: gleichmäßiger "Sunburst" — konzentrische Ringe füllen eine runde Fläche,
+# gleiche Effekte liegen als Tortenstück-Sektor zusammen, jede Skill hängt radial an
+# der nächstgelegenen Skill des inneren Rings (sauberes, dichtes Skill-Netz).
+DEFS = [b[0] for b in BRANCHES]               # 14 Effekt-Definitionen = 14 Sektoren
+SECTOR = 360.0 / len(DEFS)
+RINGS = [(40, 9), (76, 16), (112, 24), (148, 32), (184, 38)]  # (radius, knoten) -> 119 Skills
+
+def angdiff(a, b):
+    return abs(((a - b + 180.0) % 360.0) - 180.0)
+
 skills = {"root": {"x": 0, "y": 0, "definition": "root_farm", "root": True}}
 connections = []
-n = len(BRANCHES)
-BASE_R, STEP = 64, 30
-for i, (did, *_rest) in enumerate(BRANCHES):
-    count = BRANCHES[i][5]
-    ang = math.radians(i * (360.0 / n))
-    prev = "root"
-    for j in range(count):
-        r = BASE_R + j * STEP
-        sid = f"{did}{j+1}"
-        skills[sid] = {
-            "x": round(r * math.cos(ang)),
-            "y": round(r * math.sin(ang)),
-            "definition": did,
-        }
-        connections.append([prev, sid])
-        prev = sid
+prev_ring = []                                 # [(angle_deg, id), ...]
+for ri, (radius, count) in enumerate(RINGS):
+    offset = (ri % 2) * (180.0 / count)        # versetzte Ringe -> organischer
+    cur_ring = []
+    for k in range(count):
+        adeg = (k / count) * 360.0 + offset
+        arad = math.radians(adeg)
+        did = DEFS[int((adeg % 360.0) // SECTOR) % len(DEFS)]
+        sid = f"s{ri}_{k}"
+        skills[sid] = {"x": round(radius * math.cos(arad)),
+                       "y": round(radius * math.sin(arad)),
+                       "definition": did}
+        parent = "root" if ri == 0 else min(prev_ring, key=lambda pa: angdiff(pa[0], adeg))[1]
+        connections.append([parent, sid])
+        cur_ring.append((adeg, sid))
+    prev_ring = cur_ring
 
 # ---- experience.json (XP durchs Ernten vieler Feldfrüchte) -----------------
 CROPS = [("wheat", 5), ("carrots", 5), ("potatoes", 5), ("beetroots", 5),
@@ -93,4 +103,4 @@ w("definitions.json", definitions)
 w("skills.json", skills)
 w("connections.json", connections)
 w("experience.json", experience)
-print(f"Äste: {n} | Skills: {len(skills)} | Verbindungen: {len(connections)}")
+print(f"Sektoren: {len(DEFS)} | Skills: {len(skills)} | Verbindungen: {len(connections)}")
