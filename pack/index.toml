@@ -6,7 +6,7 @@ hash = "cac58b25be9750958e08989460e617325b27169b3e5eeaeb3022e63ba6798a4a"
 
 [[files]]
 file = "README.md"
-hash = "66383ca98dbd432c799196d4cdf81e3d3a00efb26eeb6ffe31f5f6210bde3a57"
+hash = "78e4e41717a02535bc3f959927f26e5cc46a89433b53f17c930ef96b39b2d09b"
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
@@ -25,28 +25,28 @@ file = "config/minecolonies-server.toml"
 hash = "ef52aacac2654ba4143f9d05c60c528938191fcee74410a73f7e04fedbc21990"
 
 [[files]]
-file = "config/puffish_skills/config.json"
-hash = "bf73ccff24326bf3caeb9e434d02fb2c31556105ded9ebe782ac11a3db4a6836"
-
-[[files]]
-file = "config/puffish_skills/farming/category.json"
+file = "config/puffish_skills/categories/farming/category.json"
 hash = "0036887cae9ab93f171195471ac65439590ed4b0dd5da883b540436fdeb2e1f5"
 
 [[files]]
-file = "config/puffish_skills/farming/connections.json"
+file = "config/puffish_skills/categories/farming/connections.json"
 hash = "05ae623b583fe24be25833d6f001d743e314f6cfd721ac54e5f2e9a4942414f8"
 
 [[files]]
-file = "config/puffish_skills/farming/definitions.json"
+file = "config/puffish_skills/categories/farming/definitions.json"
 hash = "999bad4e59cd51a297f14d66989a291bfa5ba8e1849973305ee5358899dffc33"
 
 [[files]]
-file = "config/puffish_skills/farming/experience.json"
+file = "config/puffish_skills/categories/farming/experience.json"
 hash = "7ce740f8fe92fc03d4623f003ac9468582e2c967917279f84d5a6c2312610eeb"
 
 [[files]]
-file = "config/puffish_skills/farming/skills.json"
+file = "config/puffish_skills/categories/farming/skills.json"
 hash = "c3e7aa530497447b8a5e557d7e285aa7db3e5e25064536a0b7b3b169563d3682"
+
+[[files]]
+file = "config/puffish_skills/config.json"
+hash = "bf73ccff24326bf3caeb9e434d02fb2c31556105ded9ebe782ac11a3db4a6836"
 
 [[files]]
 file = "mods/ambient-environment.pw.toml"
@@ -146,6 +146,11 @@ metafile = true
 [[files]]
 file = "mods/continents.pw.toml"
 hash = "2093cb1975cff3c2e584282bc19340d1d7567dc61c86a0461adce0066d6e3a62"
+metafile = true
+
+[[files]]
+file = "mods/controlling.pw.toml"
+hash = "65c8086d2ec3d39acc7bd36c7a0306ccc43b602b38fa07d13291bc478ef7dfff"
 metafile = true
 
 [[files]]
@@ -751,6 +756,11 @@ metafile = true
 [[files]]
 file = "mods/sable.pw.toml"
 hash = "2b4fb5e3d16d30b59be78c4efc3dd7b7c3066e6486ef0c99fb32af510ffc308a"
+metafile = true
+
+[[files]]
+file = "mods/searchables.pw.toml"
+hash = "ce9ddada6ffd55a512149cc474c6a453281a997a5fdf1b7b4a2cc73f875e704a"
 metafile = true
 
 [[files]]
