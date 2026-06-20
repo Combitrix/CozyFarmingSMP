@@ -743,11 +743,6 @@ hash = "6bc414cc0f2d4c078fe83f384d786343f701f371d657c5279b5b0df1595804bd"
 metafile = true
 
 [[files]]
-file = "mods/mrcrayfishs-furniture-mod-tools-refurbished.pw.toml"
-hash = "0d46e9913b8cf5ab71bb68d2f402432a4360c7b44d6e0b9c093c2a4a8f5f80f8"
-metafile = true
-
-[[files]]
 file = "mods/multi-piston.pw.toml"
 hash = "bc9449306cb2c32f16347779291d68e5fba67f85d7aca04b4b9cc1c033ec4083"
 metafile = true
@@ -985,6 +980,10 @@ metafile = true
 file = "resourcepacks/corail_tombstone_redrawn.pw.toml"
 hash = "d06f70f5329c51b540652fe29a5f8d66ac8ddd711a3b45f5e3fb748fd3c9d4fe"
 metafile = true
+
+[[files]]
+file = "servers.dat"
+hash = "5fe6b9064f062acc477ce0ac29167bd50239d1e8a55d40c5b390a80ba44c286f"
 
 [[files]]
 file = "shaderpacks/bsl-shaders.pw.toml"
