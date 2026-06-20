@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "EXCLUDED.md"
-hash = "5c51b2e1eb706e399b9a5710635a2519ad55464cba66a0cc556d9b1fda3fb6a1"
+hash = "56a0dafedc311fdf1fe7d9aff01152b7878e0724751d3a7f5e211afede191c52"
 
 [[files]]
 file = "README.md"
@@ -740,11 +740,6 @@ metafile = true
 [[files]]
 file = "mods/mmlib.pw.toml"
 hash = "65db1262f3d0823a0795b8b38328c0eceeb4632892f7c168e3c8e6abf4638735"
-metafile = true
-
-[[files]]
-file = "mods/modern-ui.pw.toml"
-hash = "1a4bbd8ae2d938b514eee771d68e531a9b1acd6f65bf759fd18e7977aff23baa"
 metafile = true
 
 [[files]]
