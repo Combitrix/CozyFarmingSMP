@@ -44,3 +44,15 @@ Tiere/Atmosphäre: critters-and-companions, companions-dogfolk, ribbits (+yungs-
 - **create-applied-kinetics** — harter Crash beim Start: braucht **Applied Energistics 2** (`appeng.block.AEBaseEntityBlock`), das NICHT installiert ist (auf Modrinth nicht als *required* deklariert → Auto-Audit verfehlte es). AE2 ist bewusst **nicht** im Pack (Cozy-Farming-Fokus, kein schweres Tech-Storage). Bridge-Mod daher entfernt.
 
 - **kubejs-create** — Server-Crash beim Laden: `IllegalArgumentException: Wrapper for class …ProcessingOutput already exists!` (KubeJS-Create-Bug, doppelte Wrapper-Registrierung). Entfernt; KubeJS + Rhino bleiben. Create-Maschinen-Rezepte erst mit kompatibler Version wieder möglich.
+
+- **bluemap** — beim Servertest gecrasht; auf Wunsch komplett entfernt. Geteilte Web-Karte läuft stattdessen über **squaremap** (leichter, 2D). BlueMap-Config (`config/bluemap/`) ebenfalls entfernt.
+
+## 🔄 Großer Umbau 0.10.0
+- **Rezept-Viewer:** EMI → **JEI** (+ JER, Just Enough Professions/Breeding, NERB, JEED).
+- **Coin-System entfernt** (Magic Coins + Create: Numismatics) — Quests geben jetzt XP; Wirtschaft via Vanilla-Smaragde/Villager.
+- **KubeJS-Rezepte entfernt** (funktionierten nicht); KubeJS+Rhino raus.
+- **Inventory Profiles Next entfernt** (unerwünscht) → MouseTweaks + CraftingTweaks; libipn raus.
+- **squaremap entfernt** (Render-NPE durch Bountiful-Fares-getMapColor-Mixin), **BlueMap entfernt** (Server-Crash).
+- **LambDynamicLights → sodium-dynamic-lights** (LambDL verlangte fabric-api auf NeoForge).
+- **ambient-environment + falling-leaves entfernt** (Partikel in Menüs).
+- **Alex's Mobs / Fast-Leaf-Decay(Modrinth) / Continuity:** nicht für 1.21.1-NeoForge verfügbar — Fast Leaf Decay via CurseForge ergänzt; Continuity-Ersatz = Athena (CTM, via Chipped).

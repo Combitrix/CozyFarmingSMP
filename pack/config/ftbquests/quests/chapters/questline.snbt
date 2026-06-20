@@ -51,12 +51,8 @@
 				}
 				{
 					id: "4C0F00000000006E"
-					item: {
-						count: 1
-						id: "magic_coins:silver_coin"
-					}
-					type: "item"
-					count: 10
+					type: "xp"
+					xp: 10
 				}
 				{
 					id: "4C0F00000000006F"
@@ -103,12 +99,8 @@
 				}
 				{
 					id: "4C0F000000000072"
-					item: {
-						count: 1
-						id: "magic_coins:silver_coin"
-					}
-					type: "item"
-					count: 5
+					type: "xp"
+					xp: 5
 				}
 			]
 		}
@@ -310,12 +302,8 @@
 				}
 				{
 					id: "4C0F00000000007C"
-					item: {
-						count: 1
-						id: "magic_coins:silver_coin"
-					}
-					type: "item"
-					count: 15
+					type: "xp"
+					xp: 15
 				}
 				{
 					id: "4C0F00000000007D"
@@ -378,11 +366,8 @@
 				}
 				{
 					id: "4C0F000000000082"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
+					type: "xp"
+					xp: 8
 				}
 				{
 					id: "4C0F000000000083"
@@ -421,12 +406,8 @@
 			rewards: [
 				{
 					id: "4C0F000000000085"
-					item: {
-						count: 1
-						id: "magic_coins:silver_coin"
-					}
-					type: "item"
-					count: 15
+					type: "xp"
+					xp: 15
 				}
 				{
 					id: "4C0F000000000086"
@@ -511,12 +492,8 @@
 				}
 				{
 					id: "4C0F00000000008B"
-					item: {
-						count: 1
-						id: "magic_coins:silver_coin"
-					}
-					type: "item"
-					count: 15
+					type: "xp"
+					xp: 15
 				}
 				{
 					id: "4C0F00000000008C"
@@ -573,12 +550,8 @@
 				}
 				{
 					id: "4C0F000000000090"
-					item: {
-						count: 1
-						id: "magic_coins:silver_coin"
-					}
-					type: "item"
-					count: 15
+					type: "xp"
+					xp: 15
 				}
 				{
 					id: "4C0F000000000091"
@@ -628,12 +601,8 @@
 				}
 				{
 					id: "4C0F0000000000A7"
-					item: {
-						count: 1
-						id: "magic_coins:silver_coin"
-					}
-					type: "item"
-					count: 15
+					type: "xp"
+					xp: 15
 				}
 				{
 					id: "4C0F0000000000A8"
@@ -671,12 +640,8 @@
 			rewards: [
 				{
 					id: "4C0F0000000000AA"
-					item: {
-						count: 1
-						id: "magic_coins:silver_coin"
-					}
-					type: "item"
-					count: 10
+					type: "xp"
+					xp: 10
 				}
 				{
 					id: "4C0F0000000000AB"
@@ -714,12 +679,8 @@
 			rewards: [
 				{
 					id: "4C0F0000000000AD"
-					item: {
-						count: 1
-						id: "magic_coins:silver_coin"
-					}
-					type: "item"
-					count: 10
+					type: "xp"
+					xp: 10
 				}
 				{
 					id: "4C0F0000000000AE"
@@ -757,12 +718,8 @@
 			rewards: [
 				{
 					id: "4C0F0000000000B0"
-					item: {
-						count: 1
-						id: "magic_coins:silver_coin"
-					}
-					type: "item"
-					count: 10
+					type: "xp"
+					xp: 10
 				}
 				{
 					id: "4C0F0000000000B1"
@@ -801,12 +758,8 @@
 			rewards: [
 				{
 					id: "4C0F0000000000B3"
-					item: {
-						count: 1
-						id: "magic_coins:silver_coin"
-					}
-					type: "item"
-					count: 15
+					type: "xp"
+					xp: 15
 				}
 				{
 					id: "4C0F0000000000B4"
@@ -854,11 +807,8 @@
 				}
 				{
 					id: "4C0F0000000000B7"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
+					type: "xp"
+					xp: 8
 				}
 				{
 					id: "4C0F0000000000B8"
@@ -897,12 +847,8 @@
 			rewards: [
 				{
 					id: "4C0F0000000000BA"
-					item: {
-						count: 1
-						id: "magic_coins:silver_coin"
-					}
-					type: "item"
-					count: 15
+					type: "xp"
+					xp: 15
 				}
 				{
 					id: "4C0F0000000000BB"
@@ -940,12 +886,8 @@
 			rewards: [
 				{
 					id: "4C0F0000000000BD"
-					item: {
-						count: 1
-						id: "magic_coins:silver_coin"
-					}
-					type: "item"
-					count: 15
+					type: "xp"
+					xp: 15
 				}
 				{
 					id: "4C0F0000000000BE"
@@ -982,11 +924,8 @@
 			rewards: [
 				{
 					id: "4C0F0000000000C0"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
+					type: "xp"
+					xp: 8
 				}
 				{
 					id: "4C0F0000000000C1"
@@ -1023,12 +962,8 @@
 			rewards: [
 				{
 					id: "4C0F0000000000C3"
-					item: {
-						count: 1
-						id: "magic_coins:silver_coin"
-					}
-					type: "item"
-					count: 10
+					type: "xp"
+					xp: 10
 				}
 				{
 					id: "4C0F0000000000C4"
@@ -1068,12 +1003,8 @@
 			rewards: [
 				{
 					id: "4C0F0000000000C6"
-					item: {
-						count: 1
-						id: "magic_coins:silver_coin"
-					}
-					type: "item"
-					count: 15
+					type: "xp"
+					xp: 15
 				}
 				{
 					id: "4C0F0000000000C7"
@@ -1111,12 +1042,8 @@
 			rewards: [
 				{
 					id: "4C0F0000000000C9"
-					item: {
-						count: 1
-						id: "magic_coins:silver_coin"
-					}
-					type: "item"
-					count: 15
+					type: "xp"
+					xp: 15
 				}
 				{
 					id: "4C0F0000000000CA"
@@ -1155,11 +1082,8 @@
 			rewards: [
 				{
 					id: "4C0F0000000000CC"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
+					type: "xp"
+					xp: 8
 				}
 				{
 					id: "4C0F0000000000CD"
@@ -1197,12 +1121,8 @@
 			rewards: [
 				{
 					id: "4C0F0000000000CF"
-					item: {
-						count: 1
-						id: "magic_coins:silver_coin"
-					}
-					type: "item"
-					count: 15
+					type: "xp"
+					xp: 15
 				}
 				{
 					id: "4C0F0000000000D0"
@@ -1240,12 +1160,8 @@
 			rewards: [
 				{
 					id: "4C0F0000000000D2"
-					item: {
-						count: 1
-						id: "magic_coins:silver_coin"
-					}
-					type: "item"
-					count: 15
+					type: "xp"
+					xp: 15
 				}
 				{
 					id: "4C0F0000000000D3"
@@ -1283,12 +1199,8 @@
 			rewards: [
 				{
 					id: "4C0F0000000000D5"
-					item: {
-						count: 1
-						id: "magic_coins:silver_coin"
-					}
-					type: "item"
-					count: 15
+					type: "xp"
+					xp: 15
 				}
 				{
 					id: "4C0F0000000000D6"
@@ -1327,12 +1239,8 @@
 			rewards: [
 				{
 					id: "4C0F0000000000D8"
-					item: {
-						count: 1
-						id: "magic_coins:silver_coin"
-					}
-					type: "item"
-					count: 15
+					type: "xp"
+					xp: 15
 				}
 				{
 					id: "4C0F0000000000D9"
@@ -1370,12 +1278,8 @@
 			rewards: [
 				{
 					id: "4C0F0000000000DB"
-					item: {
-						count: 1
-						id: "magic_coins:silver_coin"
-					}
-					type: "item"
-					count: 15
+					type: "xp"
+					xp: 15
 				}
 				{
 					id: "4C0F0000000000DC"
@@ -1413,12 +1317,8 @@
 			rewards: [
 				{
 					id: "4C0F0000000000DE"
-					item: {
-						count: 1
-						id: "magic_coins:silver_coin"
-					}
-					type: "item"
-					count: 15
+					type: "xp"
+					xp: 15
 				}
 				{
 					id: "4C0F0000000000DF"
@@ -1456,12 +1356,8 @@
 			rewards: [
 				{
 					id: "4C0F0000000000E1"
-					item: {
-						count: 1
-						id: "magic_coins:silver_coin"
-					}
-					type: "item"
-					count: 15
+					type: "xp"
+					xp: 15
 				}
 				{
 					id: "4C0F0000000000E2"
@@ -1499,11 +1395,8 @@
 			rewards: [
 				{
 					id: "4C0F0000000000E4"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
+					type: "xp"
+					xp: 8
 				}
 				{
 					id: "4C0F0000000000E5"
@@ -1545,12 +1438,8 @@
 			rewards: [
 				{
 					id: "4C0F0000000000E7"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
-					count: 3
+					type: "xp"
+					xp: 24
 				}
 				{
 					id: "4C0F0000000000E8"
@@ -1592,12 +1481,8 @@
 			rewards: [
 				{
 					id: "4C0F0000000000EA"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
-					count: 3
+					type: "xp"
+					xp: 24
 				}
 				{
 					id: "4C0F0000000000EB"
@@ -1636,12 +1521,8 @@
 			rewards: [
 				{
 					id: "4C0F0000000000ED"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
-					count: 2
+					type: "xp"
+					xp: 16
 				}
 				{
 					id: "4C0F0000000000EE"
@@ -1697,12 +1578,8 @@
 				}
 				{
 					id: "4C0F000000000095"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
-					count: 2
+					type: "xp"
+					xp: 16
 				}
 				{
 					id: "4C0F000000000096"
@@ -1749,12 +1626,8 @@
 				}
 				{
 					id: "4C0F000000000099"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
-					count: 2
+					type: "xp"
+					xp: 16
 				}
 				{
 					id: "4C0F00000000009A"
@@ -1801,12 +1674,8 @@
 			rewards: [
 				{
 					id: "4C0F00000000009D"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
-					count: 3
+					type: "xp"
+					xp: 24
 				}
 				{
 					id: "4C0F00000000009E"
@@ -1845,12 +1714,8 @@
 			rewards: [
 				{
 					id: "4C0F0000000000A0"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
-					count: 5
+					type: "xp"
+					xp: 40
 				}
 				{
 					id: "4C0F0000000000A1"
@@ -1890,12 +1755,8 @@
 			rewards: [
 				{
 					id: "4C0F0000000000A3"
-					item: {
-						count: 1
-						id: "magic_coins:silver_coin"
-					}
-					type: "item"
-					count: 20
+					type: "xp"
+					xp: 20
 				}
 				{
 					id: "4C0F0000000000A4"
@@ -1905,7 +1766,7 @@
 			]
 		}
 		{
-			id: "4C0F0000000001BD"
+			id: "4C0F0000000001B6"
 			x: 17.0d
 			y: 1.0d
 			title: "Eine wachsende Kolonie"
@@ -1925,7 +1786,7 @@
 			]
 			tasks: [
 				{
-					id: "4C0F0000000001ED"
+					id: "4C0F0000000001E6"
 					item: {
 						count: 1
 						id: "minecolonies:blockhutwarehouse"
@@ -1935,23 +1796,19 @@
 			]
 			rewards: [
 				{
-					id: "4C0F0000000001EE"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
-					count: 2
+					id: "4C0F0000000001E7"
+					type: "xp"
+					xp: 16
 				}
 				{
-					id: "4C0F0000000001EF"
+					id: "4C0F0000000001E8"
 					type: "xp"
 					xp: 25
 				}
 			]
 		}
 		{
-			id: "4C0F0000000001BE"
+			id: "4C0F0000000001B7"
 			x: 8.0d
 			y: 4.5d
 			title: "Lagerhaus  §8(Logistik \\& Lager)"
@@ -1966,11 +1823,11 @@
 				"&7Kategorie: Logistik \\& Lager."
 			]
 			dependencies: [
-				"4C0F0000000001BD"
+				"4C0F0000000001B6"
 			]
 			tasks: [
 				{
-					id: "4C0F0000000001F0"
+					id: "4C0F0000000001E9"
 					item: {
 						count: 1
 						id: "minecolonies:blockhutwarehouse"
@@ -1980,23 +1837,19 @@
 			]
 			rewards: [
 				{
-					id: "4C0F0000000001F1"
-					item: {
-						count: 1
-						id: "magic_coins:silver_coin"
-					}
-					type: "item"
-					count: 10
+					id: "4C0F0000000001EA"
+					type: "xp"
+					xp: 10
 				}
 				{
-					id: "4C0F0000000001F2"
+					id: "4C0F0000000001EB"
 					type: "xp"
 					xp: 12
 				}
 			]
 		}
 		{
-			id: "4C0F0000000001BF"
+			id: "4C0F0000000001B8"
 			x: 8.0d
 			y: 6.0d
 			title: "Bote"
@@ -2009,11 +1862,11 @@
 				"&7Kategorie: Logistik \\& Lager."
 			]
 			dependencies: [
-				"4C0F0000000001BE"
+				"4C0F0000000001B7"
 			]
 			tasks: [
 				{
-					id: "4C0F0000000001F3"
+					id: "4C0F0000000001EC"
 					item: {
 						count: 1
 						id: "minecolonies:blockhutdeliveryman"
@@ -2023,22 +1876,19 @@
 			]
 			rewards: [
 				{
-					id: "4C0F0000000001F4"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
+					id: "4C0F0000000001ED"
+					type: "xp"
+					xp: 8
 				}
 				{
-					id: "4C0F0000000001F5"
+					id: "4C0F0000000001EE"
 					type: "xp"
 					xp: 12
 				}
 			]
 		}
 		{
-			id: "4C0F0000000001C0"
+			id: "4C0F0000000001B9"
 			x: 11.0d
 			y: 4.5d
 			title: "Holzfäller  §8(Rohstoffe)"
@@ -2053,11 +1903,11 @@
 				"&7Kategorie: Rohstoffe."
 			]
 			dependencies: [
-				"4C0F0000000001BD"
+				"4C0F0000000001B6"
 			]
 			tasks: [
 				{
-					id: "4C0F0000000001F6"
+					id: "4C0F0000000001EF"
 					item: {
 						count: 1
 						id: "minecolonies:blockhutlumberjack"
@@ -2067,23 +1917,19 @@
 			]
 			rewards: [
 				{
-					id: "4C0F0000000001F7"
-					item: {
-						count: 1
-						id: "magic_coins:silver_coin"
-					}
-					type: "item"
-					count: 10
+					id: "4C0F0000000001F0"
+					type: "xp"
+					xp: 10
 				}
 				{
-					id: "4C0F0000000001F8"
+					id: "4C0F0000000001F1"
 					type: "xp"
 					xp: 12
 				}
 			]
 		}
 		{
-			id: "4C0F0000000001C1"
+			id: "4C0F0000000001BA"
 			x: 11.0d
 			y: 6.0d
 			title: "Bergmann"
@@ -2096,11 +1942,11 @@
 				"&7Kategorie: Rohstoffe."
 			]
 			dependencies: [
-				"4C0F0000000001C0"
+				"4C0F0000000001B9"
 			]
 			tasks: [
 				{
-					id: "4C0F0000000001F9"
+					id: "4C0F0000000001F2"
 					item: {
 						count: 1
 						id: "minecolonies:blockhutminer"
@@ -2110,23 +1956,19 @@
 			]
 			rewards: [
 				{
-					id: "4C0F0000000001FA"
-					item: {
-						count: 1
-						id: "magic_coins:silver_coin"
-					}
-					type: "item"
-					count: 10
+					id: "4C0F0000000001F3"
+					type: "xp"
+					xp: 10
 				}
 				{
-					id: "4C0F0000000001FB"
+					id: "4C0F0000000001F4"
 					type: "xp"
 					xp: 12
 				}
 			]
 		}
 		{
-			id: "4C0F0000000001C2"
+			id: "4C0F0000000001BB"
 			x: 11.0d
 			y: 7.5d
 			title: "Fischer"
@@ -2139,11 +1981,11 @@
 				"&7Kategorie: Rohstoffe."
 			]
 			dependencies: [
-				"4C0F0000000001C1"
+				"4C0F0000000001BA"
 			]
 			tasks: [
 				{
-					id: "4C0F0000000001FC"
+					id: "4C0F0000000001F5"
 					item: {
 						count: 1
 						id: "minecolonies:blockhutfisherman"
@@ -2153,23 +1995,19 @@
 			]
 			rewards: [
 				{
-					id: "4C0F0000000001FD"
-					item: {
-						count: 1
-						id: "magic_coins:silver_coin"
-					}
-					type: "item"
-					count: 10
+					id: "4C0F0000000001F6"
+					type: "xp"
+					xp: 10
 				}
 				{
-					id: "4C0F0000000001FE"
+					id: "4C0F0000000001F7"
 					type: "xp"
 					xp: 12
 				}
 			]
 		}
 		{
-			id: "4C0F0000000001C3"
+			id: "4C0F0000000001BC"
 			x: 11.0d
 			y: 9.0d
 			title: "Steinmetz"
@@ -2182,11 +2020,11 @@
 				"&7Kategorie: Rohstoffe."
 			]
 			dependencies: [
-				"4C0F0000000001C2"
+				"4C0F0000000001BB"
 			]
 			tasks: [
 				{
-					id: "4C0F0000000001FF"
+					id: "4C0F0000000001F8"
 					item: {
 						count: 1
 						id: "minecolonies:blockhutstonemason"
@@ -2196,22 +2034,19 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000200"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
+					id: "4C0F0000000001F9"
+					type: "xp"
+					xp: 8
 				}
 				{
-					id: "4C0F000000000201"
+					id: "4C0F0000000001FA"
 					type: "xp"
 					xp: 12
 				}
 			]
 		}
 		{
-			id: "4C0F0000000001C4"
+			id: "4C0F0000000001BD"
 			x: 11.0d
 			y: 10.5d
 			title: "Sägewerk"
@@ -2224,11 +2059,11 @@
 				"&7Kategorie: Rohstoffe."
 			]
 			dependencies: [
-				"4C0F0000000001C3"
+				"4C0F0000000001BC"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000202"
+					id: "4C0F0000000001FB"
 					item: {
 						count: 1
 						id: "minecolonies:blockhutsawmill"
@@ -2238,22 +2073,19 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000203"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
+					id: "4C0F0000000001FC"
+					type: "xp"
+					xp: 8
 				}
 				{
-					id: "4C0F000000000204"
+					id: "4C0F0000000001FD"
 					type: "xp"
 					xp: 12
 				}
 			]
 		}
 		{
-			id: "4C0F0000000001C5"
+			id: "4C0F0000000001BE"
 			x: 11.0d
 			y: 12.0d
 			title: "Schmelze"
@@ -2266,11 +2098,11 @@
 				"&7Kategorie: Rohstoffe."
 			]
 			dependencies: [
-				"4C0F0000000001C4"
+				"4C0F0000000001BD"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000205"
+					id: "4C0F0000000001FE"
 					item: {
 						count: 1
 						id: "minecolonies:blockhutsmeltery"
@@ -2280,22 +2112,19 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000206"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
+					id: "4C0F0000000001FF"
+					type: "xp"
+					xp: 8
 				}
 				{
-					id: "4C0F000000000207"
+					id: "4C0F000000000200"
 					type: "xp"
 					xp: 12
 				}
 			]
 		}
 		{
-			id: "4C0F0000000001C6"
+			id: "4C0F0000000001BF"
 			x: 11.0d
 			y: 13.5d
 			title: "Steinschmelze"
@@ -2308,11 +2137,11 @@
 				"&7Kategorie: Rohstoffe."
 			]
 			dependencies: [
-				"4C0F0000000001C5"
+				"4C0F0000000001BE"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000208"
+					id: "4C0F000000000201"
 					item: {
 						count: 1
 						id: "minecolonies:blockhutstonesmeltery"
@@ -2322,22 +2151,19 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000209"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
+					id: "4C0F000000000202"
+					type: "xp"
+					xp: 8
 				}
 				{
-					id: "4C0F00000000020A"
+					id: "4C0F000000000203"
 					type: "xp"
 					xp: 12
 				}
 			]
 		}
 		{
-			id: "4C0F0000000001C7"
+			id: "4C0F0000000001C0"
 			x: 14.0d
 			y: 4.5d
 			title: "Bauernhof  §8(Nahrung \\& Tiere)"
@@ -2352,11 +2178,11 @@
 				"&7Kategorie: Nahrung \\& Tiere."
 			]
 			dependencies: [
-				"4C0F0000000001BD"
+				"4C0F0000000001B6"
 			]
 			tasks: [
 				{
-					id: "4C0F00000000020B"
+					id: "4C0F000000000204"
 					item: {
 						count: 1
 						id: "minecolonies:blockhutfarmer"
@@ -2366,23 +2192,19 @@
 			]
 			rewards: [
 				{
-					id: "4C0F00000000020C"
-					item: {
-						count: 1
-						id: "magic_coins:silver_coin"
-					}
-					type: "item"
-					count: 10
+					id: "4C0F000000000205"
+					type: "xp"
+					xp: 10
 				}
 				{
-					id: "4C0F00000000020D"
+					id: "4C0F000000000206"
 					type: "xp"
 					xp: 12
 				}
 			]
 		}
 		{
-			id: "4C0F0000000001C8"
+			id: "4C0F0000000001C1"
 			x: 14.0d
 			y: 6.0d
 			title: "Feld"
@@ -2395,11 +2217,11 @@
 				"&7Kategorie: Nahrung \\& Tiere."
 			]
 			dependencies: [
-				"4C0F0000000001C7"
+				"4C0F0000000001C0"
 			]
 			tasks: [
 				{
-					id: "4C0F00000000020E"
+					id: "4C0F000000000207"
 					item: {
 						count: 1
 						id: "minecolonies:blockhutfield"
@@ -2409,23 +2231,19 @@
 			]
 			rewards: [
 				{
-					id: "4C0F00000000020F"
-					item: {
-						count: 1
-						id: "magic_coins:silver_coin"
-					}
-					type: "item"
-					count: 10
+					id: "4C0F000000000208"
+					type: "xp"
+					xp: 10
 				}
 				{
-					id: "4C0F000000000210"
+					id: "4C0F000000000209"
 					type: "xp"
 					xp: 12
 				}
 			]
 		}
 		{
-			id: "4C0F0000000001C9"
+			id: "4C0F0000000001C2"
 			x: 14.0d
 			y: 7.5d
 			title: "Küche"
@@ -2438,11 +2256,11 @@
 				"&7Kategorie: Nahrung \\& Tiere."
 			]
 			dependencies: [
-				"4C0F0000000001C8"
+				"4C0F0000000001C1"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000211"
+					id: "4C0F00000000020A"
 					item: {
 						count: 1
 						id: "minecolonies:blockhutkitchen"
@@ -2452,23 +2270,19 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000212"
-					item: {
-						count: 1
-						id: "magic_coins:silver_coin"
-					}
-					type: "item"
-					count: 10
+					id: "4C0F00000000020B"
+					type: "xp"
+					xp: 10
 				}
 				{
-					id: "4C0F000000000213"
+					id: "4C0F00000000020C"
 					type: "xp"
 					xp: 12
 				}
 			]
 		}
 		{
-			id: "4C0F0000000001CA"
+			id: "4C0F0000000001C3"
 			x: 14.0d
 			y: 9.0d
 			title: "Bäckerei"
@@ -2481,11 +2295,11 @@
 				"&7Kategorie: Nahrung \\& Tiere."
 			]
 			dependencies: [
-				"4C0F0000000001C9"
+				"4C0F0000000001C2"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000214"
+					id: "4C0F00000000020D"
 					item: {
 						count: 1
 						id: "minecolonies:blockhutbaker"
@@ -2495,22 +2309,19 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000215"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
+					id: "4C0F00000000020E"
+					type: "xp"
+					xp: 8
 				}
 				{
-					id: "4C0F000000000216"
+					id: "4C0F00000000020F"
 					type: "xp"
 					xp: 12
 				}
 			]
 		}
 		{
-			id: "4C0F0000000001CB"
+			id: "4C0F0000000001C4"
 			x: 14.0d
 			y: 10.5d
 			title: "Rinderfarm"
@@ -2523,11 +2334,11 @@
 				"&7Kategorie: Nahrung \\& Tiere."
 			]
 			dependencies: [
-				"4C0F0000000001CA"
+				"4C0F0000000001C3"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000217"
+					id: "4C0F000000000210"
 					item: {
 						count: 1
 						id: "minecolonies:blockhutcowboy"
@@ -2537,22 +2348,19 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000218"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
+					id: "4C0F000000000211"
+					type: "xp"
+					xp: 8
 				}
 				{
-					id: "4C0F000000000219"
+					id: "4C0F000000000212"
 					type: "xp"
 					xp: 12
 				}
 			]
 		}
 		{
-			id: "4C0F0000000001CC"
+			id: "4C0F0000000001C5"
 			x: 14.0d
 			y: 12.0d
 			title: "Schäferei"
@@ -2565,11 +2373,11 @@
 				"&7Kategorie: Nahrung \\& Tiere."
 			]
 			dependencies: [
-				"4C0F0000000001CB"
+				"4C0F0000000001C4"
 			]
 			tasks: [
 				{
-					id: "4C0F00000000021A"
+					id: "4C0F000000000213"
 					item: {
 						count: 1
 						id: "minecolonies:blockhutshepherd"
@@ -2579,22 +2387,19 @@
 			]
 			rewards: [
 				{
-					id: "4C0F00000000021B"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
+					id: "4C0F000000000214"
+					type: "xp"
+					xp: 8
 				}
 				{
-					id: "4C0F00000000021C"
+					id: "4C0F000000000215"
 					type: "xp"
 					xp: 12
 				}
 			]
 		}
 		{
-			id: "4C0F0000000001CD"
+			id: "4C0F0000000001C6"
 			x: 14.0d
 			y: 13.5d
 			title: "Schweinefarm"
@@ -2607,11 +2412,11 @@
 				"&7Kategorie: Nahrung \\& Tiere."
 			]
 			dependencies: [
-				"4C0F0000000001CC"
+				"4C0F0000000001C5"
 			]
 			tasks: [
 				{
-					id: "4C0F00000000021D"
+					id: "4C0F000000000216"
 					item: {
 						count: 1
 						id: "minecolonies:blockhutswineherder"
@@ -2621,22 +2426,19 @@
 			]
 			rewards: [
 				{
-					id: "4C0F00000000021E"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
+					id: "4C0F000000000217"
+					type: "xp"
+					xp: 8
 				}
 				{
-					id: "4C0F00000000021F"
+					id: "4C0F000000000218"
 					type: "xp"
 					xp: 12
 				}
 			]
 		}
 		{
-			id: "4C0F0000000001CE"
+			id: "4C0F0000000001C7"
 			x: 14.0d
 			y: 15.0d
 			title: "Hühnerfarm"
@@ -2649,11 +2451,11 @@
 				"&7Kategorie: Nahrung \\& Tiere."
 			]
 			dependencies: [
-				"4C0F0000000001CD"
+				"4C0F0000000001C6"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000220"
+					id: "4C0F000000000219"
 					item: {
 						count: 1
 						id: "minecolonies:blockhutchickenherder"
@@ -2663,22 +2465,19 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000221"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
+					id: "4C0F00000000021A"
+					type: "xp"
+					xp: 8
 				}
 				{
-					id: "4C0F000000000222"
+					id: "4C0F00000000021B"
 					type: "xp"
 					xp: 12
 				}
 			]
 		}
 		{
-			id: "4C0F0000000001CF"
+			id: "4C0F0000000001C8"
 			x: 14.0d
 			y: 16.5d
 			title: "Kaninchenstall"
@@ -2691,11 +2490,11 @@
 				"&7Kategorie: Nahrung \\& Tiere."
 			]
 			dependencies: [
-				"4C0F0000000001CE"
+				"4C0F0000000001C7"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000223"
+					id: "4C0F00000000021C"
 					item: {
 						count: 1
 						id: "minecolonies:blockhutrabbithutch"
@@ -2705,22 +2504,19 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000224"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
+					id: "4C0F00000000021D"
+					type: "xp"
+					xp: 8
 				}
 				{
-					id: "4C0F000000000225"
+					id: "4C0F00000000021E"
 					type: "xp"
 					xp: 12
 				}
 			]
 		}
 		{
-			id: "4C0F0000000001D0"
+			id: "4C0F0000000001C9"
 			x: 14.0d
 			y: 18.0d
 			title: "Imkerei"
@@ -2733,11 +2529,11 @@
 				"&7Kategorie: Nahrung \\& Tiere."
 			]
 			dependencies: [
-				"4C0F0000000001CF"
+				"4C0F0000000001C8"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000226"
+					id: "4C0F00000000021F"
 					item: {
 						count: 1
 						id: "minecolonies:blockhutbeekeeper"
@@ -2747,22 +2543,19 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000227"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
+					id: "4C0F000000000220"
+					type: "xp"
+					xp: 8
 				}
 				{
-					id: "4C0F000000000228"
+					id: "4C0F000000000221"
 					type: "xp"
 					xp: 12
 				}
 			]
 		}
 		{
-			id: "4C0F0000000001D1"
+			id: "4C0F0000000001CA"
 			x: 14.0d
 			y: 19.5d
 			title: "Plantage"
@@ -2775,11 +2568,11 @@
 				"&7Kategorie: Nahrung \\& Tiere."
 			]
 			dependencies: [
-				"4C0F0000000001D0"
+				"4C0F0000000001C9"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000229"
+					id: "4C0F000000000222"
 					item: {
 						count: 1
 						id: "minecolonies:blockhutplantation"
@@ -2789,22 +2582,19 @@
 			]
 			rewards: [
 				{
-					id: "4C0F00000000022A"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
+					id: "4C0F000000000223"
+					type: "xp"
+					xp: 8
 				}
 				{
-					id: "4C0F00000000022B"
+					id: "4C0F000000000224"
 					type: "xp"
 					xp: 12
 				}
 			]
 		}
 		{
-			id: "4C0F0000000001D2"
+			id: "4C0F0000000001CB"
 			x: 14.0d
 			y: 21.0d
 			title: "Plantagen-Feld"
@@ -2817,11 +2607,11 @@
 				"&7Kategorie: Nahrung \\& Tiere."
 			]
 			dependencies: [
-				"4C0F0000000001D1"
+				"4C0F0000000001CA"
 			]
 			tasks: [
 				{
-					id: "4C0F00000000022C"
+					id: "4C0F000000000225"
 					item: {
 						count: 1
 						id: "minecolonies:blockhutplantationfield"
@@ -2831,22 +2621,19 @@
 			]
 			rewards: [
 				{
-					id: "4C0F00000000022D"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
+					id: "4C0F000000000226"
+					type: "xp"
+					xp: 8
 				}
 				{
-					id: "4C0F00000000022E"
+					id: "4C0F000000000227"
 					type: "xp"
 					xp: 12
 				}
 			]
 		}
 		{
-			id: "4C0F0000000001D3"
+			id: "4C0F0000000001CC"
 			x: 14.0d
 			y: 22.5d
 			title: "Blumenladen"
@@ -2859,11 +2646,11 @@
 				"&7Kategorie: Nahrung \\& Tiere."
 			]
 			dependencies: [
-				"4C0F0000000001D2"
+				"4C0F0000000001CB"
 			]
 			tasks: [
 				{
-					id: "4C0F00000000022F"
+					id: "4C0F000000000228"
 					item: {
 						count: 1
 						id: "minecolonies:blockhutflorist"
@@ -2873,22 +2660,19 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000230"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
+					id: "4C0F000000000229"
+					type: "xp"
+					xp: 8
 				}
 				{
-					id: "4C0F000000000231"
+					id: "4C0F00000000022A"
 					type: "xp"
 					xp: 12
 				}
 			]
 		}
 		{
-			id: "4C0F0000000001D4"
+			id: "4C0F0000000001CD"
 			x: 14.0d
 			y: 24.0d
 			title: "Komposter"
@@ -2901,11 +2685,11 @@
 				"&7Kategorie: Nahrung \\& Tiere."
 			]
 			dependencies: [
-				"4C0F0000000001D3"
+				"4C0F0000000001CC"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000232"
+					id: "4C0F00000000022B"
 					item: {
 						count: 1
 						id: "minecolonies:blockhutcomposter"
@@ -2915,22 +2699,19 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000233"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
+					id: "4C0F00000000022C"
+					type: "xp"
+					xp: 8
 				}
 				{
-					id: "4C0F000000000234"
+					id: "4C0F00000000022D"
 					type: "xp"
 					xp: 12
 				}
 			]
 		}
 		{
-			id: "4C0F0000000001D5"
+			id: "4C0F0000000001CE"
 			x: 17.0d
 			y: 4.5d
 			title: "Schmied  §8(Handwerk)"
@@ -2945,11 +2726,11 @@
 				"&7Kategorie: Handwerk."
 			]
 			dependencies: [
-				"4C0F0000000001BD"
+				"4C0F0000000001B6"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000235"
+					id: "4C0F00000000022E"
 					item: {
 						count: 1
 						id: "minecolonies:blockhutblacksmith"
@@ -2959,23 +2740,19 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000236"
-					item: {
-						count: 1
-						id: "magic_coins:silver_coin"
-					}
-					type: "item"
-					count: 10
+					id: "4C0F00000000022F"
+					type: "xp"
+					xp: 10
 				}
 				{
-					id: "4C0F000000000237"
+					id: "4C0F000000000230"
 					type: "xp"
 					xp: 12
 				}
 			]
 		}
 		{
-			id: "4C0F0000000001D6"
+			id: "4C0F0000000001CF"
 			x: 17.0d
 			y: 6.0d
 			title: "Mechaniker"
@@ -2988,11 +2765,11 @@
 				"&7Kategorie: Handwerk."
 			]
 			dependencies: [
-				"4C0F0000000001D5"
+				"4C0F0000000001CE"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000238"
+					id: "4C0F000000000231"
 					item: {
 						count: 1
 						id: "minecolonies:blockhutmechanic"
@@ -3002,23 +2779,19 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000239"
-					item: {
-						count: 1
-						id: "magic_coins:silver_coin"
-					}
-					type: "item"
-					count: 10
+					id: "4C0F000000000232"
+					type: "xp"
+					xp: 10
 				}
 				{
-					id: "4C0F00000000023A"
+					id: "4C0F000000000233"
 					type: "xp"
 					xp: 12
 				}
 			]
 		}
 		{
-			id: "4C0F0000000001D7"
+			id: "4C0F0000000001D0"
 			x: 17.0d
 			y: 7.5d
 			title: "Färberei"
@@ -3031,11 +2804,11 @@
 				"&7Kategorie: Handwerk."
 			]
 			dependencies: [
-				"4C0F0000000001D6"
+				"4C0F0000000001CF"
 			]
 			tasks: [
 				{
-					id: "4C0F00000000023B"
+					id: "4C0F000000000234"
 					item: {
 						count: 1
 						id: "minecolonies:blockhutdyer"
@@ -3045,23 +2818,19 @@
 			]
 			rewards: [
 				{
-					id: "4C0F00000000023C"
-					item: {
-						count: 1
-						id: "magic_coins:silver_coin"
-					}
-					type: "item"
-					count: 10
+					id: "4C0F000000000235"
+					type: "xp"
+					xp: 10
 				}
 				{
-					id: "4C0F00000000023D"
+					id: "4C0F000000000236"
 					type: "xp"
 					xp: 12
 				}
 			]
 		}
 		{
-			id: "4C0F0000000001D8"
+			id: "4C0F0000000001D1"
 			x: 17.0d
 			y: 9.0d
 			title: "Bogner"
@@ -3074,11 +2843,11 @@
 				"&7Kategorie: Handwerk."
 			]
 			dependencies: [
-				"4C0F0000000001D7"
+				"4C0F0000000001D0"
 			]
 			tasks: [
 				{
-					id: "4C0F00000000023E"
+					id: "4C0F000000000237"
 					item: {
 						count: 1
 						id: "minecolonies:blockhutfletcher"
@@ -3088,22 +2857,19 @@
 			]
 			rewards: [
 				{
-					id: "4C0F00000000023F"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
+					id: "4C0F000000000238"
+					type: "xp"
+					xp: 8
 				}
 				{
-					id: "4C0F000000000240"
+					id: "4C0F000000000239"
 					type: "xp"
 					xp: 12
 				}
 			]
 		}
 		{
-			id: "4C0F0000000001D9"
+			id: "4C0F0000000001D2"
 			x: 17.0d
 			y: 10.5d
 			title: "Glasbläser"
@@ -3116,11 +2882,11 @@
 				"&7Kategorie: Handwerk."
 			]
 			dependencies: [
-				"4C0F0000000001D8"
+				"4C0F0000000001D1"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000241"
+					id: "4C0F00000000023A"
 					item: {
 						count: 1
 						id: "minecolonies:blockhutglassblower"
@@ -3130,22 +2896,19 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000242"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
+					id: "4C0F00000000023B"
+					type: "xp"
+					xp: 8
 				}
 				{
-					id: "4C0F000000000243"
+					id: "4C0F00000000023C"
 					type: "xp"
 					xp: 12
 				}
 			]
 		}
 		{
-			id: "4C0F0000000001DA"
+			id: "4C0F0000000001D3"
 			x: 17.0d
 			y: 12.0d
 			title: "Brecher"
@@ -3158,11 +2921,11 @@
 				"&7Kategorie: Handwerk."
 			]
 			dependencies: [
-				"4C0F0000000001D9"
+				"4C0F0000000001D2"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000244"
+					id: "4C0F00000000023D"
 					item: {
 						count: 1
 						id: "minecolonies:blockhutcrusher"
@@ -3172,22 +2935,19 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000245"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
+					id: "4C0F00000000023E"
+					type: "xp"
+					xp: 8
 				}
 				{
-					id: "4C0F000000000246"
+					id: "4C0F00000000023F"
 					type: "xp"
 					xp: 12
 				}
 			]
 		}
 		{
-			id: "4C0F0000000001DB"
+			id: "4C0F0000000001D4"
 			x: 17.0d
 			y: 13.5d
 			title: "Siebanlage"
@@ -3200,11 +2960,11 @@
 				"&7Kategorie: Handwerk."
 			]
 			dependencies: [
-				"4C0F0000000001DA"
+				"4C0F0000000001D3"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000247"
+					id: "4C0F000000000240"
 					item: {
 						count: 1
 						id: "minecolonies:blockhutsifter"
@@ -3214,22 +2974,19 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000248"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
+					id: "4C0F000000000241"
+					type: "xp"
+					xp: 8
 				}
 				{
-					id: "4C0F000000000249"
+					id: "4C0F000000000242"
 					type: "xp"
 					xp: 12
 				}
 			]
 		}
 		{
-			id: "4C0F0000000001DC"
+			id: "4C0F0000000001D5"
 			x: 17.0d
 			y: 15.0d
 			title: "Betonmischer"
@@ -3242,11 +2999,11 @@
 				"&7Kategorie: Handwerk."
 			]
 			dependencies: [
-				"4C0F0000000001DB"
+				"4C0F0000000001D4"
 			]
 			tasks: [
 				{
-					id: "4C0F00000000024A"
+					id: "4C0F000000000243"
 					item: {
 						count: 1
 						id: "minecolonies:blockhutconcretemixer"
@@ -3256,22 +3013,19 @@
 			]
 			rewards: [
 				{
-					id: "4C0F00000000024B"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
+					id: "4C0F000000000244"
+					type: "xp"
+					xp: 8
 				}
 				{
-					id: "4C0F00000000024C"
+					id: "4C0F000000000245"
 					type: "xp"
 					xp: 12
 				}
 			]
 		}
 		{
-			id: "4C0F0000000001DD"
+			id: "4C0F0000000001D6"
 			x: 20.0d
 			y: 4.5d
 			title: "Universität  §8(Wissen \\& Gesundheit)"
@@ -3286,11 +3040,11 @@
 				"&7Kategorie: Wissen \\& Gesundheit."
 			]
 			dependencies: [
-				"4C0F0000000001BD"
+				"4C0F0000000001B6"
 			]
 			tasks: [
 				{
-					id: "4C0F00000000024D"
+					id: "4C0F000000000246"
 					item: {
 						count: 1
 						id: "minecolonies:blockhutuniversity"
@@ -3300,23 +3054,19 @@
 			]
 			rewards: [
 				{
-					id: "4C0F00000000024E"
-					item: {
-						count: 1
-						id: "magic_coins:silver_coin"
-					}
-					type: "item"
-					count: 10
+					id: "4C0F000000000247"
+					type: "xp"
+					xp: 10
 				}
 				{
-					id: "4C0F00000000024F"
+					id: "4C0F000000000248"
 					type: "xp"
 					xp: 12
 				}
 			]
 		}
 		{
-			id: "4C0F0000000001DE"
+			id: "4C0F0000000001D7"
 			x: 20.0d
 			y: 6.0d
 			title: "Bibliothek"
@@ -3329,11 +3079,11 @@
 				"&7Kategorie: Wissen \\& Gesundheit."
 			]
 			dependencies: [
-				"4C0F0000000001DD"
+				"4C0F0000000001D6"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000250"
+					id: "4C0F000000000249"
 					item: {
 						count: 1
 						id: "minecolonies:blockhutlibrary"
@@ -3343,23 +3093,19 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000251"
-					item: {
-						count: 1
-						id: "magic_coins:silver_coin"
-					}
-					type: "item"
-					count: 10
+					id: "4C0F00000000024A"
+					type: "xp"
+					xp: 10
 				}
 				{
-					id: "4C0F000000000252"
+					id: "4C0F00000000024B"
 					type: "xp"
 					xp: 12
 				}
 			]
 		}
 		{
-			id: "4C0F0000000001DF"
+			id: "4C0F0000000001D8"
 			x: 20.0d
 			y: 7.5d
 			title: "Schule"
@@ -3372,11 +3118,11 @@
 				"&7Kategorie: Wissen \\& Gesundheit."
 			]
 			dependencies: [
-				"4C0F0000000001DE"
+				"4C0F0000000001D7"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000253"
+					id: "4C0F00000000024C"
 					item: {
 						count: 1
 						id: "minecolonies:blockhutschool"
@@ -3386,23 +3132,19 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000254"
-					item: {
-						count: 1
-						id: "magic_coins:silver_coin"
-					}
-					type: "item"
-					count: 10
+					id: "4C0F00000000024D"
+					type: "xp"
+					xp: 10
 				}
 				{
-					id: "4C0F000000000255"
+					id: "4C0F00000000024E"
 					type: "xp"
 					xp: 12
 				}
 			]
 		}
 		{
-			id: "4C0F0000000001E0"
+			id: "4C0F0000000001D9"
 			x: 20.0d
 			y: 9.0d
 			title: "Krankenhaus"
@@ -3415,11 +3157,11 @@
 				"&7Kategorie: Wissen \\& Gesundheit."
 			]
 			dependencies: [
-				"4C0F0000000001DF"
+				"4C0F0000000001D8"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000256"
+					id: "4C0F00000000024F"
 					item: {
 						count: 1
 						id: "minecolonies:blockhuthospital"
@@ -3429,22 +3171,19 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000257"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
+					id: "4C0F000000000250"
+					type: "xp"
+					xp: 8
 				}
 				{
-					id: "4C0F000000000258"
+					id: "4C0F000000000251"
 					type: "xp"
 					xp: 12
 				}
 			]
 		}
 		{
-			id: "4C0F0000000001E1"
+			id: "4C0F0000000001DA"
 			x: 20.0d
 			y: 10.5d
 			title: "Friedhof"
@@ -3457,11 +3196,11 @@
 				"&7Kategorie: Wissen \\& Gesundheit."
 			]
 			dependencies: [
-				"4C0F0000000001E0"
+				"4C0F0000000001D9"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000259"
+					id: "4C0F000000000252"
 					item: {
 						count: 1
 						id: "minecolonies:blockhutgraveyard"
@@ -3471,22 +3210,19 @@
 			]
 			rewards: [
 				{
-					id: "4C0F00000000025A"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
+					id: "4C0F000000000253"
+					type: "xp"
+					xp: 8
 				}
 				{
-					id: "4C0F00000000025B"
+					id: "4C0F000000000254"
 					type: "xp"
 					xp: 12
 				}
 			]
 		}
 		{
-			id: "4C0F0000000001E2"
+			id: "4C0F0000000001DB"
 			x: 23.0d
 			y: 4.5d
 			title: "Wachturm  §8(Verteidigung)"
@@ -3501,11 +3237,11 @@
 				"&7Kategorie: Verteidigung."
 			]
 			dependencies: [
-				"4C0F0000000001BD"
+				"4C0F0000000001B6"
 			]
 			tasks: [
 				{
-					id: "4C0F00000000025C"
+					id: "4C0F000000000255"
 					item: {
 						count: 1
 						id: "minecolonies:blockhutguardtower"
@@ -3515,23 +3251,19 @@
 			]
 			rewards: [
 				{
-					id: "4C0F00000000025D"
-					item: {
-						count: 1
-						id: "magic_coins:silver_coin"
-					}
-					type: "item"
-					count: 10
+					id: "4C0F000000000256"
+					type: "xp"
+					xp: 10
 				}
 				{
-					id: "4C0F00000000025E"
+					id: "4C0F000000000257"
 					type: "xp"
 					xp: 12
 				}
 			]
 		}
 		{
-			id: "4C0F0000000001E3"
+			id: "4C0F0000000001DC"
 			x: 23.0d
 			y: 6.0d
 			title: "Schießstand"
@@ -3544,11 +3276,11 @@
 				"&7Kategorie: Verteidigung."
 			]
 			dependencies: [
-				"4C0F0000000001E2"
+				"4C0F0000000001DB"
 			]
 			tasks: [
 				{
-					id: "4C0F00000000025F"
+					id: "4C0F000000000258"
 					item: {
 						count: 1
 						id: "minecolonies:blockhutarchery"
@@ -3558,23 +3290,19 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000260"
-					item: {
-						count: 1
-						id: "magic_coins:silver_coin"
-					}
-					type: "item"
-					count: 10
+					id: "4C0F000000000259"
+					type: "xp"
+					xp: 10
 				}
 				{
-					id: "4C0F000000000261"
+					id: "4C0F00000000025A"
 					type: "xp"
 					xp: 12
 				}
 			]
 		}
 		{
-			id: "4C0F0000000001E4"
+			id: "4C0F0000000001DD"
 			x: 23.0d
 			y: 7.5d
 			title: "Kaserne"
@@ -3587,11 +3315,11 @@
 				"&7Kategorie: Verteidigung."
 			]
 			dependencies: [
-				"4C0F0000000001E3"
+				"4C0F0000000001DC"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000262"
+					id: "4C0F00000000025B"
 					item: {
 						count: 1
 						id: "minecolonies:blockhutbarracks"
@@ -3601,23 +3329,19 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000263"
-					item: {
-						count: 1
-						id: "magic_coins:silver_coin"
-					}
-					type: "item"
-					count: 10
+					id: "4C0F00000000025C"
+					type: "xp"
+					xp: 10
 				}
 				{
-					id: "4C0F000000000264"
+					id: "4C0F00000000025D"
 					type: "xp"
 					xp: 12
 				}
 			]
 		}
 		{
-			id: "4C0F0000000001E5"
+			id: "4C0F0000000001DE"
 			x: 23.0d
 			y: 9.0d
 			title: "Kampfakademie"
@@ -3630,11 +3354,11 @@
 				"&7Kategorie: Verteidigung."
 			]
 			dependencies: [
-				"4C0F0000000001E4"
+				"4C0F0000000001DD"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000265"
+					id: "4C0F00000000025E"
 					item: {
 						count: 1
 						id: "minecolonies:blockhutcombatacademy"
@@ -3644,22 +3368,19 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000266"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
+					id: "4C0F00000000025F"
+					type: "xp"
+					xp: 8
 				}
 				{
-					id: "4C0F000000000267"
+					id: "4C0F000000000260"
 					type: "xp"
 					xp: 12
 				}
 			]
 		}
 		{
-			id: "4C0F0000000001E6"
+			id: "4C0F0000000001DF"
 			x: 23.0d
 			y: 10.5d
 			title: "Torhaus"
@@ -3672,11 +3393,11 @@
 				"&7Kategorie: Verteidigung."
 			]
 			dependencies: [
-				"4C0F0000000001E5"
+				"4C0F0000000001DE"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000268"
+					id: "4C0F000000000261"
 					item: {
 						count: 1
 						id: "minecolonies:blockhutgatehouse"
@@ -3686,22 +3407,19 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000269"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
+					id: "4C0F000000000262"
+					type: "xp"
+					xp: 8
 				}
 				{
-					id: "4C0F00000000026A"
+					id: "4C0F000000000263"
 					type: "xp"
 					xp: 12
 				}
 			]
 		}
 		{
-			id: "4C0F0000000001E7"
+			id: "4C0F0000000001E0"
 			x: 26.0d
 			y: 4.5d
 			title: "Verzauberer  §8(Mystik \\& Spezial)"
@@ -3716,11 +3434,11 @@
 				"&7Kategorie: Mystik \\& Spezial."
 			]
 			dependencies: [
-				"4C0F0000000001BD"
+				"4C0F0000000001B6"
 			]
 			tasks: [
 				{
-					id: "4C0F00000000026B"
+					id: "4C0F000000000264"
 					item: {
 						count: 1
 						id: "minecolonies:blockhutenchanter"
@@ -3730,23 +3448,19 @@
 			]
 			rewards: [
 				{
-					id: "4C0F00000000026C"
-					item: {
-						count: 1
-						id: "magic_coins:silver_coin"
-					}
-					type: "item"
-					count: 10
+					id: "4C0F000000000265"
+					type: "xp"
+					xp: 10
 				}
 				{
-					id: "4C0F00000000026D"
+					id: "4C0F000000000266"
 					type: "xp"
 					xp: 12
 				}
 			]
 		}
 		{
-			id: "4C0F0000000001E8"
+			id: "4C0F0000000001E1"
 			x: 26.0d
 			y: 6.0d
 			title: "Alchemist"
@@ -3759,11 +3473,11 @@
 				"&7Kategorie: Mystik \\& Spezial."
 			]
 			dependencies: [
-				"4C0F0000000001E7"
+				"4C0F0000000001E0"
 			]
 			tasks: [
 				{
-					id: "4C0F00000000026E"
+					id: "4C0F000000000267"
 					item: {
 						count: 1
 						id: "minecolonies:blockhutalchemist"
@@ -3773,23 +3487,19 @@
 			]
 			rewards: [
 				{
-					id: "4C0F00000000026F"
-					item: {
-						count: 1
-						id: "magic_coins:silver_coin"
-					}
-					type: "item"
-					count: 10
+					id: "4C0F000000000268"
+					type: "xp"
+					xp: 10
 				}
 				{
-					id: "4C0F000000000270"
+					id: "4C0F000000000269"
 					type: "xp"
 					xp: 12
 				}
 			]
 		}
 		{
-			id: "4C0F0000000001E9"
+			id: "4C0F0000000001E2"
 			x: 26.0d
 			y: 7.5d
 			title: "Mystischer Ort"
@@ -3802,11 +3512,11 @@
 				"&7Kategorie: Mystik \\& Spezial."
 			]
 			dependencies: [
-				"4C0F0000000001E8"
+				"4C0F0000000001E1"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000271"
+					id: "4C0F00000000026A"
 					item: {
 						count: 1
 						id: "minecolonies:blockhutmysticalsite"
@@ -3816,23 +3526,19 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000272"
-					item: {
-						count: 1
-						id: "magic_coins:silver_coin"
-					}
-					type: "item"
-					count: 10
+					id: "4C0F00000000026B"
+					type: "xp"
+					xp: 10
 				}
 				{
-					id: "4C0F000000000273"
+					id: "4C0F00000000026C"
 					type: "xp"
 					xp: 12
 				}
 			]
 		}
 		{
-			id: "4C0F0000000001EA"
+			id: "4C0F0000000001E3"
 			x: 26.0d
 			y: 9.0d
 			title: "Nether-Arbeiter"
@@ -3845,11 +3551,11 @@
 				"&7Kategorie: Mystik \\& Spezial."
 			]
 			dependencies: [
-				"4C0F0000000001E9"
+				"4C0F0000000001E2"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000274"
+					id: "4C0F00000000026D"
 					item: {
 						count: 1
 						id: "minecolonies:blockhutnetherworker"
@@ -3859,22 +3565,19 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000275"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
+					id: "4C0F00000000026E"
+					type: "xp"
+					xp: 8
 				}
 				{
-					id: "4C0F000000000276"
+					id: "4C0F00000000026F"
 					type: "xp"
 					xp: 12
 				}
 			]
 		}
 		{
-			id: "4C0F0000000001EB"
+			id: "4C0F0000000001E4"
 			x: 26.0d
 			y: 10.5d
 			title: "Stall"
@@ -3887,11 +3590,11 @@
 				"&7Kategorie: Mystik \\& Spezial."
 			]
 			dependencies: [
-				"4C0F0000000001EA"
+				"4C0F0000000001E3"
 			]
 			tasks: [
 				{
-					id: "4C0F000000000277"
+					id: "4C0F000000000270"
 					item: {
 						count: 1
 						id: "minecolonies:blockhutstable"
@@ -3901,22 +3604,19 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000278"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
+					id: "4C0F000000000271"
+					type: "xp"
+					xp: 8
 				}
 				{
-					id: "4C0F000000000279"
+					id: "4C0F000000000272"
 					type: "xp"
 					xp: 12
 				}
 			]
 		}
 		{
-			id: "4C0F0000000001EC"
+			id: "4C0F0000000001E5"
 			x: 26.0d
 			y: 12.0d
 			title: "Wohnhaus"
@@ -3929,11 +3629,11 @@
 				"&7Kategorie: Mystik \\& Spezial."
 			]
 			dependencies: [
-				"4C0F0000000001EB"
+				"4C0F0000000001E4"
 			]
 			tasks: [
 				{
-					id: "4C0F00000000027A"
+					id: "4C0F000000000273"
 					item: {
 						count: 1
 						id: "minecolonies:blockhutcitizen"
@@ -3943,15 +3643,12 @@
 			]
 			rewards: [
 				{
-					id: "4C0F00000000027B"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
+					id: "4C0F000000000274"
+					type: "xp"
+					xp: 8
 				}
 				{
-					id: "4C0F00000000027C"
+					id: "4C0F000000000275"
 					type: "xp"
 					xp: 12
 				}
@@ -3998,12 +3695,8 @@
 				}
 				{
 					id: "4C0F0000000000F1"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
-					count: 2
+					type: "xp"
+					xp: 16
 				}
 				{
 					id: "4C0F0000000000F2"
@@ -4051,12 +3744,8 @@
 			rewards: [
 				{
 					id: "4C0F0000000000F5"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
-					count: 2
+					type: "xp"
+					xp: 16
 				}
 				{
 					id: "4C0F0000000000F6"
@@ -4094,12 +3783,8 @@
 			rewards: [
 				{
 					id: "4C0F0000000000F8"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
-					count: 2
+					type: "xp"
+					xp: 16
 				}
 				{
 					id: "4C0F0000000000F9"
@@ -4140,12 +3825,8 @@
 			rewards: [
 				{
 					id: "4C0F0000000000FB"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
-					count: 3
+					type: "xp"
+					xp: 24
 				}
 				{
 					id: "4C0F0000000000FC"
@@ -4193,12 +3874,8 @@
 			rewards: [
 				{
 					id: "4C0F0000000000FF"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
-					count: 2
+					type: "xp"
+					xp: 16
 				}
 				{
 					id: "4C0F000000000100"
@@ -4241,11 +3918,8 @@
 			rewards: [
 				{
 					id: "4C0F000000000102"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
+					type: "xp"
+					xp: 8
 				}
 				{
 					id: "4C0F000000000103"
@@ -4292,12 +3966,8 @@
 			rewards: [
 				{
 					id: "4C0F000000000106"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
-					count: 3
+					type: "xp"
+					xp: 24
 				}
 				{
 					id: "4C0F000000000107"
@@ -4337,12 +4007,8 @@
 			rewards: [
 				{
 					id: "4C0F000000000109"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
-					count: 4
+					type: "xp"
+					xp: 32
 				}
 				{
 					id: "4C0F00000000010A"
@@ -4390,12 +4056,8 @@
 			rewards: [
 				{
 					id: "4C0F00000000010D"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
-					count: 4
+					type: "xp"
+					xp: 32
 				}
 				{
 					id: "4C0F00000000010E"
@@ -4435,11 +4097,8 @@
 			rewards: [
 				{
 					id: "4C0F000000000110"
-					item: {
-						count: 1
-						id: "magic_coins:crystal_coin"
-					}
-					type: "item"
+					type: "xp"
+					xp: 20
 				}
 				{
 					id: "4C0F000000000111"
@@ -4479,11 +4138,8 @@
 			rewards: [
 				{
 					id: "4C0F000000000113"
-					item: {
-						count: 1
-						id: "magic_coins:crystal_coin"
-					}
-					type: "item"
+					type: "xp"
+					xp: 20
 				}
 				{
 					id: "4C0F000000000114"
@@ -4523,11 +4179,8 @@
 			rewards: [
 				{
 					id: "4C0F000000000116"
-					item: {
-						count: 1
-						id: "magic_coins:crystal_coin"
-					}
-					type: "item"
+					type: "xp"
+					xp: 20
 				}
 				{
 					id: "4C0F000000000117"
@@ -4567,12 +4220,8 @@
 			rewards: [
 				{
 					id: "4C0F000000000119"
-					item: {
-						count: 1
-						id: "magic_coins:crystal_coin"
-					}
-					type: "item"
-					count: 2
+					type: "xp"
+					xp: 40
 				}
 				{
 					id: "4C0F00000000011A"
@@ -4619,12 +4268,8 @@
 			rewards: [
 				{
 					id: "4C0F00000000011D"
-					item: {
-						count: 1
-						id: "magic_coins:crystal_coin"
-					}
-					type: "item"
-					count: 2
+					type: "xp"
+					xp: 40
 				}
 				{
 					id: "4C0F00000000011E"
@@ -4681,11 +4326,8 @@
 				}
 				{
 					id: "4C0F000000000122"
-					item: {
-						count: 1
-						id: "magic_coins:crystal_coin"
-					}
-					type: "item"
+					type: "xp"
+					xp: 20
 				}
 				{
 					id: "4C0F000000000123"
@@ -4733,12 +4375,8 @@
 			rewards: [
 				{
 					id: "4C0F000000000126"
-					item: {
-						count: 1
-						id: "magic_coins:crystal_coin"
-					}
-					type: "item"
-					count: 2
+					type: "xp"
+					xp: 40
 				}
 				{
 					id: "4C0F000000000127"
@@ -4784,12 +4422,8 @@
 			rewards: [
 				{
 					id: "4C0F000000000129"
-					item: {
-						count: 1
-						id: "magic_coins:crystal_coin"
-					}
-					type: "item"
-					count: 5
+					type: "xp"
+					xp: 100
 				}
 				{
 					id: "4C0F00000000012A"
@@ -4838,12 +4472,8 @@
 			rewards: [
 				{
 					id: "4C0F00000000012D"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
-					count: 2
+					type: "xp"
+					xp: 16
 				}
 				{
 					id: "4C0F00000000012E"
@@ -4880,12 +4510,8 @@
 			rewards: [
 				{
 					id: "4C0F000000000130"
-					item: {
-						count: 1
-						id: "magic_coins:silver_coin"
-					}
-					type: "item"
-					count: 10
+					type: "xp"
+					xp: 10
 				}
 				{
 					id: "4C0F000000000131"
@@ -4922,12 +4548,8 @@
 			rewards: [
 				{
 					id: "4C0F000000000133"
-					item: {
-						count: 1
-						id: "magic_coins:silver_coin"
-					}
-					type: "item"
-					count: 15
+					type: "xp"
+					xp: 15
 				}
 				{
 					id: "4C0F000000000134"
@@ -4964,12 +4586,8 @@
 			rewards: [
 				{
 					id: "4C0F000000000136"
-					item: {
-						count: 1
-						id: "magic_coins:silver_coin"
-					}
-					type: "item"
-					count: 15
+					type: "xp"
+					xp: 15
 				}
 				{
 					id: "4C0F000000000137"
@@ -5006,11 +4624,8 @@
 			rewards: [
 				{
 					id: "4C0F000000000139"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
+					type: "xp"
+					xp: 8
 				}
 				{
 					id: "4C0F00000000013A"
@@ -5047,12 +4662,8 @@
 			rewards: [
 				{
 					id: "4C0F00000000013C"
-					item: {
-						count: 1
-						id: "magic_coins:silver_coin"
-					}
-					type: "item"
-					count: 15
+					type: "xp"
+					xp: 15
 				}
 				{
 					id: "4C0F00000000013D"
@@ -5090,12 +4701,8 @@
 			rewards: [
 				{
 					id: "4C0F00000000013F"
-					item: {
-						count: 1
-						id: "magic_coins:silver_coin"
-					}
-					type: "item"
-					count: 15
+					type: "xp"
+					xp: 15
 				}
 				{
 					id: "4C0F000000000140"
@@ -5132,12 +4739,8 @@
 			rewards: [
 				{
 					id: "4C0F000000000142"
-					item: {
-						count: 1
-						id: "magic_coins:silver_coin"
-					}
-					type: "item"
-					count: 15
+					type: "xp"
+					xp: 15
 				}
 				{
 					id: "4C0F000000000143"
@@ -5175,11 +4778,8 @@
 			rewards: [
 				{
 					id: "4C0F000000000145"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
+					type: "xp"
+					xp: 8
 				}
 				{
 					id: "4C0F000000000146"
@@ -5228,12 +4828,8 @@
 			rewards: [
 				{
 					id: "4C0F000000000149"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
-					count: 2
+					type: "xp"
+					xp: 16
 				}
 				{
 					id: "4C0F00000000014A"
@@ -5271,12 +4867,8 @@
 			rewards: [
 				{
 					id: "4C0F00000000014C"
-					item: {
-						count: 1
-						id: "magic_coins:silver_coin"
-					}
-					type: "item"
-					count: 15
+					type: "xp"
+					xp: 15
 				}
 				{
 					id: "4C0F00000000014D"
@@ -5313,12 +4905,8 @@
 			rewards: [
 				{
 					id: "4C0F00000000014F"
-					item: {
-						count: 1
-						id: "magic_coins:silver_coin"
-					}
-					type: "item"
-					count: 15
+					type: "xp"
+					xp: 15
 				}
 				{
 					id: "4C0F000000000150"
@@ -5358,12 +4946,8 @@
 			rewards: [
 				{
 					id: "4C0F000000000152"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
-					count: 2
+					type: "xp"
+					xp: 16
 				}
 				{
 					id: "4C0F000000000153"
@@ -5401,12 +4985,8 @@
 			rewards: [
 				{
 					id: "4C0F000000000155"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
-					count: 3
+					type: "xp"
+					xp: 24
 				}
 				{
 					id: "4C0F000000000156"
@@ -5443,11 +5023,8 @@
 			rewards: [
 				{
 					id: "4C0F000000000158"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
+					type: "xp"
+					xp: 8
 				}
 				{
 					id: "4C0F000000000159"
@@ -5484,12 +5061,8 @@
 			rewards: [
 				{
 					id: "4C0F00000000015B"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
-					count: 2
+					type: "xp"
+					xp: 16
 				}
 				{
 					id: "4C0F00000000015C"
@@ -5540,11 +5113,8 @@
 			rewards: [
 				{
 					id: "4C0F00000000015F"
-					item: {
-						count: 1
-						id: "magic_coins:crystal_coin"
-					}
-					type: "item"
+					type: "xp"
+					xp: 20
 				}
 				{
 					id: "4C0F000000000160"
@@ -5582,12 +5152,8 @@
 			rewards: [
 				{
 					id: "4C0F000000000162"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
-					count: 2
+					type: "xp"
+					xp: 16
 				}
 				{
 					id: "4C0F000000000163"
@@ -5635,12 +5201,8 @@
 			rewards: [
 				{
 					id: "4C0F000000000166"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
-					count: 3
+					type: "xp"
+					xp: 24
 				}
 				{
 					id: "4C0F000000000167"
@@ -5677,11 +5239,8 @@
 			rewards: [
 				{
 					id: "4C0F000000000169"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
+					type: "xp"
+					xp: 8
 				}
 				{
 					id: "4C0F00000000016A"
@@ -5720,12 +5279,8 @@
 			rewards: [
 				{
 					id: "4C0F00000000016C"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
-					count: 3
+					type: "xp"
+					xp: 24
 				}
 				{
 					id: "4C0F00000000016D"
@@ -5765,11 +5320,8 @@
 			rewards: [
 				{
 					id: "4C0F00000000016F"
-					item: {
-						count: 1
-						id: "magic_coins:crystal_coin"
-					}
-					type: "item"
+					type: "xp"
+					xp: 20
 				}
 				{
 					id: "4C0F000000000170"
@@ -5807,12 +5359,8 @@
 			rewards: [
 				{
 					id: "4C0F000000000172"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
-					count: 3
+					type: "xp"
+					xp: 24
 				}
 				{
 					id: "4C0F000000000173"
@@ -5861,12 +5409,8 @@
 			rewards: [
 				{
 					id: "4C0F000000000176"
-					item: {
-						count: 1
-						id: "magic_coins:crystal_coin"
-					}
-					type: "item"
-					count: 2
+					type: "xp"
+					xp: 40
 				}
 				{
 					id: "4C0F000000000177"
@@ -5918,12 +5462,8 @@
 			rewards: [
 				{
 					id: "4C0F00000000017A"
-					item: {
-						count: 1
-						id: "magic_coins:crystal_coin"
-					}
-					type: "item"
-					count: 4
+					type: "xp"
+					xp: 80
 				}
 				{
 					id: "4C0F00000000017B"
@@ -5973,12 +5513,8 @@
 			rewards: [
 				{
 					id: "4C0F00000000017E"
-					item: {
-						count: 1
-						id: "magic_coins:crystal_coin"
-					}
-					type: "item"
-					count: 8
+					type: "xp"
+					xp: 160
 				}
 				{
 					id: "4C0F00000000017F"
@@ -6018,12 +5554,8 @@
 			rewards: [
 				{
 					id: "4C0F000000000181"
-					item: {
-						count: 1
-						id: "magic_coins:crystal_coin"
-					}
-					type: "item"
-					count: 10
+					type: "xp"
+					xp: 200
 				}
 				{
 					id: "4C0F000000000182"
@@ -6063,12 +5595,8 @@
 			rewards: [
 				{
 					id: "4C0F000000000184"
-					item: {
-						count: 1
-						id: "magic_coins:crystal_coin"
-					}
-					type: "item"
-					count: 12
+					type: "xp"
+					xp: 240
 				}
 				{
 					id: "4C0F000000000185"
@@ -6136,15 +5664,17 @@
 			id: "4C0F00000000005C"
 			x: -8.0d
 			y: 3.0d
-			title: "Münzwirtschaft (Magic Coins)"
+			title: "Handel mit Dorfbewohnern"
 			icon: {
 				count: 1
-				id: "magic_coins:gold_coin"
+				id: "minecraft:emerald"
 			}
 			shape: "hexagon"
 			size: 1.5d
 			description: [
-				"&eMünzen&r sind der rote Faden. Besitze mindestens &e3 Goldmünzen&r."
+				"&eSmaragde&r sind die Währung des Dorfs. Handle mit Villagern und"
+				"besitze mindestens &e16 Smaragde&r."
+				"&7Mit Easy Villagers \\& Trade Cycling baust du dir Handelshallen."
 			]
 			dependencies: [
 				"4C0F00000000005A"
@@ -6154,24 +5684,15 @@
 					id: "4C0F000000000188"
 					item: {
 						count: 1
-						id: "magic_coins:gold_coin"
+						id: "minecraft:emerald"
 					}
 					type: "item"
-					count: 3L
+					count: 16L
 				}
 			]
 			rewards: [
 				{
 					id: "4C0F000000000189"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
-					count: 2
-				}
-				{
-					id: "4C0F00000000018A"
 					type: "xp"
 					xp: 15
 				}
@@ -6181,50 +5702,32 @@
 			id: "4C0F00000000005D"
 			x: -6.0d
 			y: 3.0d
-			title: "Handel (Create: Numismatics)"
+			title: "Der Marktplatz"
 			icon: {
 				count: 1
-				id: "numismatics:vendor"
+				id: "minecraft:emerald_block"
 			}
 			size: 1.25d
 			description: [
-				"&aNumismatics&r bringt Münzen, Bankkarten und Automaten."
-				"Baue einen &aVendor&r und sammle erste Spurs."
+				"Baue dir eine Handelshalle. Sammle &e3 Smaragdblöcke&r aus dem Handel."
 			]
 			dependencies: [
 				"4C0F00000000005C"
 			]
 			tasks: [
 				{
-					id: "4C0F00000000018B"
+					id: "4C0F00000000018A"
 					item: {
 						count: 1
-						id: "numismatics:vendor"
+						id: "minecraft:emerald_block"
 					}
 					type: "item"
-				}
-				{
-					id: "4C0F00000000018C"
-					item: {
-						count: 1
-						id: "numismatics:spur"
-					}
-					type: "item"
-					count: 8L
+					count: 3L
 				}
 			]
 			rewards: [
 				{
-					id: "4C0F00000000018D"
-					item: {
-						count: 1
-						id: "magic_coins:gold_coin"
-					}
-					type: "item"
-					count: 3
-				}
-				{
-					id: "4C0F00000000018E"
+					id: "4C0F00000000018B"
 					type: "xp"
 					xp: 20
 				}
@@ -6237,11 +5740,11 @@
 			title: "Reich werden"
 			icon: {
 				count: 1
-				id: "magic_coins:crystal_coin"
+				id: "minecraft:emerald_block"
 			}
 			size: 1.25d
 			description: [
-				"Wohlstand will erarbeitet sein. Häufe deine erste &dKristallmünze&r an —"
+				"Wohlstand will erarbeitet sein. Häufe &e8 Smaragdblöcke&r an —"
 				"und mach dich bereit fürs &cEndgame&r."
 			]
 			dependencies: [
@@ -6249,26 +5752,18 @@
 			]
 			tasks: [
 				{
-					id: "4C0F00000000018F"
+					id: "4C0F00000000018C"
 					item: {
 						count: 1
-						id: "magic_coins:crystal_coin"
+						id: "minecraft:emerald_block"
 					}
 					type: "item"
+					count: 8L
 				}
 			]
 			rewards: [
 				{
-					id: "4C0F000000000190"
-					item: {
-						count: 1
-						id: "magic_coins:crystal_coin"
-					}
-					type: "item"
-					count: 2
-				}
-				{
-					id: "4C0F000000000191"
+					id: "4C0F00000000018D"
 					type: "xp"
 					xp: 40
 				}
@@ -6300,7 +5795,7 @@
 			]
 			tasks: [
 				{
-					id: "4C0F000000000192"
+					id: "4C0F00000000018E"
 					item: {
 						count: 1
 						id: "create:precision_mechanism"
@@ -6312,16 +5807,12 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000193"
-					item: {
-						count: 1
-						id: "magic_coins:crystal_coin"
-					}
-					type: "item"
-					count: 5
+					id: "4C0F00000000018F"
+					type: "xp"
+					xp: 100
 				}
 				{
-					id: "4C0F000000000194"
+					id: "4C0F000000000190"
 					type: "xp"
 					xp: 50
 				}
@@ -6345,7 +5836,7 @@
 			]
 			tasks: [
 				{
-					id: "4C0F000000000195"
+					id: "4C0F000000000191"
 					item: {
 						count: 1
 						id: "create:andesite_alloy"
@@ -6357,16 +5848,12 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000196"
-					item: {
-						count: 1
-						id: "magic_coins:crystal_coin"
-					}
-					type: "item"
-					count: 10
+					id: "4C0F000000000192"
+					type: "xp"
+					xp: 200
 				}
 				{
-					id: "4C0F000000000197"
+					id: "4C0F000000000193"
 					type: "xp"
 					xp: 80
 				}
@@ -6391,7 +5878,7 @@
 			]
 			tasks: [
 				{
-					id: "4C0F000000000198"
+					id: "4C0F000000000194"
 					item: {
 						count: 1
 						id: "create:brass_ingot"
@@ -6403,16 +5890,12 @@
 			]
 			rewards: [
 				{
-					id: "4C0F000000000199"
-					item: {
-						count: 1
-						id: "magic_coins:crystal_coin"
-					}
-					type: "item"
-					count: 10
+					id: "4C0F000000000195"
+					type: "xp"
+					xp: 200
 				}
 				{
-					id: "4C0F00000000019A"
+					id: "4C0F000000000196"
 					type: "xp"
 					xp: 80
 				}
@@ -6437,7 +5920,7 @@
 			]
 			tasks: [
 				{
-					id: "4C0F00000000019B"
+					id: "4C0F000000000197"
 					item: {
 						count: 1
 						id: "minecraft:iron_ingot"
@@ -6449,16 +5932,12 @@
 			]
 			rewards: [
 				{
-					id: "4C0F00000000019C"
-					item: {
-						count: 1
-						id: "magic_coins:crystal_coin"
-					}
-					type: "item"
-					count: 10
+					id: "4C0F000000000198"
+					type: "xp"
+					xp: 200
 				}
 				{
-					id: "4C0F00000000019D"
+					id: "4C0F000000000199"
 					type: "xp"
 					xp: 80
 				}
@@ -6482,7 +5961,7 @@
 			]
 			tasks: [
 				{
-					id: "4C0F00000000019E"
+					id: "4C0F00000000019A"
 					item: {
 						count: 1
 						id: "minecraft:copper_ingot"
@@ -6494,16 +5973,12 @@
 			]
 			rewards: [
 				{
-					id: "4C0F00000000019F"
-					item: {
-						count: 1
-						id: "magic_coins:crystal_coin"
-					}
-					type: "item"
-					count: 8
+					id: "4C0F00000000019B"
+					type: "xp"
+					xp: 160
 				}
 				{
-					id: "4C0F0000000001A0"
+					id: "4C0F00000000019C"
 					type: "xp"
 					xp: 70
 				}
@@ -6529,7 +6004,7 @@
 			]
 			tasks: [
 				{
-					id: "4C0F0000000001A1"
+					id: "4C0F00000000019D"
 					item: {
 						count: 1
 						id: "create:precision_mechanism"
@@ -6541,25 +6016,16 @@
 			]
 			rewards: [
 				{
-					id: "4C0F0000000001A2"
+					id: "4C0F00000000019E"
 					item: {
 						count: 1
-						id: "magic_coins:crystal_coin"
+						id: "minecraft:diamond_block"
 					}
 					type: "item"
-					count: 15
+					count: 4
 				}
 				{
-					id: "4C0F0000000001A3"
-					item: {
-						count: 1
-						id: "magic_coins:crystal_coin"
-					}
-					type: "item"
-					count: 5
-				}
-				{
-					id: "4C0F0000000001A4"
+					id: "4C0F00000000019F"
 					type: "xp"
 					xp: 120
 				}
@@ -6583,7 +6049,7 @@
 			]
 			tasks: [
 				{
-					id: "4C0F0000000001A5"
+					id: "4C0F0000000001A0"
 					item: {
 						count: 1
 						id: "minecraft:oak_log"
@@ -6595,16 +6061,12 @@
 			]
 			rewards: [
 				{
-					id: "4C0F0000000001A6"
-					item: {
-						count: 1
-						id: "magic_coins:crystal_coin"
-					}
-					type: "item"
-					count: 8
+					id: "4C0F0000000001A1"
+					type: "xp"
+					xp: 160
 				}
 				{
-					id: "4C0F0000000001A7"
+					id: "4C0F0000000001A2"
 					type: "xp"
 					xp: 70
 				}
@@ -6629,7 +6091,7 @@
 			]
 			tasks: [
 				{
-					id: "4C0F0000000001A8"
+					id: "4C0F0000000001A3"
 					item: {
 						count: 1
 						id: "farmersdelight:cooked_rice"
@@ -6641,16 +6103,12 @@
 			]
 			rewards: [
 				{
-					id: "4C0F0000000001A9"
-					item: {
-						count: 1
-						id: "magic_coins:crystal_coin"
-					}
-					type: "item"
-					count: 8
+					id: "4C0F0000000001A4"
+					type: "xp"
+					xp: 160
 				}
 				{
-					id: "4C0F0000000001AA"
+					id: "4C0F0000000001A5"
 					type: "xp"
 					xp: 70
 				}
@@ -6674,7 +6132,7 @@
 			]
 			tasks: [
 				{
-					id: "4C0F0000000001AB"
+					id: "4C0F0000000001A6"
 					item: {
 						count: 1
 						id: "aeronautics:levitite"
@@ -6686,16 +6144,12 @@
 			]
 			rewards: [
 				{
-					id: "4C0F0000000001AC"
-					item: {
-						count: 1
-						id: "magic_coins:crystal_coin"
-					}
-					type: "item"
-					count: 12
+					id: "4C0F0000000001A7"
+					type: "xp"
+					xp: 240
 				}
 				{
-					id: "4C0F0000000001AD"
+					id: "4C0F0000000001A8"
 					type: "xp"
 					xp: 90
 				}
@@ -6720,7 +6174,7 @@
 			]
 			tasks: [
 				{
-					id: "4C0F0000000001AE"
+					id: "4C0F0000000001A9"
 					item: {
 						count: 1
 						id: "minecraft:potato"
@@ -6732,16 +6186,12 @@
 			]
 			rewards: [
 				{
-					id: "4C0F0000000001AF"
-					item: {
-						count: 1
-						id: "magic_coins:crystal_coin"
-					}
-					type: "item"
-					count: 8
+					id: "4C0F0000000001AA"
+					type: "xp"
+					xp: 160
 				}
 				{
-					id: "4C0F0000000001B0"
+					id: "4C0F0000000001AB"
 					type: "xp"
 					xp: 70
 				}
@@ -6765,7 +6215,7 @@
 			]
 			tasks: [
 				{
-					id: "4C0F0000000001B1"
+					id: "4C0F0000000001AC"
 					item: {
 						count: 1
 						id: "minecraft:diamond"
@@ -6777,16 +6227,12 @@
 			]
 			rewards: [
 				{
-					id: "4C0F0000000001B2"
-					item: {
-						count: 1
-						id: "magic_coins:crystal_coin"
-					}
-					type: "item"
-					count: 12
+					id: "4C0F0000000001AD"
+					type: "xp"
+					xp: 240
 				}
 				{
-					id: "4C0F0000000001B3"
+					id: "4C0F0000000001AE"
 					type: "xp"
 					xp: 90
 				}
@@ -6796,24 +6242,24 @@
 			id: "4C0F000000000069"
 			x: -20.0d
 			y: 7.0d
-			title: "Münz-Magnat"
+			title: "Smaragd-Magnat"
 			icon: {
 				count: 1
-				id: "magic_coins:crystal_coin"
+				id: "minecraft:emerald_block"
 			}
 			size: 1.25d
 			description: [
-				"Schwimme im Geld: besitze &e64 Kristallmünzen&r gleichzeitig."
+				"Schwimme im Reichtum: besitze &e64 Smaragdblöcke&r gleichzeitig."
 			]
 			dependencies: [
 				"4C0F00000000005F"
 			]
 			tasks: [
 				{
-					id: "4C0F0000000001B4"
+					id: "4C0F0000000001AF"
 					item: {
 						count: 1
-						id: "magic_coins:crystal_coin"
+						id: "minecraft:emerald_block"
 					}
 					type: "item"
 					count: 64L
@@ -6821,24 +6267,16 @@
 			]
 			rewards: [
 				{
-					id: "4C0F0000000001B5"
+					id: "4C0F0000000001B0"
 					item: {
 						count: 1
-						id: "magic_coins:crystal_coin"
+						id: "minecraft:diamond_block"
 					}
 					type: "item"
-					count: 10
+					count: 8
 				}
 				{
-					id: "4C0F0000000001B6"
-					item: {
-						count: 1
-						id: "magic_coins:prosperity_amulet"
-					}
-					type: "item"
-				}
-				{
-					id: "4C0F0000000001B7"
+					id: "4C0F0000000001B1"
 					type: "xp"
 					xp: 80
 				}
@@ -6876,7 +6314,7 @@
 			]
 			tasks: [
 				{
-					id: "4C0F0000000001B8"
+					id: "4C0F0000000001B2"
 					item: {
 						count: 1
 						id: "create:precision_mechanism"
@@ -6886,16 +6324,7 @@
 			]
 			rewards: [
 				{
-					id: "4C0F0000000001B9"
-					item: {
-						count: 1
-						id: "magic_coins:crystal_coin"
-					}
-					type: "item"
-					count: 50
-				}
-				{
-					id: "4C0F0000000001BA"
+					id: "4C0F0000000001B3"
 					item: {
 						count: 1
 						id: "minecraft:nether_star"
@@ -6904,15 +6333,16 @@
 					count: 4
 				}
 				{
-					id: "4C0F0000000001BB"
+					id: "4C0F0000000001B4"
 					item: {
 						count: 1
-						id: "magic_coins:prosperity_amulet"
+						id: "minecraft:diamond_block"
 					}
 					type: "item"
+					count: 16
 				}
 				{
-					id: "4C0F0000000001BC"
+					id: "4C0F0000000001B5"
 					type: "xp"
 					xp: 200
 				}

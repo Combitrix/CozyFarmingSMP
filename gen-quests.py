@@ -63,9 +63,10 @@ def rew_item(idstr, count=1):
     if count > 1: d["count"] = count
     return d
 def rew_xp(n): return {"id": nid(), "type": "xp", "xp": n}
-def coin_silver(n):  return rew_item("magic_coins:silver_coin", n)
-def coin_gold(n):    return rew_item("magic_coins:gold_coin", n)
-def coin_crystal(n): return rew_item("magic_coins:crystal_coin", n)
+# Coin-System (Magic Coins / Numismatics) entfernt -> Belohnungen jetzt als XP.
+def coin_silver(n):  return rew_xp(n)
+def coin_gold(n):    return rew_xp(n * 8)
+def coin_crystal(n): return rew_xp(n * 20)
 
 # ---- Quest-Helfer ----------------------------------------------------------
 def quest(key, x, y, title, desc, tasks, rewards, deps=None, icon=None, shape=None, size=None, optional=False):
@@ -646,23 +647,24 @@ world_q = [
 
 # ---- Ziele & Wirtschaft ----------------------------------------------------
 econ_q = [
-    quest("e_coins", 0.0, 0.0, "Münzwirtschaft (Magic Coins)",
-          ["&eMünzen&r sind der rote Faden. Besitze mindestens &e3 Goldmünzen&r."],
-          tasks=[task_item("magic_coins:gold_coin", 3)],
-          rewards=[coin_gold(2), rew_xp(15)],
-          deps=["w_biome"], icon="magic_coins:gold_coin", size=1.5, shape="hexagon"),
-    quest("e_handel", 2.0, 0.0, "Handel (Create: Numismatics)",
-          ["&aNumismatics&r bringt Münzen, Bankkarten und Automaten.",
-           "Baue einen &aVendor&r und sammle erste Spurs."],
-          tasks=[task_item("numismatics:vendor"), task_item("numismatics:spur", 8)],
-          rewards=[coin_gold(3), rew_xp(20)],
-          deps=["e_coins"], icon="numismatics:vendor", size=1.25),
+    quest("e_coins", 0.0, 0.0, "Handel mit Dorfbewohnern",
+          ["&eSmaragde&r sind die Währung des Dorfs. Handle mit Villagern und",
+           "besitze mindestens &e16 Smaragde&r.",
+           "&7Mit Easy Villagers & Trade Cycling baust du dir Handelshallen."],
+          tasks=[task_item("minecraft:emerald", 16)],
+          rewards=[rew_xp(15)],
+          deps=["w_biome"], icon="minecraft:emerald", size=1.5, shape="hexagon"),
+    quest("e_handel", 2.0, 0.0, "Der Marktplatz",
+          ["Baue dir eine Handelshalle. Sammle &e3 Smaragdblöcke&r aus dem Handel."],
+          tasks=[task_item("minecraft:emerald_block", 3)],
+          rewards=[rew_xp(20)],
+          deps=["e_coins"], icon="minecraft:emerald_block", size=1.25),
     quest("e_endgame", 4.0, 0.0, "Reich werden",
-          ["Wohlstand will erarbeitet sein. Häufe deine erste &dKristallmünze&r an —",
+          ["Wohlstand will erarbeitet sein. Häufe &e8 Smaragdblöcke&r an —",
            "und mach dich bereit fürs &cEndgame&r."],
-          tasks=[task_item("magic_coins:crystal_coin", 1)],
-          rewards=[coin_crystal(2), rew_xp(40)],
-          deps=["e_handel"], icon="magic_coins:crystal_coin", size=1.25),
+          tasks=[task_item("minecraft:emerald_block", 8)],
+          rewards=[rew_xp(40)],
+          deps=["e_handel"], icon="minecraft:emerald_block", size=1.25),
 ]
 
 # ---- Endgame: große, automatisierbare Massenziele (consume) ----------------
@@ -703,7 +705,7 @@ endgame_q = [
           ["Die Königsdisziplin der Automatisierung: fertige &e10.000 Precision",
            "Mechanisms&r vollautomatisch. &7Mechanical Crafters glühen lassen!"],
           tasks=[task_item("create:precision_mechanism", 10000, consume=True)],
-          rewards=[coin_crystal(15), rew_item("magic_coins:crystal_coin", 5), rew_xp(120)],
+          rewards=[rew_item("minecraft:diamond_block", 4), rew_xp(120)],
           deps=["x_root"], icon="create:precision_mechanism", size=1.75, shape="gear"),
     quest("x_logs", -3.5, 2.0, "Endlos-Holz",
           ["Deine Baumfarm läuft heiß: liefere &e50.000 Holz&r."],
@@ -732,18 +734,17 @@ endgame_q = [
           tasks=[task_item("minecraft:diamond", 10000, consume=True)],
           rewards=[coin_crystal(12), rew_xp(90)],
           deps=["x_root"], icon="minecraft:diamond", size=1.25),
-    quest("x_coins", -5.0, 0.0, "Münz-Magnat",
-          ["Schwimme im Geld: besitze &e64 Kristallmünzen&r gleichzeitig."],
-          tasks=[task_item("magic_coins:crystal_coin", 64)],
-          rewards=[coin_crystal(10), rew_item("magic_coins:prosperity_amulet"), rew_xp(80)],
-          deps=["x_root"], icon="magic_coins:crystal_coin", size=1.25),
+    quest("x_coins", -5.0, 0.0, "Smaragd-Magnat",
+          ["Schwimme im Reichtum: besitze &e64 Smaragdblöcke&r gleichzeitig."],
+          tasks=[task_item("minecraft:emerald_block", 64)],
+          rewards=[rew_item("minecraft:diamond_block", 8), rew_xp(80)],
+          deps=["x_root"], icon="minecraft:emerald_block", size=1.25),
     quest("x_completionist", 0.0, 6.0, "Legende des SMP",
           ["Du hast die größten Automatisierungs-Ziele erreicht. Niemand auf dem",
            "Server kommt dir gleich.",
            "", "&6Herzlichen Glückwunsch — du bist eine wahre Legende!&r"],
           tasks=[task_item("create:precision_mechanism", 1)],
-          rewards=[coin_crystal(50), rew_item("minecraft:nether_star", 4),
-                   rew_item("magic_coins:prosperity_amulet"), rew_xp(200)],
+          rewards=[rew_item("minecraft:nether_star", 4), rew_item("minecraft:diamond_block", 16), rew_xp(200)],
           deps=["x_andesite", "x_brass", "x_iron", "x_copper", "x_precision", "x_logs",
                 "x_food", "x_levitite", "x_kartoffel", "x_diamonds", "x_coins"],
           icon="minecraft:nether_star", size=2.5, shape="gear"),

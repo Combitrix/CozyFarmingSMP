@@ -1,10 +1,10 @@
 # Cozy Farming SMP — Modpack
 
 Ein farm-lastiges Kitchen-Sink-SMP für **Minecraft 1.21.1 / NeoForge 21.1.233**.
-Verwaltet mit [Packwiz](https://packwiz.infra.link/). **163 Mods + 5 Shaderpacks** (Stand 0.9.12) — stark Create- & Farming-lastig.
+Verwaltet mit [Packwiz](https://packwiz.infra.link/). **184 Mods + 5 Shaderpacks** (Stand 0.10.0) — stark Create- & Farming-lastig.
 
 Säulen: Farmen & Leben · MineColonies (mehrere Kolonien/Spieler) · Create + Aeronautics + Zug-Netz ·
-riesige Welt (Terralith + Tectonic) · FTB Quests + Coin-Wirtschaft.
+riesige Welt (Terralith + Tectonic) · FTB Quests + Dorfhandel (Smaragde).
 
 ---
 
@@ -19,14 +19,11 @@ riesige Welt (Terralith + Tectonic) · FTB Quests + Coin-Wirtschaft.
 
 > **Shader:** 5 beliebte Shaderpacks **liegen bei** (in `shaderpacks/`): Complementary Reimagined,
 > Complementary Unbound, BSL, Sildur's Vibrant, Photon. Aktivieren in *Optionen → Sodium/Iris →
-> Shader Packs* — standardmäßig ist **keiner** an. Auf schwächeren PCs Shader aus + DH-Qualität runter.
+> Shader Packs* — **Complementary Reimagined ist standardmäßig aktiv** (config/iris.properties). Auf schwächeren PCs Shader aus + DH-Qualität runter.
 
 ## 🗺️ Web-Maps
-- **squaremap** (Server, 2D, leichtgewichtig) — Live-Karte der ganzen Welt im Browser.
-  Standard-Port **8080**, Config in `config/squaremap/`. Auf AMP den Port freigeben/forwarden.
-- **BlueMap** (Server, 3D, zum Testen) — Standard-Port **8100**, Config in `config/bluemap/`.
-  `accept-download: true` ist vorgesetzt (lädt die Web-Oberfläche beim 1. Start). Erst-Render dauert,
-  kostet CPU/Speicher — bei Bedarf wieder rausnehmen.
+- **Aktuell keine geteilte Server-Web-Map.** BlueMap (Crash) und squaremap (Render-Fehler durch
+  Mixin-Konflikt mit Bountiful Fares) wurden beide wieder entfernt.
 - **JourneyMap-Webmap** (Client, nur DEINE erkundete Karte, lokal): im Vollbild-Map-Screen →
   *Optionen* die Web-Map einschalten; läuft dann auf `localhost` im Browser. (Pro Spieler, nicht geteilt.)
 
@@ -137,8 +134,9 @@ Quellcode verifiziert, `ServerConfiguration.java`):
   ihre Kolonie claimen wollen, ggf. das FTB-Claim-Limit (`max_claimed_chunks`) erhöhen — beide
   Schutzzonen dürfen sich überlagern.
 
-**Wirtschaft:** **Magic Coins** = Währung für FTB-Quests-Belohnungen (Currency Rewards im Quest-Editor
-einstellbar). **Create: Numismatics** = physische Münzen/Handel/Automaten (passt zum Zug-/Handels-Thema).
+**Wirtschaft:** Das frühere Münz-System (Magic Coins / Create: Numismatics) wurde **entfernt**.
+Handel läuft jetzt über **Vanilla-Smaragde + Dorfbewohner** (Easy Villagers, Trade Cycling,
+Smarter Farmers); Quest-Belohnungen geben XP statt Münzen.
 
 **Quest-Linie (liegt dem Pack bei, `config/ftbquests/quests/`):** EIN großer Quest-Baum auf
 **einer einzigen Seite** (`chapters/questline.snbt`, **154 Quests**), der sich **progressiv
