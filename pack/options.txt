@@ -1,1 +1,2 @@
 guiScale:2
+resourcePacks:["file/Corail Tombstone Redraw.zip","file/Bare Bones x Refurbished Furniture.zip","file/FreshAnimations_v1.10.4.zip","file/FA+All_Extensions-v1.8.1.zip","file/FA+Player-v1.1.zip"]

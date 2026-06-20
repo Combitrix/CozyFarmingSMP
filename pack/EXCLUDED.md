@@ -58,3 +58,8 @@ Tiere/Atmosphäre: critters-and-companions, companions-dogfolk, ribbits (+yungs-
 - **Alex's Mobs / Fast-Leaf-Decay(Modrinth) / Continuity:** nicht für 1.21.1-NeoForge verfügbar — Fast Leaf Decay via CurseForge ergänzt; Continuity-Ersatz = Athena (CTM, via Chipped).
 
 - **sodium-dynamic-lights (+sodium-options-api +reeses-sodium-options)** — Crash beim Öffnen der Video-/Optionen-Settings: `sodium-options-api` mixin-t `FlatButtonWidget` (`@Shadow field dim`), inkompatibel mit Sodium 0.8-beta. Ganze Dynamic-Lights-Kette entfernt. Dynamic Lights vorerst nicht verfügbar (sodium-gebundene Addons brechen auf der Sodium-Beta). **ModernUI bleibt** (vom User gewünscht).
+
+## 🔄 0.10.5 — Optik & Sortierer
+- **Fresh Animations** (Resourcepack) + **FA: Extensions (All)** + **FA: Player Extension** — flüssige Mob-/Spieler-Animationen. Benötigt die Mods **EMF (Entity Model Features)** + **ETF (Entity Texture Features)**, beide ergänzt. Alle drei Packs in `options.txt` aktiviert (FA-Addons über der Basis).
+- **3D Skin Layers** (client) — 3D-Skin-Auflagen.
+- **Inventory-Sortierer: IPN → „Inventory Tweaks: ReFoxed"** (modId `invtweaks`, das ist auch ATM10s Sortierer). Sort-Button im Container + Sortierregeln + Auto-Refill, **ohne** die IPN-Hotbar-Pfeile, die der User nicht mochte. libIPN dadurch ebenfalls raus.
