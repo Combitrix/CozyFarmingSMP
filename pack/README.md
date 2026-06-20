@@ -1,7 +1,7 @@
 # Cozy Farming SMP — Modpack
 
 Ein farm-lastiges Kitchen-Sink-SMP für **Minecraft 1.21.1 / NeoForge 21.1.233**.
-Verwaltet mit [Packwiz](https://packwiz.infra.link/). **161 Mods** (Stand 0.9.8) — stark Create- & Farming-lastig.
+Verwaltet mit [Packwiz](https://packwiz.infra.link/). **159 Mods** (Stand 0.9.10) — stark Create- & Farming-lastig.
 
 Säulen: Farmen & Leben · MineColonies (mehrere Kolonien/Spieler) · Create + Aeronautics + Zug-Netz ·
 riesige Welt (Terralith + Tectonic) · FTB Quests + Coin-Wirtschaft.

@@ -2,11 +2,15 @@ hash-format = "sha256"
 
 [[files]]
 file = "EXCLUDED.md"
-hash = "cac58b25be9750958e08989460e617325b27169b3e5eeaeb3022e63ba6798a4a"
+hash = "1a72f27996c8f2a43492982f6b095c4fa4e1ce341a6fc6e63cd9ca4f384b8b25"
 
 [[files]]
 file = "README.md"
-hash = "3b899d012703b9bfa1b5236a82e7d9c669690f8f4683a0d1a6e7695e598f22a0"
+hash = "398c4868730694833c1feca50587ac6aeeb360e22ee0cab96e9ae875b0d6c7d8"
+
+[[files]]
+file = "SERVER-README.txt"
+hash = "b3b634f7fa71a1d8e6ec198112e0f9ce879282f4327d7ad254d1998dcc27dd0e"
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
@@ -26,7 +30,7 @@ hash = "ef52aacac2654ba4143f9d05c60c528938191fcee74410a73f7e04fedbc21990"
 
 [[files]]
 file = "kubejs/server_scripts/cozy_recipes.js"
-hash = "50fc41f5dc699811572f20a1324c5bdbcaf70a6aa6c50fe28017882e1d5ff356"
+hash = "8ef3deeb7e1f51564d0b54743704ddef76069ce13ecec27798586927a32197f6"
 
 [[files]]
 file = "mods/almostunified.pw.toml"
@@ -559,11 +563,6 @@ hash = "27302b0087cf53570cd7a3b4eb550a208cbb6f6ba07210c604176155f39e0078"
 metafile = true
 
 [[files]]
-file = "mods/kubejs-create.pw.toml"
-hash = "531aa276b74eabc24566c57412527767238c74ee16b9c646dff511f56dba990c"
-metafile = true
-
-[[files]]
 file = "mods/kubejs.pw.toml"
 hash = "99bea71046529d65463fc12acb505ab363c91133ebbcc1d976e49a5d33150702"
 metafile = true
@@ -671,11 +670,6 @@ metafile = true
 [[files]]
 file = "mods/more-delight.pw.toml"
 hash = "7b00b0ef46a798a4a46fe541314c63cfd62017190cd554e855cc21ef44e32635"
-metafile = true
-
-[[files]]
-file = "mods/more-mob-variants-renewed.pw.toml"
-hash = "f355291e358459207a3a52b47b5a34cd2d29f8685c92577ef7af4c3d82478d51"
 metafile = true
 
 [[files]]

@@ -2,6 +2,9 @@
 // Cozy Farming SMP — Rezept-Anpassungen (KubeJS, server_scripts)
 // IDs gegen die echten Mod-Jars verifiziert. Nach Änderungen: /reload + EMI prüfen.
 // Materialien-Dedup (#14) übernimmt der Mod "Almost Unified" automatisch — daher hier nicht.
+// HINWEIS: "KubeJS Create" wurde entfernt (Crash: ProcessingOutput-Wrapper doppelt). Die unten
+//          auskommentierten event.recipes.create.* Vorlagen brauchen es — erst mit kompatibler
+//          KubeJS-Create-Version wieder aktivieren. Alle LIVE-Rezepte hier sind reines Vanilla-Crafting.
 // =============================================================================
 
 ServerEvents.recipes(event => {

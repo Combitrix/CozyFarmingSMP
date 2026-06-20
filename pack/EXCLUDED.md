@@ -42,3 +42,5 @@ Tiere/Atmosphäre: critters-and-companions, companions-dogfolk, ribbits (+yungs-
 
 ## ❌ Entfernt nach Crash-Test 0.8.0
 - **create-applied-kinetics** — harter Crash beim Start: braucht **Applied Energistics 2** (`appeng.block.AEBaseEntityBlock`), das NICHT installiert ist (auf Modrinth nicht als *required* deklariert → Auto-Audit verfehlte es). AE2 ist bewusst **nicht** im Pack (Cozy-Farming-Fokus, kein schweres Tech-Storage). Bridge-Mod daher entfernt.
+
+- **kubejs-create** — Server-Crash beim Laden: `IllegalArgumentException: Wrapper for class …ProcessingOutput already exists!` (KubeJS-Create-Bug, doppelte Wrapper-Registrierung). Entfernt; KubeJS + Rhino bleiben. Create-Maschinen-Rezepte erst mit kompatibler Version wieder möglich.
