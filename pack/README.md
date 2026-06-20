@@ -1,7 +1,7 @@
 # Cozy Farming SMP — Modpack
 
 Ein farm-lastiges Kitchen-Sink-SMP für **Minecraft 1.21.1 / NeoForge 21.1.233**.
-Verwaltet mit [Packwiz](https://packwiz.infra.link/). **161 Mods** (Stand 0.9.11) — stark Create- & Farming-lastig.
+Verwaltet mit [Packwiz](https://packwiz.infra.link/). **163 Mods + 5 Shaderpacks** (Stand 0.9.12) — stark Create- & Farming-lastig.
 
 Säulen: Farmen & Leben · MineColonies (mehrere Kolonien/Spieler) · Create + Aeronautics + Zug-Netz ·
 riesige Welt (Terralith + Tectonic) · FTB Quests + Coin-Wirtschaft.
@@ -17,9 +17,18 @@ riesige Welt (Terralith + Tectonic) · FTB Quests + Coin-Wirtschaft.
 4. **Java-Args setzen** (siehe Abschnitt „Beste Java-Args" unten).
 5. Starten. Erststart dauert länger (Mod-Setup).
 
-> **Shader/Sichtweite:** Distant Horizons (extreme Sichtweite) und Iris-Shader sind enthalten,
-> standardmäßig dezent. Shader liegen nicht bei — ein DH-kompatibles Shaderpack (Iris 1.7+) selbst
-> hinzufügen. Auf schwächeren PCs: DH-Qualität runter oder Shader aus.
+> **Shader:** 5 beliebte Shaderpacks **liegen bei** (in `shaderpacks/`): Complementary Reimagined,
+> Complementary Unbound, BSL, Sildur's Vibrant, Photon. Aktivieren in *Optionen → Sodium/Iris →
+> Shader Packs* — standardmäßig ist **keiner** an. Auf schwächeren PCs Shader aus + DH-Qualität runter.
+
+## 🗺️ Web-Maps
+- **squaremap** (Server, 2D, leichtgewichtig) — Live-Karte der ganzen Welt im Browser.
+  Standard-Port **8080**, Config in `config/squaremap/`. Auf AMP den Port freigeben/forwarden.
+- **BlueMap** (Server, 3D, zum Testen) — Standard-Port **8100**, Config in `config/bluemap/`.
+  `accept-download: true` ist vorgesetzt (lädt die Web-Oberfläche beim 1. Start). Erst-Render dauert,
+  kostet CPU/Speicher — bei Bedarf wieder rausnehmen.
+- **JourneyMap-Webmap** (Client, nur DEINE erkundete Karte, lokal): im Vollbild-Map-Screen →
+  *Optionen* die Web-Map einschalten; läuft dann auf `localhost` im Browser. (Pro Spieler, nicht geteilt.)
 
 ## Installation — Server (25 GB RAM)
 

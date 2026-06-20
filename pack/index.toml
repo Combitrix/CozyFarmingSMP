@@ -6,11 +6,15 @@ hash = "1a72f27996c8f2a43492982f6b095c4fa4e1ce341a6fc6e63cd9ca4f384b8b25"
 
 [[files]]
 file = "README.md"
-hash = "19a31957a159cc1adad090f41d0ca178f6024db6ad291c6671c21e90d3086635"
+hash = "c1569cb5c46383a58fdcd7a0c471f97c8ef6a6f3729fc35b1c687f328c283780"
 
 [[files]]
 file = "SERVER-README.txt"
 hash = "b3b634f7fa71a1d8e6ec198112e0f9ce879282f4327d7ad254d1998dcc27dd0e"
+
+[[files]]
+file = "config/bluemap/core.conf"
+hash = "e661e20905622483f87f061ec0fc65a03e4b63aab8de8f71df3e7152e21924ae"
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
@@ -80,6 +84,11 @@ metafile = true
 [[files]]
 file = "mods/blockui.pw.toml"
 hash = "05abf6fafe4a8adf5aaa24f09b7dedfbe199a8727d925e816fc608d6357f5ba8"
+metafile = true
+
+[[files]]
+file = "mods/bluemap.pw.toml"
+hash = "f33a4720ef4f315b6d1f778039e9f7bdb8f5ef1b58a57d565c30fd1d8adee207"
 metafile = true
 
 [[files]]
@@ -798,6 +807,11 @@ hash = "09c393b303130cefffc1c376ddfdeb869b20db31d3d42d9fa155e13cfc628645"
 metafile = true
 
 [[files]]
+file = "mods/squaremap.pw.toml"
+hash = "2025a366af748e77e7df6fea1d736a8bdf05dc97503eb64bf13964f7bc2136b2"
+metafile = true
+
+[[files]]
 file = "mods/storage-delight.pw.toml"
 hash = "3df81c179b5d2c98d5e339285555e03d1197dc213f8a84bf1e611ea6d036d068"
 metafile = true
@@ -840,3 +854,28 @@ metafile = true
 [[files]]
 file = "options.txt"
 hash = "624a8e4974cae64389b28e8046c3cc18a94e609a02df63f5397ec2ca0c0f7ee8"
+
+[[files]]
+file = "shaderpacks/bsl-shaders.pw.toml"
+hash = "f91c2ec79366b4607d93928a07c223cbaa4a2e18fe0c110e68a3fc064e69b65a"
+metafile = true
+
+[[files]]
+file = "shaderpacks/complementary-reimagined.pw.toml"
+hash = "ea258ed5bf495d9017eeadc3cbf9bd67b1e672d843826bc077135548b5bc699e"
+metafile = true
+
+[[files]]
+file = "shaderpacks/complementary-unbound.pw.toml"
+hash = "608b87f75b2387a9fbd340cb18a8238bbbe5a0afc54202634b34f3000246b6e7"
+metafile = true
+
+[[files]]
+file = "shaderpacks/photon-shader.pw.toml"
+hash = "e9112a2da03f65451c8c949331d71b92546bbd75ff78eac554d27f6c41e1ba29"
+metafile = true
+
+[[files]]
+file = "shaderpacks/sildurs-vibrant-shaders.pw.toml"
+hash = "e08f089d7a8ee5556cefb2f672789d2d91b6b8566ed8d61ce4e61fa638817dec"
+metafile = true
