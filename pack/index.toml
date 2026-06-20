@@ -823,6 +823,11 @@ hash = "c99c5bac469e8d6ece5aae80f08635e3bbb8367f0c586b6288573c725faefe69"
 metafile = true
 
 [[files]]
+file = "mods/put-a-plug-in-it!.pw.toml"
+hash = "5d194b9b0dfbc14b9a6fd3eee981d0d6bb3db1e93c7fb465e8e31c0cb94c7853"
+metafile = true
+
+[[files]]
 file = "mods/reestrogen.pw.toml"
 hash = "319cbc64b12de4d4c381eb328f894abd2adac61bdcbd3a59ca7929b9d9e17ef5"
 metafile = true
