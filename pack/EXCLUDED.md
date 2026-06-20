@@ -56,3 +56,5 @@ Tiere/Atmosphäre: critters-and-companions, companions-dogfolk, ribbits (+yungs-
 - **LambDynamicLights → sodium-dynamic-lights** (LambDL verlangte fabric-api auf NeoForge).
 - **ambient-environment + falling-leaves entfernt** (Partikel in Menüs).
 - **Alex's Mobs / Fast-Leaf-Decay(Modrinth) / Continuity:** nicht für 1.21.1-NeoForge verfügbar — Fast Leaf Decay via CurseForge ergänzt; Continuity-Ersatz = Athena (CTM, via Chipped).
+
+- **sodium-dynamic-lights (+sodium-options-api +reeses-sodium-options)** — Crash beim Öffnen der Video-/Optionen-Settings: `sodium-options-api` mixin-t `FlatButtonWidget` (`@Shadow field dim`), inkompatibel mit Sodium 0.8-beta. Ganze Dynamic-Lights-Kette entfernt. Dynamic Lights vorerst nicht verfügbar (sodium-gebundene Addons brechen auf der Sodium-Beta). **ModernUI bleibt** (vom User gewünscht).

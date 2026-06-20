@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "EXCLUDED.md"
-hash = "b5e5c6ba0dad68787fdd5b6e100e010782080eb03de63b0017d064a672244a77"
+hash = "5c51b2e1eb706e399b9a5710635a2519ad55464cba66a0cc556d9b1fda3fb6a1"
 
 [[files]]
 file = "README.md"
@@ -798,11 +798,6 @@ hash = "c99c5bac469e8d6ece5aae80f08635e3bbb8367f0c586b6288573c725faefe69"
 metafile = true
 
 [[files]]
-file = "mods/reeses-sodium-options.pw.toml"
-hash = "61d572ec6e241a8374db15e453074a7ae70485a0caf9082b9b39c608410f643a"
-metafile = true
-
-[[files]]
 file = "mods/reestrogen.pw.toml"
 hash = "319cbc64b12de4d4c381eb328f894abd2adac61bdcbd3a59ca7929b9d9e17ef5"
 metafile = true
@@ -865,16 +860,6 @@ metafile = true
 [[files]]
 file = "mods/smarter-farmers-farmers-replant.pw.toml"
 hash = "918104735fe4da7e223394b5f76c0f063178b34e653fab7135ce451fd08d0746"
-metafile = true
-
-[[files]]
-file = "mods/sodium-dynamic-lights.pw.toml"
-hash = "c1e526d3d17cb3563e596d45c7567ed1fe60c31bdc3457f7a747ef8150bd3c1b"
-metafile = true
-
-[[files]]
-file = "mods/sodium-options-api.pw.toml"
-hash = "d193173f0f5dfb4a921d44e29e8d5cee656dd3a40872939069715bb482b66fc9"
 metafile = true
 
 [[files]]
