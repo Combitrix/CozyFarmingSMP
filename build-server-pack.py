@@ -13,6 +13,7 @@ import os, re, sys, time, zipfile, tempfile, urllib.request, urllib.parse
 ROOT = os.path.dirname(os.path.abspath(__file__))
 MODS = os.path.join(ROOT, "pack", "mods")
 CONFIG = os.path.join(ROOT, "pack", "config")
+KUBEJS = os.path.join(ROOT, "pack", "kubejs")
 README = os.path.join(ROOT, "pack", "SERVER-README.txt")
 
 def pack_version():
@@ -67,7 +68,17 @@ def main():
                 rel = os.path.relpath(full, os.path.join(ROOT, "pack"))
                 z.write(full, rel)
                 cfg_n += 1
-    print(f"downloaded={ok} client-skipped={skip} config-files={cfg_n} failed={len(fails)} -> {zpath}")
+        # KubeJS-Scripts (server_scripts/startup_scripts; client_scripts überspringen)
+        kjs_n = 0
+        for dirpath, _dirs, files in os.walk(KUBEJS):
+            if "client_scripts" in dirpath.split(os.sep):
+                continue
+            for kf in sorted(files):
+                full = os.path.join(dirpath, kf)
+                rel = os.path.relpath(full, os.path.join(ROOT, "pack"))
+                z.write(full, rel)
+                kjs_n += 1
+    print(f"downloaded={ok} client-skipped={skip} config-files={cfg_n} kubejs-files={kjs_n} failed={len(fails)} -> {zpath}")
     for x in fails:
         print("  FAIL", x)
     return 1 if fails else 0
