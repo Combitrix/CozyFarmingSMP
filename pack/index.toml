@@ -6,7 +6,7 @@ hash = "1a72f27996c8f2a43492982f6b095c4fa4e1ce341a6fc6e63cd9ca4f384b8b25"
 
 [[files]]
 file = "README.md"
-hash = "398c4868730694833c1feca50587ac6aeeb360e22ee0cab96e9ae875b0d6c7d8"
+hash = "19a31957a159cc1adad090f41d0ca178f6024db6ad291c6671c21e90d3086635"
 
 [[files]]
 file = "SERVER-README.txt"
@@ -780,6 +780,16 @@ metafile = true
 [[files]]
 file = "mods/sodium.pw.toml"
 hash = "25324a8a9cdc663d3d1952191e873f87531011715de49673cbf7c1b0da0504d6"
+metafile = true
+
+[[files]]
+file = "mods/sophisticated-backpacks.pw.toml"
+hash = "ffb55dc7c35521b4e3fe36716321b9cf3ca11673bb6e511c63de8e5ec7d29541"
+metafile = true
+
+[[files]]
+file = "mods/sophisticated-core.pw.toml"
+hash = "e3821b3cb161f7ae9cb0d773e54658262ac8f562da879ae4da4577c07ddb4884"
 metafile = true
 
 [[files]]
