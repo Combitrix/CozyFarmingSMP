@@ -6,14 +6,22 @@
 // Nicht-Metall-Erze (Diamant/Lapis/Redstone/Kohle/Quarz) bleiben unberührt.
 
 ServerEvents.recipes(event => {
-  // Erz-Blöcke (…_ore / #c:ores…) UND Roh-Erze (#c:raw_materials/… / …:raw_iron)
-  const isTarget = (ing) => {
+  // Erz-Blöcke (…_ore / #c:ores…), Roh-Erze (#c:raw_materials/… / …:raw_iron)
+  const isOreOrRaw = (ing) => {
     if (!ing) return false
     const tag = ing.tag || ''
     const item = ing.item || ''
     return /(^|[:/])ores?([/]|$)/.test(tag) || /_ore$/.test(item)
       || /raw_materials\//.test(tag) || /(^|:)raw_[a-z]+$/.test(item)
   }
+  // Roh-Erz-Blöcke (#c:storage_blocks/raw_… / …:raw_iron_block) -> hier verdoppeln (9->18)
+  const isRawBlock = (ing) => {
+    if (!ing) return false
+    const tag = ing.tag || ''
+    const item = ing.item || ''
+    return /storage_blocks\/raw/.test(tag) || /raw_[a-z]+_block$/.test(item)
+  }
+  const isTarget = (ing) => isOreOrRaw(ing) || isRawBlock(ing)
   const isCrushed = (id) => /crushed_/.test(id || '')
 
   const toRemove = []
@@ -30,25 +38,30 @@ ServerEvents.recipes(event => {
     const crushed = results.filter((o) => isCrushed(o.id || o.item))
     if (crushed.length === 0) return
 
+    const block = ings.some(isRawBlock)  // Block -> verdoppeln (x2), sonst auf mind. 2
     let mutated = false
     let mainId = null
 
-    // 1) garantierten Crushed-Output (keine/volle chance) auf mind. 2
+    // 1) garantierten Crushed-Output anheben: Block = x2 (9->18), Item/Erz = mind. 2
     crushed.forEach((o) => {
       const ch = (o.chance === undefined) ? 1 : o.chance
       if (ch >= 1) {
         mainId = o.id || o.item
-        if ((o.count || 1) < 2) { o.count = 2; mutated = true }
+        const c = o.count || 1
+        const target = block ? c * 2 : Math.max(c, 2)
+        if (target !== c) { o.count = target; mutated = true }
       }
     })
     if (!mainId) mainId = crushed[0].id || crushed[0].item
 
-    // 2) Bonus-Crushed auf 75% (vorhandenen anpassen, sonst neu)
-    const bonus = crushed.find((o) => ((o.chance === undefined) ? 1 : o.chance) < 1)
-    if (bonus) {
-      if (bonus.chance !== 0.75) { bonus.chance = 0.75; mutated = true }
-    } else {
-      results.push({ chance: 0.75, id: mainId }); mutated = true
+    // 2) Bonus-Crushed auf 75% — nur bei Erz/Raw-Items (Blöcke bleiben sauber x2)
+    if (!block) {
+      const bonus = crushed.find((o) => ((o.chance === undefined) ? 1 : o.chance) < 1)
+      if (bonus) {
+        if (bonus.chance !== 0.75) { bonus.chance = 0.75; mutated = true }
+      } else {
+        results.push({ chance: 0.75, id: mainId }); mutated = true
+      }
     }
 
     if (mutated) {

@@ -34,7 +34,7 @@ hash = "ef52aacac2654ba4143f9d05c60c528938191fcee74410a73f7e04fedbc21990"
 
 [[files]]
 file = "kubejs/server_scripts/ore_crushing_boost.js"
-hash = "86484afca816badc90d25bffbba177c0aca3036d0f73bf09bf4e1855e9f1a579"
+hash = "8e6ab593b3ed3ad208f4e1a9cf4130d1c317b4a946fc856dd1bdc120c50d1ebc"
 
 [[files]]
 file = "mods/3dskinlayers.pw.toml"
@@ -313,7 +313,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-garnished.pw.toml"
-hash = "c4a95b0d71bc8dca3c8c8d8b2c256131cf568ae9262a9764f4e95986310941bb"
+hash = "710f6b193afb4f0660b9e1e0e084772abbac6d2eb5f3a6dfeb6cf3c0a4e3e529"
 metafile = true
 
 [[files]]
