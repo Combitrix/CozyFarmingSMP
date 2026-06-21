@@ -7,7 +7,8 @@
 
 ## 🔁 0.10.11 — KubeJS zurück
 - **KubeJS 2101.7.2 + Rhino 2101.2.7 + KubeJS Create 2101.3.1** (alle side=both) wieder hinzugefügt, um Ore Doubling per Rezept-Script zu machen.
-- ⚠️ **Achtung Dedicated Server:** kubejs-create build.18 crashte bei 0.9.8 beim Laden — `IllegalArgumentException: Wrapper for class …ProcessingOutput already exists!` in `KubeJSCreatePlugin.registerTypeWrappers` (Doppel-Registrierung des Rhino-Type-Wrappers, **nicht** scriptbedingt — Crash passiert vor jeder Script-Ausführung). Singleplayer lädt laut User normal; Pack hat sich seit 0.9.8 stark geändert. **Vor Server-Deploy auf MeinPack01 testen.** Falls es serverseitig wieder crasht: kubejs-create auf `side=client` setzen (dann fehlen aber serverseitige KubeJS-Create-Rezepte) oder den kollidierenden Create-Addon-KubeJS-Plugin finden.
+- ✅ **0.10.12 auf MeinPack01 deployt & getestet (21.06.2026):** kubejs-create lädt serverseitig **ohne** Crash (der `ProcessingOutput`-Konflikt von 0.9.8 ist mit dem damaligen Konflikt-Addon längst raus). KubeJS startup+server scripts 0 errors, Ore-Doubling-Script lief („8 Create-Compacting-Rezepte geladen"), Done. Frühere 0.9.8-Crash-Notiz damit erledigt.
+- **Ore-Doubling-Script:** `kubejs/server_scripts/ore_doubling.js` — Create-Compacting für iron/gold/copper/zinc (raw + 50mb Lava → 2× crushed; heated → 3× crushed). Erweiterbar um weitere Metalle, sofern `crushed_raw_*`-Item existiert.
 
 ## ⚠️ Aufgenommen, aber in-game gegen Create 6 verifizieren (🖐️)
 Diese Addons hatten lt. Recherche evtl. ältere Create-5-Bauten oder Beta/Alpha-Stand —
