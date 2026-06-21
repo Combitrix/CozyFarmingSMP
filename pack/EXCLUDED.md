@@ -3,7 +3,11 @@
 **Pinned Create: 6.0.10+mc1.21.1 (Create-6-Linie)** — alle Create-Addons müssen dazu passen.
 
 ## 📋 To Be Added (geplant, noch NICHT im Pack)
-- **create-simple-ore-doubling** — „Create: Simple Ore Doubling" v1.6.0 (1.21.1/neoforge verfügbar, 1 Pflicht-Dependency). Auf Wunsch des Users vorgemerkt, noch nicht hinzugefügt.
+- **create-simple-ore-doubling** — *on hold:* User macht Ore Doubling stattdessen via **KubeJS** (KubeJS+Rhino+KubeJS-Create in 0.10.11 wieder rein). Mod bleibt als Fallback vorgemerkt, falls kubejs-create serverseitig doch crasht.
+
+## 🔁 0.10.11 — KubeJS zurück
+- **KubeJS 2101.7.2 + Rhino 2101.2.7 + KubeJS Create 2101.3.1** (alle side=both) wieder hinzugefügt, um Ore Doubling per Rezept-Script zu machen.
+- ⚠️ **Achtung Dedicated Server:** kubejs-create build.18 crashte bei 0.9.8 beim Laden — `IllegalArgumentException: Wrapper for class …ProcessingOutput already exists!` in `KubeJSCreatePlugin.registerTypeWrappers` (Doppel-Registrierung des Rhino-Type-Wrappers, **nicht** scriptbedingt — Crash passiert vor jeder Script-Ausführung). Singleplayer lädt laut User normal; Pack hat sich seit 0.9.8 stark geändert. **Vor Server-Deploy auf MeinPack01 testen.** Falls es serverseitig wieder crasht: kubejs-create auf `side=client` setzen (dann fehlen aber serverseitige KubeJS-Create-Rezepte) oder den kollidierenden Create-Addon-KubeJS-Plugin finden.
 
 ## ⚠️ Aufgenommen, aber in-game gegen Create 6 verifizieren (🖐️)
 Diese Addons hatten lt. Recherche evtl. ältere Create-5-Bauten oder Beta/Alpha-Stand —
