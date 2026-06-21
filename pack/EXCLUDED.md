@@ -2,6 +2,9 @@
 
 **Pinned Create: 6.0.10+mc1.21.1 (Create-6-Linie)** — alle Create-Addons müssen dazu passen.
 
+## 📋 To Be Added (geplant, noch NICHT im Pack)
+- **create-simple-ore-doubling** — „Create: Simple Ore Doubling" v1.6.0 (1.21.1/neoforge verfügbar, 1 Pflicht-Dependency). Auf Wunsch des Users vorgemerkt, noch nicht hinzugefügt.
+
 ## ⚠️ Aufgenommen, aber in-game gegen Create 6 verifizieren (🖐️)
 Diese Addons hatten lt. Recherche evtl. ältere Create-5-Bauten oder Beta/Alpha-Stand —
 beim ersten Start auf Crashes/Mixin-Konflikte prüfen, ggf. einzeln entfernen:
