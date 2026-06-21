@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "EXCLUDED.md"
-hash = "a481ef04da2c4fd2bba0f5ed6661464423471197dc79b22707573556aeed13a1"
+hash = "149bc225d43aeec50679de96bc1ad8ca92fcfd406d1d23f7b797f1fcb1474cf6"
 
 [[files]]
 file = "README.md"
@@ -34,11 +34,7 @@ hash = "ef52aacac2654ba4143f9d05c60c528938191fcee74410a73f7e04fedbc21990"
 
 [[files]]
 file = "kubejs/server_scripts/ore_crushing_boost.js"
-hash = "e73314b6e1dbbd7f806a872c5ba877adb88ab0f16d6ad0a021bc5475e9a3623d"
-
-[[files]]
-file = "kubejs/server_scripts/ore_doubling.js"
-hash = "9822f8dc457bf11cff89f12ac84ad8990a42c84a35a82bef43cd3295f6fdb446"
+hash = "86484afca816badc90d25bffbba177c0aca3036d0f73bf09bf4e1855e9f1a579"
 
 [[files]]
 file = "mods/3dskinlayers.pw.toml"

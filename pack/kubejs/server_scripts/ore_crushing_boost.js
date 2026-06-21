@@ -6,11 +6,13 @@
 // Nicht-Metall-Erze (Diamant/Lapis/Redstone/Kohle/Quarz) bleiben unberührt.
 
 ServerEvents.recipes(event => {
-  const isOreIngredient = (ing) => {
+  // Erz-Blöcke (…_ore / #c:ores…) UND Roh-Erze (#c:raw_materials/… / …:raw_iron)
+  const isTarget = (ing) => {
     if (!ing) return false
     const tag = ing.tag || ''
     const item = ing.item || ''
     return /(^|[:/])ores?([/]|$)/.test(tag) || /_ore$/.test(item)
+      || /raw_materials\//.test(tag) || /(^|:)raw_[a-z]+$/.test(item)
   }
   const isCrushed = (id) => /crushed_/.test(id || '')
 
@@ -22,7 +24,7 @@ ServerEvents.recipes(event => {
     try { j = JSON.parse(r.json.toString()) } catch (e) { return }
 
     const ings = j.ingredients || []
-    if (!ings.some(isOreIngredient)) return
+    if (!ings.some(isTarget)) return
 
     const results = j.results || []
     const crushed = results.filter((o) => isCrushed(o.id || o.item))
@@ -58,5 +60,5 @@ ServerEvents.recipes(event => {
 
   toRemove.forEach((id) => event.remove({ id: id }))
   toAdd.forEach((j) => event.custom(j))
-  console.info(`[Cozy] Ore-Crushing-Boost: ${toAdd.length} Erz-Crushing-Rezepte angepasst (>=2 garantiert + 75% auf drittes)`)
+  console.info(`[Cozy] Ore-Crushing-Boost: ${toAdd.length} Crushing-Rezepte (Erz + Raw) angepasst (>=2 garantiert + 75% auf drittes)`)
 })
