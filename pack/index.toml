@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "EXCLUDED.md"
-hash = "399297b1b3983b9b34225c6702060ce6aa7f5258a16280c0ca53a58b52170631"
+hash = "a481ef04da2c4fd2bba0f5ed6661464423471197dc79b22707573556aeed13a1"
 
 [[files]]
 file = "README.md"
@@ -31,6 +31,10 @@ hash = "4cd551159addc4e61b56f4f15c022f143a610131121468a1912dea19328ce79a"
 [[files]]
 file = "config/minecolonies-server.toml"
 hash = "ef52aacac2654ba4143f9d05c60c528938191fcee74410a73f7e04fedbc21990"
+
+[[files]]
+file = "kubejs/server_scripts/ore_crushing_boost.js"
+hash = "e73314b6e1dbbd7f806a872c5ba877adb88ab0f16d6ad0a021bc5475e9a3623d"
 
 [[files]]
 file = "kubejs/server_scripts/ore_doubling.js"
