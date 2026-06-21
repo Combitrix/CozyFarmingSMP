@@ -221,6 +221,11 @@ hash = "5fab8d2e412683dfd72f08cf6750e51b03cb43192e8eb783e962ba28d20978bc"
 metafile = true
 
 [[files]]
+file = "mods/create-aeroworks.pw.toml"
+hash = "2f02126de38cf2a656b7ae97aa1f6c1a153498f5cdb03fe197c291d9c43cbb5a"
+metafile = true
+
+[[files]]
 file = "mods/create-big-cannons.pw.toml"
 hash = "f7b20a7e5ae4678c0e74e7e6945f48c402636f8887d65b0cdab0357dd5c08856"
 metafile = true
@@ -336,6 +341,11 @@ hash = "4c0763d5351f0264d1d60c6fee012663f4855a9def0c31c309560779782945d1"
 metafile = true
 
 [[files]]
+file = "mods/create-lift-n-load.pw.toml"
+hash = "c400a47623955915cbada02a952824365d5b57b43ccfc696740f83f4ee34c93d"
+metafile = true
+
+[[files]]
 file = "mods/create-liquid-fuel.pw.toml"
 hash = "9b27b8381a81b711e574cf244ee5fc81abf64076e7aa81089e47512deb61b123"
 metafile = true
@@ -348,6 +358,11 @@ metafile = true
 [[files]]
 file = "mods/create-misc-and-things.pw.toml"
 hash = "055a23471c72576d1f79e2edcd6a20bcaa59ac70c84480fc10069c6469b3f528"
+metafile = true
+
+[[files]]
+file = "mods/create-molten-vents.pw.toml"
+hash = "198dc94a41237e61ad862bb803a6b5892781209a0f9890881f3f98cd6fce2792"
 metafile = true
 
 [[files]]
@@ -386,6 +401,11 @@ hash = "480b7c7cf1569b1eb98d199c10ce60a8ad13a534b738aa72e7bbcd3ac966d21e"
 metafile = true
 
 [[files]]
+file = "mods/create-structures-arise.pw.toml"
+hash = "bd48df02197c531fc58f203c2b6616f8327f5c18208414060e24b12e93c8afe0"
+metafile = true
+
+[[files]]
 file = "mods/create-stuff-additions.pw.toml"
 hash = "5d7c434f746d615ea78adfdc4ba6e96452c93b2a68dc939c2ff3611a061e0b21"
 metafile = true
@@ -398,6 +418,11 @@ metafile = true
 [[files]]
 file = "mods/create-trainutilities.pw.toml"
 hash = "fe60a010c4a980865f3497cbc1247b40fadbb4bf68c9b653a241227bd7e52525"
+metafile = true
+
+[[files]]
+file = "mods/create-ultimate-factory.pw.toml"
+hash = "34d808989e71221b8e01a44bc8031f20af1c94981acb0cba4669e0e58be69629"
 metafile = true
 
 [[files]]
@@ -468,6 +493,11 @@ metafile = true
 [[files]]
 file = "mods/dye-depot.pw.toml"
 hash = "80b348059fd89aa96ada0ccb1ec872ddd8af9898a5cdf47fee4ec021ffb8bb3d"
+metafile = true
+
+[[files]]
+file = "mods/dynamic-village.pw.toml"
+hash = "2bcb5fbe083f3ace39698e890255eb0758116e395fb211d136c8a12369b529e0"
 metafile = true
 
 [[files]]

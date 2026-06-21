@@ -1,0 +1,13 @@
+name = "Create: Lift n' Load |  Simulated/Aeronautics Addon"
+filename = "Lift-n-Load-1.21.1-1.0b.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/aJR8vXL6/versions/lymRCW9X/Lift-n-Load-1.21.1-1.0b.jar"
+hash-format = "sha512"
+hash = "188ec26427660f3845792b04aecd49d41d3cb4c7b7488cbcbbe71f2dd2b835d1e21938febcd3fb1c740550a9f1ee690dc9dd13be0315f0523ecb6dc7258818e7"
+
+[update]
+[update.modrinth]
+mod-id = "aJR8vXL6"
+version = "lymRCW9X"

@@ -4,6 +4,17 @@
 
 ## 📋 To Be Added (geplant, noch NICHT im Pack)
 - **create-simple-ore-doubling** — *on hold:* User macht Ore Doubling stattdessen via **KubeJS** (KubeJS+Rhino+KubeJS-Create in 0.10.11 wieder rein). Mod bleibt als Fallback vorgemerkt, falls kubejs-create serverseitig doch crasht.
+- **CreateTweaker** (CraftTweaker-Integration) — ❌ keine 1.21.1/NeoForge-Version + würde CraftTweaker ziehen (redundant zu KubeJS). Weggelassen.
+
+## 🧪 0.10.14 — weitere Create-Addons (HINZUGEFÜGT, in-game testen, noch NICHT auf Server deployt)
+Alle 6 side=both, Deps (create/sable) vorhanden. Mehrere sind Alpha/Beta → beim ersten Start auf Crash/Mixin-Konflikt prüfen, ggf. einzeln `packwiz remove`:
+- **create-ultimate-factory** 2.2.4 — ⚠️ mögliche Rezept-Kollision mit **create-aeronautics** (es existiert ein „create-aeronautics-ultimatefactory-recipe-fix"; bei Rezept-/Startfehlern den Fix suchen).
+- **create-lift-n-load** 1.0b (Beta, Simulated/Aeronautics-Addon, nutzt sable)
+- **dynamic-village** 0.5.1 (frühe Version)
+- **create-structures-arise** (aktiv gepflegt, 26 Versionen)
+- **create-aeroworks** 1.2.11 (Aeronautics/sable-Addon)
+- **create-molten-vents** 2.1.1
+→ **Erst Singleplayer testen**, dann auf MeinPack01 deployen (diese Addon-Klasse hat früher gecrasht: create-applied-kinetics/AE2, kubejs-create).
 
 ## 🔁 0.10.11 — KubeJS zurück
 - **KubeJS 2101.7.2 + Rhino 2101.2.7 + KubeJS Create 2101.3.1** (alle side=both) wieder hinzugefügt, um Ore Doubling per Rezept-Script zu machen.
