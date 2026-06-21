@@ -1,0 +1,27 @@
+{
+ "type": "create:compacting",
+ "heat_requirement": "heated",
+ "ingredients": [
+  {
+   "item": "garnished:bitter_almond"
+  },
+  {
+   "item": "garnished:salt_compound"
+  },
+  {
+   "item": "garnished:salt_compound"
+  },
+  {
+   "type": "neoforge:single",
+   "amount": 500,
+   "fluid": "minecraft:water"
+  }
+ ],
+ "results": [
+  {
+   "item": {
+    "id": "garnished:almond_cheese"
+   }
+  }
+ ]
+}

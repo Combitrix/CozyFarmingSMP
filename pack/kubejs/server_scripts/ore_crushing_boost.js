@@ -41,6 +41,7 @@ ServerEvents.recipes(event => {
     const block = ings.some(isRawBlock)  // Block -> verdoppeln (x2), sonst auf mind. 2
     let mutated = false
     let mainId = null
+    let bonus = null
 
     // 1) garantierten Crushed-Output anheben: Block = x2 (9->18), Item/Erz = mind. 2
     crushed.forEach((o) => {
@@ -56,7 +57,7 @@ ServerEvents.recipes(event => {
 
     // 2) Bonus-Crushed auf 75% — nur bei Erz/Raw-Items (Blöcke bleiben sauber x2)
     if (!block) {
-      const bonus = crushed.find((o) => ((o.chance === undefined) ? 1 : o.chance) < 1)
+      bonus = crushed.find((o) => ((o.chance === undefined) ? 1 : o.chance) < 1)
       if (bonus) {
         if (bonus.chance !== 0.75) { bonus.chance = 0.75; mutated = true }
       } else {

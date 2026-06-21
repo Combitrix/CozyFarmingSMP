@@ -1,0 +1,20 @@
+{
+ "type": "create:filling",
+ "ingredients": [
+  {
+   "item": "garnished:hazelnut"
+  },
+  {
+   "type": "neoforge:tag",
+   "amount": 250,
+   "tag": "c:honey"
+  }
+ ],
+ "results": [
+  {
+   "item": {
+    "id": "garnished:honeyed_hazelnut"
+   }
+  }
+ ]
+}

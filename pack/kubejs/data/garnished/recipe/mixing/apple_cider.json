@@ -1,0 +1,29 @@
+{
+ "type": "create:mixing",
+ "heat_requirement": "heated",
+ "ingredients": [
+  {
+   "item": "garnished:garnish_compound"
+  },
+  {
+   "item": "minecraft:apple"
+  },
+  {
+   "item": "minecraft:apple"
+  },
+  {
+   "tag": "garnished:cracked_nuts"
+  },
+  {
+   "type": "neoforge:single",
+   "amount": 250,
+   "fluid": "minecraft:water"
+  }
+ ],
+ "results": [
+  {
+   "amount": 250,
+   "id": "garnished:apple_cider"
+  }
+ ]
+}

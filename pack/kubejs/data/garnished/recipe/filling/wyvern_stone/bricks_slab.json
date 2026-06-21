@@ -1,0 +1,18 @@
+{
+ "type": "create:filling",
+ "ingredients": [
+  {
+   "item": "garnished:unstable_stone_brick_slab"
+  },
+  {
+   "type": "neoforge:tag",
+   "amount": 250,
+   "tag": "c:dragon_breath"
+  }
+ ],
+ "results": [
+  {
+   "id": "garnished:dragon_stone_brick_slab"
+  }
+ ]
+}

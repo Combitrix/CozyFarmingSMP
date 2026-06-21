@@ -33,8 +33,332 @@ file = "config/minecolonies-server.toml"
 hash = "ef52aacac2654ba4143f9d05c60c528938191fcee74410a73f7e04fedbc21990"
 
 [[files]]
+file = "kubejs/data/garnished/recipe/compacting/almond_cheese.json"
+hash = "438f7b93d3c3edd647c08ebe551bfb5cfe9bff6f316bfdb028479b2a16be8b39"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/compacting/bristled_tortilla.json"
+hash = "9a50f5a50377842b803edccec978c9004a99145c0f367063f6e197ed59044474"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/compacting/effect/melted_cinder_almond_with_haste.json"
+hash = "f05a35a3f0e3dc9a9c3409cd3228e43b292f52f4d5434faaa8b4ed4e0bc93afb"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/compacting/effect/melted_cinder_cashew_with_speed.json"
+hash = "19ab9281b1c0def1d57a71ba4d5eac97eb9437359f90c8da60bb7f731bca6528"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/compacting/effect/melted_cinder_chestnut_with_slow_falling.json"
+hash = "8f9e0316eceeeb8b3d664eb40a467c15b1c74fc2774a4d4f4c3c6381c3939999"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/compacting/effect/melted_cinder_hazelnut_with_potent_speed.json"
+hash = "5cd8936ccbf3d9a21476ef494fb4a9c5415f311dcdb1bd85d4ab972e7e17ee57"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/compacting/effect/melted_cinder_macadamia_with_fire_resistance.json"
+hash = "d98dbf49c5cf834d0821367945653920c61261ab6b6c1439d3e73c6d02969849"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/compacting/effect/melted_cinder_peanut_with_effect.json"
+hash = "bcf5e5a6441da30d04c1d05300cc12cb10e7750a3130b192628ab86e9e4f487d"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/compacting/effect/melted_cinder_pecan_with_resistance.json"
+hash = "9d1968fc066cfccd5c2f446e669a16f3f40c441fee9614028699c586771295f7"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/compacting/effect/melted_cinder_pistachio_with_night_vision.json"
+hash = "59873e1e36ad1492ab7e794f4670dbaf1d37d9a53ad85be4045952df3113bc1a"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/compacting/effect/melted_cinder_walnut_with_strength.json"
+hash = "a3b39b830974e8374ab3eaf6824d36fcd964f49d80813345658c53f515684633"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/compacting/ender_jelly.json"
+hash = "b31c14cb939ba188e785d602b883292c3dcb25a7d0194c1d91acb6b76e6ab5d5"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/compacting/solidified_garnish_from_compound.json"
+hash = "2e2eb494d97b02e6f92220ee2c7a3233613ed82c4b250bd3a0864cda7799cf9c"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/compacting/solidified_garnish_from_liquid.json"
+hash = "99c28f4475b3cf168bf88cf4c023684a628f428b20c36b17bde4eb0bd1c30d86"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/filling/apple_cider.json"
+hash = "71186c343347891cfbd25bc404fb0b904faeee75d41bd4e73fdc0f4df10382ac"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/filling/chocolate_glazed_almond.json"
+hash = "90f5680cefa2632725762d47fe9dbb8f29a75b44224121ff8bb3e975a472bef0"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/filling/chocolate_glazed_cashew.json"
+hash = "a1b085df12bbd6d681e35350a8d8da9881614f5ac002b2fb33f7b2eed01e90b3"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/filling/chocolate_glazed_chestnut.json"
+hash = "d5ba9b307de7c034c4cc38fbc5afad5843ac272c3058406c9c117babac508876"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/filling/chocolate_glazed_hazelnut.json"
+hash = "cea59e59c7b462d552a467fb6869c31086b13530079fda0c2ff1005c49412e64"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/filling/chocolate_glazed_macadamia.json"
+hash = "8a99e28c73a559e5888fe593205e0bceb307d54782a3f1139cb6ea0209677411"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/filling/chocolate_glazed_nut_mix_from_regular_nut_mix.json"
+hash = "dc68b8d703e7e84948f1cc345282da35505895f7e150eb0101f3e962a1969791"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/filling/chocolate_glazed_peanut.json"
+hash = "0ecb8ac73f43fca4128eb6d14638b6dd0be0429a9adefce07df1b6f259bf0bc9"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/filling/chocolate_glazed_pecan.json"
+hash = "d65c040f6852e1504279f8320dabae237a55ba2901a581f98559d3113bfa1083"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/filling/chocolate_glazed_pistachio.json"
+hash = "6045118f6af364a6d0793bfd22b7f3619faf56cec5a1e71184f98daf60394b4f"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/filling/chocolate_glazed_walnut.json"
+hash = "06a88749e24ee6a417ffbc105e48f90767ec12e26a0250266c0cb95f0cec7e91"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/filling/coal_truffle.json"
+hash = "693a906429729ad02a57c00a16be6aacd6ab0d28ec807d6829a71b3c739eb805"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/filling/dragon_breath.json"
+hash = "f74b1e5e7bfee59f4341f32e68d4874be305e3ba96ab25f1967c9f0f956a0219"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/filling/garnished_almond.json"
+hash = "2ce5909db4fdd123713e35e6f7aa1041442f7e0a38cec2d9e750896be45c4462"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/filling/garnished_cashew.json"
+hash = "3bc64fc682740c8c4cbee419ece43951211d64075570e32ed645f3f498f1f53a"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/filling/garnished_chestnut.json"
+hash = "41bb4914dbbecf59a4f9f0f354bda5aa4b22c8d0c0fb171809bdd87ae725cf11"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/filling/garnished_hazelnut.json"
+hash = "a42807deab74e4c0675a5b476d4215162152fcd9b685dff1637fcb45e48b6ae3"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/filling/garnished_macadamia.json"
+hash = "b6744dc4a9f77e1a955ba40bca2d460d58a87f2246996ffb93b128efecd49453"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/filling/garnished_peanut.json"
+hash = "7c4fab6d63ec6345ccb19c7dc3c10d7ac463333b472ff4b1ed2ece686ea5e6a0"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/filling/garnished_pecan.json"
+hash = "8b77b075da2896ab3221b38ceaf6fca762604e61129783accc8c2566f476a3f5"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/filling/garnished_pistachio.json"
+hash = "e0d0d599b19c507621b14f18d2498975e509b492d41a3fff12e4e6873acc4c6f"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/filling/garnished_sweet_berries.json"
+hash = "38ac5b6514a8bc7ff9e49223325f69f017f9cabb84885624ba9b9374e27b5427"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/filling/garnished_walnut.json"
+hash = "abba22542ba7db12fcd11747d405d7018deb2e00c31edfe564ba86e4ed8b4f1c"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/filling/honeyed_almond.json"
+hash = "1365defe7fadebd5502a291747e603d5253e1a2659c0fb2e6129fcc642585222"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/filling/honeyed_cashew.json"
+hash = "7cbb18b1df8fdab148f6fec39bcab1864af0e0267482fb86313c0bbbc040414f"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/filling/honeyed_chestnut.json"
+hash = "dd8d426eb92cb4b2a768afa926f855c52769fd0dc97acd6b988b5314ede8db78"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/filling/honeyed_hazelnut.json"
+hash = "c7e5440b71a2ec5892788ecd650ce0f38cfb074842fadfb792ac43d41b4a36ad"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/filling/honeyed_macadamia.json"
+hash = "e7da2caad9384696e8f4184c363a0a8c9058987d969d5e1f3407a5da4a2b181b"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/filling/honeyed_nut_mix.json"
+hash = "7eee138c6f6d8abcc5187250ed58a58f509315c2e60a487193f173facea3db38"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/filling/honeyed_peanut.json"
+hash = "201dacf417053f69e50290052ffa48890fa1ce510e8ba24b8587f2c897081625"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/filling/honeyed_pecan.json"
+hash = "900c09ad03f7a17a1d444b6d518713d0b0157d72bf0c63ffa08aa346ae383e73"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/filling/honeyed_pistachio.json"
+hash = "00e907024de3026587a2b7857db3c31eda3a6378b2987e8b2770474f2e8ee45b"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/filling/honeyed_sweet_berries.json"
+hash = "8be98b68395fad195a4563de4b6b3c77c0d01b7af9e75710eb8da51d89a30b28"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/filling/honeyed_walnut.json"
+hash = "f6c662a3a05e6f4a0365551c7613c27175e71e776c196e53a5f41f0cf87bc138"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/filling/peanut_oil.json"
+hash = "ab613b292e9aa1c3dde8a8c5a6b314aac17d724ae035b2aba08cb73afd9ae60b"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/filling/sweet_tea.json"
+hash = "70ecf0644b52b4b0d8fadb8c050874ca524a0fa41803bda7f5751b517db04847"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/filling/wyvern_stone/base.json"
+hash = "d3b11bec491c10ffa38b1e4aab9de967c72057dc3d6a140beed9598f8f3642bc"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/filling/wyvern_stone/bricks.json"
+hash = "3e939af662c6231c1992a08ee76827cade6a07f283148bee0622fcda27f95ea9"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/filling/wyvern_stone/bricks_slab.json"
+hash = "5ee1a10864d83454e992059a50204a36071a0715aa9b9d49536b550345ae3c8a"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/filling/wyvern_stone/bricks_stairs.json"
+hash = "30d096fdae987ccf140bf705e75d19593f9478fb43387d75117cb63dd753744d"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/filling/wyvern_stone/bricks_wall.json"
+hash = "90a5e73608a66388a554a372d414a86c8f743fa8db387330f1d0f37ec17bb9ca"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/filling/wyvern_stone/chiseled_bricks.json"
+hash = "83f52ab1661f1b0e8efe756d4285aa071f6a06296071873d04208038c93a7ec5"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/filling/wyvern_stone/polished.json"
+hash = "5ad11e52a3f738ac40efe64c67824c4e5ff47e5b3fcd3a6762c10fb0fd100834"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/filling/wyvern_stone/polished_slab.json"
+hash = "deb302fc2e8b15aff6910cad8e2be4e66e690c1c0dcef83ed7e52fbddfc969bf"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/filling/wyvern_stone/polished_stairs.json"
+hash = "02fa0f01851dc78474729a70dfaf48baebc4005b1078bd701545909dfce4b39f"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/filling/wyvern_stone/polished_wall.json"
+hash = "68240cbe483efb34451b98b04197bcc9e5e8f2fb7412322bb1c40419eff0ac04"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/filling/wyvern_stone/slab.json"
+hash = "34079151048752b6622bcb0569d29191cd33fed9fb6dcf466b2ee831cdb99727"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/filling/wyvern_stone/stairs.json"
+hash = "0a2a20d77ca463358bf0743a07b34cd44e1d09add26495036bc8bc3ce2d0663c"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/filling/wyvern_stone/wall.json"
+hash = "a87786af24a466a67468ce90c7fa8c88b4449e8844e155372dd71f6bf5df904d"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/integration/createaddition/liquid_burning/peanut_oil.json"
+hash = "2110504a21388ee0e740c681e3be0fb85efb7bba7200b09c9822cb4c1e8a6542"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/mixing/aching_tenebrous_clump.json"
+hash = "3ee3f22e034c8a92ae34ed34c1b943414c6fff823368cbeaa26624d0c9fcff72"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/mixing/apple_cider.json"
+hash = "17cd7b29d6b81bbcbad00277e5a15fff73b7e67d5ef375834054c537e41c5d67"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/mixing/baklava.json"
+hash = "db384954f9346c4628fdb3b2a0150a692fcc3b6f6bbacce0a3d05279a46da218"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/mixing/cackling_pie.json"
+hash = "f7a3b6d977f610b0dbf780cab2330af764060513f3a32154486da6ee58c4ea53"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/mixing/cashew_sorbet_scoop.json"
+hash = "36ef54977510ed5db345ec3b30267d729b9d65e1374c82e69dc11974f3c7aef7"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/mixing/chocolate_from_hazelnut.json"
+hash = "b8d482ccb2e2f39447ac1331d70aa0716e820f1b7a5589feafbe95c891f3ffef"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/mixing/garnish.json"
+hash = "02988a57e3e189098f6f024e51fa4ce2748b069b088844521911ebe91efe3068"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/mixing/peanut_oil.json"
+hash = "25c3cb1dd3fd522ff9e19fd4e328a5055184c647e470ac25af2e68e8f51b745d"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/mixing/sweet_tea.json"
+hash = "51a42eddc68e17054b5caab73c6bb0bcd1e26d04349894b36409a9aa365e775a"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/sequenced_assembly/champion_omelette.json"
+hash = "172b3296d28808bf596bf8de17824a23f4b67adc951df6084299c6f4acd0acaa"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/sequenced_assembly/cookie_from_macadamia.json"
+hash = "a64896ae58b90d553542c28720ecc63b7a83baa7a7b51cb65aaf629a5e8d3225"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/sequenced_assembly/ender_dragon_egg.json"
+hash = "a2b4593a5feb27d50fbb028d9501c663c508fdca274caede55f2b9ef56d003eb"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/sequenced_assembly/fermented_cashew_mixture.json"
+hash = "8bba077026eff402540f3be010c2f7bf4840b23ad7d190ae3cb00795d599897a"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/sequenced_assembly/muesli.json"
+hash = "5268b0f6f03bd7544ced731aa1b84b8267edf3d3a2de95181a194eec7701c657"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/sequenced_assembly/nutty_melody.json"
+hash = "1a3b351811280132404ded2297b6b7cc7c156568935c03bf90228ee9689a1ed6"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/sequenced_assembly/peanut_oil_and_cinder_sandwich.json"
+hash = "d5e72115928ed142a824f976f8a9e1dc90505062aa508e7ae36654ca8d0796b7"
+
+[[files]]
+file = "kubejs/data/garnished/recipe/sequenced_assembly/tophet_brew.json"
+hash = "a12d9ceccff3a0c06a5fa424766591f9e40588fdf918c11367e10cb017b3248f"
+
+[[files]]
 file = "kubejs/server_scripts/ore_crushing_boost.js"
-hash = "8e6ab593b3ed3ad208f4e1a9cf4130d1c317b4a946fc856dd1bdc120c50d1ebc"
+hash = "6d18254526198d2ba965bb9220ae07a9113834e2765bd122207f068ed9bbcc12"
 
 [[files]]
 file = "mods/3dskinlayers.pw.toml"

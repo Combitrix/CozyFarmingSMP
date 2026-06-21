@@ -1,0 +1,19 @@
+{
+ "neoforge:conditions": [
+  {
+   "type": "neoforge:mod_loaded",
+   "modid": "createaddition"
+  }
+ ],
+ "type": "createaddition:liquid_burning",
+ "burn_time": 24000,
+ "ingredients": [
+  {
+   "type": "neoforge:tag",
+   "amount": 1000,
+   "tag": "garnished:peanut_oil"
+  }
+ ],
+ "results": [],
+ "superheated": true
+}

@@ -1,0 +1,20 @@
+{
+ "type": "create:filling",
+ "ingredients": [
+  {
+   "item": "minecraft:sweet_berries"
+  },
+  {
+   "type": "neoforge:single",
+   "amount": 250,
+   "fluid": "garnished:garnish"
+  }
+ ],
+ "results": [
+  {
+   "item": {
+    "id": "garnished:garnished_sweet_berries"
+   }
+  }
+ ]
+}

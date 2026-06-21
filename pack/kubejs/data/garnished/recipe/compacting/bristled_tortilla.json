@@ -1,0 +1,24 @@
+{
+ "type": "create:compacting",
+ "ingredients": [
+  {
+   "item": "garnished:bristled_flour"
+  },
+  {
+   "item": "garnished:solemn_dust"
+  },
+  {
+   "type": "neoforge:single",
+   "amount": 100,
+   "fluid": "minecraft:water"
+  }
+ ],
+ "results": [
+  {
+   "count": 1,
+   "item": {
+    "id": "garnished:bristled_tortilla"
+   }
+  }
+ ]
+}
