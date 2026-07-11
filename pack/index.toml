@@ -29,6 +29,10 @@ file = "config/iris.properties"
 hash = "4cd551159addc4e61b56f4f15c022f143a610131121468a1912dea19328ce79a"
 
 [[files]]
+file = "config/jei/jei-client.ini"
+hash = "cd82511179ffa0b23202e4fc8a63ea169d84176df6f72080b3fed48be2c99094"
+
+[[files]]
 file = "config/kubejs/dev.properties"
 hash = "c6274578d019fb66b8471b392e4ce5b2fccfdf2e139cd26acf9873276455ebd9"
 
