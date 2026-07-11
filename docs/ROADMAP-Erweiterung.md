@@ -1,3 +1,5 @@
+> **⚠️ Konzept-Update (2026-07-11):** Das Stardew-Valley-/Animal-Crossing-Framing dieses Dokuments ist **verworfen** — das Pack soll eine **eigene Identität** bekommen. Die Mechanik-Ideen und Mod-Empfehlungen bleiben als Rohmaterial gültig, werden aber neu geframed (keine 1:1-Kopien wie Community Center, Qualitätssterne à la Stardew, Herzsystem). Create: Bionics ist seit 0.10.18 im Pack.
+
 # Cozy Farming SMP — Creative Director Masterplan
 
 *Minecraft 1.21.1 / NeoForge 21.1.233 · Packwiz · Vision: Stardew Valley × Animal Crossing × Create 6*
