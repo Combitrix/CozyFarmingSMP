@@ -1,0 +1,7 @@
+{
+  "extra_settings": {
+    "cloudHeightOverride": true,
+    "cloudHeight": 320,
+    "cloudDistance": 100
+  }
+}

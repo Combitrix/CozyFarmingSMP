@@ -33,6 +33,10 @@ file = "config/minecolonies-server.toml"
 hash = "ef52aacac2654ba4143f9d05c60c528938191fcee74410a73f7e04fedbc21990"
 
 [[files]]
+file = "config/sodium-extra-options.json"
+hash = "284f08ca474b2a9447759ddc676cf464968c166641a53a2965e10e274c43715a"
+
+[[files]]
 file = "kubejs/data/cozy/recipe/cutting/aq_arapaima.json"
 hash = "a3c5f9c71a4902b9a79628cbd7b20c0744efd59a2cde59ec92446c213a11ba65"
 
@@ -1543,6 +1547,11 @@ metafile = true
 [[files]]
 file = "mods/smarter-farmers-farmers-replant.pw.toml"
 hash = "918104735fe4da7e223394b5f76c0f063178b34e653fab7135ce451fd08d0746"
+metafile = true
+
+[[files]]
+file = "mods/sodium-extra.pw.toml"
+hash = "c490445e40a84c9e19bd3d3a7c8e8b9709b8cea0346a307eb7fb8a32a72a9504"
 metafile = true
 
 [[files]]
