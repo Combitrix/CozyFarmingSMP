@@ -551,6 +551,11 @@ hash = "f7b20a7e5ae4678c0e74e7e6945f48c402636f8887d65b0cdab0357dd5c08856"
 metafile = true
 
 [[files]]
+file = "mods/create-bionics.pw.toml"
+hash = "ccb156a28becc63d5fdea04798ec08f3fab390f35fd5380440211aa632199e70"
+metafile = true
+
+[[files]]
 file = "mods/create-bitterballen.pw.toml"
 hash = "818c72ad08596c9312ad2090aad62c7c1733053ec4588079c1d5f9cd2fa03421"
 metafile = true
