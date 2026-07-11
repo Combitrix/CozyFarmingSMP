@@ -8,6 +8,9 @@ hash-format = "sha512"
 hash = "07971d9ba040ad599781d822a71ec4dccc055d08203e367fef3e078cde4a24f1988088c26e5a5e49bfe5b9fd80179a063354d00eb79e2526069e2833a67e50a0"
 
 [update]
+[update.curseforge]
+file-id = 8121918
+project-id = 988504
 [update.modrinth]
 mod-id = "dl88rsIq"
 version = "HPPmvIRN"

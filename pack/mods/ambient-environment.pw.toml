@@ -8,6 +8,9 @@ hash-format = "sha512"
 hash = "aad91081e677097847ad847463717fdb77abf32a1a27176b019fa919ba505a3ab01b6d06c30d63da800a0b5b490be3cf5a7cf80f2193b6a8394a4249ba2cfeaa"
 
 [update]
+[update.curseforge]
+file-id = 5799489
+project-id = 320163
 [update.modrinth]
 mod-id = "DyTvM1dv"
 version = "N7jam3SN"

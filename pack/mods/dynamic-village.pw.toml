@@ -8,6 +8,9 @@ hash-format = "sha512"
 hash = "f16317ca147cb3558441d3e984fb21d477a061154dabaa497371a9fe4533b66e7af7ff4233f068beb089e1c9565697200e2dca990894c87c56339382fe5b9cc6"
 
 [update]
+[update.curseforge]
+file-id = 8252993
+project-id = 919759
 [update.modrinth]
 mod-id = "YCPmkFAm"
 version = "9maBydxx"

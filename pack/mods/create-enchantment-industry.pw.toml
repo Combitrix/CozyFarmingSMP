@@ -8,6 +8,9 @@ hash-format = "sha512"
 hash = "287ffc78bf1cdb1e15e985aa42fdf831a7d5ecbdc0e6b685113b59d3d8989a9802954d72ed75be6030bcf16360ee392ecd0537832c35e4dd354d6a74fa649c8b"
 
 [update]
+[update.curseforge]
+file-id = 8241357
+project-id = 688768
 [update.modrinth]
 mod-id = "JWGBpFUP"
 version = "8XedJhwv"

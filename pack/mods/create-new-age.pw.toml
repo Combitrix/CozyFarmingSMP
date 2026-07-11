@@ -8,6 +8,9 @@ hash-format = "sha512"
 hash = "5075c6482b800af7044b594ad694855e7d56f386cb0354967eafe99d77e84b4e26ee7f880d287672d24d84ea8086fd074b7695e46632f32f215b31ce859ada72"
 
 [update]
+[update.curseforge]
+file-id = 8215216
+project-id = 905861
 [update.modrinth]
 mod-id = "FTeXqI9v"
 version = "IwtuwMZy"

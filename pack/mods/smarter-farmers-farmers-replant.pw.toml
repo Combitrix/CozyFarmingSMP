@@ -8,6 +8,9 @@ hash-format = "sha512"
 hash = "a79babd2e4fd42823dbbfc6afedd30e57462d693fe255b7e4306023d0567f183196c9b142356b43803ad8e503a386642aa91b9b29835f739c233bce768018d62"
 
 [update]
+[update.curseforge]
+file-id = 7120722
+project-id = 491290
 [update.modrinth]
 mod-id = "Bh6ZOMvp"
 version = "odppGdXf"

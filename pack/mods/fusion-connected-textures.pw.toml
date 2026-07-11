@@ -8,6 +8,9 @@ hash-format = "sha512"
 hash = "5ec9fa88ba6611168f7889c533713e76273d8a2f571bdf2a4cd3ae8a46da6ab4d690dc4ff4f3c818461434ddba12a722f8cf9fa85538bd7da13c35a637fd0b13"
 
 [update]
+[update.curseforge]
+file-id = 8283189
+project-id = 854949
 [update.modrinth]
 mod-id = "p19vrgc2"
 version = "TMWAuZXT"

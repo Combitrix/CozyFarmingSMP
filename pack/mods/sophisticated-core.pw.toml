@@ -8,6 +8,9 @@ hash-format = "sha512"
 hash = "6e1f5d8730d4c810d87aedd31112f243b4574eb393b58580b29454a976b1f8a7c4dd2243fa3cedf6cca298244b00e5c1c255a85a17796a50bada5032e4605935"
 
 [update]
+[update.curseforge]
+file-id = 8398762
+project-id = 618298
 [update.modrinth]
 mod-id = "nmoqTijg"
 version = "PaNVpd0p"

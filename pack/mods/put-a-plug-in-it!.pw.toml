@@ -8,6 +8,9 @@ hash-format = "sha512"
 hash = "e1e2bc2c00209e899652efb3e4960a283a9e3af62007fe020b14e504deb618acc7a50dffb2586fb626e27192aefc4eca8d7bb0f8d7034166b91ddc9655201957"
 
 [update]
+[update.curseforge]
+file-id = 7875683
+project-id = 1461195
 [update.modrinth]
 mod-id = "xedaBnSm"
 version = "y2wCW8V6"
