@@ -1,0 +1,20 @@
+{
+ "type": "recipe",
+ "crafter": "chef_crafting",
+ "inputs": [
+  {
+   "id": "minecraft:beef"
+  },
+  {
+   "id": "minecraft:carrot"
+  },
+  {
+   "id": "minecraft:baked_potato"
+  }
+ ],
+ "intermediate": "minecraft:furnace",
+ "result": {
+  "id": "farmersdelight:beef_stew",
+  "count": 1
+ }
+}

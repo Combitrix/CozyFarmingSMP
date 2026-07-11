@@ -1,0 +1,8 @@
+{
+ "replace": false,
+ "values": [
+  "pamhc2crops:brusselsproutseeditem",
+  "pamhc2crops:kaleseeditem",
+  "pamhc2crops:wintersquashseeditem"
+ ]
+}

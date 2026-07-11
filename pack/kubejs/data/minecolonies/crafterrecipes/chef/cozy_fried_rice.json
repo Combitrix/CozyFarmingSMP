@@ -1,0 +1,23 @@
+{
+ "type": "recipe",
+ "crafter": "chef_crafting",
+ "inputs": [
+  {
+   "id": "farmersdelight:rice"
+  },
+  {
+   "id": "minecraft:egg"
+  },
+  {
+   "id": "minecraft:carrot"
+  },
+  {
+   "id": "farmersdelight:onion"
+  }
+ ],
+ "intermediate": "minecraft:furnace",
+ "result": {
+  "id": "farmersdelight:fried_rice",
+  "count": 1
+ }
+}

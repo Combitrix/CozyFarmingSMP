@@ -1,0 +1,20 @@
+{
+ "type": "recipe",
+ "crafter": "chef_crafting",
+ "inputs": [
+  {
+   "id": "pizzadelight:flat_dough"
+  },
+  {
+   "id": "brewinandchewin:flaxen_cheese_wedge"
+  },
+  {
+   "id": "farmersdelight:tomato_sauce"
+  }
+ ],
+ "intermediate": "minecraft:furnace",
+ "result": {
+  "id": "pizzadelight:pizza",
+  "count": 1
+ }
+}

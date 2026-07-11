@@ -1,0 +1,17 @@
+{
+ "type": "recipe",
+ "crafter": "baker_crafting",
+ "inputs": [
+  {
+   "id": "minecraft:bread"
+  },
+  {
+   "id": "brewinandchewin:flaxen_cheese_wedge"
+  }
+ ],
+ "intermediate": "minecraft:furnace",
+ "result": {
+  "id": "pamhc2foodcore:grilledcheeseitem",
+  "count": 1
+ }
+}
