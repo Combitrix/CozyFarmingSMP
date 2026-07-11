@@ -29,6 +29,10 @@ file = "config/iris.properties"
 hash = "4cd551159addc4e61b56f4f15c022f143a610131121468a1912dea19328ce79a"
 
 [[files]]
+file = "config/kubejs/dev.properties"
+hash = "c6274578d019fb66b8471b392e4ce5b2fccfdf2e139cd26acf9873276455ebd9"
+
+[[files]]
 file = "config/minecolonies-server.toml"
 hash = "ef52aacac2654ba4143f9d05c60c528938191fcee74410a73f7e04fedbc21990"
 
@@ -622,7 +626,7 @@ hash = "6d18254526198d2ba965bb9220ae07a9113834e2765bd122207f068ed9bbcc12"
 
 [[files]]
 file = "kubejs/server_scripts/unify_food.js"
-hash = "f76bb92813e36ba386af7bbc5c7022b606e708792e21ce194c6283157838f2ab"
+hash = "2c921614bd44adc441cb4b6c83ac271655898b40ba8dcc90d548136e31feaec3"
 
 [[files]]
 file = "mods/3dskinlayers.pw.toml"
@@ -1675,7 +1679,7 @@ metafile = true
 
 [[files]]
 file = "servers.dat"
-hash = "5fe6b9064f062acc477ce0ac29167bd50239d1e8a55d40c5b390a80ba44c286f"
+hash = "2740f0c07b3a6e56a5f123a7c5fe3925d6cf398308c1be7d4530deaa4f48052f"
 
 [[files]]
 file = "shaderpacks/bsl-shaders.pw.toml"

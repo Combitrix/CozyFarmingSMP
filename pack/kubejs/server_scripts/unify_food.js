@@ -1,7 +1,7 @@
 // Cozy-Integration Phase 1: Basiszutaten vereinheitlichen
 // Kanonisches Item ersetzt Duplikate in allen Rezepten; Umtausch-Rezepte für Alt-Items.
 ServerEvents.recipes(event => {
-  const safe = (id) => Item.exists(id)
+  const safe = (id) => { try { return Item.of(id).id !== 'minecraft:air' } catch (e) { return false } }
   if (safe('create:dough') && safe('farmersdelight:wheat_dough')) {
     event.replaceInput({not: {id: /^cozy:/}}, 'create:dough', 'farmersdelight:wheat_dough')
     event.replaceOutput({not: {id: /^cozy:/}}, 'create:dough', 'farmersdelight:wheat_dough')
