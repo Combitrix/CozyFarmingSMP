@@ -7,3 +7,4 @@ __pycache__/
 pack/latest.log
 pack/*.log
 pack/crash-reports/
+pack/mods/physics-mod-pro-*.jar

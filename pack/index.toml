@@ -1473,8 +1473,17 @@ hash = "2fba8c0c93dddcfea65221dd9172647bfb63ed389062e0bacc8f896651073f5d"
 metafile = true
 
 [[files]]
+file = "mods/physics-mod-pro-v172p-neoforge-mc-1.21.1.jar"
+hash = "0a7d027c4b30e77e4b33ddac3425e08eb8611ae415342dac43f84300ad6b7f7d"
+
+[[files]]
 file = "mods/pizza-delight.pw.toml"
 hash = "38174a95135292b8205a4e8c5431578ade1c8f63f7a98f3ab1a370a126b502fd"
+metafile = true
+
+[[files]]
+file = "mods/polymorph.pw.toml"
+hash = "152769b5dfbb92a836634e315898b23b6a555c60b6f05ddf38c00085f2b784f6"
 metafile = true
 
 [[files]]
