@@ -1064,11 +1064,6 @@ hash = "a106fc02aebc47466abc69c0d4195f7af20c14795292bde81d201cafa7a04765"
 metafile = true
 
 [[files]]
-file = "mods/delightful-fares.pw.toml"
-hash = "38de52b14590ec04ebc792aead2d8260215aa971907670ef7b82ae9b58cb9222"
-metafile = true
-
-[[files]]
 file = "mods/distanthorizons.pw.toml"
 hash = "cc5dcbc7ac2bc244863f27ec37ff17eeb339aee23c3ff5b8e7e287227db3538a"
 metafile = true
