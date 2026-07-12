@@ -574,15 +574,11 @@ hash = "06d1c2a9fd931f1ae4bb4b62b2ea25fbfe3eed4fbd6be1959d355912ee0155b2"
 
 [[files]]
 file = "kubejs/data/minecolonies/crafterrecipes/chef/cozy_cheese_pizza.json"
-hash = "52ab741976d9eaf7a8633daeab3934d86c881b03c3514f220846d0931d0dce40"
+hash = "b6906c748055178f78e5fab20cfe9771af51c3bd21d5645d25e6ce6fa41e87de"
 
 [[files]]
 file = "kubejs/data/minecolonies/crafterrecipes/chef/cozy_fried_rice.json"
 hash = "2c5a13fff2adc3b408f3ca07b6e67c0d76d32ebbb0145c00dd9a3dccaaa4a84c"
-
-[[files]]
-file = "kubejs/data/pizzadelight/recipe/rolling/flat_dough.json"
-hash = "89d66534dfb0ef6cac1fc8e2ca7ee4e982ada3cd1961a14612e37bfe639eb0fe"
 
 [[files]]
 file = "kubejs/data/sereneseasons/tags/block/autumn_crops.json"
@@ -685,7 +681,7 @@ metafile = true
 
 [[files]]
 file = "mods/balm.pw.toml"
-hash = "88a91abcba5d052942362296e2c25611524e2ffecd142feb7322ce98c34169d4"
+hash = "89f91af68cf3680b17ba26529d5195d7e5421e0333ae43d0080124c6b3b2ff44"
 metafile = true
 
 [[files]]
@@ -1475,7 +1471,7 @@ metafile = true
 
 [[files]]
 file = "mods/pizza-delight.pw.toml"
-hash = "38174a95135292b8205a4e8c5431578ade1c8f63f7a98f3ab1a370a126b502fd"
+hash = "323edf22a0ebf0a6c0989cf3304fd51a78d4217183f4bd22486fc6951553c5bc"
 metafile = true
 
 [[files]]
@@ -1575,12 +1571,12 @@ metafile = true
 
 [[files]]
 file = "mods/sophisticated-backpacks.pw.toml"
-hash = "0c318da7254c932b4c48670fdcc0932a9bbffb3c17f625b75858046637b2071d"
+hash = "009e1fa9767781fa10720b7b49a1eb083fa29a39d8c665b2f2f6d0558b07cc5c"
 metafile = true
 
 [[files]]
 file = "mods/sophisticated-core.pw.toml"
-hash = "e9fb14bb75532aa672ed5ad8310f36a83b4b3c7b96bc8bb85488e334557a3941"
+hash = "8b9492eb76c06925034921e16137528aa69c4c81d1ebf76153b9c15dc9374baf"
 metafile = true
 
 [[files]]

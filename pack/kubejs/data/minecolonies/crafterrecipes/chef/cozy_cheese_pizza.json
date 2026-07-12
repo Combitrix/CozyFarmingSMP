@@ -3,7 +3,7 @@
  "crafter": "chef_crafting",
  "inputs": [
   {
-   "id": "pizzadelight:flat_dough"
+   "id": "farmersdelight:wheat_dough"
   },
   {
    "id": "brewinandchewin:flaxen_cheese_wedge"
