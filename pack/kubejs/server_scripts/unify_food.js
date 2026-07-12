@@ -47,11 +47,6 @@ ServerEvents.recipes(event => {
     event.replaceOutput({not: {id: /^cozy:/}}, 'pizzadelight:cheese', 'brewinandchewin:flaxen_cheese_wedge')
     event.shapeless('brewinandchewin:flaxen_cheese_wedge', ['pizzadelight:cheese']).id('cozy:unify/pizzadelight_cheese')
   }
-  if (safe('pizzadelight:cheese_slice') && safe('expandeddelight:cheese_slice')) {
-    event.replaceInput({not: {id: /^cozy:/}}, 'pizzadelight:cheese_slice', 'expandeddelight:cheese_slice')
-    event.replaceOutput({not: {id: /^cozy:/}}, 'pizzadelight:cheese_slice', 'expandeddelight:cheese_slice')
-    event.shapeless('expandeddelight:cheese_slice', ['pizzadelight:cheese_slice']).id('cozy:unify/pizzadelight_cheese_slice')
-  }
   if (safe('farm_and_charm:butter') && safe('extradelight:butter')) {
     event.replaceInput({not: {id: /^cozy:/}}, 'farm_and_charm:butter', 'extradelight:butter')
     event.replaceOutput({not: {id: /^cozy:/}}, 'farm_and_charm:butter', 'extradelight:butter')

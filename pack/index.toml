@@ -622,7 +622,7 @@ hash = "6d18254526198d2ba965bb9220ae07a9113834e2765bd122207f068ed9bbcc12"
 
 [[files]]
 file = "kubejs/server_scripts/unify_food.js"
-hash = "43857ea5403e9e7c85663df3ec5b0574fb20b2fd6a1d888bedb2408cfe0044d2"
+hash = "0e750c8acaaf4b9fad4b26aabd8823dd4921cc8ed6234a3c29f86b114a79c361"
 
 [[files]]
 file = "mods/3dskinlayers.pw.toml"
