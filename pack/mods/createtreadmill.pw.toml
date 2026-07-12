@@ -1,0 +1,16 @@
+name = "Create:Treadmill"
+filename = "createtreadmill-1.14.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/N705v2dC/versions/hIl0u6Dw/createtreadmill-1.14.jar"
+hash-format = "sha512"
+hash = "179738f311a0114e9a2804e4c26d974ea25da238b322be8e24b42558fafb955a53dcc48000a8173d5db229ae3defcaae5edac57eaeb8074e8aa9bb5939b9d561"
+
+[update]
+[update.curseforge]
+file-id = 8370411
+project-id = 1434062
+[update.modrinth]
+mod-id = "N705v2dC"
+version = "hIl0u6Dw"

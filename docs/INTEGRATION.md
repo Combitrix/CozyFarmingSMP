@@ -28,10 +28,8 @@ Crop-**Loot-Drops**, keine Rezept-Outputs; bräuchte LootJS (Kandidat Phase 7).
   (Fermentation → Ethanol + Pflanzenöl → Biodiesel) endlich funktionsfähig.
 - pizzadelight `rolling/flat_dough` repariert: jeder `c:doughs`-Teig → Flachteig.
 
-## Phase 3 — Bionics ↔ Farm (`bionics_farm_link.js`)
-Alle Bionics-Rezepte nutzen **Biomasse-Pellets** (Create-Addition) statt Kohle —
-Roboter laufen mit Ernteabfällen. (Die `noyoudon't:`-Fehler der Organ-Roboter
-sind Absicht des Mod-Autors: nicht craftbar.)
+## Phase 3 — ~~Bionics ↔ Farm~~ (entfernt in 0.12.0)
+Create: Bionics wurde in 0.12.0 entfernt (nicht auf CurseForge verfügbar). Der Biomasse-Gedanke lebt weiter: **Create: Treadmill** (Tiere erzeugen Rotation) und **Simulated Jet Engines** ergänzen den Farm-treibt-Technik-Pfad.
 
 ## Phase 4 — MineColonies (`kubejs/data/minecolonies/crafterrecipes/`)
 Bäcker: Grilled Cheese, Apple Pie, Honig-Kekse · Chef: Fried Rice, Beef Stew,

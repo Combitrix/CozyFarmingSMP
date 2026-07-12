@@ -1,0 +1,13 @@
+name = "Create: Simulated Jet Engines | Aero Propulsion | Create Aeronautics"
+filename = "morepropulsion-1.1.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "69a12f2da5e88bee44cbc82eba7f746797c79d0a"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8417232
+project-id = 1603705
